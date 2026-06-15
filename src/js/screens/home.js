@@ -50,6 +50,10 @@ export default function renderHome(ctx) {
         <span class="badge">${ICONS.poele} ${esc(libelleEquipement(recette))}</span>
       </div>
     </article>`);
+  if (ctx.animerCarte) {
+    card.classList.add('swap'); // animation lors d'un « Autre chose »
+    ctx.animerCarte = false;
+  }
   body.appendChild(card);
 
   // Appoint : ingrédient(s) manquant(s) signalé(s)
@@ -125,6 +129,9 @@ export default function renderHome(ctx) {
 
   screen.appendChild(body);
 
+  // Tirer vers le bas (en haut de page) = « Autre chose ».
+  installerPullToRefresh(body, () => ctx.autreChose());
+
   // Placeholder pub : uniquement en aperçu navigateur (en natif, vraie bannière AdMob).
   if (!ads.disponible()) {
     screen.appendChild(el('<div class="adbar" aria-hidden="true">Publicité</div>'));
@@ -132,4 +139,33 @@ export default function renderHome(ctx) {
 
   annoncer(`Proposition : ${recette.nom}, ${recette.temps_min} minutes.`);
   return screen;
+}
+
+/** Pull-to-refresh : un tiré vers le bas en haut de page déclenche l'action. */
+function installerPullToRefresh(scroller, onRefresh) {
+  const SEUIL = 70;
+  let y0 = 0, tire = false;
+  const ind = el('<div class="pull-ind" aria-hidden="true">↻</div>');
+  scroller.prepend(ind);
+
+  scroller.addEventListener('touchstart', (e) => {
+    if (scroller.scrollTop <= 0) { y0 = e.touches[0].clientY; tire = true; }
+  }, { passive: true });
+
+  scroller.addEventListener('touchmove', (e) => {
+    if (!tire) return;
+    const dy = e.touches[0].clientY - y0;
+    if (dy <= 0) { ind.style.height = '0px'; return; }
+    ind.style.height = `${Math.min(dy, SEUIL + 20)}px`;
+    ind.classList.toggle('ready', dy > SEUIL);
+  }, { passive: true });
+
+  scroller.addEventListener('touchend', (e) => {
+    if (!tire) return;
+    tire = false;
+    const dy = e.changedTouches[0].clientY - y0;
+    ind.style.height = '0px';
+    ind.classList.remove('ready');
+    if (dy > SEUIL && scroller.scrollTop <= 0) onRefresh();
+  });
 }

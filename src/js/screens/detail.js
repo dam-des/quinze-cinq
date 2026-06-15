@@ -45,9 +45,15 @@ export default function renderDetail(ctx, { recette }) {
       ? '<span class="dot-need" aria-hidden="true"></span>'
       : `<span class="tick" aria-hidden="true">${ICONS.check}</span>`;
     const etat = manque ? 'à avoir' : 'disponible';
-    return el(
-      `<div class="ing-row"><span class="sr-only">${etat} :</span>${marque} ${esc(libelle)} <span class="tag">${esc(ing.type)}</span></div>`
+    const row = el(
+      `<button class="ing-row" aria-pressed="false"><span class="sr-only">${etat} :</span>${marque} <span class="ing-nom">${esc(libelle)}</span> <span class="tag">${esc(ing.type)}</span></button>`
     );
+    // Cocher/décocher (aide visuelle pendant les courses / la prépa).
+    row.addEventListener('click', () => {
+      const fait = row.classList.toggle('fait');
+      row.setAttribute('aria-pressed', String(fait));
+    });
+    return row;
   };
 
   if (possedes.length) {

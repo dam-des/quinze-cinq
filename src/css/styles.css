@@ -9,6 +9,7 @@
   --ink-faint: #A6A8AE;
   --accent: #FFC400;       /* jaune — seule couleur d'accent */
   --accent-deep: #E0A500;
+  --on-accent: #16171B;    /* texte sur aplat jaune — toujours sombre (clair & sombre) */
   --line: #ECECE6;
   --line-strong: #E0E0D9;
   --chip: #F5F5F0;
@@ -54,7 +55,7 @@ body {
 }
 .mark {
   display: inline-flex; align-items: baseline;
-  background: var(--accent); color: var(--ink);
+  background: var(--accent); color: var(--on-accent);
   font-family: var(--display); font-weight: 800; font-size: 18px;
   padding: 5px 10px; border-radius: 8px; letter-spacing: -.3px;
 }
@@ -99,7 +100,7 @@ body {
   display: inline-flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 600;
   padding: 7px 11px; border-radius: 9px; background: var(--chip); color: var(--ink);
 }
-.badge.hl { background: var(--accent); }
+.badge.hl { background: var(--accent); color: var(--on-accent); }
 .badge svg { width: 14px; height: 14px; }
 
 .section-q { margin-top: 22px; font-size: 14px; font-weight: 600; color: var(--ink); }
@@ -162,7 +163,7 @@ body {
 .step .num {
   flex: none; width: 28px; height: 28px; border-radius: 8px; background: var(--accent);
   font-family: var(--display); font-weight: 700; font-size: 14px;
-  display: flex; align-items: center; justify-content: center; color: var(--ink);
+  display: flex; align-items: center; justify-content: center; color: var(--on-accent);
 }
 .step p { font-size: 15px; line-height: 1.45; padding-top: 3px; }
 
@@ -180,7 +181,7 @@ body {
 .pantry { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 22px; }
 .pchip {
   font-size: 14px; font-weight: 600; padding: 10px 14px; border-radius: 999px;
-  background: var(--accent); color: var(--ink); display: inline-flex; align-items: center; gap: 7px;
+  background: var(--accent); color: var(--on-accent); display: inline-flex; align-items: center; gap: 7px;
   cursor: pointer; border: 1px solid transparent; min-height: 40px;
 }
 .pchip.off { background: var(--surface); color: var(--ink-faint); border-color: var(--line-strong); }
@@ -267,11 +268,11 @@ body {
 /* Minuteur du mode cuisine */
 .cook-timer {
   margin-top: 18px; align-self: flex-start; display: inline-flex; align-items: center; gap: 7px;
-  font-size: 15px; font-weight: 700; color: var(--ink); background: var(--accent);
+  font-size: 15px; font-weight: 700; color: var(--on-accent); background: var(--accent);
   padding: 10px 16px; border-radius: 12px; border: none; cursor: pointer; min-height: 44px;
 }
-.cook-timer.running { background: var(--accent-deep); color: var(--ink); }
-.cook-timer.done { background: var(--ink); color: #fff; }
+.cook-timer.running { background: var(--accent-deep); color: var(--on-accent); }
+.cook-timer.done { background: #16171B; color: #fff; }
 .end-streak { font-size: 14px; font-weight: 700; color: var(--accent-deep); margin-top: 10px; }
 
 /* « Mes plats » (historique) */
@@ -291,6 +292,55 @@ body {
 .hist-meta { font-size: 12.5px; color: var(--ink-soft); }
 .hist-avis { font-size: 18px; }
 .hist-row .chev { color: var(--ink-faint); margin-left: 4px; }
+
+/* Vie & fun : swap de carte, pull-to-refresh, checklist d'ingrédients */
+@keyframes q5-card-swap {
+  from { opacity: 0; transform: translateY(10px) scale(.985); }
+  to { opacity: 1; transform: none; }
+}
+.dish-card.swap { animation: q5-card-swap .3s cubic-bezier(.2, .7, .3, 1); }
+
+.pull-ind {
+  height: 0; overflow: hidden; display: flex; align-items: flex-end; justify-content: center;
+  color: var(--ink-faint); font-size: 20px; transition: height .15s ease; padding-bottom: 4px;
+}
+.pull-ind.ready { color: var(--ink); }
+
+.ing-row {
+  width: 100%; background: none; border: none; border-bottom: 1px solid var(--line);
+  font-family: var(--body); color: inherit; text-align: left; cursor: pointer;
+}
+.ing-nom { transition: color .15s; }
+.ing-row.fait .ing-nom { text-decoration: line-through; color: var(--ink-faint); }
+.ing-row.fait .tick { opacity: .4; }
+
+/* ── Mode sombre ───────────────────────────────────────────────────────────── */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --surface: #1A1B20;
+    --bg: #0E0F12;
+    --ink: #F2F2EE;
+    --ink-soft: #A8AAB0;
+    --ink-faint: #6E7077;
+    --line: #2A2B31;
+    --line-strong: #3A3B42;
+    --chip: #26272D;
+    --accent-deep: #FFCF33;
+  }
+  /* Cartes / surfaces à dégradé clair → sombre. */
+  .dish-card { background: linear-gradient(180deg, #202127 0%, #191A1F 100%); }
+  .frais-search { background: #202127; }
+  .adbar { background: repeating-linear-gradient(45deg, #1E1F25, #1E1F25 10px, #23242A 10px, #23242A 20px); }
+  /* Boutons « encre pleine » → clairs sur fond sombre. */
+  .btn-primary { background: #F2F2EE; color: #16171B; }
+  .chip.on { background: #F2F2EE; color: #16171B; border-color: #F2F2EE; }
+  .toggle.on { background: var(--accent); }
+  .toggle.on::after { background: #16171B; }
+  /* Coche « possédé » : boîte claire, coche sombre. */
+  .tick { background: #F2F2EE; }
+  .tick svg { color: #16171B; }
+  /* Les bandeaux d'illustration restent jaune pâle (le trait sombre reste lisible). */
+}
 
 /* Transitions de navigation (slide façon iOS) */
 @keyframes q5-slide-in {

@@ -89,6 +89,7 @@ const ctx = {
 
   autreChose() {
     haptics.impact('LIGHT');
+    ctx.animerCarte = true; // déclenche l'animation de swap de la carte
     const prec = ctx.proposition && ctx.proposition.recette;
     if (prec) {
       ctx.session.push(prec.id);
