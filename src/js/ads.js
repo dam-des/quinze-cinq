@@ -87,3 +87,29 @@ export async function signalerAutreChose() {
 export function reinitialiserCadence() {
   _compteurAutreChose = 0;
 }
+
+/**
+ * Permet à l'utilisateur de revoir/modifier son consentement publicitaire.
+ * Renvoie un message lisible à afficher (le bouton réglages ne doit jamais
+ * sembler « mort »).
+ */
+export async function revoirConsentement() {
+  const p = plugin();
+  if (!p) return { ok: false, message: 'Le consentement publicitaire sera disponible dans l’app installée.' };
+  try {
+    if (p.resetConsentInfo) await p.resetConsentInfo();
+    let info = {};
+    if (p.requestConsentInfo) info = await p.requestConsentInfo({});
+    if (p.showConsentForm && (info.isConsentFormAvailable ?? true)) {
+      await p.showConsentForm();
+      return { ok: true, message: 'Ton choix de consentement a été mis à jour.' };
+    }
+    if (p.showPrivacyOptionsForm) {
+      await p.showPrivacyOptionsForm();
+      return { ok: true, message: 'Ton choix de consentement a été mis à jour.' };
+    }
+    return { ok: true, message: 'Consentement déjà enregistré : aucun formulaire à afficher.' };
+  } catch (e) {
+    return { ok: false, message: 'Impossible d’ouvrir le formulaire de consentement.' };
+  }
+}

@@ -18,7 +18,9 @@ export default function renderDetail(ctx, { recette }) {
 
   const back = el(`<button class="back">${ICONS.fleche} Retour</button>`);
   // Retour = on conserve la même proposition (consulter n'est pas « Autre chose »).
-  back.addEventListener('click', () => ctx.aller('home'));
+  const retour = () => ctx.aller('home');
+  back.addEventListener('click', retour);
+  ctx.retour = retour; // active le balayage retour
   body.appendChild(back);
 
   body.appendChild(

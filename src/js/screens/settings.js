@@ -12,10 +12,12 @@ export default function renderReglages(ctx) {
   const body = el('<div class="body-scroll" style="padding-top:calc(var(--safe-top) + 14px)"></div>');
 
   const back = el(`<button class="back">${ICONS.fleche} Retour</button>`);
-  back.addEventListener('click', () => {
+  const retour = () => {
     ctx.calculerProposition();
     ctx.aller('home');
-  });
+  };
+  back.addEventListener('click', retour);
+  ctx.retour = retour; // active le balayage retour
   body.appendChild(back);
   body.appendChild(el('<h1 class="set-h">Réglages</h1>'));
 
@@ -150,8 +152,8 @@ export default function renderReglages(ctx) {
   rowPol.addEventListener('click', () => ctx.aller('confidentialite'));
   const rowPub = el('<button class="set-row">Publicités &amp; consentement<span class="chev">›</span></button>');
   rowPub.addEventListener('click', async () => {
-    if (ads.disponible()) await ads.initialiser();
-    else alert('Le consentement publicitaire (UMP) sera disponible dans l’app installée.');
+    const r = await ads.revoirConsentement();
+    alert(r.message);
   });
   cardConf.append(rowPol, rowPub);
   gConf.appendChild(cardConf);

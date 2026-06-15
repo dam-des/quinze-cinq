@@ -6,7 +6,7 @@ let _cache = null;
 /** Charge recettes_poc.json (embarqué, aucune requête réseau « métier »). */
 export async function chargerCatalogue() {
   if (_cache) return _cache;
-  const res = await fetch('./data/recettes_poc.json');
+  const res = await fetch('./data/recettes_50.json');
   if (!res.ok) throw new Error('Impossible de charger la base de recettes');
   _cache = await res.json();
   return _cache;

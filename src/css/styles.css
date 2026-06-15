@@ -112,6 +112,7 @@ body {
   margin-top: 14px; font-size: 13.5px; color: var(--accent-deep); font-weight: 600;
   display: flex; gap: 7px; align-items: flex-start;
 }
+.appoint-note svg { width: 17px; height: 17px; flex: none; margin-top: 1px; }
 
 /* Actions */
 .actions { display: flex; flex-direction: column; gap: 10px; padding: 14px 0 8px; }
@@ -135,8 +136,10 @@ body {
 /* Détail */
 .back {
   display: inline-flex; align-items: center; gap: 6px; font-size: 14px; font-weight: 600;
-  color: var(--ink-soft); margin: 4px 0 14px; background: none; border: none; cursor: pointer;
+  color: var(--ink-soft); margin: 4px 0 14px; padding: 6px 6px 6px 0;
+  background: none; border: none; cursor: pointer; align-self: flex-start;
 }
+.back svg { width: 18px; height: 18px; flex: none; }
 .detail-illu {
   height: 132px; margin: 4px 0; border-radius: 18px;
   background: linear-gradient(155deg, var(--illu-a) 0%, var(--illu-b) 100%);
@@ -237,4 +240,14 @@ body {
   overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
 }
 
-@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+/* Transitions de navigation (slide façon iOS) */
+@keyframes q5-slide-in {
+  from { transform: translateX(28px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+#screen-root { will-change: transform; }
+.screen.push { animation: q5-slide-in .22s cubic-bezier(.3, .7, .3, 1); }
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; animation: none !important; }
+}

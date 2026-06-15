@@ -5,6 +5,7 @@
 import { genererProposition } from './engine.js';
 import * as storage from './storage.js';
 import * as ads from './ads.js';
+import * as notifications from './notifications.js';
 import {
   chargerCatalogue,
   gardeMangerParDefaut,
@@ -37,12 +38,23 @@ const ctx = {
   ecranCourant: null,
 
   // ── Navigation ─────────────────────────────────────────────────────────
+  // Geste « retour » de l'écran courant (balayage depuis le bord gauche /
+  // bouton retour). Redéfini par chaque écran ; null = pas de retour.
+  retour: null,
+
   aller(nom, params = {}) {
     const root = document.getElementById('screen-root');
+    root.style.transition = '';
+    root.style.transform = '';
+    ctx.retour = null;
     root.innerHTML = '';
     ctx.ecranCourant = nom;
     const ecran = ECRANS[nom](ctx, params);
+    if (nom === 'detail' || nom === 'cuisine') ecran.classList.add('push');
     root.appendChild(ecran);
+    // Bannière pub : uniquement sur l'accueil (sinon elle masque les boutons).
+    if (nom === 'home') ads.afficherBanniere();
+    else ads.masquerBanniere();
     // Met le focus en tête d'écran pour le lecteur d'écran.
     const titre = ecran.querySelector('h1, h2, [data-autofocus]');
     if (titre) {
@@ -150,14 +162,68 @@ async function demarrer() {
     frais_du_jour: [], // jamais persisté : propre à la soirée
   };
 
+  // Garantit la présence des staples « implicites » (ingrédients base hors liste
+  // canonique éditable, ex. vermicelles) même pour un utilisateur déjà onboardé.
+  const defaut = gardeMangerParDefaut(ctx.catalogue);
+  const canon = ctx.catalogue.garde_manger_base;
+  for (const nom of defaut) {
+    if (!canon.includes(nom) && !ctx.etat.garde_manger.includes(nom)) {
+      ctx.etat.garde_manger.push(nom);
+    }
+  }
+
+  installerGestes();
+  // Tap sur la notification quotidienne → ouvre l'app sur une proposition fraîche.
+  notifications.surOuverture(() => {
+    ctx.session = [];
+    ctx.calculerProposition();
+    ctx.aller('home');
+  });
+
   if (!onboardingFait) {
     ctx.aller('onboarding');
   } else {
     await ads.initialiser();
-    ads.afficherBanniere();
     ctx.calculerProposition();
     ctx.aller('home');
   }
+}
+
+// Balayage depuis le bord gauche → retour (geste façon iOS), avec slide suivi.
+function installerGestes() {
+  const app = document.getElementById('app');
+  const root = document.getElementById('screen-root');
+  let x0 = 0, y0 = 0, actif = false;
+
+  app.addEventListener('touchstart', (e) => {
+    if (!ctx.retour) return;
+    const t = e.touches[0];
+    if (t.clientX > 28) return; // uniquement depuis le bord gauche
+    x0 = t.clientX; y0 = t.clientY; actif = true;
+    root.style.transition = 'none';
+  }, { passive: true });
+
+  app.addEventListener('touchmove', (e) => {
+    if (!actif) return;
+    const t = e.touches[0];
+    const dx = t.clientX - x0, dy = t.clientY - y0;
+    if (Math.abs(dy) > Math.abs(dx)) { actif = false; root.style.transform = ''; return; }
+    root.style.transform = `translateX(${Math.max(0, dx)}px)`;
+  }, { passive: true });
+
+  app.addEventListener('touchend', (e) => {
+    if (!actif) return;
+    actif = false;
+    const dx = e.changedTouches[0].clientX - x0;
+    root.style.transition = 'transform .2s ease';
+    if (dx > 80 && ctx.retour) {
+      const retour = ctx.retour;
+      root.style.transform = `translateX(100%)`;
+      setTimeout(retour, 170); // aller() réinitialise transform/transition
+    } else {
+      root.style.transform = '';
+    }
+  });
 }
 
 window.addEventListener('DOMContentLoaded', () => {

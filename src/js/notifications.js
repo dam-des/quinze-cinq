@@ -59,6 +59,17 @@ export async function planifierQuotidien(heure = '18:00') {
   });
 }
 
+/** Enregistre un callback exécuté quand l'utilisateur tape la notification. */
+export function surOuverture(callback) {
+  const p = plugin();
+  if (!p) return;
+  try {
+    p.addListener('localNotificationActionPerformed', () => callback());
+  } catch {
+    /* listener indisponible */
+  }
+}
+
 export async function annuler() {
   const p = plugin();
   if (!p) return;

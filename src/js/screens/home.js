@@ -56,7 +56,7 @@ export default function renderHome(ctx) {
   if (evaluation && evaluation.manquants.length > 0) {
     const liste = evaluation.manquants.map((m) => m.nom).join(', ');
     body.appendChild(
-      el(`<p class="appoint-note">${ICONS.liste} Il te manque peut-être : ${esc(liste)}</p>`)
+      el(`<p class="appoint-note">${ICONS.panier} Il te manque peut-être : ${esc(liste)}</p>`)
     );
   }
 
