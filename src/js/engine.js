@@ -118,7 +118,7 @@ function categoriesRecentes(recettes, historique = {}, now, jours) {
  * Évalue un plat (déjà passé par les filtres durs) : éligibilité + score + raisons.
  * @param {object} options { maxManquants, applyRecence, applyDiversite, applyDislike }
  */
-function evaluer(recette, etat, now, options, catsRecentes, rng) {
+function evaluer(recette, etat, now, options, catsRecentes, rng, restreindreAuxMatches = false) {
   const fraisCoches = etat.frais_du_jour || [];
   const manquants = ingredientsManquants(recette, etat.garde_manger, fraisCoches);
   const baseManquants = manquants.filter((m) => m.type === 'base').length;
@@ -129,9 +129,13 @@ function evaluer(recette, etat, now, options, catsRecentes, rng) {
   const oriente = fraisCoches.length > 0 && nbMatch > 0;
   // Plat orienté : éligible tant que les BASE sont là — les autres frais sont
   // « à acheter » (signalés), pas un motif d'exclusion. Sinon : appoint classique.
+  // Si des frais sont cochés ET qu'au moins une recette les utilise, on EXCLUT
+  // les plats non concernés (« Autre chose » reste sur l'ingrédient choisi).
   const eligible = oriente
     ? baseManquants <= options.maxManquants
-    : manquants.length <= options.maxManquants;
+    : restreindreAuxMatches
+      ? false
+      : manquants.length <= options.maxManquants;
 
   let score = SCORE_BASE;
   const raisons = [];
@@ -225,9 +229,21 @@ export function classer(recettes, etat, now = Date.now(), options = {}, rng = Ma
     ? categoriesRecentes(recettes, etat.historique, now, DIVERSITE_JOURS)
     : new Set();
 
+  // Au moins une recette (passant les filtres durs) utilise-t-elle un frais coché ?
+  // Si oui, on restreint les candidats à ces recettes (« Autre chose » reste sur
+  // l'ingrédient choisi au lieu de retomber sur un plat sans rapport).
+  const fraisCoches = etat.frais_du_jour || [];
+  const restreindreAuxMatches =
+    fraisCoches.length > 0 &&
+    recettes.some(
+      (r) =>
+        passeFiltresDurs(r, etat.preferences, etat.equipements) &&
+        (r.ingredients || []).some((i) => i.type === 'frais' && fraisCoches.includes(i.nom))
+    );
+
   return recettes
     .filter((r) => passeFiltresDurs(r, etat.preferences, etat.equipements))
-    .map((r) => evaluer(r, etat, now, opt, catsRecentes, rng))
+    .map((r) => evaluer(r, etat, now, opt, catsRecentes, rng, restreindreAuxMatches))
     .filter((e) => e.eligible)
     .sort((a, b) => b.score - a.score || b.alea - a.alea);
 }

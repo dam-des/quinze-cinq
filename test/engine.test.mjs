@@ -184,6 +184,18 @@ test('B6 — le plat couvrant le plus de frais cochés passe en tête', () => {
   }
 });
 
+test('B8 — « Autre chose » reste sur le frais coché (pas de plat sans rapport)', () => {
+  const e = etat(CINQUANTE, { frais_du_jour: ['courgette'] });
+  const utilise = (r) => r.ingredients.some((i) => i.type === 'frais' && i.nom === 'courgette');
+  const session = [];
+  for (let i = 0; i < 5; i++) {
+    const p = genererProposition(CINQUANTE.recettes, e, NOW, session, rng(i + 1));
+    assert.ok(p.recette, `tour ${i} : une proposition existe`);
+    assert.ok(utilise(p.recette), `tour ${i} : ${p.recette.id} n'utilise pas la courgette`);
+    session.push(p.recette.id);
+  }
+});
+
 test('B7 — frais pertinents : végé masque les frais carnés', () => {
   const veg = etat(CINQUANTE, { preferences: { vegetarien: true, exclusions: [] } });
   const set = fraisPertinents(CINQUANTE.recettes, veg);
@@ -196,8 +208,9 @@ test('B7 — frais pertinents : végé masque les frais carnés', () => {
 // ════════════════════════════════════════════════════════════════════════════
 
 test('C1 — un plat cuisiné le jour même ne ressort pas en premier', () => {
+  // Surprends-moi (pas de frais coché) : omelette validée aujourd'hui est
+  // défavorisée par la récence et ne sort pas en premier.
   const e = etat(POC, {
-    frais_du_jour: ['champignons'],
     historique: { 'omelette-champignons': { validation: NOW } },
   });
   const p = genererProposition(POC.recettes, e, NOW, [], rng(9));
@@ -279,16 +292,17 @@ test('E1 — 👎 : le plat tombe tout en bas (dernier recours)', () => {
 });
 
 test('E2 — 👍 favorise durablement (à conditions égales)', () => {
-  const e = etat(POC, {
+  // riz-saute-express utilise la carotte (donc candidat dans les deux cas) :
+  // le 👍 augmente durablement son score.
+  const avec = etat(POC, {
     frais_du_jour: ['carotte'],
     historique: { 'riz-saute-express': { appreciation: 'aime' } },
   });
-  const classement = classer(POC.recettes, e, NOW, {}, rng());
-  const rang = (id) => classement.findIndex((c) => c.recette.id === id);
-  assert.ok(
-    rang('riz-saute-express') < rang('pates-thon-tomate'),
-    'le plat aimé passe devant un plat neutre comparable'
-  );
+  const sans = etat(POC, { frais_du_jour: ['carotte'], historique: {} });
+  const sc = (cl, id) => cl.find((c) => c.recette.id === id).score;
+  const clA = classer(POC.recettes, avec, NOW, {}, rng());
+  const clS = classer(POC.recettes, sans, NOW, {}, rng());
+  assert.ok(sc(clA, 'riz-saute-express') > sc(clS, 'riz-saute-express'));
 });
 
 test('E3 — récence l’emporte sur le 👍 à court terme', () => {
