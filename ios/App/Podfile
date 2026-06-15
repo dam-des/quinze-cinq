@@ -19,6 +19,9 @@ end
 target 'App' do
   capacitor_pods
   # Add your Pods here
+  # @capacitor-community/admob@6.2.0 utilise l'ancienne API UMP (UMPConsentStatus).
+  # On fige le SDK UMP en 2.x : la 3.x a renommé les symboles et casse la compilation.
+  pod 'GoogleUserMessagingPlatform', '~> 2.3'
 end
 
 post_install do |installer|
