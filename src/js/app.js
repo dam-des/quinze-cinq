@@ -52,9 +52,18 @@ const ctx = {
     const ecran = ECRANS[nom](ctx, params);
     if (nom === 'detail' || nom === 'cuisine') ecran.classList.add('push');
     root.appendChild(ecran);
-    // Bannière pub : uniquement sur l'accueil (sinon elle masque les boutons).
-    if (nom === 'home') ads.afficherBanniere();
-    else ads.masquerBanniere();
+    // Bannière pub : sur les écrans de navigation (accueil + détail), JAMAIS
+    // pendant le mode cuisine ni l'onboarding. On réserve l'espace (.with-ad)
+    // pour qu'elle ne masque aucun bouton.
+    const avecPub = (nom === 'home' || nom === 'detail') && ads.disponible();
+    const app = document.getElementById('app');
+    if (avecPub) {
+      ads.afficherBanniere();
+      app.classList.add('with-ad');
+    } else {
+      ads.masquerBanniere();
+      app.classList.remove('with-ad');
+    }
     // Met le focus en tête d'écran pour le lecteur d'écran.
     const titre = ecran.querySelector('h1, h2, [data-autofocus]');
     if (titre) {

@@ -2269,6 +2269,613 @@
       "tags": [
         "enfant_friendly"
       ]
+    },
+    {
+      "id": "pates-pesto-tomates-cerises",
+      "nom": "Pâtes pesto & tomates cerises",
+      "temps_min": 13,
+      "portions": 2,
+      "ingredient_vedette": "pesto",
+      "categorie": "feculent",
+      "ingredients": [
+        {
+          "nom": "pâtes",
+          "type": "base",
+          "quantite": {
+            "valeur": 200,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "pesto",
+          "type": "frais",
+          "quantite": {
+            "valeur": 3,
+            "unite": "c. à soupe"
+          }
+        },
+        {
+          "nom": "tomates cerises",
+          "type": "frais",
+          "quantite": {
+            "valeur": 150,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "parmesan",
+          "type": "frais",
+          "quantite": {
+            "valeur": 40,
+            "unite": "g"
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Cuire les pâtes.",
+        "Couper les tomates cerises en deux.",
+        "Mélanger pâtes, pesto et tomates, parsemer de parmesan."
+      ],
+      "tags": [
+        "vegetarien",
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "poulet-soja-miel",
+      "nom": "Poulet sauté soja-miel",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "escalope de poulet",
+      "categorie": "volaille",
+      "ingredients": [
+        {
+          "nom": "escalope de poulet",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "sauce soja",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": "c. à soupe"
+          }
+        },
+        {
+          "nom": "miel",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "c. à soupe"
+          }
+        },
+        {
+          "nom": "riz cuit",
+          "type": "base",
+          "quantite": {
+            "valeur": 300,
+            "unite": "g"
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Couper le poulet en lanières, poêler 8 min.",
+        "Ajouter soja et miel, laisser glacer 3 min.",
+        "Servir sur le riz réchauffé."
+      ],
+      "tags": [
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "cabillaud-citron-persil",
+      "nom": "Cabillaud poêlé citron-persil",
+      "temps_min": 14,
+      "portions": 2,
+      "ingredient_vedette": "dos de cabillaud",
+      "categorie": "poisson",
+      "ingredients": [
+        {
+          "nom": "dos de cabillaud",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "citron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "persil",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "poignée"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [],
+      "etapes": [
+        "Poêler le cabillaud 5 min de chaque côté.",
+        "Arroser de jus de citron.",
+        "Parsemer de persil ciselé."
+      ],
+      "tags": []
+    },
+    {
+      "id": "boeuf-saute-poivron",
+      "nom": "Bœuf sauté aux poivrons",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "bœuf émincé",
+      "categorie": "viande",
+      "ingredients": [
+        {
+          "nom": "bœuf émincé",
+          "type": "frais",
+          "quantite": {
+            "valeur": 250,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "poivron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "sauce soja",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": "c. à soupe"
+          }
+        },
+        {
+          "nom": "nouilles chinoises",
+          "type": "frais",
+          "quantite": {
+            "valeur": 200,
+            "unite": "g"
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Cuire les nouilles.",
+        "Saisir le bœuf et le poivron émincé 5 min.",
+        "Déglacer au soja, mélanger aux nouilles."
+      ],
+      "tags": [
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "soupe-potiron-coco",
+      "nom": "Soupe potiron-coco",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "potiron",
+      "categorie": "soupe",
+      "ingredients": [
+        {
+          "nom": "potiron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 400,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "lait de coco",
+          "type": "frais",
+          "quantite": {
+            "valeur": 20,
+            "unite": "cl"
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "bouillon cube",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire revenir l'oignon, ajouter le potiron en dés.",
+        "Couvrir de bouillon, cuire 12 min.",
+        "Mixer avec le lait de coco."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "riz-saute-petits-pois",
+      "nom": "Riz sauté petits pois & œuf",
+      "temps_min": 13,
+      "portions": 2,
+      "ingredient_vedette": "petits pois",
+      "categorie": "feculent",
+      "ingredients": [
+        {
+          "nom": "riz cuit",
+          "type": "base",
+          "quantite": {
+            "valeur": 300,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "petits pois",
+          "type": "frais",
+          "quantite": {
+            "valeur": 150,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "œufs",
+          "type": "base",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "sauce soja",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": "c. à soupe"
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Sauter le riz et les petits pois 4 min.",
+        "Pousser sur le côté, brouiller les œufs.",
+        "Mélanger, déglacer au soja."
+      ],
+      "tags": [
+        "vegetarien",
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "quinoa-avocat-tomates",
+      "nom": "Bowl quinoa avocat",
+      "temps_min": 10,
+      "portions": 2,
+      "ingredient_vedette": "avocat",
+      "categorie": "vegetarien",
+      "ingredients": [
+        {
+          "nom": "quinoa cuit",
+          "type": "frais",
+          "quantite": {
+            "valeur": 250,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "avocat",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "tomates cerises",
+          "type": "frais",
+          "quantite": {
+            "valeur": 150,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "citron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Disposer le quinoa dans un bol.",
+        "Ajouter avocat en lamelles et tomates coupées.",
+        "Arroser de jus de citron."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "tartine-saumon-avocat",
+      "nom": "Tartine saumon fumé-avocat",
+      "temps_min": 8,
+      "portions": 2,
+      "ingredient_vedette": "saumon fumé",
+      "categorie": "poisson",
+      "ingredients": [
+        {
+          "nom": "pain de campagne",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": "tranches"
+          }
+        },
+        {
+          "nom": "saumon fumé",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": "tranches"
+          }
+        },
+        {
+          "nom": "avocat",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "citron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Toaster le pain.",
+        "Écraser l'avocat avec un filet de citron.",
+        "Tartiner et déposer le saumon fumé."
+      ],
+      "tags": []
+    },
+    {
+      "id": "wrap-dinde-crudites",
+      "nom": "Wrap dinde & crudités",
+      "temps_min": 12,
+      "portions": 2,
+      "ingredient_vedette": "aiguillettes de dinde",
+      "categorie": "volaille",
+      "ingredients": [
+        {
+          "nom": "tortillas",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "aiguillettes de dinde",
+          "type": "frais",
+          "quantite": {
+            "valeur": 200,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "salade",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "poignée"
+          }
+        },
+        {
+          "nom": "mayonnaise",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "c. à soupe"
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Poêler les aiguillettes 6 min.",
+        "Garnir les tortillas de salade et mayonnaise.",
+        "Ajouter la dinde et rouler."
+      ],
+      "tags": [
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "omelette-epinards-parmesan",
+      "nom": "Omelette épinards-parmesan",
+      "temps_min": 12,
+      "portions": 2,
+      "ingredient_vedette": "épinards",
+      "categorie": "oeufs",
+      "ingredients": [
+        {
+          "nom": "œufs",
+          "type": "base",
+          "quantite": {
+            "valeur": 4,
+            "unite": null
+          }
+        },
+        {
+          "nom": "épinards",
+          "type": "frais",
+          "quantite": {
+            "valeur": 100,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "parmesan",
+          "type": "frais",
+          "quantite": {
+            "valeur": 40,
+            "unite": "g"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire tomber les épinards à la poêle.",
+        "Battre les œufs, verser dessus.",
+        "Parsemer de parmesan, plier."
+      ],
+      "tags": [
+        "vegetarien",
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "semoule-courgette-pois-chiches",
+      "nom": "Semoule courgette & pois chiches",
+      "temps_min": 14,
+      "portions": 2,
+      "ingredient_vedette": "courgette",
+      "categorie": "feculent",
+      "ingredients": [
+        {
+          "nom": "semoule",
+          "type": "frais",
+          "quantite": {
+            "valeur": 200,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "courgette",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "pois chiches",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "boîte"
+          }
+        },
+        {
+          "nom": "citron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Hydrater la semoule à l'eau bouillante.",
+        "Poêler la courgette en dés 6 min.",
+        "Mélanger semoule, courgette, pois chiches, citron."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "veloute-carotte-coco",
+      "nom": "Velouté carotte-coco",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "carotte",
+      "categorie": "soupe",
+      "ingredients": [
+        {
+          "nom": "carotte",
+          "type": "frais",
+          "quantite": {
+            "valeur": 3,
+            "unite": null
+          }
+        },
+        {
+          "nom": "lait de coco",
+          "type": "frais",
+          "quantite": {
+            "valeur": 20,
+            "unite": "cl"
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "bouillon cube",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Revenir l'oignon, ajouter les carottes en rondelles.",
+        "Couvrir de bouillon, cuire 12 min.",
+        "Mixer avec le lait de coco."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
     }
   ]
 }

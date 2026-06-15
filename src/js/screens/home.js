@@ -1,8 +1,11 @@
-// home.js — Accueil : LA proposition du soir (un seul plat), vignettes frais,
-// « Voir la recette » / « Autre chose ». Jamais d'écran vide.
+// home.js — Accueil : LA proposition du soir (un seul plat), vignettes frais
+// (repliables), « Voir la recette » / « Autre chose ». Jamais d'écran vide.
 
 import { el, esc, ICONS, annoncer } from '../ui.js';
 import { illustrationPour, libelleEquipement } from '../data.js';
+import * as ads from '../ads.js';
+
+const FRAIS_VISIBLES = 8; // nb de vignettes affichées avant « voir plus »
 
 /** Liste de frais suggérés (vedettes + ingrédients frais distincts). */
 function fraisSuggeres(catalogue) {
@@ -18,7 +21,6 @@ export default function renderHome(ctx) {
   const { recette, evaluation } = ctx.proposition || {};
   const screen = el('<section class="screen actif" aria-label="Proposition du soir"></section>');
 
-  // Barre du haut
   const topbar = el(`
     <div class="topbar">
       <span class="mark">15/5</span>
@@ -69,10 +71,22 @@ export default function renderHome(ctx) {
     );
   }
 
-  // Vignettes frais
+  // Vignettes frais — repliables (cochés + frais du plat en tête)
   body.appendChild(el('<div class="section-q">Tu as quoi de frais ce soir ?</div>'));
   const chips = el('<div class="chips" role="group" aria-label="Ingrédients frais"></div>');
-  for (const nom of fraisSuggeres(ctx.catalogue)) {
+
+  const prioritaires = new Set([
+    ...fraisCoche,
+    ...(recette.ingredients || []).filter((i) => i.type === 'frais').map((i) => i.nom),
+  ]);
+  const ordonnes = fraisSuggeres(ctx.catalogue).sort(
+    (a, b) => (prioritaires.has(b) ? 1 : 0) - (prioritaires.has(a) ? 1 : 0)
+  );
+  const deplie = ctx.fraisDeplie || fraisCoche.length > FRAIS_VISIBLES;
+  const visibles = deplie ? ordonnes : ordonnes.slice(0, FRAIS_VISIBLES);
+  const caches = ordonnes.length - visibles.length;
+
+  for (const nom of visibles) {
     const actif = fraisCoche.includes(nom);
     const chip = el(
       `<button class="chip${actif ? ' on' : ''}" aria-pressed="${actif}">${esc(nom)}</button>`
@@ -80,6 +94,23 @@ export default function renderHome(ctx) {
     chip.addEventListener('click', () => ctx.toggleFrais(nom));
     chips.appendChild(chip);
   }
+
+  if (caches > 0) {
+    const plus = el(`<button class="chip add">+ ${caches} autres</button>`);
+    plus.addEventListener('click', () => {
+      ctx.fraisDeplie = true;
+      ctx.aller('home');
+    });
+    chips.appendChild(plus);
+  } else if (deplie && ordonnes.length > FRAIS_VISIBLES) {
+    const moins = el('<button class="chip add">Voir moins</button>');
+    moins.addEventListener('click', () => {
+      ctx.fraisDeplie = false;
+      ctx.aller('home');
+    });
+    chips.appendChild(moins);
+  }
+
   const autre = el('<button class="chip add">+ autre</button>');
   autre.addEventListener('click', () => {
     const v = (prompt('Quel ingrédient frais as-tu ?') || '').trim().toLowerCase();
@@ -90,7 +121,6 @@ export default function renderHome(ctx) {
 
   body.appendChild(el('<div class="spacer"></div>'));
 
-  // Actions
   const actions = el('<div class="actions"></div>');
   const voir = el('<button class="btn btn-primary">Voir la recette</button>');
   voir.addEventListener('click', () => ctx.ouvrirDetail(recette));
@@ -101,8 +131,10 @@ export default function renderHome(ctx) {
 
   screen.appendChild(body);
 
-  // Bannière pub (placeholder visuel ; AdMob réelle injectée en natif)
-  screen.appendChild(el('<div class="adbar" aria-hidden="true">Publicité</div>'));
+  // Placeholder pub : uniquement en aperçu navigateur (en natif, vraie bannière AdMob).
+  if (!ads.disponible()) {
+    screen.appendChild(el('<div class="adbar" aria-hidden="true">Publicité</div>'));
+  }
 
   annoncer(`Proposition : ${recette.nom}, ${recette.temps_min} minutes.`);
   return screen;

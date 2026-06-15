@@ -72,6 +72,10 @@ body {
 }
 .spacer { flex: 1; min-height: 12px; }
 
+/* Espace réservé en bas quand la bannière AdMob native est affichée
+   (accueil + détail) : aucun bouton ne passe sous la pub. */
+#app.with-ad .body-scroll { padding-bottom: calc(60px + var(--safe-bottom)); }
+
 .eyebrow { font-size: 12px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-faint); }
 .decide-line { font-family: var(--display); font-weight: 600; font-size: 15px; color: var(--ink-soft); margin-top: 2px; }
 

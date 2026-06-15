@@ -9,7 +9,7 @@ const TEST = {
   interstitial: 'ca-app-pub-3940256099942544/1033173712',
 };
 
-export const CADENCE_INTERSTITIEL = 4; // 1 interstitiel tous les 4 « Autre chose ».
+export const CADENCE_INTERSTITIEL = 2; // 1 interstitiel tous les 2 « Autre chose ».
 
 let _compteurAutreChose = 0;
 let _bannereAffichee = false;
