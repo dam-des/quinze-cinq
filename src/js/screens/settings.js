@@ -21,6 +21,15 @@ export default function renderReglages(ctx) {
   body.appendChild(back);
   body.appendChild(el('<h1 class="set-h">Réglages</h1>'));
 
+  // ── Mes plats (historique) ─────────────────────────────────────────────────
+  const gHist = el('<div class="set-group"><div class="gl">Mon historique</div></div>');
+  const cardHist = el('<div class="set-card"></div>');
+  const rowHist = el('<button class="set-row">Mes plats cuisinés<span class="chev">›</span></button>');
+  rowHist.addEventListener('click', () => ctx.aller('historique'));
+  cardHist.appendChild(rowHist);
+  gHist.appendChild(cardHist);
+  body.appendChild(gHist);
+
   // ── Mon placard ──────────────────────────────────────────────────────────
   const gPlacard = el('<div class="set-group"><div class="gl">Mon placard de base</div></div>');
   const pantry = el('<div class="pantry"></div>');

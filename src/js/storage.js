@@ -11,6 +11,7 @@ export const CLES = {
   EQUIPEMENTS: 'equipements',
   PREFERENCES: 'preferences',
   HISTORIQUE: 'historique',
+  FRAIS_RECENTS: 'frais_recents',
   REGLAGE_NOTIF: 'reglage_notif',
   CONSENTEMENT_PUB: 'consentement_pub',
 };

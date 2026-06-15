@@ -13,6 +13,7 @@ import {
   passeFiltresDurs,
   ingredientsManquants,
   fraisPertinents,
+  streakCuisine,
 } from '../src/js/engine.js';
 
 // ── Données ──────────────────────────────────────────────────────────────────
@@ -343,6 +344,17 @@ test('F1 — pas de répétition dans la session tant que le stock le permet', (
 // ════════════════════════════════════════════════════════════════════════════
 // Helpers unitaires (sanity)
 // ════════════════════════════════════════════════════════════════════════════
+
+test('Streak — jours consécutifs avec validation', () => {
+  // aujourd'hui + hier → 2
+  assert.equal(streakCuisine({ a: { validation: NOW }, b: { validation: NOW - JOUR } }, NOW), 2);
+  // rien aujourd'hui mais hier + avant-hier → 2 (tolérance du jour en cours)
+  assert.equal(streakCuisine({ a: { validation: NOW - JOUR }, b: { validation: NOW - 2 * JOUR } }, NOW), 2);
+  // trou : aujourd'hui + il y a 3 jours → 1
+  assert.equal(streakCuisine({ a: { validation: NOW }, c: { validation: NOW - 3 * JOUR } }, NOW), 1);
+  // aucun historique → 0
+  assert.equal(streakCuisine({}, NOW), 0);
+});
 
 test('passeFiltresDurs / ingredientsManquants — comportements de base', () => {
   const omelette = POC.recettes.find((r) => r.id === 'omelette-champignons');

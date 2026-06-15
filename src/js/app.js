@@ -6,6 +6,7 @@ import { genererProposition } from './engine.js';
 import * as storage from './storage.js';
 import * as ads from './ads.js';
 import * as notifications from './notifications.js';
+import * as haptics from './haptics.js';
 import {
   chargerCatalogue,
   gardeMangerParDefaut,
@@ -20,6 +21,7 @@ import renderDetail from './screens/detail.js';
 import renderCuisine from './screens/cooking.js';
 import renderReglages from './screens/settings.js';
 import renderConfidentialite from './screens/privacy.js';
+import renderHistorique from './screens/historique.js';
 
 const ECRANS = {
   onboarding: renderOnboarding,
@@ -28,6 +30,7 @@ const ECRANS = {
   cuisine: renderCuisine,
   reglages: renderReglages,
   confidentialite: renderConfidentialite,
+  historique: renderHistorique,
 };
 
 const ctx = {
@@ -85,6 +88,7 @@ const ctx = {
   },
 
   autreChose() {
+    haptics.impact('LIGHT');
     const prec = ctx.proposition && ctx.proposition.recette;
     if (prec) {
       ctx.session.push(prec.id);
@@ -99,10 +103,19 @@ const ctx = {
 
   /** Coche/décoche un frais et relance le matching vers cet ingrédient. */
   toggleFrais(nom) {
+    haptics.selection();
     const f = ctx.etat.frais_du_jour;
     const i = f.indexOf(nom);
-    if (i >= 0) f.splice(i, 1);
-    else f.push(nom);
+    if (i >= 0) {
+      f.splice(i, 1);
+    } else {
+      f.push(nom);
+      // mémorise dans les frais récents (dédupliqué, plus récent en tête, max 12)
+      const r = ctx.etat.frais_recents.filter((x) => x !== nom);
+      r.unshift(nom);
+      ctx.etat.frais_recents = r.slice(0, 12);
+      storage.ecrire(storage.CLES.FRAIS_RECENTS, ctx.etat.frais_recents);
+    }
     ctx.session = []; // nouvelle orientation → proposition fraîche
     ctx.calculerProposition();
     ctx.aller('home');
@@ -135,8 +148,18 @@ const ctx = {
     ctx.aller('detail', { recette });
   },
   async cuisiner(recette) {
+    haptics.impact('MEDIUM');
     await ctx.marquerValidation(recette.id);
     ctx.aller('cuisine', { recette });
+  },
+
+  /** (Re)planifie le rappel quotidien avec le nom du plat courant si actif. */
+  async rafraichirNotif() {
+    const n = ctx.etat.reglage_notif;
+    if (n && n.actif) {
+      const nom = ctx.proposition && ctx.proposition.recette && ctx.proposition.recette.nom;
+      await notifications.planifierQuotidien(n.heure, nom);
+    }
   },
 
   // ── Onboarding terminé ────────────────────────────────────────────────────
@@ -146,6 +169,7 @@ const ctx = {
     ads.afficherBanniere();
     ctx.session = [];
     ctx.calculerProposition();
+    await ctx.rafraichirNotif();
     ctx.aller('home');
   },
 };
@@ -164,6 +188,7 @@ async function demarrer() {
     equipements: await storage.lire(storage.CLES.EQUIPEMENTS, equipementsParDefaut()),
     preferences: await storage.lire(storage.CLES.PREFERENCES, preferencesParDefaut()),
     historique: await storage.lire(storage.CLES.HISTORIQUE, {}),
+    frais_recents: await storage.lire(storage.CLES.FRAIS_RECENTS, []),
     reglage_notif: await storage.lire(storage.CLES.REGLAGE_NOTIF, {
       actif: false,
       heure: '18:00',
@@ -194,6 +219,7 @@ async function demarrer() {
   } else {
     await ads.initialiser();
     ctx.calculerProposition();
+    await ctx.rafraichirNotif(); // notif du soir avec le nom du plat courant
     ctx.aller('home');
   }
 }

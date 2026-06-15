@@ -298,4 +298,26 @@ export function genererProposition(
   return { recette: null, evaluation: null, niveauRelache: -1, repetitionSession: false, classement: [] };
 }
 
+/**
+ * Streak de rétention : nombre de jours calendaires CONSÉCUTIFS avec au moins
+ * une validation, en remontant depuis aujourd'hui. On tolère le jour en cours
+ * (si rien validé aujourd'hui mais hier oui, le streak court toujours).
+ */
+export function streakCuisine(historique = {}, now = Date.now()) {
+  const cle = (d) => `${d.getFullYear()}-${d.getMonth()}-${d.getDate()}`;
+  const jours = new Set();
+  for (const h of Object.values(historique)) {
+    if (h && h.validation) jours.add(cle(new Date(h.validation)));
+  }
+  if (jours.size === 0) return 0;
+  const cur = new Date(now);
+  if (!jours.has(cle(cur))) cur.setDate(cur.getDate() - 1); // tolère « pas encore ce soir »
+  let streak = 0;
+  while (jours.has(cle(cur))) {
+    streak++;
+    cur.setDate(cur.getDate() - 1);
+  }
+  return streak;
+}
+
 export const _internals = { joursDepuis, categoriesRecentes, evaluer, NIVEAUX_RELACHEMENT };

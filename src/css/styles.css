@@ -247,6 +247,51 @@ body {
   overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
 }
 
+/* Streak de rétention (accueil) */
+.eyebrow-row { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+.streak {
+  font-size: 12.5px; font-weight: 700; color: var(--ink);
+  background: var(--chip); padding: 4px 10px; border-radius: 999px;
+}
+
+/* Recherche de frais */
+.frais-search {
+  width: 100%; margin-top: 10px; padding: 12px 14px;
+  border: 1px solid var(--line-strong); border-radius: 12px;
+  font-family: var(--body); font-size: 14.5px; background: var(--surface); color: var(--ink);
+  min-height: 44px;
+}
+.frais-search::placeholder { color: var(--ink-faint); }
+.chip-empty { font-size: 13px; color: var(--ink-faint); padding: 8px 2px; }
+
+/* Minuteur du mode cuisine */
+.cook-timer {
+  margin-top: 18px; align-self: flex-start; display: inline-flex; align-items: center; gap: 7px;
+  font-size: 15px; font-weight: 700; color: var(--ink); background: var(--accent);
+  padding: 10px 16px; border-radius: 12px; border: none; cursor: pointer; min-height: 44px;
+}
+.cook-timer.running { background: var(--accent-deep); color: var(--ink); }
+.cook-timer.done { background: var(--ink); color: #fff; }
+.end-streak { font-size: 14px; font-weight: 700; color: var(--accent-deep); margin-top: 10px; }
+
+/* « Mes plats » (historique) */
+.hist-row {
+  display: flex; align-items: center; gap: 12px; padding: 12px 14px; width: 100%;
+  background: none; border: none; border-bottom: 1px solid var(--line); cursor: pointer; text-align: left;
+}
+.hist-row:last-child { border-bottom: none; }
+.hist-illu {
+  width: 48px; height: 48px; border-radius: 12px; flex: none;
+  background: linear-gradient(155deg, var(--illu-a), var(--illu-b));
+  display: flex; align-items: center; justify-content: center;
+}
+.hist-illu img { height: 34px; width: auto; }
+.hist-txt { display: flex; flex-direction: column; gap: 2px; flex: 1; min-width: 0; }
+.hist-nom { font-size: 15px; font-weight: 600; color: var(--ink); }
+.hist-meta { font-size: 12.5px; color: var(--ink-soft); }
+.hist-avis { font-size: 18px; }
+.hist-row .chev { color: var(--ink-faint); margin-left: 4px; }
+
 /* Transitions de navigation (slide façon iOS) */
 @keyframes q5-slide-in {
   from { transform: translateX(28px); opacity: 0; }

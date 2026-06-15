@@ -1,12 +1,12 @@
-// home.js — Accueil : LA proposition du soir (un seul plat), vignettes frais
-// (repliables), « Voir la recette » / « Autre chose ». Jamais d'écran vide.
+// home.js — Accueil : LA proposition du soir (un seul plat), recherche de frais
+// + frais récents, « Voir la recette » / « Autre chose ». Jamais d'écran vide.
 
 import { el, esc, ICONS, annoncer } from '../ui.js';
 import { illustrationPour, libelleEquipement } from '../data.js';
-import { fraisPertinents } from '../engine.js';
+import { fraisPertinents, streakCuisine } from '../engine.js';
 import * as ads from '../ads.js';
 
-const FRAIS_VISIBLES = 8; // nb de vignettes affichées avant « voir plus »
+const FRAIS_DEFAUT = 8; // nb de vignettes par défaut (cochés + récents + complément)
 
 export default function renderHome(ctx) {
   const { recette, evaluation } = ctx.proposition || {};
@@ -21,7 +21,14 @@ export default function renderHome(ctx) {
   screen.appendChild(topbar);
 
   const body = el('<div class="body-scroll"></div>');
-  body.appendChild(el('<span class="eyebrow">Ce soir</span>'));
+
+  // Eyebrow + streak de rétention
+  const eyebrow = el('<div class="eyebrow-row"><span class="eyebrow">Ce soir</span></div>');
+  const streak = streakCuisine(ctx.etat.historique, Date.now());
+  if (streak >= 2) {
+    eyebrow.appendChild(el(`<span class="streak" aria-label="${streak} soirs cuisinés d'affilée">🔥 ${streak} soirs</span>`));
+  }
+  body.appendChild(eyebrow);
   body.appendChild(el('<div class="decide-line">On a choisi pour toi.</div>'));
 
   if (!recette) {
@@ -62,55 +69,49 @@ export default function renderHome(ctx) {
     );
   }
 
-  // Vignettes frais — repliables (cochés + frais du plat en tête)
+  // ── Frais : recherche + récents ──────────────────────────────────────────
   body.appendChild(el('<div class="section-q">Tu as quoi de frais ce soir ?</div>'));
-  const chips = el('<div class="chips" role="group" aria-label="Ingrédients frais"></div>');
-
-  const prioritaires = new Set([
-    ...fraisCoche,
-    ...(recette.ingredients || []).filter((i) => i.type === 'frais').map((i) => i.nom),
-  ]);
-  // Frais pertinents seulement (qui mènent à une recette réalisable selon
-  // préférences/équipement) ; les cochés/du plat courant en tête.
-  const ordonnes = [...fraisPertinents(ctx.catalogue.recettes, ctx.etat)].sort(
-    (a, b) => (prioritaires.has(b) ? 1 : 0) - (prioritaires.has(a) ? 1 : 0)
+  const recherche = el(
+    '<input class="frais-search" type="search" inputmode="search" autocomplete="off" placeholder="Chercher un ingrédient frais…" aria-label="Chercher un ingrédient frais" />'
   );
-  const deplie = ctx.fraisDeplie || fraisCoche.length > FRAIS_VISIBLES;
-  const visibles = deplie ? ordonnes : ordonnes.slice(0, FRAIS_VISIBLES);
-  const caches = ordonnes.length - visibles.length;
+  body.appendChild(recherche);
 
-  for (const nom of visibles) {
-    const actif = fraisCoche.includes(nom);
-    const chip = el(
-      `<button class="chip${actif ? ' on' : ''}" aria-pressed="${actif}">${esc(nom)}</button>`
-    );
-    chip.addEventListener('click', () => ctx.toggleFrais(nom));
-    chips.appendChild(chip);
-  }
-
-  if (caches > 0) {
-    const plus = el(`<button class="chip add">+ ${caches} autres</button>`);
-    plus.addEventListener('click', () => {
-      ctx.fraisDeplie = true;
-      ctx.aller('home');
-    });
-    chips.appendChild(plus);
-  } else if (deplie && ordonnes.length > FRAIS_VISIBLES) {
-    const moins = el('<button class="chip add">Voir moins</button>');
-    moins.addEventListener('click', () => {
-      ctx.fraisDeplie = false;
-      ctx.aller('home');
-    });
-    chips.appendChild(moins);
-  }
-
-  const autre = el('<button class="chip add">+ autre</button>');
-  autre.addEventListener('click', () => {
-    const v = (prompt('Quel ingrédient frais as-tu ?') || '').trim().toLowerCase();
-    if (v) ctx.toggleFrais(v);
-  });
-  chips.appendChild(autre);
+  const chips = el('<div class="chips" role="group" aria-label="Ingrédients frais"></div>');
   body.appendChild(chips);
+
+  const pertinents = [...fraisPertinents(ctx.catalogue.recettes, ctx.etat)];
+  const recents = (ctx.etat.frais_recents || []).filter((n) => pertinents.includes(n));
+
+  function construireChips() {
+    const q = recherche.value.trim().toLowerCase();
+    chips.innerHTML = '';
+
+    // Les cochés d'abord (toujours visibles), puis résultats de recherche ou défaut.
+    let liste;
+    if (q) {
+      liste = [...fraisCoche, ...pertinents.filter((n) => n.includes(q) && !fraisCoche.includes(n))].slice(0, 16);
+    } else {
+      liste = [...new Set([...fraisCoche, ...recents])];
+      for (const n of pertinents) {
+        if (liste.length >= FRAIS_DEFAUT) break;
+        if (!liste.includes(n)) liste.push(n);
+      }
+    }
+
+    for (const nom of liste) {
+      const actif = fraisCoche.includes(nom);
+      const chip = el(
+        `<button class="chip${actif ? ' on' : ''}" aria-pressed="${actif}">${esc(nom)}</button>`
+      );
+      chip.addEventListener('click', () => ctx.toggleFrais(nom));
+      chips.appendChild(chip);
+    }
+    if (q && liste.length === 0) {
+      chips.appendChild(el(`<span class="chip-empty">Aucun ingrédient « ${esc(q)} »</span>`));
+    }
+  }
+  recherche.addEventListener('input', construireChips);
+  construireChips();
 
   body.appendChild(el('<div class="spacer"></div>'));
 

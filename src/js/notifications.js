@@ -42,17 +42,20 @@ export async function permissionAccordee() {
  * Planifie le rappel quotidien à l'heure donnée (HH:MM), répété chaque jour.
  * Annule d'abord toute planification existante pour éviter les doublons.
  */
-export async function planifierQuotidien(heure = '18:00') {
+export async function planifierQuotidien(heure = '18:00', nomPlat = null) {
   const p = plugin();
   if (!p) return;
   await annuler();
   const [h, m] = heure.split(':').map((n) => parseInt(n, 10));
+  const body = nomPlat
+    ? `Ce soir : ${nomPlat} — prêt en 15 min 🍳`
+    : 'On a choisi ton dîner — prêt en 15 min 🍳';
   await p.schedule({
     notifications: [
       {
         id: NOTIF_ID,
         title: 'Quinze Cinq',
-        body: 'On a choisi ton dîner — prêt en 15 min 🍳',
+        body,
         schedule: { on: { hour: h, minute: m }, repeats: true, every: 'day' },
       },
     ],
