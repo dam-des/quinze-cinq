@@ -1,0 +1,12 @@
+{
+  "appId": "com.quinzecinq.app",
+  "appName": "Quinze Cinq",
+  "webDir": "src",
+  "backgroundColor": "#EEEDE7",
+  "plugins": {
+    "LocalNotifications": {
+      "smallIcon": "ic_stat_icon",
+      "iconColor": "#FFC400"
+    }
+  }
+}

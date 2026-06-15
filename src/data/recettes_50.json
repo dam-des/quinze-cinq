@@ -1,0 +1,2274 @@
+{
+  "version": "v1.0",
+  "garde_manger_base": [
+    "pâtes",
+    "riz",
+    "œufs",
+    "farine",
+    "huile d'olive",
+    "beurre",
+    "oignon",
+    "ail",
+    "lait",
+    "moutarde",
+    "bouillon cube",
+    "tomates concassées",
+    "thon en conserve",
+    "maïs",
+    "chapelure"
+  ],
+  "recettes": [
+    {
+      "id": "pates-thon-tomate",
+      "nom": "Pâtes au thon à la tomate",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": null,
+      "categorie": "feculent",
+      "ingredients": [
+        {
+          "nom": "pâtes",
+          "type": "base",
+          "quantite": {
+            "valeur": 200,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "thon en conserve",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": "boîte"
+          }
+        },
+        {
+          "nom": "tomates concassées",
+          "type": "base",
+          "quantite": {
+            "valeur": 400,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Cuire les pâtes.",
+        "Faire revenir l'oignon, ajouter tomates et thon égoutté, mijoter 8 min.",
+        "Mélanger avec les pâtes."
+      ],
+      "tags": [
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "omelette-champignons",
+      "nom": "Omelette aux champignons",
+      "temps_min": 12,
+      "portions": 2,
+      "ingredient_vedette": "champignons",
+      "categorie": "oeufs",
+      "ingredients": [
+        {
+          "nom": "œufs",
+          "type": "base",
+          "quantite": {
+            "valeur": 4,
+            "unite": null
+          }
+        },
+        {
+          "nom": "champignons",
+          "type": "frais",
+          "quantite": {
+            "valeur": 200,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [],
+      "etapes": [
+        "Émincer et poêler champignons et oignon.",
+        "Battre les œufs, verser sur les champignons.",
+        "Cuire à feu doux 4 min, plier."
+      ],
+      "tags": [
+        "vegetarien",
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "poulet-poele-citron",
+      "nom": "Poulet poêlé citron-ail",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "escalope de poulet",
+      "categorie": "volaille",
+      "ingredients": [
+        {
+          "nom": "escalope de poulet",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "citron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "ail",
+          "type": "base",
+          "quantite": {
+            "valeur": 2,
+            "unite": "gousses"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [],
+      "etapes": [
+        "Couper le poulet en lanières.",
+        "Poêler avec l'ail 8 min.",
+        "Déglacer au jus de citron, 2 min."
+      ],
+      "tags": [
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "saumon-express-courgettes",
+      "nom": "Saumon express aux courgettes",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "pavé de saumon",
+      "categorie": "poisson",
+      "ingredients": [
+        {
+          "nom": "pavé de saumon",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "courgette",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "citron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [],
+      "etapes": [
+        "Tailler la courgette en rondelles fines, poêler 8 min.",
+        "Ajouter le saumon, cuire 5 min.",
+        "Arroser de jus de citron."
+      ],
+      "tags": []
+    },
+    {
+      "id": "riz-saute-express",
+      "nom": "Riz sauté express",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "carotte",
+      "categorie": "feculent",
+      "ingredients": [
+        {
+          "nom": "riz cuit",
+          "type": "base",
+          "quantite": {
+            "valeur": 300,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "œufs",
+          "type": "base",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "maïs",
+          "type": "base",
+          "quantite": {
+            "valeur": 150,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "carotte",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Râper la carotte, sauter à feu vif 4 min.",
+        "Ajouter le riz et le maïs, sauter 5 min.",
+        "Pousser sur le côté, brouiller les œufs, mélanger."
+      ],
+      "tags": [
+        "vegetarien",
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "tenders-frites-airfryer",
+      "nom": "Tenders de poulet & frites airfryer",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "escalope de poulet",
+      "categorie": "volaille",
+      "ingredients": [
+        {
+          "nom": "escalope de poulet",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "frites surgelées",
+          "type": "frais",
+          "quantite": {
+            "valeur": 400,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "chapelure",
+          "type": "base",
+          "quantite": {
+            "valeur": 50,
+            "unite": "g"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Lancer les frites à l'airfryer 180°C, 15 min.",
+        "Tailler le poulet en lanières, paner dans la chapelure.",
+        "À mi-cuisson, ajouter les tenders dans le panier, finir ensemble."
+      ],
+      "tags": [
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "legumes-rotis-airfryer",
+      "nom": "Légumes rôtis express airfryer",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "poivron",
+      "categorie": "vegetarien",
+      "ingredients": [
+        {
+          "nom": "poivron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "courgette",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "pomme de terre",
+          "type": "frais",
+          "quantite": {
+            "valeur": 3,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Couper les légumes en dés.",
+        "Huiler, saler, mélanger.",
+        "Airfryer 180°C, 14 min en secouant à mi-cuisson."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "croque-jambon",
+      "nom": "Croque express jambon-fromage",
+      "temps_min": 10,
+      "portions": 2,
+      "ingredient_vedette": "jambon",
+      "categorie": "viande",
+      "ingredients": [
+        {
+          "nom": "pain de mie",
+          "type": "frais",
+          "quantite": {
+            "valeur": 4,
+            "unite": "tranches"
+          }
+        },
+        {
+          "nom": "jambon",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": "tranches"
+          }
+        },
+        {
+          "nom": "fromage râpé",
+          "type": "frais",
+          "quantite": {
+            "valeur": 80,
+            "unite": "g"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [],
+      "etapes": [
+        "Garnir le pain de jambon et fromage.",
+        "Beurrer l'extérieur.",
+        "Poêler 3 min de chaque côté."
+      ],
+      "tags": [
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "soupe-tomate-vermicelles",
+      "nom": "Soupe tomate-vermicelles",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": null,
+      "categorie": "soupe",
+      "ingredients": [
+        {
+          "nom": "tomates concassées",
+          "type": "base",
+          "quantite": {
+            "valeur": 400,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "vermicelles",
+          "type": "base",
+          "quantite": {
+            "valeur": 80,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "bouillon cube",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [],
+      "etapes": [
+        "Porter le bouillon à ébullition avec les tomates.",
+        "Ajouter les vermicelles, cuire 5 min.",
+        "Rectifier l'assaisonnement."
+      ],
+      "tags": [
+        "vegetarien",
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "steak-hache-poele",
+      "nom": "Steak haché & poêlée d'oignons",
+      "temps_min": 12,
+      "portions": 2,
+      "ingredient_vedette": "steak haché",
+      "categorie": "viande",
+      "ingredients": [
+        {
+          "nom": "steak haché",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "moutarde",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": "c. à café"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [],
+      "etapes": [
+        "Émincer et caraméliser l'oignon 6 min.",
+        "Cuire les steaks à côté 3 min par face.",
+        "Servir avec une pointe de moutarde."
+      ],
+      "tags": [
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "pates-aglio-olio",
+      "nom": "Pâtes ail & huile d'olive",
+      "temps_min": 13,
+      "portions": 2,
+      "ingredient_vedette": null,
+      "categorie": "feculent",
+      "ingredients": [
+        {
+          "nom": "pâtes",
+          "type": "base",
+          "quantite": {
+            "valeur": 200,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "ail",
+          "type": "base",
+          "quantite": {
+            "valeur": 3,
+            "unite": "gousses"
+          }
+        },
+        {
+          "nom": "persil",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "poignée"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [],
+      "etapes": [
+        "Cuire les pâtes.",
+        "Faire blondir l'ail émincé dans l'huile.",
+        "Mélanger avec les pâtes et le persil."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "pates-carbonara",
+      "nom": "Carbonara express",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "lardons",
+      "categorie": "feculent",
+      "ingredients": [
+        {
+          "nom": "pâtes",
+          "type": "base",
+          "quantite": {
+            "valeur": 200,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "lardons",
+          "type": "frais",
+          "quantite": {
+            "valeur": 150,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "œufs",
+          "type": "base",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "parmesan",
+          "type": "frais",
+          "quantite": {
+            "valeur": 40,
+            "unite": "g"
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Cuire les pâtes, faire revenir les lardons.",
+        "Battre œufs et parmesan.",
+        "Hors du feu, mélanger pâtes, lardons et l'appareil."
+      ],
+      "tags": [
+        "enfant_friendly",
+        "porc"
+      ]
+    },
+    {
+      "id": "pates-pesto",
+      "nom": "Pâtes au pesto & tomates cerises",
+      "temps_min": 13,
+      "portions": 2,
+      "ingredient_vedette": "tomates cerises",
+      "categorie": "feculent",
+      "ingredients": [
+        {
+          "nom": "pâtes",
+          "type": "base",
+          "quantite": {
+            "valeur": 200,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "pesto",
+          "type": "frais",
+          "quantite": {
+            "valeur": 4,
+            "unite": "c. à soupe"
+          }
+        },
+        {
+          "nom": "tomates cerises",
+          "type": "frais",
+          "quantite": {
+            "valeur": 150,
+            "unite": "g"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [],
+      "etapes": [
+        "Cuire les pâtes.",
+        "Couper les tomates en deux.",
+        "Mélanger pâtes, pesto et tomates."
+      ],
+      "tags": [
+        "vegetarien",
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "pates-saumon-fume",
+      "nom": "Pâtes au saumon fumé",
+      "temps_min": 14,
+      "portions": 2,
+      "ingredient_vedette": "saumon fumé",
+      "categorie": "feculent",
+      "ingredients": [
+        {
+          "nom": "pâtes",
+          "type": "base",
+          "quantite": {
+            "valeur": 200,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "saumon fumé",
+          "type": "frais",
+          "quantite": {
+            "valeur": 120,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "crème fraîche",
+          "type": "frais",
+          "quantite": {
+            "valeur": 15,
+            "unite": "cl"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [],
+      "etapes": [
+        "Cuire les pâtes.",
+        "Chauffer la crème, ajouter le saumon en lanières.",
+        "Mélanger avec les pâtes."
+      ],
+      "tags": [
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "riz-cantonais",
+      "nom": "Riz cantonais express",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "petits pois",
+      "categorie": "feculent",
+      "ingredients": [
+        {
+          "nom": "riz cuit",
+          "type": "base",
+          "quantite": {
+            "valeur": 300,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "jambon",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": "tranches"
+          }
+        },
+        {
+          "nom": "petits pois",
+          "type": "frais",
+          "quantite": {
+            "valeur": 150,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "œufs",
+          "type": "base",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Sauter le riz à feu vif.",
+        "Ajouter jambon en dés et petits pois.",
+        "Pousser sur le côté, brouiller les œufs, mélanger."
+      ],
+      "tags": [
+        "enfant_friendly",
+        "porc"
+      ]
+    },
+    {
+      "id": "riz-thon-mais",
+      "nom": "Riz thon & maïs",
+      "temps_min": 10,
+      "portions": 2,
+      "ingredient_vedette": null,
+      "categorie": "feculent",
+      "ingredients": [
+        {
+          "nom": "riz cuit",
+          "type": "base",
+          "quantite": {
+            "valeur": 250,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "thon en conserve",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": "boîte"
+          }
+        },
+        {
+          "nom": "maïs",
+          "type": "base",
+          "quantite": {
+            "valeur": 150,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "mayonnaise",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": "c. à soupe"
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Égoutter thon et maïs.",
+        "Mélanger au riz.",
+        "Lier avec la mayonnaise."
+      ],
+      "tags": [
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "pates-thon-citron",
+      "nom": "Pâtes thon & citron",
+      "temps_min": 14,
+      "portions": 2,
+      "ingredient_vedette": "citron",
+      "categorie": "feculent",
+      "ingredients": [
+        {
+          "nom": "pâtes",
+          "type": "base",
+          "quantite": {
+            "valeur": 200,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "thon en conserve",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": "boîte"
+          }
+        },
+        {
+          "nom": "citron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "câpres",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "c. à soupe"
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Cuire les pâtes.",
+        "Mélanger thon, jus de citron et câpres.",
+        "Réunir avec les pâtes."
+      ],
+      "tags": []
+    },
+    {
+      "id": "gnocchi-tomate-mozza",
+      "nom": "Gnocchi tomate-mozzarella",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "gnocchi",
+      "categorie": "feculent",
+      "ingredients": [
+        {
+          "nom": "gnocchi",
+          "type": "frais",
+          "quantite": {
+            "valeur": 400,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "tomates concassées",
+          "type": "base",
+          "quantite": {
+            "valeur": 200,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "mozzarella",
+          "type": "frais",
+          "quantite": {
+            "valeur": 125,
+            "unite": "g"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [],
+      "etapes": [
+        "Poêler les gnocchi 5 min.",
+        "Ajouter la tomate, mijoter 5 min.",
+        "Ajouter la mozzarella, couvrir 2 min."
+      ],
+      "tags": [
+        "vegetarien",
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "nouilles-sautees-legumes",
+      "nom": "Nouilles sautées aux légumes",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "poivron",
+      "categorie": "feculent",
+      "ingredients": [
+        {
+          "nom": "nouilles chinoises",
+          "type": "frais",
+          "quantite": {
+            "valeur": 200,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "poivron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "sauce soja",
+          "type": "frais",
+          "quantite": {
+            "valeur": 3,
+            "unite": "c. à soupe"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [],
+      "etapes": [
+        "Cuire les nouilles.",
+        "Sauter le poivron émincé à feu vif.",
+        "Ajouter nouilles et sauce soja, sauter 2 min."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "semoule-legumes",
+      "nom": "Semoule express aux légumes",
+      "temps_min": 12,
+      "portions": 2,
+      "ingredient_vedette": "courgette",
+      "categorie": "feculent",
+      "ingredients": [
+        {
+          "nom": "semoule",
+          "type": "frais",
+          "quantite": {
+            "valeur": 200,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "courgette",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "pois chiches",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "boîte"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [],
+      "etapes": [
+        "Couvrir la semoule d'eau bouillante.",
+        "Poêler la courgette en dés.",
+        "Mélanger semoule, courgette et pois chiches."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "oeufs-brouilles-ciboulette",
+      "nom": "Œufs brouillés à la ciboulette",
+      "temps_min": 8,
+      "portions": 2,
+      "ingredient_vedette": "ciboulette",
+      "categorie": "oeufs",
+      "ingredients": [
+        {
+          "nom": "œufs",
+          "type": "base",
+          "quantite": {
+            "valeur": 4,
+            "unite": null
+          }
+        },
+        {
+          "nom": "ciboulette",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "poignée"
+          }
+        }
+      ],
+      "nb_comptables": 2,
+      "equipement_requis": [],
+      "etapes": [
+        "Battre les œufs.",
+        "Cuire doucement en remuant.",
+        "Parsemer de ciboulette."
+      ],
+      "tags": [
+        "vegetarien",
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "omelette-fromage",
+      "nom": "Omelette au fromage",
+      "temps_min": 10,
+      "portions": 2,
+      "ingredient_vedette": "fromage râpé",
+      "categorie": "oeufs",
+      "ingredients": [
+        {
+          "nom": "œufs",
+          "type": "base",
+          "quantite": {
+            "valeur": 4,
+            "unite": null
+          }
+        },
+        {
+          "nom": "fromage râpé",
+          "type": "frais",
+          "quantite": {
+            "valeur": 80,
+            "unite": "g"
+          }
+        }
+      ],
+      "nb_comptables": 2,
+      "equipement_requis": [],
+      "etapes": [
+        "Battre les œufs.",
+        "Verser dans la poêle chaude.",
+        "Ajouter le fromage, plier."
+      ],
+      "tags": [
+        "vegetarien",
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "oeufs-poeles-epinards",
+      "nom": "Œufs poêlés aux épinards",
+      "temps_min": 12,
+      "portions": 2,
+      "ingredient_vedette": "épinards",
+      "categorie": "oeufs",
+      "ingredients": [
+        {
+          "nom": "œufs",
+          "type": "base",
+          "quantite": {
+            "valeur": 4,
+            "unite": null
+          }
+        },
+        {
+          "nom": "épinards",
+          "type": "frais",
+          "quantite": {
+            "valeur": 150,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "ail",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": "gousse"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire tomber les épinards avec l'ail.",
+        "Casser les œufs par-dessus.",
+        "Couvrir et cuire 4 min."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "frittata-courgette",
+      "nom": "Frittata à la courgette",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "courgette",
+      "categorie": "oeufs",
+      "ingredients": [
+        {
+          "nom": "œufs",
+          "type": "base",
+          "quantite": {
+            "valeur": 5,
+            "unite": null
+          }
+        },
+        {
+          "nom": "courgette",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [],
+      "etapes": [
+        "Poêler courgette et oignon en rondelles.",
+        "Verser les œufs battus.",
+        "Cuire à couvert 8 min."
+      ],
+      "tags": [
+        "vegetarien",
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "oeufs-brouilles-saumon",
+      "nom": "Œufs brouillés au saumon fumé",
+      "temps_min": 10,
+      "portions": 2,
+      "ingredient_vedette": "saumon fumé",
+      "categorie": "oeufs",
+      "ingredients": [
+        {
+          "nom": "œufs",
+          "type": "base",
+          "quantite": {
+            "valeur": 4,
+            "unite": null
+          }
+        },
+        {
+          "nom": "saumon fumé",
+          "type": "frais",
+          "quantite": {
+            "valeur": 100,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "ciboulette",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "poignée"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [],
+      "etapes": [
+        "Battre les œufs.",
+        "Cuire doucement, ajouter le saumon en fin.",
+        "Parsemer de ciboulette."
+      ],
+      "tags": []
+    },
+    {
+      "id": "poulet-curry-coco",
+      "nom": "Poulet curry-coco",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "escalope de poulet",
+      "categorie": "volaille",
+      "ingredients": [
+        {
+          "nom": "escalope de poulet",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "lait de coco",
+          "type": "frais",
+          "quantite": {
+            "valeur": 20,
+            "unite": "cl"
+          }
+        },
+        {
+          "nom": "curry",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "c. à café"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [],
+      "etapes": [
+        "Dorer le poulet en lanières.",
+        "Ajouter curry puis lait de coco.",
+        "Mijoter 8 min."
+      ],
+      "tags": [
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "emince-poulet-creme-champignons",
+      "nom": "Poulet crème & champignons",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "escalope de poulet",
+      "categorie": "volaille",
+      "ingredients": [
+        {
+          "nom": "escalope de poulet",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "champignons",
+          "type": "frais",
+          "quantite": {
+            "valeur": 200,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "crème fraîche",
+          "type": "frais",
+          "quantite": {
+            "valeur": 15,
+            "unite": "cl"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [],
+      "etapes": [
+        "Dorer le poulet, réserver.",
+        "Poêler les champignons.",
+        "Ajouter crème et poulet, mijoter 5 min."
+      ],
+      "tags": [
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "poulet-teriyaki",
+      "nom": "Poulet teriyaki",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "escalope de poulet",
+      "categorie": "volaille",
+      "ingredients": [
+        {
+          "nom": "escalope de poulet",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "sauce soja",
+          "type": "frais",
+          "quantite": {
+            "valeur": 3,
+            "unite": "c. à soupe"
+          }
+        },
+        {
+          "nom": "miel",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "c. à soupe"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [],
+      "etapes": [
+        "Couper le poulet en dés, dorer.",
+        "Ajouter soja et miel.",
+        "Laisser caraméliser 4 min."
+      ],
+      "tags": [
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "wrap-poulet-crudites",
+      "nom": "Wrap poulet & crudités",
+      "temps_min": 12,
+      "portions": 2,
+      "ingredient_vedette": "escalope de poulet",
+      "categorie": "volaille",
+      "ingredients": [
+        {
+          "nom": "tortillas",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "escalope de poulet",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "salade",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "poignée"
+          }
+        },
+        {
+          "nom": "tomate",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Poêler le poulet en lanières.",
+        "Garnir les tortillas de salade, tomate, poulet.",
+        "Rouler serré."
+      ],
+      "tags": [
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "nuggets-poulet-airfryer",
+      "nom": "Nuggets de poulet airfryer",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "escalope de poulet",
+      "categorie": "volaille",
+      "ingredients": [
+        {
+          "nom": "escalope de poulet",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "chapelure",
+          "type": "base",
+          "quantite": {
+            "valeur": 60,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "œufs",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Couper le poulet en morceaux, paner (œuf puis chapelure).",
+        "Airfryer 180°C, 12 min.",
+        "Retourner à mi-cuisson."
+      ],
+      "tags": [
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "dinde-miel-moutarde",
+      "nom": "Dinde miel-moutarde",
+      "temps_min": 13,
+      "portions": 2,
+      "ingredient_vedette": "aiguillettes de dinde",
+      "categorie": "volaille",
+      "ingredients": [
+        {
+          "nom": "aiguillettes de dinde",
+          "type": "frais",
+          "quantite": {
+            "valeur": 300,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "miel",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "c. à soupe"
+          }
+        },
+        {
+          "nom": "moutarde",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": "c. à café"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [],
+      "etapes": [
+        "Dorer les aiguillettes.",
+        "Ajouter miel et moutarde.",
+        "Enrober et cuire 4 min."
+      ],
+      "tags": [
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "cabillaud-poele-citron",
+      "nom": "Cabillaud poêlé au citron",
+      "temps_min": 14,
+      "portions": 2,
+      "ingredient_vedette": "dos de cabillaud",
+      "categorie": "poisson",
+      "ingredients": [
+        {
+          "nom": "dos de cabillaud",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "citron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 2,
+      "equipement_requis": [],
+      "etapes": [
+        "Poêler le cabillaud 5 min par face.",
+        "Arroser de jus de citron.",
+        "Saler, servir."
+      ],
+      "tags": [
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "colin-pane-airfryer",
+      "nom": "Colin pané airfryer",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "filet de colin",
+      "categorie": "poisson",
+      "ingredients": [
+        {
+          "nom": "filet de colin",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "chapelure",
+          "type": "base",
+          "quantite": {
+            "valeur": 50,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "œufs",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Paner le colin (œuf puis chapelure).",
+        "Airfryer 180°C, 12 min.",
+        "Servir avec un filet de citron."
+      ],
+      "tags": [
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "sardines-salade",
+      "nom": "Sardines & salade express",
+      "temps_min": 8,
+      "portions": 2,
+      "ingredient_vedette": "sardines",
+      "categorie": "poisson",
+      "ingredients": [
+        {
+          "nom": "sardines en boîte",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": "boîtes"
+          }
+        },
+        {
+          "nom": "salade",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "sachet"
+          }
+        },
+        {
+          "nom": "citron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [],
+      "etapes": [
+        "Disposer la salade.",
+        "Ajouter les sardines.",
+        "Assaisonner au citron et à l'huile."
+      ],
+      "tags": []
+    },
+    {
+      "id": "crevettes-ail-persil",
+      "nom": "Crevettes ail & persil",
+      "temps_min": 12,
+      "portions": 2,
+      "ingredient_vedette": "crevettes",
+      "categorie": "poisson",
+      "ingredients": [
+        {
+          "nom": "crevettes",
+          "type": "frais",
+          "quantite": {
+            "valeur": 250,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "ail",
+          "type": "base",
+          "quantite": {
+            "valeur": 2,
+            "unite": "gousses"
+          }
+        },
+        {
+          "nom": "persil",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "poignée"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire revenir l'ail.",
+        "Ajouter les crevettes, 4 min.",
+        "Parsemer de persil."
+      ],
+      "tags": []
+    },
+    {
+      "id": "saumon-miel-airfryer",
+      "nom": "Saumon laqué au miel airfryer",
+      "temps_min": 14,
+      "portions": 2,
+      "ingredient_vedette": "pavé de saumon",
+      "categorie": "poisson",
+      "ingredients": [
+        {
+          "nom": "pavé de saumon",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "miel",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "c. à soupe"
+          }
+        },
+        {
+          "nom": "sauce soja",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": "c. à soupe"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Mélanger miel et soja, en napper le saumon.",
+        "Airfryer 180°C, 10 min.",
+        "Napper du reste de sauce."
+      ],
+      "tags": [
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "emince-boeuf-oignons-creme",
+      "nom": "Émincé de bœuf à la crème",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "bœuf émincé",
+      "categorie": "viande",
+      "ingredients": [
+        {
+          "nom": "bœuf émincé",
+          "type": "frais",
+          "quantite": {
+            "valeur": 300,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "crème fraîche",
+          "type": "frais",
+          "quantite": {
+            "valeur": 15,
+            "unite": "cl"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire fondre l'oignon.",
+        "Saisir le bœuf à feu vif.",
+        "Ajouter la crème, 3 min."
+      ],
+      "tags": []
+    },
+    {
+      "id": "saucisses-ecrase-pdt",
+      "nom": "Saucisses & écrasé de pommes de terre",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "saucisses",
+      "categorie": "viande",
+      "ingredients": [
+        {
+          "nom": "saucisses",
+          "type": "frais",
+          "quantite": {
+            "valeur": 4,
+            "unite": null
+          }
+        },
+        {
+          "nom": "pommes de terre",
+          "type": "frais",
+          "quantite": {
+            "valeur": 4,
+            "unite": null
+          }
+        },
+        {
+          "nom": "lait",
+          "type": "base",
+          "quantite": {
+            "valeur": 5,
+            "unite": "cl"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [],
+      "etapes": [
+        "Cuire les pdt en dés à l'eau bouillante.",
+        "Cuire les saucisses à la poêle.",
+        "Écraser les pdt avec lait et beurre."
+      ],
+      "tags": [
+        "enfant_friendly",
+        "porc"
+      ]
+    },
+    {
+      "id": "cotes-porc-moutarde",
+      "nom": "Côtes de porc à la moutarde",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "côte de porc",
+      "categorie": "viande",
+      "ingredients": [
+        {
+          "nom": "côte de porc",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "moutarde",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": "c. à soupe"
+          }
+        },
+        {
+          "nom": "crème fraîche",
+          "type": "frais",
+          "quantite": {
+            "valeur": 10,
+            "unite": "cl"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [],
+      "etapes": [
+        "Dorer les côtes 4 min par face.",
+        "Déglacer avec crème et moutarde.",
+        "Napper et servir."
+      ],
+      "tags": [
+        "porc"
+      ]
+    },
+    {
+      "id": "chipolatas-poivrons-airfryer",
+      "nom": "Chipolatas & poivrons airfryer",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "chipolatas",
+      "categorie": "viande",
+      "ingredients": [
+        {
+          "nom": "chipolatas",
+          "type": "frais",
+          "quantite": {
+            "valeur": 4,
+            "unite": null
+          }
+        },
+        {
+          "nom": "poivron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Émincer poivrons et oignon.",
+        "Tout placer dans l'airfryer.",
+        "180°C, 13 min en secouant à mi-cuisson."
+      ],
+      "tags": [
+        "enfant_friendly",
+        "porc"
+      ]
+    },
+    {
+      "id": "poelee-legumes-oeuf",
+      "nom": "Poêlée de légumes & œuf au plat",
+      "temps_min": 14,
+      "portions": 2,
+      "ingredient_vedette": "courgette",
+      "categorie": "vegetarien",
+      "ingredients": [
+        {
+          "nom": "courgette",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "poivron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "œufs",
+          "type": "base",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [],
+      "etapes": [
+        "Poêler courgette et poivron en dés.",
+        "Cuire les œufs au plat à côté.",
+        "Dresser ensemble."
+      ],
+      "tags": [
+        "vegetarien",
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "falafel-pois-chiches-airfryer",
+      "nom": "Galettes de pois chiches airfryer",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "pois chiches",
+      "categorie": "vegetarien",
+      "ingredients": [
+        {
+          "nom": "pois chiches",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "boîte"
+          }
+        },
+        {
+          "nom": "ail",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": "gousse"
+          }
+        },
+        {
+          "nom": "farine",
+          "type": "base",
+          "quantite": {
+            "valeur": 2,
+            "unite": "c. à soupe"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Écraser pois chiches, ail et épices.",
+        "Former des galettes avec la farine.",
+        "Airfryer 180°C, 12 min."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "dahl-lentilles-corail",
+      "nom": "Dahl de lentilles corail",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": null,
+      "categorie": "vegetarien",
+      "ingredients": [
+        {
+          "nom": "lentilles corail",
+          "type": "frais",
+          "quantite": {
+            "valeur": 150,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "lait de coco",
+          "type": "frais",
+          "quantite": {
+            "valeur": 20,
+            "unite": "cl"
+          }
+        },
+        {
+          "nom": "tomates concassées",
+          "type": "base",
+          "quantite": {
+            "valeur": 200,
+            "unite": "g"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [],
+      "etapes": [
+        "Rincer les lentilles.",
+        "Cuire avec tomate et coco 12 min.",
+        "Assaisonner (curry, sel)."
+      ],
+      "tags": [
+        "vegetarien",
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "salade-quinoa-mais-avocat",
+      "nom": "Salade quinoa, maïs & avocat",
+      "temps_min": 10,
+      "portions": 2,
+      "ingredient_vedette": "avocat",
+      "categorie": "vegetarien",
+      "ingredients": [
+        {
+          "nom": "quinoa cuit",
+          "type": "frais",
+          "quantite": {
+            "valeur": 150,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "maïs",
+          "type": "base",
+          "quantite": {
+            "valeur": 150,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "avocat",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [],
+      "etapes": [
+        "Mélanger quinoa et maïs.",
+        "Ajouter l'avocat en dés.",
+        "Assaisonner citron-huile."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "gnocchi-epinards-chevre",
+      "nom": "Gnocchi épinards & chèvre",
+      "temps_min": 14,
+      "portions": 2,
+      "ingredient_vedette": "chèvre",
+      "categorie": "vegetarien",
+      "ingredients": [
+        {
+          "nom": "gnocchi",
+          "type": "frais",
+          "quantite": {
+            "valeur": 400,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "épinards",
+          "type": "frais",
+          "quantite": {
+            "valeur": 150,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "bûche de chèvre",
+          "type": "frais",
+          "quantite": {
+            "valeur": 100,
+            "unite": "g"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [],
+      "etapes": [
+        "Poêler les gnocchi 5 min.",
+        "Ajouter les épinards.",
+        "Émietter le chèvre, couvrir 2 min."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "tartines-avocat-oeuf",
+      "nom": "Tartines avocat & œuf",
+      "temps_min": 10,
+      "portions": 2,
+      "ingredient_vedette": "avocat",
+      "categorie": "vegetarien",
+      "ingredients": [
+        {
+          "nom": "pain de campagne",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": "tranches"
+          }
+        },
+        {
+          "nom": "avocat",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "œufs",
+          "type": "base",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [],
+      "etapes": [
+        "Toaster le pain.",
+        "Écraser l'avocat dessus.",
+        "Ajouter un œuf poché ou au plat."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "patate-douce-oeuf-airfryer",
+      "nom": "Frites de patate douce & œuf",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "patate douce",
+      "categorie": "vegetarien",
+      "ingredients": [
+        {
+          "nom": "patate douce",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "œufs",
+          "type": "base",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 2,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Tailler la patate douce en frites.",
+        "Airfryer 180°C, 14 min.",
+        "Servir avec un œuf au plat."
+      ],
+      "tags": [
+        "vegetarien",
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "veloute-courgette",
+      "nom": "Velouté de courgette",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "courgette",
+      "categorie": "soupe",
+      "ingredients": [
+        {
+          "nom": "courgette",
+          "type": "frais",
+          "quantite": {
+            "valeur": 3,
+            "unite": null
+          }
+        },
+        {
+          "nom": "bouillon cube",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "crème fraîche",
+          "type": "frais",
+          "quantite": {
+            "valeur": 5,
+            "unite": "cl"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [],
+      "etapes": [
+        "Cuire les courgettes dans le bouillon 10 min.",
+        "Mixer.",
+        "Ajouter la crème."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "soupe-potiron",
+      "nom": "Soupe de potiron express",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "potiron",
+      "categorie": "soupe",
+      "ingredients": [
+        {
+          "nom": "potiron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 500,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "bouillon cube",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "lait",
+          "type": "base",
+          "quantite": {
+            "valeur": 10,
+            "unite": "cl"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [],
+      "etapes": [
+        "Cuire le potiron en dés dans le bouillon 12 min.",
+        "Mixer.",
+        "Détendre avec le lait."
+      ],
+      "tags": [
+        "vegetarien",
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "salade-cesar",
+      "nom": "Salade César express",
+      "temps_min": 12,
+      "portions": 2,
+      "ingredient_vedette": "poulet",
+      "categorie": "soupe",
+      "ingredients": [
+        {
+          "nom": "salade romaine",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "escalope de poulet",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "croûtons",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "poignée"
+          }
+        },
+        {
+          "nom": "parmesan",
+          "type": "frais",
+          "quantite": {
+            "valeur": 30,
+            "unite": "g"
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Poêler le poulet en lanières.",
+        "Disposer salade, poulet, croûtons.",
+        "Parsemer de parmesan, sauce César."
+      ],
+      "tags": [
+        "enfant_friendly"
+      ]
+    }
+  ]
+}

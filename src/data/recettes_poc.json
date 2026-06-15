@@ -1,0 +1,483 @@
+{
+  "version": "poc-1.0",
+  "garde_manger_base": [
+    "pâtes",
+    "riz",
+    "œufs",
+    "farine",
+    "huile d'olive",
+    "beurre",
+    "oignon",
+    "ail",
+    "lait",
+    "moutarde",
+    "bouillon cube",
+    "tomates concassées",
+    "thon en conserve",
+    "maïs",
+    "chapelure"
+  ],
+  "recettes": [
+    {
+      "id": "pates-thon-tomate",
+      "nom": "Pâtes au thon à la tomate",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": null,
+      "categorie": "feculent",
+      "ingredients": [
+        {
+          "nom": "pâtes",
+          "type": "base",
+          "quantite": {
+            "valeur": 200,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "thon en conserve",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": "boîte"
+          }
+        },
+        {
+          "nom": "tomates concassées",
+          "type": "base",
+          "quantite": {
+            "valeur": 400,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Cuire les pâtes.",
+        "Faire revenir l'oignon, ajouter tomates et thon égoutté, mijoter 8 min.",
+        "Mélanger avec les pâtes."
+      ],
+      "tags": [
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "omelette-champignons",
+      "nom": "Omelette aux champignons",
+      "temps_min": 12,
+      "portions": 2,
+      "ingredient_vedette": "champignons",
+      "categorie": "oeufs",
+      "ingredients": [
+        {
+          "nom": "œufs",
+          "type": "base",
+          "quantite": {
+            "valeur": 4,
+            "unite": null
+          }
+        },
+        {
+          "nom": "champignons",
+          "type": "frais",
+          "quantite": {
+            "valeur": 200,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [],
+      "etapes": [
+        "Émincer et poêler champignons et oignon.",
+        "Battre les œufs, verser sur les champignons.",
+        "Cuire à feu doux 4 min, plier."
+      ],
+      "tags": [
+        "vegetarien",
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "poulet-poele-citron",
+      "nom": "Poulet poêlé citron-ail",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "escalope de poulet",
+      "categorie": "volaille",
+      "ingredients": [
+        {
+          "nom": "escalope de poulet",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "citron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "ail",
+          "type": "base",
+          "quantite": {
+            "valeur": 2,
+            "unite": "gousses"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [],
+      "etapes": [
+        "Couper le poulet en lanières.",
+        "Poêler avec l'ail 8 min.",
+        "Déglacer au jus de citron, 2 min."
+      ],
+      "tags": [
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "saumon-express-courgettes",
+      "nom": "Saumon express aux courgettes",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "pavé de saumon",
+      "categorie": "poisson",
+      "ingredients": [
+        {
+          "nom": "pavé de saumon",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "courgette",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "citron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [],
+      "etapes": [
+        "Tailler la courgette en rondelles fines, poêler 8 min.",
+        "Ajouter le saumon, cuire 5 min.",
+        "Arroser de jus de citron."
+      ],
+      "tags": []
+    },
+    {
+      "id": "riz-saute-express",
+      "nom": "Riz sauté express",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "carotte",
+      "categorie": "feculent",
+      "ingredients": [
+        {
+          "nom": "riz cuit",
+          "type": "base",
+          "quantite": {
+            "valeur": 300,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "œufs",
+          "type": "base",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "maïs",
+          "type": "base",
+          "quantite": {
+            "valeur": 150,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "carotte",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Râper la carotte, sauter à feu vif 4 min.",
+        "Ajouter le riz et le maïs, sauter 5 min.",
+        "Pousser sur le côté, brouiller les œufs, mélanger."
+      ],
+      "tags": [
+        "vegetarien",
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "tenders-frites-airfryer",
+      "nom": "Tenders de poulet & frites airfryer",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "escalope de poulet",
+      "categorie": "volaille",
+      "ingredients": [
+        {
+          "nom": "escalope de poulet",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "frites surgelées",
+          "type": "frais",
+          "quantite": {
+            "valeur": 400,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "chapelure",
+          "type": "base",
+          "quantite": {
+            "valeur": 50,
+            "unite": "g"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Lancer les frites à l'airfryer 180°C, 15 min.",
+        "Tailler le poulet en lanières, paner dans la chapelure.",
+        "À mi-cuisson, ajouter les tenders dans le panier, finir ensemble."
+      ],
+      "tags": [
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "legumes-rotis-airfryer",
+      "nom": "Légumes rôtis express airfryer",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "poivron",
+      "categorie": "vegetarien",
+      "ingredients": [
+        {
+          "nom": "poivron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "courgette",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "pomme de terre",
+          "type": "frais",
+          "quantite": {
+            "valeur": 3,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Couper les légumes en dés.",
+        "Huiler, saler, mélanger.",
+        "Airfryer 180°C, 14 min en secouant à mi-cuisson."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "croque-jambon",
+      "nom": "Croque express jambon-fromage",
+      "temps_min": 10,
+      "portions": 2,
+      "ingredient_vedette": "jambon",
+      "categorie": "viande",
+      "ingredients": [
+        {
+          "nom": "pain de mie",
+          "type": "frais",
+          "quantite": {
+            "valeur": 4,
+            "unite": "tranches"
+          }
+        },
+        {
+          "nom": "jambon",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": "tranches"
+          }
+        },
+        {
+          "nom": "fromage râpé",
+          "type": "frais",
+          "quantite": {
+            "valeur": 80,
+            "unite": "g"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [],
+      "etapes": [
+        "Garnir le pain de jambon et fromage.",
+        "Beurrer l'extérieur.",
+        "Poêler 3 min de chaque côté."
+      ],
+      "tags": [
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "soupe-tomate-vermicelles",
+      "nom": "Soupe tomate-vermicelles",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": null,
+      "categorie": "soupe",
+      "ingredients": [
+        {
+          "nom": "tomates concassées",
+          "type": "base",
+          "quantite": {
+            "valeur": 400,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "vermicelles",
+          "type": "base",
+          "quantite": {
+            "valeur": 80,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "bouillon cube",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [],
+      "etapes": [
+        "Porter le bouillon à ébullition avec les tomates.",
+        "Ajouter les vermicelles, cuire 5 min.",
+        "Rectifier l'assaisonnement."
+      ],
+      "tags": [
+        "vegetarien",
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "steak-hache-poele",
+      "nom": "Steak haché & poêlée d'oignons",
+      "temps_min": 12,
+      "portions": 2,
+      "ingredient_vedette": "steak haché",
+      "categorie": "viande",
+      "ingredients": [
+        {
+          "nom": "steak haché",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "moutarde",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": "c. à café"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [],
+      "etapes": [
+        "Émincer et caraméliser l'oignon 6 min.",
+        "Cuire les steaks à côté 3 min par face.",
+        "Servir avec une pointe de moutarde."
+      ],
+      "tags": [
+        "enfant_friendly"
+      ]
+    }
+  ]
+}

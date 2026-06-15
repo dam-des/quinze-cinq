@@ -1,0 +1,14 @@
+node_modules/
+.DS_Store
+# Capacitor / natif (régénérables)
+/ios/App/Pods/
+/ios/App/App/public/
+/android/app/src/main/assets/public/
+/android/.gradle/
+/android/app/build/
+/android/build/
+/android/local.properties
+www/
+dist/
+*.log
+.env
