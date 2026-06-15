@@ -12,6 +12,7 @@ import {
   genererProposition,
   passeFiltresDurs,
   ingredientsManquants,
+  fraisPertinents,
 } from '../src/js/engine.js';
 
 // ── Données ──────────────────────────────────────────────────────────────────
@@ -157,6 +158,38 @@ test('B4 — frais coché sans plat correspondant : pas d’écran vide', () => 
   assert.ok(p.recette, 'une proposition de repli est fournie');
 });
 
+test('B5 — frais coché : plat orienté proposé même si d’autres frais manquent', () => {
+  // avocat coché ; les plats à l'avocat ont d'autres frais (citron, tomates…)
+  // non cochés — ils doivent quand même être proposés (frais « à acheter »).
+  const e = etat(CINQUANTE, { frais_du_jour: ['avocat'] });
+  const p = genererProposition(CINQUANTE.recettes, e, NOW, [], rng(4));
+  assert.ok(p.recette, 'une proposition existe');
+  assert.ok(
+    (p.recette.ingredients || []).some((i) => i.type === 'frais' && i.nom === 'avocat'),
+    `la proposition (${p.recette.id}) utilise le frais coché`
+  );
+});
+
+test('B6 — le plat couvrant le plus de frais cochés passe en tête', () => {
+  const cibles = ['courgette', 'citron'];
+  const e = etat(CINQUANTE, { frais_du_jour: cibles });
+  const classement = classer(CINQUANTE.recettes, e, NOW, {}, rng());
+  const matches = (r) =>
+    r.ingredients.filter((i) => i.type === 'frais' && cibles.includes(i.nom)).length;
+  const top = classement[0];
+  assert.ok(matches(top.recette) >= 1, 'le 1er utilise au moins un frais coché');
+  for (const c of classement) {
+    assert.ok(matches(top.recette) >= matches(c.recette), 'le 1er couvre le plus de frais');
+  }
+});
+
+test('B7 — frais pertinents : végé masque les frais carnés', () => {
+  const veg = etat(CINQUANTE, { preferences: { vegetarien: true, exclusions: [] } });
+  const set = fraisPertinents(CINQUANTE.recettes, veg);
+  assert.ok(!set.has('steak haché'), 'pas de frais carné quand végé');
+  assert.ok(set.has('courgette'), 'les frais végé restent proposés');
+});
+
 // ════════════════════════════════════════════════════════════════════════════
 // C. Récence (decay)
 // ════════════════════════════════════════════════════════════════════════════
@@ -266,6 +299,28 @@ test('E3 — récence l’emporte sur le 👍 à court terme', () => {
   assert.ok(
     rang('pates-thon-tomate') < rang('riz-saute-express'),
     'malgré le 👍, le plat cuisiné hier reste défavorisé ce soir'
+  );
+});
+
+test('E4 — préférence enfants : favorise sans exclure', () => {
+  const avec = etat(POC, {
+    preferences: { vegetarien: false, enfant_friendly: true, exclusions: [] },
+  });
+  const sans = etat(POC, {
+    preferences: { vegetarien: false, enfant_friendly: false, exclusions: [] },
+  });
+  const clAvec = classer(POC.recettes, avec, NOW, { maxManquants: 5 }, rng());
+  const clSans = classer(POC.recettes, sans, NOW, { maxManquants: 5 }, rng());
+  // Des plats NON enfant-friendly restent proposés (préférence, pas filtre).
+  assert.ok(
+    clAvec.some((c) => !(c.recette.tags || []).includes('enfant_friendly')),
+    'les plats non-enfants restent proposés'
+  );
+  // À conditions égales, un plat enfant marque plus de points avec la préférence.
+  const score = (cl, id) => cl.find((c) => c.recette.id === id).score;
+  assert.ok(
+    score(clAvec, 'pates-thon-tomate') > score(clSans, 'pates-thon-tomate'),
+    'le plat enfant est favorisé quand la préférence est active'
   );
 });
 

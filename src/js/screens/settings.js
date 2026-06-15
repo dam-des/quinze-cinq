@@ -46,9 +46,10 @@ export default function renderReglages(ctx) {
   body.appendChild(gPlacard);
 
   // ── Équipement ───────────────────────────────────────────────────────────
-  const toggleRow = (label, valeur, onChange) => {
+  const toggleRow = (label, valeur, onChange, sous = '') => {
+    const sub = sous ? `<span class="set-row-sub">${esc(sous)}</span>` : '';
     const row = el(
-      `<div class="set-row">${esc(label)}<button class="toggle${valeur ? ' on' : ''}" role="switch" aria-checked="${valeur}" aria-label="${esc(label)}"></button></div>`
+      `<div class="set-row"><span class="set-row-txt"><span class="set-row-label">${esc(label)}</span>${sub}</span><button class="toggle${valeur ? ' on' : ''}" role="switch" aria-checked="${valeur}" aria-label="${esc(label)}"></button></div>`
     );
     const t = row.querySelector('.toggle');
     t.addEventListener('click', async () => {
@@ -83,24 +84,39 @@ export default function renderReglages(ctx) {
   const cardPref = el('<div class="set-card"></div>');
   const prefs = ctx.etat.preferences;
   cardPref.appendChild(
-    toggleRow('Végétarien', prefs.vegetarien, async (v) => {
-      prefs.vegetarien = v;
-      await ctx.sauver(storage.CLES.PREFERENCES, prefs);
-    })
+    toggleRow(
+      'Végétarien',
+      prefs.vegetarien,
+      async (v) => {
+        prefs.vegetarien = v;
+        await ctx.sauver(storage.CLES.PREFERENCES, prefs);
+      },
+      'Seuls des plats végétariens seront proposés.'
+    )
   );
   cardPref.appendChild(
-    toggleRow('Plats pour enfants', prefs.enfant_friendly, async (v) => {
-      prefs.enfant_friendly = v;
-      await ctx.sauver(storage.CLES.PREFERENCES, prefs);
-    })
+    toggleRow(
+      'Plats pour enfants',
+      prefs.enfant_friendly,
+      async (v) => {
+        prefs.enfant_friendly = v;
+        await ctx.sauver(storage.CLES.PREFERENCES, prefs);
+      },
+      'Les plats adaptés aux enfants sont mis en avant (les autres restent proposés).'
+    )
   );
   cardPref.appendChild(
-    toggleRow('Sans porc', (prefs.exclusions || []).includes('porc'), async (v) => {
-      prefs.exclusions = prefs.exclusions || [];
-      if (v && !prefs.exclusions.includes('porc')) prefs.exclusions.push('porc');
-      if (!v) prefs.exclusions = prefs.exclusions.filter((x) => x !== 'porc');
-      await ctx.sauver(storage.CLES.PREFERENCES, prefs);
-    })
+    toggleRow(
+      'Sans porc',
+      (prefs.exclusions || []).includes('porc'),
+      async (v) => {
+        prefs.exclusions = prefs.exclusions || [];
+        if (v && !prefs.exclusions.includes('porc')) prefs.exclusions.push('porc');
+        if (!v) prefs.exclusions = prefs.exclusions.filter((x) => x !== 'porc');
+        await ctx.sauver(storage.CLES.PREFERENCES, prefs);
+      },
+      'Les plats contenant du porc sont exclus.'
+    )
   );
   gPref.appendChild(cardPref);
   body.appendChild(gPref);

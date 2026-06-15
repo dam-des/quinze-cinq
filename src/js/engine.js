@@ -35,8 +35,12 @@ export const DIVERSITE_JOURS = 3;
 // Appoint : léger malus par ingrédient manquant.
 export const APPOINT_MALUS = 14;
 
-// Frais explicitement coché ce soir et utilisé par le plat : bonus net.
+// Frais explicitement coché ce soir et utilisé par le plat : bonus net, PAR frais
+// matché (le plat qui utilise le plus d'ingrédients cochés remonte en tête).
 export const BONUS_FRAIS_COCHE = 45;
+
+// Préférence « plats pour enfants » : bonus doux (non filtrant).
+export const BONUS_ENFANT = 20;
 
 const MS_PAR_JOUR = 24 * 60 * 60 * 1000;
 
@@ -82,6 +86,20 @@ export function ingredientsManquants(recette, garde_manger = [], frais_du_jour =
   return manquants;
 }
 
+/**
+ * Frais qui « mènent quelque part » : noms d'ingrédients frais utilisés par au
+ * moins une recette passant les filtres durs (préférences + équipement). Sert à
+ * masquer dans l'UI les frais sans issue (ex. viande quand végé est actif).
+ */
+export function fraisPertinents(recettes, etat) {
+  const set = new Set();
+  for (const r of recettes) {
+    if (!passeFiltresDurs(r, etat.preferences, etat.equipements)) continue;
+    for (const i of r.ingredients || []) if (i.type === 'frais') set.add(i.nom);
+  }
+  return set;
+}
+
 /** Ensemble des catégories validées dans les `jours` derniers jours. */
 function categoriesRecentes(recettes, historique = {}, now, jours) {
   const parId = new Map(recettes.map((r) => [r.id, r]));
@@ -101,8 +119,19 @@ function categoriesRecentes(recettes, historique = {}, now, jours) {
  * @param {object} options { maxManquants, applyRecence, applyDiversite, applyDislike }
  */
 function evaluer(recette, etat, now, options, catsRecentes, rng) {
-  const manquants = ingredientsManquants(recette, etat.garde_manger, etat.frais_du_jour);
-  const eligible = manquants.length <= options.maxManquants;
+  const fraisCoches = etat.frais_du_jour || [];
+  const manquants = ingredientsManquants(recette, etat.garde_manger, fraisCoches);
+  const baseManquants = manquants.filter((m) => m.type === 'base').length;
+  // Frais explicitement cochés ET utilisés par ce plat (orientation utilisateur).
+  const nbMatch = (recette.ingredients || []).filter(
+    (i) => i.type === 'frais' && fraisCoches.includes(i.nom)
+  ).length;
+  const oriente = fraisCoches.length > 0 && nbMatch > 0;
+  // Plat orienté : éligible tant que les BASE sont là — les autres frais sont
+  // « à acheter » (signalés), pas un motif d'exclusion. Sinon : appoint classique.
+  const eligible = oriente
+    ? baseManquants <= options.maxManquants
+    : manquants.length <= options.maxManquants;
 
   let score = SCORE_BASE;
   const raisons = [];
@@ -143,19 +172,29 @@ function evaluer(recette, etat, now, options, catsRecentes, rng) {
     raisons.push('catégorie récente');
   }
 
-  // (e) Appoint — léger malus par ingrédient manquant.
-  if (manquants.length > 0) {
-    score -= APPOINT_MALUS * manquants.length;
+  // (e) Appoint — léger malus par ingrédient manquant (sur les BASE seulement
+  // pour un plat orienté : les frais à acheter ne sont pas pénalisés).
+  const nbAppoint = oriente ? baseManquants : manquants.length;
+  if (nbAppoint > 0) {
+    score -= APPOINT_MALUS * nbAppoint;
     raisons.push('appoint');
   }
 
-  // (f) Frais coché ce soir et utilisé par le plat.
-  const utiliseFraisCoche = (recette.ingredients || []).some(
-    (i) => i.type === 'frais' && (etat.frais_du_jour || []).includes(i.nom)
-  );
-  if (utiliseFraisCoche) {
-    score += BONUS_FRAIS_COCHE;
+  // (f) Frais cochés utilisés : bonus PAR frais matché → le plat couvrant le
+  // plus d'ingrédients cochés remonte en tête.
+  if (nbMatch > 0) {
+    score += BONUS_FRAIS_COCHE * nbMatch;
     raisons.push('frais coché');
+  }
+
+  // (g) Préférence « plats pour enfants » (douce, non filtrante).
+  if (
+    etat.preferences &&
+    etat.preferences.enfant_friendly &&
+    (recette.tags || []).includes('enfant_friendly')
+  ) {
+    score += BONUS_ENFANT;
+    raisons.push('enfant');
   }
 
   return {

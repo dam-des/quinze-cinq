@@ -3,19 +3,10 @@
 
 import { el, esc, ICONS, annoncer } from '../ui.js';
 import { illustrationPour, libelleEquipement } from '../data.js';
+import { fraisPertinents } from '../engine.js';
 import * as ads from '../ads.js';
 
 const FRAIS_VISIBLES = 8; // nb de vignettes affichées avant « voir plus »
-
-/** Liste de frais suggérés (vedettes + ingrédients frais distincts). */
-function fraisSuggeres(catalogue) {
-  const noms = new Set();
-  for (const r of catalogue.recettes) {
-    if (r.ingredient_vedette) noms.add(r.ingredient_vedette);
-    for (const i of r.ingredients) if (i.type === 'frais') noms.add(i.nom);
-  }
-  return [...noms];
-}
 
 export default function renderHome(ctx) {
   const { recette, evaluation } = ctx.proposition || {};
@@ -79,7 +70,9 @@ export default function renderHome(ctx) {
     ...fraisCoche,
     ...(recette.ingredients || []).filter((i) => i.type === 'frais').map((i) => i.nom),
   ]);
-  const ordonnes = fraisSuggeres(ctx.catalogue).sort(
+  // Frais pertinents seulement (qui mènent à une recette réalisable selon
+  // préférences/équipement) ; les cochés/du plat courant en tête.
+  const ordonnes = [...fraisPertinents(ctx.catalogue.recettes, ctx.etat)].sort(
     (a, b) => (prioritaires.has(b) ? 1 : 0) - (prioritaires.has(a) ? 1 : 0)
   );
   const deplie = ctx.fraisDeplie || fraisCoche.length > FRAIS_VISIBLES;
