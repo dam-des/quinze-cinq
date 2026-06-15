@@ -13,12 +13,14 @@ echo "→ Synchronisation des assets web…"
 npx cap sync ios
 
 cd ios/App
+# DerivedData hors du projet (évite le conflit « CLEAN FAILED » sur ios/App/build).
+DERIVED="/tmp/q5-derived"
 echo "→ Build (device)…"
 xcodebuild -workspace App.xcworkspace -scheme App -configuration Debug -sdk iphoneos \
-  -destination 'generic/platform=iOS' -derivedDataPath build -allowProvisioningUpdates build \
+  -destination 'generic/platform=iOS' -derivedDataPath "$DERIVED" -allowProvisioningUpdates build \
   >/tmp/q5build.log 2>&1 || { echo "BUILD FAILED :"; grep -iE 'error:' /tmp/q5build.log | head; exit 1; }
 
-APP="build/Build/Products/Debug-iphoneos/App.app"
+APP="$DERIVED/Build/Products/Debug-iphoneos/App.app"
 echo "→ Installation Wi-Fi…"
 for i in $(seq 1 40); do
   if xcrun devicectl device install app --device "$DEV" "$APP" >/tmp/q5install.log 2>&1; then
