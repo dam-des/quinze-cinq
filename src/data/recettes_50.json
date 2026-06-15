@@ -146,14 +146,23 @@
             "valeur": 2,
             "unite": "gousses"
           }
+        },
+        {
+          "nom": "riz cuit",
+          "type": "base",
+          "quantite": {
+            "valeur": 250,
+            "unite": "g"
+          }
         }
       ],
-      "nb_comptables": 3,
+      "nb_comptables": 4,
       "equipement_requis": [],
       "etapes": [
         "Couper le poulet en lanières.",
         "Poêler avec l'ail 8 min.",
-        "Déglacer au jus de citron, 2 min."
+        "Déglacer au jus de citron, 2 min.",
+        "Servir avec le riz."
       ],
       "tags": [
         "enfant_friendly"
@@ -190,14 +199,23 @@
             "valeur": 1,
             "unite": null
           }
+        },
+        {
+          "nom": "riz cuit",
+          "type": "base",
+          "quantite": {
+            "valeur": 250,
+            "unite": "g"
+          }
         }
       ],
-      "nb_comptables": 3,
+      "nb_comptables": 4,
       "equipement_requis": [],
       "etapes": [
         "Tailler la courgette en rondelles fines, poêler 8 min.",
         "Ajouter le saumon, cuire 5 min.",
-        "Arroser de jus de citron."
+        "Arroser de jus de citron.",
+        "Servir avec le riz."
       ],
       "tags": []
     },
@@ -466,14 +484,23 @@
             "valeur": 1,
             "unite": "c. à café"
           }
+        },
+        {
+          "nom": "riz cuit",
+          "type": "base",
+          "quantite": {
+            "valeur": 250,
+            "unite": "g"
+          }
         }
       ],
-      "nb_comptables": 3,
+      "nb_comptables": 4,
       "equipement_requis": [],
       "etapes": [
         "Émincer et caraméliser l'oignon 6 min.",
         "Cuire les steaks à côté 3 min par face.",
-        "Servir avec une pointe de moutarde."
+        "Servir avec une pointe de moutarde.",
+        "Servir avec le riz."
       ],
       "tags": [
         "enfant_friendly"
@@ -1189,14 +1216,23 @@
             "valeur": 1,
             "unite": "c. à café"
           }
+        },
+        {
+          "nom": "riz cuit",
+          "type": "base",
+          "quantite": {
+            "valeur": 250,
+            "unite": "g"
+          }
         }
       ],
-      "nb_comptables": 3,
+      "nb_comptables": 4,
       "equipement_requis": [],
       "etapes": [
         "Dorer le poulet en lanières.",
         "Ajouter curry puis lait de coco.",
-        "Mijoter 8 min."
+        "Mijoter 8 min.",
+        "Servir avec le riz."
       ],
       "tags": [
         "enfant_friendly"
@@ -1233,14 +1269,23 @@
             "valeur": 15,
             "unite": "cl"
           }
+        },
+        {
+          "nom": "riz cuit",
+          "type": "base",
+          "quantite": {
+            "valeur": 250,
+            "unite": "g"
+          }
         }
       ],
-      "nb_comptables": 3,
+      "nb_comptables": 4,
       "equipement_requis": [],
       "etapes": [
         "Dorer le poulet, réserver.",
         "Poêler les champignons.",
-        "Ajouter crème et poulet, mijoter 5 min."
+        "Ajouter crème et poulet, mijoter 5 min.",
+        "Servir avec le riz."
       ],
       "tags": [
         "enfant_friendly"
@@ -1277,14 +1322,23 @@
             "valeur": 1,
             "unite": "c. à soupe"
           }
+        },
+        {
+          "nom": "riz cuit",
+          "type": "base",
+          "quantite": {
+            "valeur": 250,
+            "unite": "g"
+          }
         }
       ],
-      "nb_comptables": 3,
+      "nb_comptables": 4,
       "equipement_requis": [],
       "etapes": [
         "Couper le poulet en dés, dorer.",
         "Ajouter soja et miel.",
-        "Laisser caraméliser 4 min."
+        "Laisser caraméliser 4 min.",
+        "Servir avec le riz."
       ],
       "tags": [
         "enfant_friendly"
@@ -1373,16 +1427,25 @@
             "valeur": 1,
             "unite": null
           }
+        },
+        {
+          "nom": "riz cuit",
+          "type": "base",
+          "quantite": {
+            "valeur": 250,
+            "unite": "g"
+          }
         }
       ],
-      "nb_comptables": 3,
+      "nb_comptables": 4,
       "equipement_requis": [
         "airfryer"
       ],
       "etapes": [
         "Couper le poulet en morceaux, paner (œuf puis chapelure).",
         "Airfryer 180°C, 12 min.",
-        "Retourner à mi-cuisson."
+        "Retourner à mi-cuisson.",
+        "Servir avec le riz."
       ],
       "tags": [
         "enfant_friendly"
@@ -1419,14 +1482,23 @@
             "valeur": 1,
             "unite": "c. à café"
           }
+        },
+        {
+          "nom": "riz cuit",
+          "type": "base",
+          "quantite": {
+            "valeur": 250,
+            "unite": "g"
+          }
         }
       ],
-      "nb_comptables": 3,
+      "nb_comptables": 4,
       "equipement_requis": [],
       "etapes": [
         "Dorer les aiguillettes.",
         "Ajouter miel et moutarde.",
-        "Enrober et cuire 4 min."
+        "Enrober et cuire 4 min.",
+        "Servir avec le riz."
       ],
       "tags": [
         "enfant_friendly"
@@ -1455,14 +1527,23 @@
             "valeur": 1,
             "unite": null
           }
+        },
+        {
+          "nom": "riz cuit",
+          "type": "base",
+          "quantite": {
+            "valeur": 250,
+            "unite": "g"
+          }
         }
       ],
-      "nb_comptables": 2,
+      "nb_comptables": 3,
       "equipement_requis": [],
       "etapes": [
         "Poêler le cabillaud 5 min par face.",
         "Arroser de jus de citron.",
-        "Saler, servir."
+        "Saler, servir.",
+        "Servir avec le riz."
       ],
       "tags": [
         "enfant_friendly"
@@ -1499,16 +1580,25 @@
             "valeur": 1,
             "unite": null
           }
+        },
+        {
+          "nom": "riz cuit",
+          "type": "base",
+          "quantite": {
+            "valeur": 250,
+            "unite": "g"
+          }
         }
       ],
-      "nb_comptables": 3,
+      "nb_comptables": 4,
       "equipement_requis": [
         "airfryer"
       ],
       "etapes": [
         "Paner le colin (œuf puis chapelure).",
         "Airfryer 180°C, 12 min.",
-        "Servir avec un filet de citron."
+        "Servir avec un filet de citron.",
+        "Servir avec le riz."
       ],
       "tags": [
         "enfant_friendly"
@@ -1587,14 +1677,23 @@
             "valeur": 1,
             "unite": "poignée"
           }
+        },
+        {
+          "nom": "riz cuit",
+          "type": "base",
+          "quantite": {
+            "valeur": 250,
+            "unite": "g"
+          }
         }
       ],
-      "nb_comptables": 3,
+      "nb_comptables": 4,
       "equipement_requis": [],
       "etapes": [
         "Faire revenir l'ail.",
         "Ajouter les crevettes, 4 min.",
-        "Parsemer de persil."
+        "Parsemer de persil.",
+        "Servir avec le riz."
       ],
       "tags": []
     },
@@ -1629,16 +1728,25 @@
             "valeur": 2,
             "unite": "c. à soupe"
           }
+        },
+        {
+          "nom": "riz cuit",
+          "type": "base",
+          "quantite": {
+            "valeur": 250,
+            "unite": "g"
+          }
         }
       ],
-      "nb_comptables": 3,
+      "nb_comptables": 4,
       "equipement_requis": [
         "airfryer"
       ],
       "etapes": [
         "Mélanger miel et soja, en napper le saumon.",
         "Airfryer 180°C, 10 min.",
-        "Napper du reste de sauce."
+        "Napper du reste de sauce.",
+        "Servir avec le riz."
       ],
       "tags": [
         "enfant_friendly"
@@ -1675,14 +1783,23 @@
             "valeur": 15,
             "unite": "cl"
           }
+        },
+        {
+          "nom": "riz cuit",
+          "type": "base",
+          "quantite": {
+            "valeur": 250,
+            "unite": "g"
+          }
         }
       ],
-      "nb_comptables": 3,
+      "nb_comptables": 4,
       "equipement_requis": [],
       "etapes": [
         "Faire fondre l'oignon.",
         "Saisir le bœuf à feu vif.",
-        "Ajouter la crème, 3 min."
+        "Ajouter la crème, 3 min.",
+        "Servir avec le riz."
       ],
       "tags": []
     },
@@ -1762,14 +1879,23 @@
             "valeur": 10,
             "unite": "cl"
           }
+        },
+        {
+          "nom": "riz cuit",
+          "type": "base",
+          "quantite": {
+            "valeur": 250,
+            "unite": "g"
+          }
         }
       ],
-      "nb_comptables": 3,
+      "nb_comptables": 4,
       "equipement_requis": [],
       "etapes": [
         "Dorer les côtes 4 min par face.",
         "Déglacer avec crème et moutarde.",
-        "Napper et servir."
+        "Napper et servir.",
+        "Servir avec le riz."
       ],
       "tags": [
         "porc"
@@ -1806,16 +1932,25 @@
             "valeur": 1,
             "unite": null
           }
+        },
+        {
+          "nom": "riz cuit",
+          "type": "base",
+          "quantite": {
+            "valeur": 250,
+            "unite": "g"
+          }
         }
       ],
-      "nb_comptables": 3,
+      "nb_comptables": 4,
       "equipement_requis": [
         "airfryer"
       ],
       "etapes": [
         "Émincer poivrons et oignon.",
         "Tout placer dans l'airfryer.",
-        "180°C, 13 min en secouant à mi-cuisson."
+        "180°C, 13 min en secouant à mi-cuisson.",
+        "Servir avec le riz."
       ],
       "tags": [
         "enfant_friendly",
@@ -2406,14 +2541,23 @@
             "valeur": 1,
             "unite": "poignée"
           }
+        },
+        {
+          "nom": "riz cuit",
+          "type": "base",
+          "quantite": {
+            "valeur": 250,
+            "unite": "g"
+          }
         }
       ],
-      "nb_comptables": 3,
+      "nb_comptables": 4,
       "equipement_requis": [],
       "etapes": [
         "Poêler le cabillaud 5 min de chaque côté.",
         "Arroser de jus de citron.",
-        "Parsemer de persil ciselé."
+        "Parsemer de persil ciselé.",
+        "Servir avec le riz."
       ],
       "tags": []
     },
