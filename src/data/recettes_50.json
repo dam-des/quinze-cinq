@@ -3020,6 +3020,2061 @@
       "tags": [
         "vegetarien"
       ]
+    },
+    {
+      "id": "poulet-croustillant-moutarde-airfryer",
+      "nom": "Poulet croustillant moutarde airfryer",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "escalope de poulet",
+      "categorie": "volaille",
+      "ingredients": [
+        {
+          "nom": "escalope de poulet",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "moutarde",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": "c. à soupe"
+          }
+        },
+        {
+          "nom": "chapelure",
+          "type": "base",
+          "quantite": {
+            "valeur": 4,
+            "unite": "c. à soupe"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Badigeonner le poulet de moutarde, enrober de chapelure.",
+        "Airfryer 15 min à 190 °C en retournant à mi-cuisson.",
+        "Vérifier la cuisson et servir."
+      ],
+      "tags": [
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "dinde-panee-airfryer",
+      "nom": "Aiguillettes de dinde panées airfryer",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "aiguillettes de dinde",
+      "categorie": "volaille",
+      "ingredients": [
+        {
+          "nom": "aiguillettes de dinde",
+          "type": "frais",
+          "quantite": {
+            "valeur": 250,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "œufs",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "chapelure",
+          "type": "base",
+          "quantite": {
+            "valeur": 5,
+            "unite": "c. à soupe"
+          }
+        },
+        {
+          "nom": "riz cuit",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": "bol"
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Passer les aiguillettes dans l'œuf battu puis la chapelure.",
+        "Airfryer 12 min à 190 °C en retournant à mi-cuisson.",
+        "Réchauffer le riz.",
+        "Servir."
+      ],
+      "tags": [
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "dinde-laquee-miel-soja-airfryer",
+      "nom": "Dinde laquée miel-soja airfryer",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "aiguillettes de dinde",
+      "categorie": "volaille",
+      "ingredients": [
+        {
+          "nom": "aiguillettes de dinde",
+          "type": "frais",
+          "quantite": {
+            "valeur": 250,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "miel",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "c. à soupe"
+          }
+        },
+        {
+          "nom": "sauce soja",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": "c. à soupe"
+          }
+        },
+        {
+          "nom": "riz cuit",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": "bol"
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Mélanger miel et sauce soja, enrober la dinde.",
+        "Airfryer 12 min à 190 °C en retournant à mi-cuisson.",
+        "Servir sur le riz réchauffé."
+      ],
+      "tags": [
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "cabillaud-citron-airfryer",
+      "nom": "Cabillaud rôti au citron airfryer",
+      "temps_min": 14,
+      "portions": 2,
+      "ingredient_vedette": "dos de cabillaud",
+      "categorie": "poisson",
+      "ingredients": [
+        {
+          "nom": "dos de cabillaud",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "citron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "riz cuit",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": "bol"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Arroser le cabillaud de jus de citron, saler, poivrer.",
+        "Airfryer 12 min à 180 °C.",
+        "Servir avec le riz réchauffé."
+      ],
+      "tags": [
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "crevettes-croustillantes-airfryer",
+      "nom": "Crevettes croustillantes ail airfryer",
+      "temps_min": 12,
+      "portions": 2,
+      "ingredient_vedette": "crevettes",
+      "categorie": "poisson",
+      "ingredients": [
+        {
+          "nom": "crevettes",
+          "type": "frais",
+          "quantite": {
+            "valeur": 200,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "ail",
+          "type": "base",
+          "quantite": {
+            "valeur": 2,
+            "unite": "gousses"
+          }
+        },
+        {
+          "nom": "chapelure",
+          "type": "base",
+          "quantite": {
+            "valeur": 3,
+            "unite": "c. à soupe"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Mélanger crevettes, ail écrasé, chapelure et un filet d'huile.",
+        "Airfryer 8 min à 200 °C en secouant à mi-cuisson.",
+        "Servir aussitôt."
+      ],
+      "tags": []
+    },
+    {
+      "id": "saumon-croustillant-airfryer",
+      "nom": "Saumon croustillant airfryer",
+      "temps_min": 14,
+      "portions": 2,
+      "ingredient_vedette": "pavé de saumon",
+      "categorie": "poisson",
+      "ingredients": [
+        {
+          "nom": "pavé de saumon",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "chapelure",
+          "type": "base",
+          "quantite": {
+            "valeur": 3,
+            "unite": "c. à soupe"
+          }
+        },
+        {
+          "nom": "citron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Presser le citron sur le saumon, parsemer de chapelure.",
+        "Airfryer 12 min à 190 °C.",
+        "Servir."
+      ],
+      "tags": [
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "boulettes-boeuf-airfryer",
+      "nom": "Boulettes de bœuf airfryer",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "steak haché",
+      "categorie": "viande",
+      "ingredients": [
+        {
+          "nom": "steak haché",
+          "type": "frais",
+          "quantite": {
+            "valeur": 250,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "chapelure",
+          "type": "base",
+          "quantite": {
+            "valeur": 3,
+            "unite": "c. à soupe"
+          }
+        },
+        {
+          "nom": "œufs",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Mélanger viande, chapelure, œuf et oignon haché, former des boulettes.",
+        "Airfryer 12 min à 190 °C en secouant à mi-cuisson.",
+        "Servir."
+      ],
+      "tags": [
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "cote-porc-panee-airfryer",
+      "nom": "Côte de porc panée airfryer",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "côte de porc",
+      "categorie": "viande",
+      "ingredients": [
+        {
+          "nom": "côte de porc",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "œufs",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "chapelure",
+          "type": "base",
+          "quantite": {
+            "valeur": 5,
+            "unite": "c. à soupe"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Tremper les côtes dans l'œuf battu puis la chapelure.",
+        "Airfryer 14 min à 190 °C en retournant à mi-cuisson.",
+        "Vérifier la cuisson et servir."
+      ],
+      "tags": [
+        "porc",
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "lardons-pdt-airfryer",
+      "nom": "Pommes de terre lardons airfryer",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "lardons",
+      "categorie": "viande",
+      "ingredients": [
+        {
+          "nom": "lardons",
+          "type": "frais",
+          "quantite": {
+            "valeur": 150,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "pommes de terre",
+          "type": "frais",
+          "quantite": {
+            "valeur": 3,
+            "unite": null
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Couper les pommes de terre en cubes, mélanger avec lardons et oignon.",
+        "Airfryer 15 min à 200 °C en secouant à mi-cuisson.",
+        "Servir."
+      ],
+      "tags": [
+        "porc",
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "saucisses-pdt-airfryer",
+      "nom": "Saucisses & pommes de terre airfryer",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "saucisses",
+      "categorie": "viande",
+      "ingredients": [
+        {
+          "nom": "saucisses",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "pommes de terre",
+          "type": "frais",
+          "quantite": {
+            "valeur": 3,
+            "unite": null
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Couper les pommes de terre en quartiers, ajouter oignon et saucisses.",
+        "Airfryer 15 min à 200 °C en retournant à mi-cuisson.",
+        "Servir."
+      ],
+      "tags": [
+        "porc",
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "pdt-roties-parmesan-airfryer",
+      "nom": "Pommes de terre rôties au parmesan airfryer",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "pommes de terre",
+      "categorie": "vegetarien",
+      "ingredients": [
+        {
+          "nom": "pommes de terre",
+          "type": "frais",
+          "quantite": {
+            "valeur": 4,
+            "unite": null
+          }
+        },
+        {
+          "nom": "parmesan",
+          "type": "frais",
+          "quantite": {
+            "valeur": 30,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "ail",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": "gousse"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Couper en quartiers, mélanger avec ail, parmesan et un filet d'huile.",
+        "Airfryer 15 min à 200 °C en secouant à mi-cuisson.",
+        "Servir."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "courgettes-panees-airfryer",
+      "nom": "Courgettes panées airfryer",
+      "temps_min": 13,
+      "portions": 2,
+      "ingredient_vedette": "courgette",
+      "categorie": "vegetarien",
+      "ingredients": [
+        {
+          "nom": "courgette",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "chapelure",
+          "type": "base",
+          "quantite": {
+            "valeur": 4,
+            "unite": "c. à soupe"
+          }
+        },
+        {
+          "nom": "œufs",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "parmesan",
+          "type": "frais",
+          "quantite": {
+            "valeur": 20,
+            "unite": "g"
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Couper la courgette en bâtonnets, passer dans l'œuf puis chapelure-parmesan.",
+        "Airfryer 10 min à 200 °C en retournant à mi-cuisson.",
+        "Servir."
+      ],
+      "tags": [
+        "vegetarien",
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "pois-chiches-curry-airfryer",
+      "nom": "Pois chiches croustillants curry airfryer",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "pois chiches",
+      "categorie": "vegetarien",
+      "ingredients": [
+        {
+          "nom": "pois chiches",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "boîte"
+          }
+        },
+        {
+          "nom": "curry",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "c. à café"
+          }
+        },
+        {
+          "nom": "riz cuit",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": "bol"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Égoutter les pois chiches, mélanger avec curry et un filet d'huile.",
+        "Airfryer 14 min à 200 °C en secouant à mi-cuisson.",
+        "Servir sur le riz réchauffé."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "poivrons-chevre-airfryer",
+      "nom": "Poivrons rôtis au chèvre airfryer",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "poivron",
+      "categorie": "vegetarien",
+      "ingredients": [
+        {
+          "nom": "poivron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "bûche de chèvre",
+          "type": "frais",
+          "quantite": {
+            "valeur": 80,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "miel",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "c. à café"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Couper les poivrons, déposer des tranches de chèvre, filet de miel.",
+        "Airfryer 13 min à 190 °C.",
+        "Servir."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "champignons-farcis-airfryer",
+      "nom": "Champignons farcis airfryer",
+      "temps_min": 14,
+      "portions": 2,
+      "ingredient_vedette": "champignons",
+      "categorie": "vegetarien",
+      "ingredients": [
+        {
+          "nom": "champignons",
+          "type": "frais",
+          "quantite": {
+            "valeur": 6,
+            "unite": null
+          }
+        },
+        {
+          "nom": "fromage râpé",
+          "type": "frais",
+          "quantite": {
+            "valeur": 40,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "chapelure",
+          "type": "base",
+          "quantite": {
+            "valeur": 2,
+            "unite": "c. à soupe"
+          }
+        },
+        {
+          "nom": "ail",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": "gousse"
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Garnir les chapeaux de champignons de fromage, chapelure et ail.",
+        "Airfryer 10 min à 180 °C.",
+        "Servir."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "mozza-panee-airfryer",
+      "nom": "Mozzarella panée airfryer",
+      "temps_min": 12,
+      "portions": 2,
+      "ingredient_vedette": "mozzarella",
+      "categorie": "vegetarien",
+      "ingredients": [
+        {
+          "nom": "mozzarella",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "boule"
+          }
+        },
+        {
+          "nom": "farine",
+          "type": "base",
+          "quantite": {
+            "valeur": 2,
+            "unite": "c. à soupe"
+          }
+        },
+        {
+          "nom": "œufs",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "chapelure",
+          "type": "base",
+          "quantite": {
+            "valeur": 4,
+            "unite": "c. à soupe"
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Couper la mozzarella, passer dans farine, œuf puis chapelure.",
+        "Airfryer 8 min à 200 °C.",
+        "Servir aussitôt."
+      ],
+      "tags": [
+        "vegetarien",
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "patate-douce-pois-chiches-airfryer",
+      "nom": "Patate douce & pois chiches rôtis airfryer",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "patate douce",
+      "categorie": "vegetarien",
+      "ingredients": [
+        {
+          "nom": "patate douce",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "pois chiches",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "boîte"
+          }
+        },
+        {
+          "nom": "curry",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "c. à café"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Couper la patate douce en cubes, mélanger avec pois chiches et curry.",
+        "Airfryer 15 min à 200 °C en secouant à mi-cuisson.",
+        "Servir."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "gnocchi-rotis-tomates-airfryer",
+      "nom": "Gnocchi rôtis tomates-mozza airfryer",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "gnocchi",
+      "categorie": "vegetarien",
+      "ingredients": [
+        {
+          "nom": "gnocchi",
+          "type": "frais",
+          "quantite": {
+            "valeur": 400,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "tomates cerises",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "poignée"
+          }
+        },
+        {
+          "nom": "mozzarella",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "boule"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Mélanger gnocchi et tomates cerises avec un filet d'huile.",
+        "Airfryer 12 min à 200 °C, ajouter la mozzarella 2 min avant la fin.",
+        "Servir."
+      ],
+      "tags": [
+        "vegetarien",
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "tomates-farcies-riz-airfryer",
+      "nom": "Tomates farcies au riz airfryer",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "tomate",
+      "categorie": "vegetarien",
+      "ingredients": [
+        {
+          "nom": "tomate",
+          "type": "frais",
+          "quantite": {
+            "valeur": 3,
+            "unite": null
+          }
+        },
+        {
+          "nom": "riz cuit",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": "bol"
+          }
+        },
+        {
+          "nom": "fromage râpé",
+          "type": "frais",
+          "quantite": {
+            "valeur": 30,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "ail",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": "gousse"
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Évider les tomates, garnir de riz mélangé à ail et fromage.",
+        "Airfryer 13 min à 180 °C.",
+        "Servir."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "oeufs-cocotte-airfryer",
+      "nom": "Œufs cocotte airfryer",
+      "temps_min": 12,
+      "portions": 2,
+      "ingredient_vedette": null,
+      "categorie": "oeufs",
+      "ingredients": [
+        {
+          "nom": "œufs",
+          "type": "base",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "crème fraîche",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": "c. à soupe"
+          }
+        },
+        {
+          "nom": "fromage râpé",
+          "type": "frais",
+          "quantite": {
+            "valeur": 30,
+            "unite": "g"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Dans deux ramequins, verser crème, casser un œuf, parsemer de fromage.",
+        "Airfryer 10 min à 180 °C.",
+        "Servir avec du pain."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "oeufs-cocotte-epinards-airfryer",
+      "nom": "Œufs cocotte aux épinards airfryer",
+      "temps_min": 13,
+      "portions": 2,
+      "ingredient_vedette": "épinards",
+      "categorie": "oeufs",
+      "ingredients": [
+        {
+          "nom": "œufs",
+          "type": "base",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "épinards",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "poignée"
+          }
+        },
+        {
+          "nom": "crème fraîche",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": "c. à soupe"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Répartir épinards et crème dans deux ramequins, casser un œuf dessus.",
+        "Airfryer 11 min à 180 °C.",
+        "Servir."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "pates-chorizo-tomate",
+      "nom": "Pâtes au chorizo & tomate",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "chorizo",
+      "categorie": "feculent",
+      "ingredients": [
+        {
+          "nom": "pâtes",
+          "type": "base",
+          "quantite": {
+            "valeur": 200,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "chorizo",
+          "type": "frais",
+          "quantite": {
+            "valeur": 80,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "tomates concassées",
+          "type": "base",
+          "quantite": {
+            "valeur": 400,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Cuire les pâtes.",
+        "Faire revenir oignon et chorizo en rondelles, ajouter la tomate, mijoter 8 min.",
+        "Mélanger avec les pâtes."
+      ],
+      "tags": [
+        "porc"
+      ]
+    },
+    {
+      "id": "pates-epinards-chevre",
+      "nom": "Pâtes épinards & chèvre",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "épinards",
+      "categorie": "feculent",
+      "ingredients": [
+        {
+          "nom": "pâtes",
+          "type": "base",
+          "quantite": {
+            "valeur": 200,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "épinards",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": "poignées"
+          }
+        },
+        {
+          "nom": "bûche de chèvre",
+          "type": "frais",
+          "quantite": {
+            "valeur": 80,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "ail",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": "gousse"
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Cuire les pâtes.",
+        "Faire tomber les épinards à l'ail, ajouter le chèvre pour le fondre.",
+        "Mélanger avec les pâtes."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "pates-citron-parmesan",
+      "nom": "Pâtes citron & parmesan",
+      "temps_min": 14,
+      "portions": 2,
+      "ingredient_vedette": "citron",
+      "categorie": "feculent",
+      "ingredients": [
+        {
+          "nom": "pâtes",
+          "type": "base",
+          "quantite": {
+            "valeur": 200,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "citron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "parmesan",
+          "type": "frais",
+          "quantite": {
+            "valeur": 40,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "crème fraîche",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": "c. à soupe"
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Cuire les pâtes.",
+        "Mélanger crème, jus et zeste de citron, parmesan.",
+        "Enrober les pâtes chaudes de la sauce."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "nouilles-boeuf-soja",
+      "nom": "Nouilles sautées au bœuf & soja",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "bœuf émincé",
+      "categorie": "feculent",
+      "ingredients": [
+        {
+          "nom": "nouilles chinoises",
+          "type": "frais",
+          "quantite": {
+            "valeur": 150,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "bœuf émincé",
+          "type": "frais",
+          "quantite": {
+            "valeur": 200,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "sauce soja",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": "c. à soupe"
+          }
+        },
+        {
+          "nom": "poivron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Cuire les nouilles.",
+        "Saisir le bœuf et le poivron à feu vif, ajouter la sauce soja.",
+        "Mélanger avec les nouilles."
+      ],
+      "tags": []
+    },
+    {
+      "id": "pates-thon-capres",
+      "nom": "Pâtes thon & câpres",
+      "temps_min": 14,
+      "portions": 2,
+      "ingredient_vedette": "câpres",
+      "categorie": "feculent",
+      "ingredients": [
+        {
+          "nom": "pâtes",
+          "type": "base",
+          "quantite": {
+            "valeur": 200,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "thon en conserve",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": "boîte"
+          }
+        },
+        {
+          "nom": "câpres",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "c. à soupe"
+          }
+        },
+        {
+          "nom": "citron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Cuire les pâtes.",
+        "Mélanger thon égoutté, câpres, jus de citron et un filet d’huile.",
+        "Mélanger avec les pâtes."
+      ],
+      "tags": []
+    },
+    {
+      "id": "shakshuka-express",
+      "nom": "Shakshuka express",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "poivron",
+      "categorie": "oeufs",
+      "ingredients": [
+        {
+          "nom": "œufs",
+          "type": "base",
+          "quantite": {
+            "valeur": 3,
+            "unite": null
+          }
+        },
+        {
+          "nom": "tomates concassées",
+          "type": "base",
+          "quantite": {
+            "valeur": 400,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "poivron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire revenir oignon et poivron.",
+        "Ajouter la tomate, laisser mijoter 5 min.",
+        "Casser les œufs dessus, couvrir 4 min.",
+        "Servir avec du pain."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "omelette-chevre-miel",
+      "nom": "Omelette chèvre & miel",
+      "temps_min": 10,
+      "portions": 2,
+      "ingredient_vedette": "bûche de chèvre",
+      "categorie": "oeufs",
+      "ingredients": [
+        {
+          "nom": "œufs",
+          "type": "base",
+          "quantite": {
+            "valeur": 3,
+            "unite": null
+          }
+        },
+        {
+          "nom": "bûche de chèvre",
+          "type": "frais",
+          "quantite": {
+            "valeur": 60,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "miel",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "c. à café"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [],
+      "etapes": [
+        "Battre les œufs, cuire à la poêle.",
+        "Déposer le chèvre, plier l’omelette.",
+        "Filet de miel et servir."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "poulet-miel-moutarde",
+      "nom": "Poulet miel-moutarde",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "escalope de poulet",
+      "categorie": "volaille",
+      "ingredients": [
+        {
+          "nom": "escalope de poulet",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "miel",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "c. à soupe"
+          }
+        },
+        {
+          "nom": "moutarde",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": "c. à soupe"
+          }
+        },
+        {
+          "nom": "riz cuit",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": "bol"
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Couper le poulet en lanières, le saisir.",
+        "Ajouter miel et moutarde, laquer 4 min.",
+        "Servir avec le riz réchauffé."
+      ],
+      "tags": [
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "quesadilla-poulet",
+      "nom": "Quesadilla poulet-fromage",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "escalope de poulet",
+      "categorie": "volaille",
+      "ingredients": [
+        {
+          "nom": "tortillas",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "escalope de poulet",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "fromage râpé",
+          "type": "frais",
+          "quantite": {
+            "valeur": 60,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "poivron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Saisir poulet et poivron émincés.",
+        "Garnir une tortilla de poulet et fromage, replier.",
+        "Dorer 2 min de chaque côté à la poêle."
+      ],
+      "tags": [
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "crevettes-ail-miel",
+      "nom": "Crevettes sautées ail & miel",
+      "temps_min": 12,
+      "portions": 2,
+      "ingredient_vedette": "crevettes",
+      "categorie": "poisson",
+      "ingredients": [
+        {
+          "nom": "crevettes",
+          "type": "frais",
+          "quantite": {
+            "valeur": 200,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "miel",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "c. à soupe"
+          }
+        },
+        {
+          "nom": "ail",
+          "type": "base",
+          "quantite": {
+            "valeur": 2,
+            "unite": "gousses"
+          }
+        },
+        {
+          "nom": "riz cuit",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": "bol"
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Saisir les crevettes avec l’ail.",
+        "Ajouter le miel, laquer 2 min.",
+        "Servir sur le riz réchauffé."
+      ],
+      "tags": [
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "cabillaud-tomates-cerises",
+      "nom": "Cabillaud & tomates cerises",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "dos de cabillaud",
+      "categorie": "poisson",
+      "ingredients": [
+        {
+          "nom": "dos de cabillaud",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "tomates cerises",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "poignée"
+          }
+        },
+        {
+          "nom": "citron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "riz cuit",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": "bol"
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Poêler le cabillaud 6 min.",
+        "Ajouter tomates cerises et jus de citron, 3 min.",
+        "Servir avec le riz."
+      ],
+      "tags": [
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "crevettes-courgette",
+      "nom": "Poêlée crevettes & courgette",
+      "temps_min": 13,
+      "portions": 2,
+      "ingredient_vedette": "crevettes",
+      "categorie": "poisson",
+      "ingredients": [
+        {
+          "nom": "crevettes",
+          "type": "frais",
+          "quantite": {
+            "valeur": 200,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "courgette",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "ail",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": "gousse"
+          }
+        },
+        {
+          "nom": "citron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire revenir la courgette en dés avec l’ail.",
+        "Ajouter les crevettes, saisir 4 min.",
+        "Filet de citron et servir."
+      ],
+      "tags": []
+    },
+    {
+      "id": "fajitas-boeuf",
+      "nom": "Fajitas de bœuf",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "bœuf émincé",
+      "categorie": "viande",
+      "ingredients": [
+        {
+          "nom": "bœuf émincé",
+          "type": "frais",
+          "quantite": {
+            "valeur": 250,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "poivron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "tortillas",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Saisir le bœuf à feu vif.",
+        "Ajouter poivron et oignon émincés, 5 min.",
+        "Garnir les tortillas chaudes."
+      ],
+      "tags": [
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "merguez-semoule",
+      "nom": "Merguez & semoule",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "merguez",
+      "categorie": "viande",
+      "ingredients": [
+        {
+          "nom": "merguez",
+          "type": "frais",
+          "quantite": {
+            "valeur": 4,
+            "unite": null
+          }
+        },
+        {
+          "nom": "semoule",
+          "type": "frais",
+          "quantite": {
+            "valeur": 150,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "poivron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Cuire les merguez à la poêle.",
+        "Faire revenir poivron et oignon.",
+        "Préparer la semoule (eau bouillante, 5 min couvert).",
+        "Servir ensemble."
+      ],
+      "tags": []
+    },
+    {
+      "id": "chili-express",
+      "nom": "Chili express bœuf & haricots",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "bœuf émincé",
+      "categorie": "viande",
+      "ingredients": [
+        {
+          "nom": "bœuf émincé",
+          "type": "frais",
+          "quantite": {
+            "valeur": 250,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "haricots rouges",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "boîte"
+          }
+        },
+        {
+          "nom": "tomates concassées",
+          "type": "base",
+          "quantite": {
+            "valeur": 400,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Saisir le bœuf avec l’oignon.",
+        "Ajouter tomates et haricots égouttés.",
+        "Mijoter 8 min et servir."
+      ],
+      "tags": [
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "quesadilla-vege",
+      "nom": "Quesadilla poivron-fromage",
+      "temps_min": 13,
+      "portions": 2,
+      "ingredient_vedette": "poivron",
+      "categorie": "vegetarien",
+      "ingredients": [
+        {
+          "nom": "tortillas",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "fromage râpé",
+          "type": "frais",
+          "quantite": {
+            "valeur": 60,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "poivron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "maïs",
+          "type": "base",
+          "quantite": {
+            "valeur": 4,
+            "unite": "c. à soupe"
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire revenir le poivron émincé.",
+        "Garnir une tortilla de fromage, poivron et maïs, replier.",
+        "Dorer 2 min de chaque côté."
+      ],
+      "tags": [
+        "vegetarien",
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "fajitas-haricots",
+      "nom": "Fajitas de haricots rouges",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "haricots rouges",
+      "categorie": "vegetarien",
+      "ingredients": [
+        {
+          "nom": "haricots rouges",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "boîte"
+          }
+        },
+        {
+          "nom": "poivron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "tortillas",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "maïs",
+          "type": "base",
+          "quantite": {
+            "valeur": 3,
+            "unite": "c. à soupe"
+          }
+        }
+      ],
+      "nb_comptables": 5,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire revenir poivron et oignon.",
+        "Ajouter haricots égouttés et maïs, réchauffer.",
+        "Garnir les tortillas."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "galette-sarrasin-oeuf",
+      "nom": "Galette de sarrasin œuf-fromage",
+      "temps_min": 12,
+      "portions": 2,
+      "ingredient_vedette": "galette de sarrasin",
+      "categorie": "vegetarien",
+      "ingredients": [
+        {
+          "nom": "galette de sarrasin",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "œufs",
+          "type": "base",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "fromage râpé",
+          "type": "frais",
+          "quantite": {
+            "valeur": 50,
+            "unite": "g"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [],
+      "etapes": [
+        "Réchauffer une galette à la poêle.",
+        "Casser un œuf au centre, parsemer de fromage.",
+        "Replier les bords, servir."
+      ],
+      "tags": [
+        "vegetarien",
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "salade-pois-chiches-feta",
+      "nom": "Salade pois chiches & feta",
+      "temps_min": 10,
+      "portions": 2,
+      "ingredient_vedette": "feta",
+      "categorie": "vegetarien",
+      "ingredients": [
+        {
+          "nom": "pois chiches",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "boîte"
+          }
+        },
+        {
+          "nom": "feta",
+          "type": "frais",
+          "quantite": {
+            "valeur": 80,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "tomate",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "citron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Égoutter les pois chiches.",
+        "Mélanger avec feta émiettée, tomates en dés.",
+        "Assaisonner de jus de citron et d’huile."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "soupe-tomate-pois-chiches",
+      "nom": "Soupe tomate & pois chiches",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "pois chiches",
+      "categorie": "soupe",
+      "ingredients": [
+        {
+          "nom": "tomates concassées",
+          "type": "base",
+          "quantite": {
+            "valeur": 400,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "pois chiches",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "boîte"
+          }
+        },
+        {
+          "nom": "bouillon cube",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire revenir l’oignon.",
+        "Ajouter tomate, pois chiches, bouillon et un peu d’eau.",
+        "Mijoter 10 min, mixer si désiré."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
     }
   ]
 }

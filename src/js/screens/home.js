@@ -64,13 +64,28 @@ export default function renderHome(ctx) {
     );
   }
 
-  // Frais coché sans correspondance (B4)
+  // Frais cochés : on dit lesquels la recette utilise, et lesquels n'y entrent pas.
   const fraisCoche = ctx.etat.frais_du_jour;
-  const utiliseCoche = evaluation && evaluation.raisons.includes('frais coché');
-  if (fraisCoche.length > 0 && !utiliseCoche) {
-    body.appendChild(
-      el(`<p class="appoint-note">Aucune idée avec ${esc(fraisCoche.join(', '))} ce soir — en voici une autre.</p>`)
+  if (fraisCoche.length > 0) {
+    const fraisRecette = new Set(
+      recette.ingredients.filter((i) => i.type === 'frais').map((i) => i.nom)
     );
+    const utilises = fraisCoche.filter((n) => fraisRecette.has(n));
+    const nonUtilises = fraisCoche.filter((n) => !fraisRecette.has(n));
+    if (utilises.length === 0) {
+      // Aucun coché ne colle (B4) — on propose quand même quelque chose.
+      body.appendChild(
+        el(`<p class="appoint-note">Aucune idée avec ${esc(fraisCoche.join(', '))} ce soir — en voici une autre.</p>`)
+      );
+    } else if (nonUtilises.length > 0) {
+      body.appendChild(
+        el(`<p class="appoint-note">${ICONS.check} Utilise ${esc(utilises.join(', '))}. <strong>${esc(nonUtilises.join(', '))}</strong> n'entre pas dans cette recette.</p>`)
+      );
+    } else {
+      body.appendChild(
+        el(`<p class="appoint-note match-ok">${ICONS.check} Cette recette utilise tous tes ingrédients !</p>`)
+      );
+    }
   }
 
   // ── Frais : recherche + récents ──────────────────────────────────────────
@@ -85,6 +100,7 @@ export default function renderHome(ctx) {
 
   const pertinents = [...fraisPertinents(ctx.catalogue.recettes, ctx.etat)];
   const recents = (ctx.etat.frais_recents || []).filter((n) => pertinents.includes(n));
+  let etendu = false; // « Voir plus » : déroule toute la liste pour piocher une idée
 
   function construireChips() {
     const q = recherche.value.trim().toLowerCase();
@@ -92,13 +108,17 @@ export default function renderHome(ctx) {
 
     // Les cochés d'abord (toujours visibles), puis résultats de recherche ou défaut.
     let liste;
+    let reste = 0;
     if (q) {
       liste = [...fraisCoche, ...pertinents.filter((n) => n.includes(q) && !fraisCoche.includes(n))].slice(0, 16);
     } else {
-      liste = [...new Set([...fraisCoche, ...recents])];
-      for (const n of pertinents) {
-        if (liste.length >= FRAIS_DEFAUT) break;
-        if (!liste.includes(n)) liste.push(n);
+      // base = cochés + récents, complétée par les frais pertinents.
+      const complet = [...new Set([...fraisCoche, ...recents, ...pertinents])];
+      if (etendu) {
+        liste = complet;
+      } else {
+        liste = complet.slice(0, FRAIS_DEFAUT);
+        reste = complet.length - liste.length;
       }
     }
 
@@ -112,6 +132,14 @@ export default function renderHome(ctx) {
     }
     if (q && liste.length === 0) {
       chips.appendChild(el(`<span class="chip-empty">Aucun ingrédient « ${esc(q)} »</span>`));
+    }
+    // Bouton « Voir plus / Voir moins » (hors recherche uniquement).
+    if (!q && (reste > 0 || etendu)) {
+      const more = el(
+        `<button class="chip more" aria-expanded="${etendu}">${etendu ? 'Voir moins' : `Voir plus (+${reste})`}</button>`
+      );
+      more.addEventListener('click', () => { etendu = !etendu; construireChips(); });
+      chips.appendChild(more);
     }
   }
   recherche.addEventListener('input', construireChips);

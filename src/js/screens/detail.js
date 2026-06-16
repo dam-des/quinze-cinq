@@ -38,6 +38,7 @@ export default function renderDetail(ctx, { recette }) {
   const possedes = recette.ingredients.filter((i) => !estManquant(i));
   const aAvoir = recette.ingredients.filter((i) => estManquant(i));
 
+  const choisis = ctx.etat.frais_du_jour || [];
   const ligne = (ing, manque) => {
     const q = formatQuantite(ing.quantite);
     const libelle = q ? `${q} ${ing.nom}` : ing.nom;
@@ -45,8 +46,12 @@ export default function renderDetail(ctx, { recette }) {
       ? '<span class="dot-need" aria-hidden="true"></span>'
       : `<span class="tick" aria-hidden="true">${ICONS.check}</span>`;
     const etat = manque ? 'à avoir' : 'disponible';
+    // Ingrédient explicitement choisi par l'utilisateur ce soir → mis en avant.
+    const choisi = choisis.includes(ing.nom);
+    const badge = choisi ? '<span class="ing-pick">ton choix</span>' : '';
+    const srPick = choisi ? '<span class="sr-only">ton ingrédient choisi : </span>' : '';
     const row = el(
-      `<button class="ing-row" aria-pressed="false"><span class="sr-only">${etat} :</span>${marque} <span class="ing-nom">${esc(libelle)}</span> <span class="tag">${esc(ing.type)}</span></button>`
+      `<button class="ing-row${choisi ? ' choisi' : ''}" aria-pressed="false">${srPick}<span class="sr-only">${etat} :</span>${marque} <span class="ing-nom">${esc(libelle)}</span> ${badge}<span class="tag">${esc(ing.type)}</span></button>`
     );
     // Cocher/décocher (aide visuelle pendant les courses / la prépa).
     row.addEventListener('click', () => {

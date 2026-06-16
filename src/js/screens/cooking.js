@@ -5,6 +5,7 @@ import { el, esc, annoncer } from '../ui.js';
 import { streakCuisine } from '../engine.js';
 import * as keepawake from '../keepawake.js';
 import * as haptics from '../haptics.js';
+import * as notifications from '../notifications.js';
 
 export default function renderCuisine(ctx, { recette }) {
   const etapes = recette.etapes;
@@ -19,6 +20,7 @@ export default function renderCuisine(ctx, { recette }) {
 
   const arreterTimer = () => {
     if (timerId) { clearInterval(timerId); timerId = null; }
+    notifications.annulerMinuteur(); // plus de notif de fin si on stoppe/quitte
   };
   const quitter = () => {
     arreterTimer();
@@ -62,6 +64,8 @@ export default function renderCuisine(ctx, { recette }) {
         haptics.impact('LIGHT');
         btn.classList.add('running');
         btn.textContent = `⏱ ${fmt(restant)}`;
+        // Alerte « téléphone » : notification sonore à la fin, même app fermée/écran éteint.
+        notifications.lancerMinuteur(restant, `Étape ${i + 1} : c’est prêt ! 🍳`);
         timerId = setInterval(() => {
           restant--;
           if (restant <= 0) {

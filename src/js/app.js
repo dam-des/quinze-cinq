@@ -14,6 +14,7 @@ import {
   equipementsParDefaut,
 } from './data.js';
 import { annoncer } from './ui.js';
+import { appliquerTheme } from './theme.js';
 
 import renderOnboarding from './screens/onboarding.js';
 import renderHome from './screens/home.js';
@@ -177,6 +178,7 @@ const ctx = {
 
 // ── Bootstrap ────────────────────────────────────────────────────────────────
 async function demarrer() {
+  appliquerTheme(); // (ré)applique le thème + active le suivi système en mode Auto
   ctx.catalogue = await chargerCatalogue();
 
   const onboardingFait = await storage.lire(storage.CLES.ONBOARDING, false);

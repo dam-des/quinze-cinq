@@ -2,6 +2,7 @@
    Tokens et composants repris de docs/maquettes_15-5.html, en application plein écran. */
 
 :root {
+  color-scheme: light;
   --bg: #EEEDE7;
   --surface: #FFFFFF;
   --ink: #16171B;
@@ -112,6 +113,7 @@ body {
 }
 .chip.on { background: var(--ink); color: #fff; border-color: var(--ink); }
 .chip.add { color: var(--ink-faint); }
+.chip.more { color: var(--accent-deep); border-style: dashed; border-color: var(--accent-deep); background: none; }
 
 .appoint-note {
   margin-top: 14px; font-size: 13.5px; color: var(--accent-deep); font-weight: 600;
@@ -157,6 +159,11 @@ body {
 .tick svg { width: 13px; height: 13px; color: #fff; }
 .dot-need { width: 22px; height: 22px; border-radius: 6px; border: 1.5px dashed var(--accent-deep); flex: none; }
 .ing-row .tag { margin-left: auto; font-size: 11px; font-weight: 600; color: var(--ink-faint); }
+/* Ingrédient choisi par l'utilisateur (frais coché) → mis en avant dans le détail. */
+.ing-row.choisi .ing-nom { font-weight: 700; color: var(--ink); }
+.ing-pick { margin-left: auto; font-size: 10px; font-weight: 800; text-transform: uppercase; letter-spacing: .03em; color: var(--on-accent); background: var(--accent); padding: 3px 8px; border-radius: 999px; white-space: nowrap; }
+.ing-row.choisi .tag { margin-left: 8px; }
+.appoint-note strong { color: var(--ink); font-weight: 800; }
 .steps { margin-top: 4px; }
 .step { display: flex; gap: 13px; padding: 12px 0; border-bottom: 1px solid var(--line); }
 .step:last-child { border-bottom: none; }
@@ -214,6 +221,11 @@ body {
 .set-row .toggle { margin-left: auto; }
 .set-row input[type="time"] { margin-left: auto; font-family: var(--body); font-size: 15px; border: 1px solid var(--line-strong); border-radius: 8px; padding: 6px 8px; }
 
+/* Sélecteur segmenté (thème clair/sombre/auto) */
+.set-row .seg { margin-left: auto; display: inline-flex; background: var(--chip); border: 1px solid var(--line-strong); border-radius: 10px; padding: 2px; gap: 2px; }
+.seg-opt { font-family: var(--body); font-size: 13.5px; font-weight: 600; color: var(--ink-soft); background: none; border: none; border-radius: 8px; padding: 7px 12px; cursor: pointer; min-height: 34px; }
+.seg-opt.on { background: var(--surface); color: var(--ink); box-shadow: 0 1px 2px rgba(0,0,0,.12); }
+
 /* Mode cuisine */
 .cook-top { display: flex; align-items: center; gap: 12px; padding: calc(var(--safe-top) + 10px) 0 4px; }
 .cook-close { width: 38px; height: 38px; border-radius: 10px; border: 1px solid var(--line-strong); background: var(--surface); display: flex; align-items: center; justify-content: center; color: var(--ink-soft); font-size: 18px; cursor: pointer; }
@@ -267,9 +279,9 @@ body {
 
 /* Minuteur du mode cuisine */
 .cook-timer {
-  margin-top: 18px; align-self: flex-start; display: inline-flex; align-items: center; gap: 7px;
-  font-size: 15px; font-weight: 700; color: var(--on-accent); background: var(--accent);
-  padding: 10px 16px; border-radius: 12px; border: none; cursor: pointer; min-height: 44px;
+  margin-top: 22px; align-self: stretch; display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+  font-size: 22px; font-weight: 800; color: var(--on-accent); background: var(--accent);
+  padding: 18px 22px; border-radius: 16px; border: none; cursor: pointer; min-height: 64px;
 }
 .cook-timer.running { background: var(--accent-deep); color: var(--on-accent); }
 .cook-timer.done { background: #16171B; color: #fff; }
@@ -315,32 +327,33 @@ body {
 .ing-row.fait .tick { opacity: .4; }
 
 /* ── Mode sombre ───────────────────────────────────────────────────────────── */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --surface: #1A1B20;
-    --bg: #0E0F12;
-    --ink: #F2F2EE;
-    --ink-soft: #A8AAB0;
-    --ink-faint: #6E7077;
-    --line: #2A2B31;
-    --line-strong: #3A3B42;
-    --chip: #26272D;
-    --accent-deep: #FFCF33;
-  }
-  /* Cartes / surfaces à dégradé clair → sombre. */
-  .dish-card { background: linear-gradient(180deg, #202127 0%, #191A1F 100%); }
-  .frais-search { background: #202127; }
-  .adbar { background: repeating-linear-gradient(45deg, #1E1F25, #1E1F25 10px, #23242A 10px, #23242A 20px); }
-  /* Boutons « encre pleine » → clairs sur fond sombre. */
-  .btn-primary { background: #F2F2EE; color: #16171B; }
-  .chip.on { background: #F2F2EE; color: #16171B; border-color: #F2F2EE; }
-  .toggle.on { background: var(--accent); }
-  .toggle.on::after { background: #16171B; }
-  /* Coche « possédé » : boîte claire, coche sombre. */
-  .tick { background: #F2F2EE; }
-  .tick svg { color: #16171B; }
-  /* Les bandeaux d'illustration restent jaune pâle (le trait sombre reste lisible). */
+/* Piloté par la classe .theme-dark sur <html> : le mode « Auto » des réglages la
+   pose/retire selon le système (theme.js), « Clair » / « Sombre » la forcent. */
+:root.theme-dark {
+  color-scheme: dark;
+  --surface: #1A1B20;
+  --bg: #0E0F12;
+  --ink: #F2F2EE;
+  --ink-soft: #A8AAB0;
+  --ink-faint: #6E7077;
+  --line: #2A2B31;
+  --line-strong: #3A3B42;
+  --chip: #26272D;
+  --accent-deep: #FFCF33;
 }
+/* Cartes / surfaces à dégradé clair → sombre. */
+.theme-dark .dish-card { background: linear-gradient(180deg, #202127 0%, #191A1F 100%); }
+.theme-dark .frais-search { background: #202127; }
+.theme-dark .adbar { background: repeating-linear-gradient(45deg, #1E1F25, #1E1F25 10px, #23242A 10px, #23242A 20px); }
+/* Boutons « encre pleine » → clairs sur fond sombre. */
+.theme-dark .btn-primary { background: #F2F2EE; color: #16171B; }
+.theme-dark .chip.on { background: #F2F2EE; color: #16171B; border-color: #F2F2EE; }
+.theme-dark .toggle.on { background: var(--accent); }
+.theme-dark .toggle.on::after { background: #16171B; }
+/* Coche « possédé » : boîte claire, coche sombre. */
+.theme-dark .tick { background: #F2F2EE; }
+.theme-dark .tick svg { color: #16171B; }
+/* Les bandeaux d'illustration restent jaune pâle (le trait sombre reste lisible). */
 
 /* Transitions de navigation (slide façon iOS) */
 @keyframes q5-slide-in {

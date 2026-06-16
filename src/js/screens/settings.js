@@ -5,6 +5,7 @@ import { el, esc, ICONS } from '../ui.js';
 import * as storage from '../storage.js';
 import * as notifications from '../notifications.js';
 import * as ads from '../ads.js';
+import * as theme from '../theme.js';
 import { basiquesEditables } from '../data.js';
 
 export default function renderReglages(ctx) {
@@ -129,6 +130,36 @@ export default function renderReglages(ctx) {
   );
   gPref.appendChild(cardPref);
   body.appendChild(gPref);
+
+  // ── Apparence (thème clair / sombre / auto) ───────────────────────────────
+  const gApp = el('<div class="set-group"><div class="gl">Apparence</div></div>');
+  const cardApp = el('<div class="set-card"></div>');
+  const rowApp = el(
+    '<div class="set-row"><span class="set-row-txt"><span class="set-row-label">Thème</span><span class="set-row-sub">« Auto » suit le réglage de ton téléphone.</span></span></div>'
+  );
+  const courant = theme.lireTheme();
+  const seg = el('<div class="seg" role="radiogroup" aria-label="Thème de l’application"></div>');
+  const options = [['auto', 'Auto'], ['clair', 'Clair'], ['sombre', 'Sombre']];
+  const boutons = options.map(([val, label]) => {
+    const sel = courant === val;
+    const b = el(
+      `<button class="seg-opt${sel ? ' on' : ''}" role="radio" aria-checked="${sel}">${esc(label)}</button>`
+    );
+    b.addEventListener('click', () => {
+      theme.definirTheme(val);
+      for (const o of boutons) {
+        const on = o === b;
+        o.classList.toggle('on', on);
+        o.setAttribute('aria-checked', String(on));
+      }
+    });
+    seg.appendChild(b);
+    return b;
+  });
+  rowApp.appendChild(seg);
+  cardApp.appendChild(rowApp);
+  gApp.appendChild(cardApp);
+  body.appendChild(gApp);
 
   // ── Rappel quotidien ─────────────────────────────────────────────────────
   const notif = ctx.etat.reglage_notif;

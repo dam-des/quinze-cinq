@@ -10,7 +10,8 @@
     "cap:sync": "cap sync",
     "cap:ios": "cap run ios",
     "cap:android": "cap run android",
-    "ios:wifi": "bash scripts/deploy-wifi.sh"
+    "ios:wifi": "bash scripts/deploy-wifi.sh",
+    "ios:usb": "bash scripts/deploy-wifi.sh"
   },
   "dependencies": {
     "@capacitor-community/admob": "^6.2.0",

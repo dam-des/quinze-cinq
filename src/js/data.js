@@ -3,7 +3,7 @@
 
 let _cache = null;
 
-/** Charge recettes_poc.json (embarqué, aucune requête réseau « métier »). */
+/** Charge recettes_50.json (62 recettes, embarqué — aucune requête réseau « métier »). */
 export async function chargerCatalogue() {
   if (_cache) return _cache;
   const res = await fetch('./data/recettes_50.json');
