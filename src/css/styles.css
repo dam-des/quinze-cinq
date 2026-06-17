@@ -104,6 +104,14 @@ body {
 .badge.hl { background: var(--accent); color: var(--on-accent); }
 .badge svg { width: 14px; height: 14px; }
 
+/* Sélecteur de personnes (met les quantités à l'échelle dans le détail). */
+.portions { display: flex; align-items: center; gap: 12px; margin-top: 16px; padding: 10px 14px; border: 1px solid var(--line-strong); border-radius: 12px; }
+.portions-label { display: inline-flex; align-items: center; gap: 7px; font-size: 14px; font-weight: 600; color: var(--ink); }
+.portions-label svg { width: 16px; height: 16px; }
+.portions-ctrl { margin-left: auto; display: inline-flex; align-items: center; gap: 14px; }
+.portions-btn { width: 36px; height: 36px; border-radius: 50%; border: 1px solid var(--line-strong); background: var(--surface); color: var(--ink); font-size: 20px; font-weight: 700; line-height: 1; cursor: pointer; display: flex; align-items: center; justify-content: center; }
+.portions-val { min-width: 18px; text-align: center; font-family: var(--display); font-weight: 700; font-size: 18px; font-variant-numeric: tabular-nums; }
+
 .section-q { margin-top: 22px; font-size: 14px; font-weight: 600; color: var(--ink); }
 .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
 .chip {
@@ -114,6 +122,7 @@ body {
 .chip.on { background: var(--ink); color: #fff; border-color: var(--ink); }
 .chip.add { color: var(--ink-faint); }
 .chip.more { color: var(--accent-deep); border-style: dashed; border-color: var(--accent-deep); background: none; }
+.chip.clear { color: var(--ink-soft); background: none; }
 
 .appoint-note {
   margin-top: 14px; font-size: 13.5px; color: var(--accent-deep); font-weight: 600;
@@ -172,7 +181,9 @@ body {
   font-family: var(--display); font-weight: 700; font-size: 14px;
   display: flex; align-items: center; justify-content: center; color: var(--on-accent);
 }
-.step p { font-size: 15px; line-height: 1.45; padding-top: 3px; }
+.step p { font-size: 15px; line-height: 1.45; padding-top: 3px; flex: 1; }
+/* Icône d'action à côté du texte de l'étape (détail). */
+.step-icon { flex: none; width: 46px; height: 46px; align-self: flex-start; }
 
 /* Onboarding */
 .ob-progress { display: flex; gap: 6px; padding: 4px 0 18px; }
@@ -285,6 +296,15 @@ body {
 }
 .cook-timer.running { background: var(--accent-deep); color: var(--on-accent); }
 .cook-timer.done { background: #16171B; color: #fff; }
+/* Illustration de catégorie en mode cuisine : comble le blanc entre l'étape et la nav. */
+/* Icône d'action au-dessus du texte de l'étape (mode cuisine). */
+.cook-step-icon { display: flex; justify-content: center; margin-top: 18px; }
+.cook-step-icon img { width: 88px; height: 88px; }
+/* Barre de minuteur persistante (dernier enfant de l'écran : toujours visible, ne défile pas). */
+.timer-bar { display: flex; align-items: center; gap: 8px; padding: 12px 20px calc(var(--safe-bottom) + 12px); background: var(--accent); color: var(--on-accent); }
+.timer-bar-txt { font-weight: 800; font-size: 17px; font-variant-numeric: tabular-nums; }
+.timer-bar-pause, .timer-bar-stop { font-family: var(--body); font-weight: 700; font-size: 13px; color: var(--on-accent); background: rgba(0,0,0,.14); border: none; border-radius: 999px; padding: 7px 14px; min-height: 36px; cursor: pointer; }
+.timer-bar-pause { margin-left: auto; }
 .end-streak { font-size: 14px; font-weight: 700; color: var(--accent-deep); margin-top: 10px; }
 
 /* « Mes plats » (historique) */

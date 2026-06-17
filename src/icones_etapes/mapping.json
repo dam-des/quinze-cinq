@@ -1,0 +1,109 @@
+{
+  "priorite": [
+    "airfryer",
+    "mixer",
+    "egoutter",
+    "couper",
+    "battre",
+    "mijoter",
+    "poeler",
+    "arroser",
+    "assaisonner",
+    "ajouter",
+    "melanger",
+    "servir"
+  ],
+  "mots_cles": {
+    "airfryer": [
+      "airfryer",
+      "air fryer",
+      "panier"
+    ],
+    "mixer": [
+      "mixer",
+      "blender",
+      "mouliner"
+    ],
+    "egoutter": [
+      "égoutter",
+      "egoutter",
+      "essorer",
+      "rincer"
+    ],
+    "couper": [
+      "émincer",
+      "emincer",
+      "couper",
+      "tailler",
+      "hacher",
+      "trancher",
+      "ciseler",
+      "découper"
+    ],
+    "battre": [
+      "battre",
+      "fouetter",
+      "casser",
+      "monter les"
+    ],
+    "mijoter": [
+      "mijoter",
+      "couvrir",
+      "réchauffer",
+      "rechauffer",
+      "frémir",
+      "fremir",
+      "laisser cuire"
+    ],
+    "poeler": [
+      "poêler",
+      "poeler",
+      "saisir",
+      "dorer",
+      "faire revenir",
+      "rissoler",
+      "snacker",
+      "cuire à la poêle",
+      "cuire"
+    ],
+    "arroser": [
+      "arroser",
+      "presser",
+      "filet de",
+      "citronner",
+      "jus de"
+    ],
+    "assaisonner": [
+      "assaisonner",
+      "saler",
+      "poivrer",
+      "parsemer",
+      "épicer",
+      "epicer",
+      "saupoudrer"
+    ],
+    "ajouter": [
+      "ajouter",
+      "verser",
+      "déglacer",
+      "deglacer",
+      "incorporer"
+    ],
+    "melanger": [
+      "mélanger",
+      "melanger",
+      "remuer",
+      "napper",
+      "lier",
+      "enrober"
+    ],
+    "servir": [
+      "servir",
+      "dresser",
+      "garnir",
+      "déguster",
+      "deguster"
+    ]
+  },
+  "defaut": "defaut"
+}

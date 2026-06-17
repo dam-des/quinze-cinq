@@ -1,9 +1,12 @@
-// detail.js — Détail recette : illustration, badges, ingrédients AVEC quantités
-// (distinguant ce qu'on a / ce qui manque), étapes, bouton « Je cuisine ça ».
+// detail.js — Détail recette : illustration, badges, sélecteur de personnes
+// (quantités mises à l'échelle), ingrédients (ce qu'on a / ce qui manque),
+// étapes, bouton « Je cuisine ça ».
 
 import { el, esc, ICONS } from '../ui.js';
 import { ingredientsManquants } from '../engine.js';
-import { illustrationPour, libelleEquipement, formatQuantite } from '../data.js';
+import * as storage from '../storage.js';
+import { illustrationPour, libelleEquipement, formatQuantitePortions } from '../data.js';
+import { iconePourEtape } from '../icones.js';
 
 export default function renderDetail(ctx, { recette }) {
   const manquants = ingredientsManquants(
@@ -12,6 +15,8 @@ export default function renderDetail(ctx, { recette }) {
     ctx.etat.frais_du_jour
   );
   const estManquant = (ing) => manquants.includes(ing);
+  const choisis = ctx.etat.frais_du_jour || [];
+  let portions = ctx.etat.portions || recette.portions;
 
   const screen = el('<section class="screen actif" aria-label="Détail de la recette"></section>');
   const body = el('<div class="body-scroll" style="padding-top:calc(var(--safe-top) + 14px)"></div>');
@@ -30,17 +35,37 @@ export default function renderDetail(ctx, { recette }) {
   body.appendChild(
     el(`<div class="badges">
       <span class="badge hl">${ICONS.horloge} ${recette.temps_min} min</span>
-      <span class="badge">${ICONS.portions} Pour ${recette.portions}</span>
+      <span class="badge">${ICONS.liste} ${recette.nb_comptables} ingrédients</span>
       <span class="badge">${ICONS.poele} ${esc(libelleEquipement(recette))}</span>
     </div>`)
   );
 
-  const possedes = recette.ingredients.filter((i) => !estManquant(i));
-  const aAvoir = recette.ingredients.filter((i) => estManquant(i));
+  // ── Sélecteur de personnes (met les quantités à l'échelle) ─────────────────
+  const portionsRow = el(
+    `<div class="portions">
+       <span class="portions-label">${ICONS.portions} Personnes</span>
+       <div class="portions-ctrl">
+         <button class="portions-btn moins" aria-label="Moins de personnes">−</button>
+         <span class="portions-val" aria-live="polite">${portions}</span>
+         <button class="portions-btn plus" aria-label="Plus de personnes">+</button>
+       </div>
+     </div>`
+  );
+  const valEl = portionsRow.querySelector('.portions-val');
+  const setPortions = async (n) => {
+    portions = Math.min(12, Math.max(1, n));
+    valEl.textContent = String(portions);
+    ctx.etat.portions = portions;
+    await ctx.sauver(storage.CLES.PORTIONS, portions);
+    rendreIngredients();
+  };
+  portionsRow.querySelector('.moins').addEventListener('click', () => setPortions(portions - 1));
+  portionsRow.querySelector('.plus').addEventListener('click', () => setPortions(portions + 1));
+  body.appendChild(portionsRow);
 
-  const choisis = ctx.etat.frais_du_jour || [];
+  // ── Ingrédients (re-rendus quand le nombre de personnes change) ────────────
   const ligne = (ing, manque) => {
-    const q = formatQuantite(ing.quantite);
+    const q = formatQuantitePortions(ing.quantite, portions, recette.portions);
     const libelle = q ? `${q} ${ing.nom}` : ing.nom;
     const marque = manque
       ? '<span class="dot-need" aria-hidden="true"></span>'
@@ -61,20 +86,28 @@ export default function renderDetail(ctx, { recette }) {
     return row;
   };
 
-  if (possedes.length) {
-    body.appendChild(el('<div class="group-title">Dans ton placard</div>'));
-    possedes.forEach((i) => body.appendChild(ligne(i, false)));
+  const ingWrap = el('<div class="ing-wrap"></div>');
+  function rendreIngredients() {
+    ingWrap.innerHTML = '';
+    const possedes = recette.ingredients.filter((i) => !estManquant(i));
+    const aAvoir = recette.ingredients.filter((i) => estManquant(i));
+    if (possedes.length) {
+      ingWrap.appendChild(el('<div class="group-title">Dans ton placard</div>'));
+      possedes.forEach((i) => ingWrap.appendChild(ligne(i, false)));
+    }
+    if (aAvoir.length) {
+      ingWrap.appendChild(el('<div class="group-title">À avoir</div>'));
+      aAvoir.forEach((i) => ingWrap.appendChild(ligne(i, true)));
+    }
   }
-  if (aAvoir.length) {
-    body.appendChild(el('<div class="group-title">À avoir</div>'));
-    aAvoir.forEach((i) => body.appendChild(ligne(i, true)));
-  }
+  rendreIngredients();
+  body.appendChild(ingWrap);
 
   body.appendChild(el('<div class="group-title">Préparation</div>'));
   const steps = el('<ol class="steps" style="list-style:none"></ol>');
   recette.etapes.forEach((etape, idx) => {
     steps.appendChild(
-      el(`<li class="step"><span class="num" aria-hidden="true">${idx + 1}</span><p>${esc(etape)}</p></li>`)
+      el(`<li class="step"><span class="num" aria-hidden="true">${idx + 1}</span><img class="step-icon" src="${iconePourEtape(etape)}" alt="" aria-hidden="true" /><p>${esc(etape)}</p></li>`)
     );
   });
   body.appendChild(steps);

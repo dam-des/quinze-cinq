@@ -74,20 +74,60 @@ export default function renderReglages(ctx) {
 
   const gEquip = el('<div class="set-group"><div class="gl">Mon équipement</div></div>');
   const cardEquip = el('<div class="set-card"></div>');
-  cardEquip.appendChild(
-    toggleRow('Four', ctx.etat.equipements.four, async (v) => {
-      ctx.etat.equipements.four = v;
-      await ctx.sauver(storage.CLES.EQUIPEMENTS, ctx.etat.equipements);
-    })
-  );
-  cardEquip.appendChild(
-    toggleRow('Airfryer', ctx.etat.equipements.airfryer, async (v) => {
-      ctx.etat.equipements.airfryer = v;
-      await ctx.sauver(storage.CLES.EQUIPEMENTS, ctx.etat.equipements);
-    })
-  );
+  const rowFour = toggleRow('Four', ctx.etat.equipements.four, async (v) => {
+    ctx.etat.equipements.four = v;
+    await ctx.sauver(storage.CLES.EQUIPEMENTS, ctx.etat.equipements);
+  });
+  const rowAir = toggleRow('Airfryer', !!ctx.etat.equipements.airfryer, async (v) => {
+    ctx.etat.equipements.airfryer = v;
+    await ctx.sauver(storage.CLES.EQUIPEMENTS, ctx.etat.equipements);
+  });
+  const rowCookeo = toggleRow('Cookeo', !!ctx.etat.equipements.cookeo, async (v) => {
+    ctx.etat.equipements.cookeo = v;
+    await ctx.sauver(storage.CLES.EQUIPEMENTS, ctx.etat.equipements);
+  });
+  cardEquip.append(rowFour, rowAir, rowCookeo);
   gEquip.appendChild(cardEquip);
   body.appendChild(gEquip);
+
+  // Active un équipement (et coche son toggle) — utilisé quand on choisit un mode appareil.
+  const forcerEquip = (nom) => {
+    if (ctx.etat.equipements[nom]) return;
+    ctx.etat.equipements[nom] = true;
+    ctx.sauver(storage.CLES.EQUIPEMENTS, ctx.etat.equipements);
+    const row = nom === 'airfryer' ? rowAir : rowCookeo;
+    const t = row.querySelector('.toggle');
+    if (t) { t.classList.add('on'); t.setAttribute('aria-checked', 'true'); }
+  };
+
+  // ── Mode : ne proposer que les recettes d'un appareil ──────────────────────
+  const gModeApp = el('<div class="set-group"><div class="gl">Mode</div></div>');
+  const cardModeApp = el('<div class="set-card"></div>');
+  const rowModeApp = el(
+    '<div class="set-row"><span class="set-row-txt"><span class="set-row-label">Par appareil</span><span class="set-row-sub">N’affiche que les recettes de cet appareil.</span></span></div>'
+  );
+  const segM = el('<div class="seg" role="radiogroup" aria-label="Filtrer les recettes par appareil"></div>');
+  const courantM = ctx.etat.preferences.mode_appareil || '';
+  const btnsM = [['', 'Tous'], ['airfryer', 'Airfryer'], ['cookeo', 'Cookeo']].map(([val, label]) => {
+    const sel = courantM === val;
+    const b = el(`<button class="seg-opt${sel ? ' on' : ''}" role="radio" aria-checked="${sel}">${esc(label)}</button>`);
+    b.addEventListener('click', async () => {
+      ctx.etat.preferences.mode_appareil = val || null;
+      await ctx.sauver(storage.CLES.PREFERENCES, ctx.etat.preferences);
+      if (val === 'airfryer' || val === 'cookeo') forcerEquip(val);
+      for (const o of btnsM) {
+        const on = o === b;
+        o.classList.toggle('on', on);
+        o.setAttribute('aria-checked', String(on));
+      }
+    });
+    segM.appendChild(b);
+    return b;
+  });
+  rowModeApp.appendChild(segM);
+  cardModeApp.appendChild(rowModeApp);
+  gModeApp.appendChild(cardModeApp);
+  body.appendChild(gModeApp);
 
   // ── Préférences ──────────────────────────────────────────────────────────
   const gPref = el('<div class="set-group"><div class="gl">Mes préférences</div></div>');

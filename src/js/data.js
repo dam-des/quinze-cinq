@@ -29,14 +29,14 @@ export function basiquesEditables(catalogue) {
   return [...catalogue.garde_manger_base];
 }
 
-/** Préférences par défaut. */
+/** Préférences par défaut. `mode_appareil` : null | 'airfryer' | 'cookeo'. */
 export function preferencesParDefaut() {
-  return { vegetarien: false, enfant_friendly: false, exclusions: [] };
+  return { vegetarien: false, enfant_friendly: false, exclusions: [], mode_appareil: null };
 }
 
 /** Équipements par défaut (poêle/plaque toujours supposés). */
 export function equipementsParDefaut() {
-  return { four: true, airfryer: false };
+  return { four: true, airfryer: false, cookeo: false };
 }
 
 // Catégorie → fichier d'illustration (les 7 SVG fournis, intégrés tels quels).
@@ -60,6 +60,7 @@ export function illustrationPour(recette) {
 export function libelleEquipement(recette) {
   const eq = recette.equipement_requis || [];
   if (eq.includes('airfryer')) return 'Airfryer';
+  if (eq.includes('cookeo')) return 'Cookeo';
   if (eq.includes('four')) return 'Four';
   return 'Poêle';
 }
@@ -68,4 +69,24 @@ export function libelleEquipement(recette) {
 export function formatQuantite(q) {
   if (!q || q.valeur == null) return '';
   return q.unite ? `${q.valeur} ${q.unite}` : `${q.valeur}`;
+}
+
+// Arrondi d'une quantité mise à l'échelle, selon l'unité (lisible en cuisine).
+function arrondirQuantite(valeur, unite) {
+  if (unite === 'g' || unite === 'cl') return Math.max(10, Math.round(valeur / 10) * 10);
+  if (unite === 'c. à soupe' || unite === 'c. à café') return Math.max(0.5, Math.round(valeur * 2) / 2);
+  // dénombrables (œufs, boîtes, tranches, gousses, poignées, sachets, unités…)
+  return Math.max(1, Math.round(valeur));
+}
+
+/**
+ * Quantité ramenée à `portions` convives (la recette est écrite pour `base`).
+ * Ex. 200 g pour 2 → « 300 g » pour 3.
+ */
+export function formatQuantitePortions(q, portions, base = 2) {
+  if (!q || q.valeur == null) return '';
+  const facteur = base ? portions / base : 1;
+  const v = arrondirQuantite(q.valeur * facteur, q.unite);
+  const aff = Number.isInteger(v) ? v : v.toFixed(1).replace('.0', '');
+  return q.unite ? `${aff} ${q.unite}` : `${aff}`;
 }

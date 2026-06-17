@@ -15,6 +15,7 @@ import {
 } from './data.js';
 import { annoncer } from './ui.js';
 import { appliquerTheme } from './theme.js';
+import { chargerMappingIcones } from './icones.js';
 
 import renderOnboarding from './screens/onboarding.js';
 import renderHome from './screens/home.js';
@@ -78,13 +79,11 @@ const ctx = {
 
   // ── Moteur ─────────────────────────────────────────────────────────────
   calculerProposition() {
-    ctx.proposition = genererProposition(
-      ctx.catalogue.recettes,
-      ctx.etat,
-      Date.now(),
-      ctx.session,
-      Math.random
-    );
+    let recettes = ctx.catalogue.recettes;
+    // Mode « par appareil » : ne propose que les recettes de cet appareil.
+    const mode = ctx.etat.preferences && ctx.etat.preferences.mode_appareil;
+    if (mode) recettes = recettes.filter((r) => (r.equipement_requis || []).includes(mode));
+    ctx.proposition = genererProposition(recettes, ctx.etat, Date.now(), ctx.session, Math.random);
     return ctx.proposition;
   },
 
@@ -101,26 +100,6 @@ const ctx = {
     ctx.aller('home');
     const r = ctx.proposition.recette;
     annoncer(r ? `Nouvelle proposition : ${r.nom}` : 'Aucune proposition');
-  },
-
-  /** Coche/décoche un frais et relance le matching vers cet ingrédient. */
-  toggleFrais(nom) {
-    haptics.selection();
-    const f = ctx.etat.frais_du_jour;
-    const i = f.indexOf(nom);
-    if (i >= 0) {
-      f.splice(i, 1);
-    } else {
-      f.push(nom);
-      // mémorise dans les frais récents (dédupliqué, plus récent en tête, max 12)
-      const r = ctx.etat.frais_recents.filter((x) => x !== nom);
-      r.unshift(nom);
-      ctx.etat.frais_recents = r.slice(0, 12);
-      storage.ecrire(storage.CLES.FRAIS_RECENTS, ctx.etat.frais_recents);
-    }
-    ctx.session = []; // nouvelle orientation → proposition fraîche
-    ctx.calculerProposition();
-    ctx.aller('home');
   },
 
   // ── Historique / persistance ─────────────────────────────────────────────
@@ -180,6 +159,7 @@ const ctx = {
 async function demarrer() {
   appliquerTheme(); // (ré)applique le thème + active le suivi système en mode Auto
   ctx.catalogue = await chargerCatalogue();
+  await chargerMappingIcones(); // mapping des icônes d'étape (offline)
 
   const onboardingFait = await storage.lire(storage.CLES.ONBOARDING, false);
 
@@ -188,6 +168,7 @@ async function demarrer() {
       storage.CLES.GARDE_MANGER,
       gardeMangerParDefaut(ctx.catalogue)
     ),
+    portions: await storage.lire(storage.CLES.PORTIONS, 2),
     equipements: await storage.lire(storage.CLES.EQUIPEMENTS, equipementsParDefaut()),
     preferences: await storage.lire(storage.CLES.PREFERENCES, preferencesParDefaut()),
     historique: await storage.lire(storage.CLES.HISTORIQUE, {}),
@@ -196,7 +177,7 @@ async function demarrer() {
       actif: false,
       heure: '18:00',
     }),
-    frais_du_jour: [], // jamais persisté : propre à la soirée
+    frais_du_jour: await storage.lire(storage.CLES.FRAIS_DU_JOUR, []),
   };
 
   // Garantit la présence des staples « implicites » (ingrédients base hors liste

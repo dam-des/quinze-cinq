@@ -8,9 +8,11 @@ const PREFIX = 'q5.';
 export const CLES = {
   ONBOARDING: 'onboarding_done',
   GARDE_MANGER: 'garde_manger',
+  PORTIONS: 'portions',
   EQUIPEMENTS: 'equipements',
   PREFERENCES: 'preferences',
   HISTORIQUE: 'historique',
+  FRAIS_DU_JOUR: 'frais_du_jour',
   FRAIS_RECENTS: 'frais_recents',
   REGLAGE_NOTIF: 'reglage_notif',
   CONSENTEMENT_PUB: 'consentement_pub',

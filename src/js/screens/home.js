@@ -1,15 +1,18 @@
 // home.js — Accueil : LA proposition du soir (un seul plat), recherche de frais
 // + frais récents, « Voir la recette » / « Autre chose ». Jamais d'écran vide.
+// Cocher un frais met à jour la proposition EN PLACE (les vignettes ne bougent
+// pas) → sélection multiple fluide.
 
 import { el, esc, ICONS, annoncer } from '../ui.js';
 import { illustrationPour, libelleEquipement } from '../data.js';
 import { fraisPertinents, streakCuisine } from '../engine.js';
 import * as ads from '../ads.js';
+import * as storage from '../storage.js';
+import * as haptics from '../haptics.js';
 
 const FRAIS_DEFAUT = 8; // nb de vignettes par défaut (cochés + récents + complément)
 
 export default function renderHome(ctx) {
-  const { recette, evaluation } = ctx.proposition || {};
   const screen = el('<section class="screen actif" aria-label="Proposition du soir"></section>');
 
   const topbar = el(`
@@ -31,64 +34,71 @@ export default function renderHome(ctx) {
   body.appendChild(eyebrow);
   body.appendChild(el('<div class="decide-line">On a choisi pour toi.</div>'));
 
-  if (!recette) {
-    body.appendChild(
-      el('<p class="appoint-note">Aucune idée ne correspond. Ajuste ton placard dans les réglages.</p>')
-    );
-    screen.appendChild(body);
-    return screen;
-  }
+  // ── Zone proposition (carte + notes) — mise à jour en place quand on coche ──
+  const propZone = el('<div class="prop-zone"></div>');
+  body.appendChild(propZone);
 
-  // Carte plat héros
-  const card = el(`
-    <article class="dish-card" aria-label="${esc(recette.nom)}">
-      <div class="dish-illu"><img src="${illustrationPour(recette)}" alt="" aria-hidden="true" /></div>
-      <h1 class="dish-name">${esc(recette.nom)}</h1>
-      <div class="badges">
-        <span class="badge hl">${ICONS.horloge} ${recette.temps_min} min</span>
-        <span class="badge">${ICONS.liste} ${recette.nb_comptables} ingrédients</span>
-        <span class="badge">${ICONS.poele} ${esc(libelleEquipement(recette))}</span>
-      </div>
-    </article>`);
-  if (ctx.animerCarte) {
-    card.classList.add('swap'); // animation lors d'un « Autre chose »
-    ctx.animerCarte = false;
-  }
-  body.appendChild(card);
-
-  // Appoint : ingrédient(s) manquant(s) signalé(s)
-  if (evaluation && evaluation.manquants.length > 0) {
-    const liste = evaluation.manquants.map((m) => m.nom).join(', ');
-    body.appendChild(
-      el(`<p class="appoint-note">${ICONS.panier} Il te manque peut-être : ${esc(liste)}</p>`)
-    );
-  }
-
-  // Frais cochés : on dit lesquels la recette utilise, et lesquels n'y entrent pas.
-  const fraisCoche = ctx.etat.frais_du_jour;
-  if (fraisCoche.length > 0) {
-    const fraisRecette = new Set(
-      recette.ingredients.filter((i) => i.type === 'frais').map((i) => i.nom)
-    );
-    const utilises = fraisCoche.filter((n) => fraisRecette.has(n));
-    const nonUtilises = fraisCoche.filter((n) => !fraisRecette.has(n));
-    if (utilises.length === 0) {
-      // Aucun coché ne colle (B4) — on propose quand même quelque chose.
-      body.appendChild(
-        el(`<p class="appoint-note">Aucune idée avec ${esc(fraisCoche.join(', '))} ce soir — en voici une autre.</p>`)
+  function rendreProp() {
+    propZone.innerHTML = '';
+    const { recette, evaluation } = ctx.proposition || {};
+    if (!recette) {
+      propZone.appendChild(
+        el('<p class="appoint-note">Aucune idée ne correspond. Ajuste ton placard ou tes filtres dans les réglages.</p>')
       );
-    } else if (nonUtilises.length > 0) {
-      body.appendChild(
-        el(`<p class="appoint-note">${ICONS.check} Utilise ${esc(utilises.join(', '))}. <strong>${esc(nonUtilises.join(', '))}</strong> n'entre pas dans cette recette.</p>`)
-      );
-    } else {
-      body.appendChild(
-        el(`<p class="appoint-note match-ok">${ICONS.check} Cette recette utilise tous tes ingrédients !</p>`)
+      return;
+    }
+
+    const card = el(`
+      <article class="dish-card" aria-label="${esc(recette.nom)}">
+        <div class="dish-illu"><img src="${illustrationPour(recette)}" alt="" aria-hidden="true" /></div>
+        <h1 class="dish-name">${esc(recette.nom)}</h1>
+        <div class="badges">
+          <span class="badge hl">${ICONS.horloge} ${recette.temps_min} min</span>
+          <span class="badge">${ICONS.liste} ${recette.nb_comptables} ingrédients</span>
+          <span class="badge">${ICONS.poele} ${esc(libelleEquipement(recette))}</span>
+        </div>
+      </article>`);
+    if (ctx.animerCarte) {
+      card.classList.add('swap'); // animation lors d'un « Autre chose »
+      ctx.animerCarte = false;
+    }
+    propZone.appendChild(card);
+
+    // Appoint : ingrédient(s) manquant(s) signalé(s)
+    if (evaluation && evaluation.manquants.length > 0) {
+      const liste = evaluation.manquants.map((m) => m.nom).join(', ');
+      propZone.appendChild(
+        el(`<p class="appoint-note">${ICONS.panier} Il te manque peut-être : ${esc(liste)}</p>`)
       );
     }
-  }
 
-  // ── Frais : recherche + récents ──────────────────────────────────────────
+    // Frais cochés : lesquels la recette utilise, lesquels n'y entrent pas.
+    const fc = ctx.etat.frais_du_jour;
+    if (fc.length > 0) {
+      const fraisRecette = new Set(
+        recette.ingredients.filter((i) => i.type === 'frais').map((i) => i.nom)
+      );
+      const utilises = fc.filter((n) => fraisRecette.has(n));
+      const nonUtilises = fc.filter((n) => !fraisRecette.has(n));
+      if (utilises.length === 0) {
+        propZone.appendChild(
+          el(`<p class="appoint-note">Aucune idée avec ${esc(fc.join(', '))} ce soir — en voici une autre.</p>`)
+        );
+      } else if (nonUtilises.length > 0) {
+        propZone.appendChild(
+          el(`<p class="appoint-note">${ICONS.check} Utilise ${esc(utilises.join(', '))}. <strong>${esc(nonUtilises.join(', '))}</strong> n'entre pas dans cette recette.</p>`)
+        );
+      } else {
+        propZone.appendChild(
+          el(`<p class="appoint-note match-ok">${ICONS.check} Cette recette utilise tous tes ingrédients !</p>`)
+        );
+      }
+    }
+    annoncer(`Proposition : ${recette.nom}, ${recette.temps_min} minutes.`);
+  }
+  rendreProp();
+
+  // ── Frais : recherche + vignettes ──────────────────────────────────────────
   body.appendChild(el('<div class="section-q">Tu as quoi de frais ce soir ?</div>'));
   const recherche = el(
     '<input class="frais-search" type="search" inputmode="search" autocomplete="off" placeholder="Chercher un ingrédient frais…" aria-label="Chercher un ingrédient frais" />'
@@ -102,18 +112,41 @@ export default function renderHome(ctx) {
   const recents = (ctx.etat.frais_recents || []).filter((n) => pertinents.includes(n));
   let etendu = false; // « Voir plus » : déroule toute la liste pour piocher une idée
 
+  // Coche/décoche un frais SANS reconstruire la liste : la vignette change d'état
+  // sur place, seule la proposition est recalculée → on peut tout cocher d'affilée.
+  function basculerFrais(nom, chip) {
+    haptics.selection();
+    const f = ctx.etat.frais_du_jour;
+    const idx = f.indexOf(nom);
+    if (idx >= 0) {
+      f.splice(idx, 1);
+    } else {
+      f.push(nom);
+      const r = ctx.etat.frais_recents.filter((x) => x !== nom);
+      r.unshift(nom);
+      ctx.etat.frais_recents = r.slice(0, 12);
+      storage.ecrire(storage.CLES.FRAIS_RECENTS, ctx.etat.frais_recents);
+    }
+    storage.ecrire(storage.CLES.FRAIS_DU_JOUR, f); // persistant entre deux ouvertures
+    const actif = f.includes(nom);
+    chip.classList.toggle('on', actif);
+    chip.setAttribute('aria-pressed', String(actif));
+    ctx.session = []; // nouvelle orientation → proposition fraîche
+    ctx.calculerProposition();
+    rendreProp();
+  }
+
   function construireChips() {
     const q = recherche.value.trim().toLowerCase();
+    const fc = ctx.etat.frais_du_jour;
     chips.innerHTML = '';
 
-    // Les cochés d'abord (toujours visibles), puis résultats de recherche ou défaut.
     let liste;
     let reste = 0;
     if (q) {
-      liste = [...fraisCoche, ...pertinents.filter((n) => n.includes(q) && !fraisCoche.includes(n))].slice(0, 16);
+      liste = [...fc, ...pertinents.filter((n) => n.includes(q) && !fc.includes(n))].slice(0, 16);
     } else {
-      // base = cochés + récents, complétée par les frais pertinents.
-      const complet = [...new Set([...fraisCoche, ...recents, ...pertinents])];
+      const complet = [...new Set([...fc, ...recents, ...pertinents])];
       if (etendu) {
         liste = complet;
       } else {
@@ -123,23 +156,36 @@ export default function renderHome(ctx) {
     }
 
     for (const nom of liste) {
-      const actif = fraisCoche.includes(nom);
+      const actif = fc.includes(nom);
       const chip = el(
         `<button class="chip${actif ? ' on' : ''}" aria-pressed="${actif}">${esc(nom)}</button>`
       );
-      chip.addEventListener('click', () => ctx.toggleFrais(nom));
+      chip.addEventListener('click', () => basculerFrais(nom, chip));
       chips.appendChild(chip);
     }
     if (q && liste.length === 0) {
       chips.appendChild(el(`<span class="chip-empty">Aucun ingrédient « ${esc(q)} »</span>`));
     }
-    // Bouton « Voir plus / Voir moins » (hors recherche uniquement).
+    // « Voir plus / Voir moins » (hors recherche). « Tout afficher » pour cocher vite.
     if (!q && (reste > 0 || etendu)) {
       const more = el(
         `<button class="chip more" aria-expanded="${etendu}">${etendu ? 'Voir moins' : `Voir plus (+${reste})`}</button>`
       );
       more.addEventListener('click', () => { etendu = !etendu; construireChips(); });
       chips.appendChild(more);
+    }
+    // Effacer la sélection (visible dès qu'au moins un frais est coché).
+    if (fc.length > 0) {
+      const clear = el('<button class="chip clear">Tout effacer</button>');
+      clear.addEventListener('click', () => {
+        ctx.etat.frais_du_jour = [];
+        storage.ecrire(storage.CLES.FRAIS_DU_JOUR, []);
+        ctx.session = [];
+        ctx.calculerProposition();
+        rendreProp();
+        construireChips();
+      });
+      chips.appendChild(clear);
     }
   }
   recherche.addEventListener('input', construireChips);
@@ -149,7 +195,10 @@ export default function renderHome(ctx) {
 
   const actions = el('<div class="actions"></div>');
   const voir = el('<button class="btn btn-primary">Voir la recette</button>');
-  voir.addEventListener('click', () => ctx.ouvrirDetail(recette));
+  voir.addEventListener('click', () => {
+    const r = ctx.proposition && ctx.proposition.recette;
+    if (r) ctx.ouvrirDetail(r);
+  });
   const autreChose = el('<button class="btn btn-ghost">Autre chose</button>');
   autreChose.addEventListener('click', () => ctx.autreChose());
   actions.append(voir, autreChose);
@@ -165,7 +214,6 @@ export default function renderHome(ctx) {
     screen.appendChild(el('<div class="adbar" aria-hidden="true">Publicité</div>'));
   }
 
-  annoncer(`Proposition : ${recette.nom}, ${recette.temps_min} minutes.`);
   return screen;
 }
 

@@ -5075,6 +5075,681 @@
       "tags": [
         "vegetarien"
       ]
+    },
+    {
+      "id": "risotto-champignons-cookeo",
+      "nom": "Risotto champignons Cookeo",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "champignons",
+      "categorie": "feculent",
+      "ingredients": [
+        {
+          "nom": "riz",
+          "type": "base",
+          "quantite": {
+            "valeur": 180,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "champignons",
+          "type": "frais",
+          "quantite": {
+            "valeur": 200,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "parmesan",
+          "type": "frais",
+          "quantite": {
+            "valeur": 40,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "bouillon cube",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 5,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Dorer oignon et champignons en mode dorer.",
+        "Ajouter le riz, le bouillon et de l’eau à hauteur.",
+        "Cuisson sous pression 6 min.",
+        "Mélanger le parmesan et servir."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "bolognaise-cookeo",
+      "nom": "Bolognaise express Cookeo",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "steak haché",
+      "categorie": "feculent",
+      "ingredients": [
+        {
+          "nom": "pâtes",
+          "type": "base",
+          "quantite": {
+            "valeur": 200,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "steak haché",
+          "type": "frais",
+          "quantite": {
+            "valeur": 250,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "tomates concassées",
+          "type": "base",
+          "quantite": {
+            "valeur": 400,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Dorer l’oignon et la viande.",
+        "Ajouter pâtes, tomate et de l’eau à hauteur.",
+        "Cuisson sous pression 7 min.",
+        "Mélanger et servir."
+      ],
+      "tags": [
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "poulet-curry-coco-cookeo",
+      "nom": "Poulet curry-coco Cookeo",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "escalope de poulet",
+      "categorie": "volaille",
+      "ingredients": [
+        {
+          "nom": "escalope de poulet",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "lait de coco",
+          "type": "frais",
+          "quantite": {
+            "valeur": 20,
+            "unite": "cl"
+          }
+        },
+        {
+          "nom": "curry",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "c. à soupe"
+          }
+        },
+        {
+          "nom": "riz",
+          "type": "base",
+          "quantite": {
+            "valeur": 150,
+            "unite": "g"
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Dorer le poulet en morceaux.",
+        "Ajouter curry, lait de coco, riz et un peu d’eau.",
+        "Cuisson sous pression 8 min.",
+        "Servir."
+      ],
+      "tags": [
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "dahl-corail-cookeo",
+      "nom": "Dahl de corail Cookeo",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "lentilles corail",
+      "categorie": "vegetarien",
+      "ingredients": [
+        {
+          "nom": "lentilles corail",
+          "type": "frais",
+          "quantite": {
+            "valeur": 200,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "lait de coco",
+          "type": "frais",
+          "quantite": {
+            "valeur": 20,
+            "unite": "cl"
+          }
+        },
+        {
+          "nom": "tomates concassées",
+          "type": "base",
+          "quantite": {
+            "valeur": 400,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Dorer l’oignon.",
+        "Ajouter lentilles, tomate, lait de coco et de l’eau.",
+        "Cuisson sous pression 8 min.",
+        "Mélanger et servir."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "soupe-legumes-cookeo",
+      "nom": "Soupe de légumes Cookeo",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "carotte",
+      "categorie": "soupe",
+      "ingredients": [
+        {
+          "nom": "carotte",
+          "type": "frais",
+          "quantite": {
+            "valeur": 3,
+            "unite": null
+          }
+        },
+        {
+          "nom": "pomme de terre",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "bouillon cube",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Couper les légumes en morceaux.",
+        "Mettre avec le bouillon et de l’eau à hauteur.",
+        "Cuisson sous pression 10 min.",
+        "Mixer et servir."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "riz-cantonais-cookeo",
+      "nom": "Riz cantonais Cookeo",
+      "temps_min": 14,
+      "portions": 2,
+      "ingredient_vedette": "petits pois",
+      "categorie": "feculent",
+      "ingredients": [
+        {
+          "nom": "riz",
+          "type": "base",
+          "quantite": {
+            "valeur": 180,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "petits pois",
+          "type": "frais",
+          "quantite": {
+            "valeur": 100,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "jambon",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": "tranches"
+          }
+        },
+        {
+          "nom": "œufs",
+          "type": "base",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Mettre riz, petits pois et eau à hauteur.",
+        "Cuisson sous pression 6 min.",
+        "Ajouter jambon en dés et œufs brouillés.",
+        "Mélanger et servir."
+      ],
+      "tags": [
+        "enfant_friendly",
+        "porc"
+      ]
+    },
+    {
+      "id": "chili-cookeo",
+      "nom": "Chili con carne Cookeo",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "bœuf émincé",
+      "categorie": "viande",
+      "ingredients": [
+        {
+          "nom": "bœuf émincé",
+          "type": "frais",
+          "quantite": {
+            "valeur": 250,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "haricots rouges",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "boîte"
+          }
+        },
+        {
+          "nom": "tomates concassées",
+          "type": "base",
+          "quantite": {
+            "valeur": 400,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Dorer oignon et bœuf.",
+        "Ajouter tomate et haricots égouttés.",
+        "Cuisson sous pression 6 min.",
+        "Servir."
+      ],
+      "tags": [
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "risotto-potiron-cookeo",
+      "nom": "Risotto potiron Cookeo",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "potiron",
+      "categorie": "vegetarien",
+      "ingredients": [
+        {
+          "nom": "riz",
+          "type": "base",
+          "quantite": {
+            "valeur": 180,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "potiron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 250,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "parmesan",
+          "type": "frais",
+          "quantite": {
+            "valeur": 40,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "bouillon cube",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 5,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Dorer oignon et potiron en dés.",
+        "Ajouter riz, bouillon et eau à hauteur.",
+        "Cuisson sous pression 7 min.",
+        "Mélanger le parmesan et servir."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "soupe-potiron-coco-cookeo",
+      "nom": "Soupe potiron-coco Cookeo",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "potiron",
+      "categorie": "soupe",
+      "ingredients": [
+        {
+          "nom": "potiron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 400,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "lait de coco",
+          "type": "frais",
+          "quantite": {
+            "valeur": 20,
+            "unite": "cl"
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "bouillon cube",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Couper le potiron en morceaux.",
+        "Mettre avec oignon, bouillon, lait de coco et eau.",
+        "Cuisson sous pression 10 min.",
+        "Mixer et servir."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "pates-thon-cookeo",
+      "nom": "Pâtes au thon Cookeo",
+      "temps_min": 14,
+      "portions": 2,
+      "ingredient_vedette": null,
+      "categorie": "feculent",
+      "ingredients": [
+        {
+          "nom": "pâtes",
+          "type": "base",
+          "quantite": {
+            "valeur": 200,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "thon en conserve",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": "boîte"
+          }
+        },
+        {
+          "nom": "tomates concassées",
+          "type": "base",
+          "quantite": {
+            "valeur": 400,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Dorer l’oignon.",
+        "Ajouter pâtes, tomate, thon et eau à hauteur.",
+        "Cuisson sous pression 7 min.",
+        "Mélanger et servir."
+      ],
+      "tags": []
+    },
+    {
+      "id": "poulet-riz-petits-pois-cookeo",
+      "nom": "Poulet, riz & petits pois Cookeo",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "escalope de poulet",
+      "categorie": "volaille",
+      "ingredients": [
+        {
+          "nom": "escalope de poulet",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "riz",
+          "type": "base",
+          "quantite": {
+            "valeur": 150,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "petits pois",
+          "type": "frais",
+          "quantite": {
+            "valeur": 100,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "bouillon cube",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Dorer le poulet en morceaux.",
+        "Ajouter riz, petits pois, bouillon et eau.",
+        "Cuisson sous pression 8 min.",
+        "Servir."
+      ],
+      "tags": [
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "saucisses-lentilles-cookeo",
+      "nom": "Saucisses & lentilles Cookeo",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "saucisses",
+      "categorie": "viande",
+      "ingredients": [
+        {
+          "nom": "saucisses",
+          "type": "frais",
+          "quantite": {
+            "valeur": 3,
+            "unite": null
+          }
+        },
+        {
+          "nom": "lentilles corail",
+          "type": "frais",
+          "quantite": {
+            "valeur": 180,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "tomates concassées",
+          "type": "base",
+          "quantite": {
+            "valeur": 400,
+            "unite": "g"
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Dorer les saucisses et l’oignon.",
+        "Ajouter lentilles, tomate et de l’eau.",
+        "Cuisson sous pression 8 min.",
+        "Servir."
+      ],
+      "tags": [
+        "porc"
+      ]
     }
   ]
 }
