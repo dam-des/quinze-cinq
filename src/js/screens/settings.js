@@ -104,11 +104,19 @@ export default function renderReglages(ctx) {
   const gModeApp = el('<div class="set-group"><div class="gl">Mode</div></div>');
   const cardModeApp = el('<div class="set-card"></div>');
   const rowModeApp = el(
-    '<div class="set-row"><span class="set-row-txt"><span class="set-row-label">Par appareil</span><span class="set-row-sub">N’affiche que les recettes de cet appareil.</span></span></div>'
+    '<div class="set-row mode-row"><span class="set-row-txt"><span class="set-row-label">Par appareil</span><span class="set-row-sub">N’affiche que les recettes de cet appareil.</span></span></div>'
   );
   const segM = el('<div class="seg" role="radiogroup" aria-label="Filtrer les recettes par appareil"></div>');
   const courantM = ctx.etat.preferences.mode_appareil || '';
-  const btnsM = [['', 'Tous'], ['airfryer', 'Airfryer'], ['cookeo', 'Cookeo']].map(([val, label]) => {
+  // Compteurs par type, pour donner la visibilité sur le nombre de recettes.
+  const _R = ctx.catalogue.recettes;
+  const nb = {
+    '': _R.length,
+    airfryer: _R.filter((r) => (r.equipement_requis || []).includes('airfryer')).length,
+    cookeo: _R.filter((r) => (r.equipement_requis || []).includes('cookeo')).length,
+  };
+  const btnsM = [['', 'Tous'], ['airfryer', 'Airfryer'], ['cookeo', 'Cookeo']].map(([val, base]) => {
+    const label = `${base} (${nb[val]})`;
     const sel = courantM === val;
     const b = el(`<button class="seg-opt${sel ? ' on' : ''}" role="radio" aria-checked="${sel}">${esc(label)}</button>`);
     b.addEventListener('click', async () => {

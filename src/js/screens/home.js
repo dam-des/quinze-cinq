@@ -85,8 +85,9 @@ export default function renderHome(ctx) {
           el(`<p class="appoint-note">Aucune idée avec ${esc(fc.join(', '))} ce soir — en voici une autre.</p>`)
         );
       } else if (nonUtilises.length > 0) {
+        const n = nonUtilises.length;
         propZone.appendChild(
-          el(`<p class="appoint-note">${ICONS.check} Utilise ${esc(utilises.join(', '))}. <strong>${esc(nonUtilises.join(', '))}</strong> n'entre pas dans cette recette.</p>`)
+          el(`<p class="appoint-note">${ICONS.check} Utilise ${esc(utilises.join(', '))}. <span class="note-muted">+${n} non utilisé${n > 1 ? 's' : ''}</span></p>`)
         );
       } else {
         propZone.appendChild(
