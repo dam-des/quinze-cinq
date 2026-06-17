@@ -29,9 +29,24 @@ export function basiquesEditables(catalogue) {
   return [...catalogue.garde_manger_base];
 }
 
-/** Préférences par défaut. `mode_appareil` : null | 'airfryer' | 'cookeo'. */
+/** Préférences par défaut. `modes_appareil` : liste vide = tous les appareils. */
 export function preferencesParDefaut() {
-  return { vegetarien: false, enfant_friendly: false, exclusions: [], mode_appareil: null };
+  return { vegetarien: false, enfant_friendly: false, exclusions: [], modes_appareil: [] };
+}
+
+// Appareils sélectionnables (extensible : ajouter ici une future entrée suffit).
+export const APPAREILS = [
+  { cle: 'classique', label: 'Classiques' },
+  { cle: 'airfryer', label: 'Airfryer' },
+  { cle: 'cookeo', label: 'Cookeo' },
+];
+
+/** Catégorie d'appareil d'une recette : 'airfryer' | 'cookeo' | 'classique'. */
+export function categorieAppareil(recette) {
+  const eq = recette.equipement_requis || [];
+  if (eq.includes('airfryer')) return 'airfryer';
+  if (eq.includes('cookeo')) return 'cookeo';
+  return 'classique';
 }
 
 /** Équipements par défaut (poêle/plaque toujours supposés). */

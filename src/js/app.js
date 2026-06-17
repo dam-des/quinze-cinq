@@ -12,6 +12,7 @@ import {
   gardeMangerParDefaut,
   preferencesParDefaut,
   equipementsParDefaut,
+  categorieAppareil,
 } from './data.js';
 import { annoncer } from './ui.js';
 import { appliquerTheme } from './theme.js';
@@ -80,9 +81,10 @@ const ctx = {
   // ── Moteur ─────────────────────────────────────────────────────────────
   calculerProposition() {
     let recettes = ctx.catalogue.recettes;
-    // Mode « par appareil » : ne propose que les recettes de cet appareil.
-    const mode = ctx.etat.preferences && ctx.etat.preferences.mode_appareil;
-    if (mode) recettes = recettes.filter((r) => (r.equipement_requis || []).includes(mode));
+    // Filtre « par appareil(s) » : liste vide = tous ; sinon on ne garde que les
+    // recettes des catégories d'appareil sélectionnées (classique / airfryer / cookeo).
+    const modes = (ctx.etat.preferences && ctx.etat.preferences.modes_appareil) || [];
+    if (modes.length) recettes = recettes.filter((r) => modes.includes(categorieAppareil(r)));
     ctx.proposition = genererProposition(recettes, ctx.etat, Date.now(), ctx.session, Math.random);
     return ctx.proposition;
   },
@@ -179,6 +181,13 @@ async function demarrer() {
     }),
     frais_du_jour: await storage.lire(storage.CLES.FRAIS_DU_JOUR, []),
   };
+
+  // Migration : ancien `mode_appareil` (string) → `modes_appareil` (liste).
+  const prefs = ctx.etat.preferences;
+  if (!Array.isArray(prefs.modes_appareil)) {
+    prefs.modes_appareil = prefs.mode_appareil ? [prefs.mode_appareil] : [];
+    delete prefs.mode_appareil;
+  }
 
   // Garantit la présence des staples « implicites » (ingrédients base hors liste
   // canonique éditable, ex. vermicelles) même pour un utilisateur déjà onboardé.

@@ -6,7 +6,7 @@ import * as storage from '../storage.js';
 import * as notifications from '../notifications.js';
 import * as ads from '../ads.js';
 import * as theme from '../theme.js';
-import { basiquesEditables } from '../data.js';
+import { basiquesEditables, APPAREILS, categorieAppareil } from '../data.js';
 
 export default function renderReglages(ctx) {
   const screen = el('<section class="screen actif" aria-label="Réglages"></section>');
@@ -100,39 +100,57 @@ export default function renderReglages(ctx) {
     if (t) { t.classList.add('on'); t.setAttribute('aria-checked', 'true'); }
   };
 
-  // ── Mode : ne proposer que les recettes d'un appareil ──────────────────────
-  const gModeApp = el('<div class="set-group"><div class="gl">Mode</div></div>');
+  // ── Mode : par appareil(s) — MULTI-sélection (Tous / Classiques / Airfryer / Cookeo) ──
+  const gModeApp = el('<div class="set-group"><div class="gl">Mode — par appareil</div></div>');
   const cardModeApp = el('<div class="set-card"></div>');
   const rowModeApp = el(
-    '<div class="set-row mode-row"><span class="set-row-txt"><span class="set-row-label">Par appareil</span><span class="set-row-sub">N’affiche que les recettes de cet appareil.</span></span></div>'
+    '<div class="set-row mode-row"><span class="set-row-txt"><span class="set-row-label">Appareils à inclure</span><span class="set-row-sub">« Tous » = aucune restriction. Sinon, seules les recettes des appareils choisis (cumulables).</span></span></div>'
   );
-  const segM = el('<div class="seg" role="radiogroup" aria-label="Filtrer les recettes par appareil"></div>');
-  const courantM = ctx.etat.preferences.mode_appareil || '';
-  // Compteurs par type, pour donner la visibilité sur le nombre de recettes.
+  // Compteurs par catégorie d'appareil (visibilité sur le nombre de recettes).
   const _R = ctx.catalogue.recettes;
-  const nb = {
-    '': _R.length,
-    airfryer: _R.filter((r) => (r.equipement_requis || []).includes('airfryer')).length,
-    cookeo: _R.filter((r) => (r.equipement_requis || []).includes('cookeo')).length,
+  const nb = { classique: 0, airfryer: 0, cookeo: 0 };
+  for (const r of _R) nb[categorieAppareil(r)]++;
+  const modes = ctx.etat.preferences.modes_appareil; // référence vivante (array)
+
+  const chipsM = el('<div class="chips mode-chips"></div>');
+  const apChips = [];
+  const persistModes = () => ctx.sauver(storage.CLES.PREFERENCES, ctx.etat.preferences);
+  const rafraichirModes = () => {
+    chipTous.classList.toggle('on', modes.length === 0);
+    chipTous.setAttribute('aria-pressed', String(modes.length === 0));
+    for (const { cle, btn } of apChips) {
+      const on = modes.includes(cle);
+      btn.classList.toggle('on', on);
+      btn.setAttribute('aria-pressed', String(on));
+    }
   };
-  const btnsM = [['', 'Tous'], ['airfryer', 'Airfryer'], ['cookeo', 'Cookeo']].map(([val, base]) => {
-    const label = `${base} (${nb[val]})`;
-    const sel = courantM === val;
-    const b = el(`<button class="seg-opt${sel ? ' on' : ''}" role="radio" aria-checked="${sel}">${esc(label)}</button>`);
-    b.addEventListener('click', async () => {
-      ctx.etat.preferences.mode_appareil = val || null;
-      await ctx.sauver(storage.CLES.PREFERENCES, ctx.etat.preferences);
-      if (val === 'airfryer' || val === 'cookeo') forcerEquip(val);
-      for (const o of btnsM) {
-        const on = o === b;
-        o.classList.toggle('on', on);
-        o.setAttribute('aria-checked', String(on));
-      }
-    });
-    segM.appendChild(b);
-    return b;
+
+  const chipTous = el(`<button class="chip" aria-pressed="false">Tous (${_R.length})</button>`);
+  chipTous.addEventListener('click', async () => {
+    modes.length = 0; // liste vide = aucune restriction
+    rafraichirModes();
+    await persistModes();
   });
-  rowModeApp.appendChild(segM);
+  chipsM.appendChild(chipTous);
+
+  for (const ap of APPAREILS) {
+    const btn = el(`<button class="chip" aria-pressed="false">${esc(ap.label)} (${nb[ap.cle]})</button>`);
+    btn.addEventListener('click', async () => {
+      const idx = modes.indexOf(ap.cle);
+      if (idx >= 0) {
+        modes.splice(idx, 1);
+      } else {
+        modes.push(ap.cle);
+        if (ap.cle === 'airfryer' || ap.cle === 'cookeo') forcerEquip(ap.cle);
+      }
+      rafraichirModes();
+      await persistModes();
+    });
+    apChips.push({ cle: ap.cle, btn });
+    chipsM.appendChild(btn);
+  }
+  rafraichirModes();
+  rowModeApp.appendChild(chipsM);
   cardModeApp.appendChild(rowModeApp);
   gModeApp.appendChild(cardModeApp);
   body.appendChild(gModeApp);

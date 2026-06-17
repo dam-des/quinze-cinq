@@ -307,6 +307,7 @@ body {
 .cook-step-icon img { width: 88px; height: 88px; }
 /* Barre de minuteur persistante (dernier enfant de l'écran : toujours visible, ne défile pas). */
 .timer-bar { display: flex; align-items: center; gap: 8px; padding: 12px 20px calc(var(--safe-bottom) + 12px); background: var(--accent); color: var(--on-accent); }
+.timer-bar[hidden] { display: none; } /* sinon display:flex l'emporte sur l'attribut hidden */
 .timer-bar-txt { font-weight: 800; font-size: 17px; font-variant-numeric: tabular-nums; }
 .timer-bar-pause, .timer-bar-stop { font-family: var(--body); font-weight: 700; font-size: 13px; color: var(--on-accent); background: rgba(0,0,0,.14); border: none; border-radius: 999px; padding: 7px 14px; min-height: 36px; cursor: pointer; }
 .timer-bar-pause { margin-left: auto; }
