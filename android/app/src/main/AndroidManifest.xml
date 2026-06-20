@@ -9,11 +9,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <!-- AdMob : app id de TEST (à remplacer par l'app id réel pour le MVP).
+        <!-- AdMob : App ID Android réel (PROD).
              Sans ce meta-data, l'app crashe au démarrage de l'SDK. -->
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-3940256099942544~3347511713" />
+            android:value="ca-app-pub-3773782948374050~5105228843" />
 
         <activity
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|smallestScreenSize|screenLayout|uiMode"

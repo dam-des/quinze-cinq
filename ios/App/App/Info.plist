@@ -45,10 +45,9 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<true/>
-	<!-- AdMob : app id de TEST. PROD → remplacer par l'App ID iOS réel (AdMob ›
-	     Paramètres de l'application), format ca-app-pub-XXXXXXXX~YYYYYYYY. -->
+	<!-- AdMob : App ID iOS réel (PROD). -->
 	<key>GADApplicationIdentifier</key>
-	<string>ca-app-pub-3940256099942544~1458002511</string>
+	<string>ca-app-pub-3773782948374050~2542489157</string>
 	<!-- Consentement de suivi (UMP/ATT) : texte affiché à l'utilisateur. -->
 	<key>NSUserTrackingUsageDescription</key>
 	<string>Ton accord permet d'afficher des publicités plus pertinentes. Tu peux refuser : l'app reste gratuite et fonctionne pareil.</string>

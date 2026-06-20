@@ -7,18 +7,24 @@
 // Passer à true UNE FOIS les vrais blocs AdMob créés et remplis ci-dessous,
 // ET les App IDs renseignés dans ios/App/App/Info.plist (GADApplicationIdentifier)
 // et android/app/src/main/AndroidManifest.xml (APPLICATION_ID).
-const PROD = false;
+const PROD = true;
 
 // Identifiants de BLOCS publicitaires (≠ App ID). TEST = blocs publics Google
-// (identiques iOS/Android). PROD = à créer dans AdMob, un bloc par plateforme.
+// (identiques iOS/Android). PROD = blocs réels AdMob, un par plateforme.
 const BLOCS = {
   test: {
     banner: 'ca-app-pub-3940256099942544/6300978111',
     interstitial: 'ca-app-pub-3940256099942544/1033173712',
   },
   prod: {
-    ios: { banner: 'REMPLIR_BANNIERE_IOS', interstitial: 'REMPLIR_INTERSTITIEL_IOS' },
-    android: { banner: 'REMPLIR_BANNIERE_ANDROID', interstitial: 'REMPLIR_INTERSTITIEL_ANDROID' },
+    ios: {
+      banner: 'ca-app-pub-3773782948374050/7411672454',
+      interstitial: 'ca-app-pub-3773782948374050/5332459552',
+    },
+    android: {
+      banner: 'ca-app-pub-3773782948374050/9124364901',
+      interstitial: 'ca-app-pub-3773782948374050/2350917461',
+    },
   },
 };
 
