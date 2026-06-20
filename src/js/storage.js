@@ -15,6 +15,8 @@ export const CLES = {
   FRAIS_DU_JOUR: 'frais_du_jour',
   FRAIS_RECENTS: 'frais_recents',
   REGLAGE_NOTIF: 'reglage_notif',
+  NOTIF_RECETTE: 'notif_recette', // id du plat nommé dans le rappel quotidien
+
   CONSENTEMENT_PUB: 'consentement_pub',
 };
 

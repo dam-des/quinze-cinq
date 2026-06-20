@@ -136,12 +136,14 @@ const ctx = {
     ctx.aller('cuisine', { recette });
   },
 
-  /** (Re)planifie le rappel quotidien avec le nom du plat courant si actif. */
+  /** (Re)planifie le rappel quotidien avec le plat courant si actif. */
   async rafraichirNotif() {
     const n = ctx.etat.reglage_notif;
     if (n && n.actif) {
-      const nom = ctx.proposition && ctx.proposition.recette && ctx.proposition.recette.nom;
-      await notifications.planifierQuotidien(n.heure, nom);
+      const r = ctx.proposition && ctx.proposition.recette;
+      await notifications.planifierQuotidien(n.heure, r && r.nom);
+      // Mémorise le plat nommé pour le retrouver tel quel au tap sur la notif.
+      await storage.ecrire(storage.CLES.NOTIF_RECETTE, r ? r.id : null);
     }
   },
 
@@ -200,10 +202,18 @@ async function demarrer() {
   }
 
   installerGestes();
-  // Tap sur la notification quotidienne → ouvre l'app sur une proposition fraîche.
-  notifications.surOuverture(() => {
+  // Tap sur la notification quotidienne → ouvre l'app sur LE plat nommé dans la
+  // notif (pas une proposition fraîche, sinon le plat affiché ne correspond pas).
+  notifications.surOuverture(async () => {
+    const id = await storage.lire(storage.CLES.NOTIF_RECETTE, null);
+    const r = id && ctx.catalogue.recettes.find((x) => x.id === id);
     ctx.session = [];
-    ctx.calculerProposition();
+    if (r) {
+      // genererProposition sur la seule recette nommée → évaluation correcte (manquants…).
+      ctx.proposition = genererProposition([r], ctx.etat, Date.now(), [], Math.random);
+    } else {
+      ctx.calculerProposition();
+    }
     ctx.aller('home');
   });
 

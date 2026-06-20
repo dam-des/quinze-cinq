@@ -1,13 +1,37 @@
-// ads.js — AdMob (bannière + interstitiel) avec consentement UMP (cadrage §14).
-// POC : identifiants de TEST. Jamais d'interstitiel au lancement ni pendant une
-// action ; bannière discrète en bas de l'accueil ; interstitiel toutes les
-// CADENCE_INTERSTITIEL occurrences de « Autre chose ». Dégrade en no-op hors natif.
+// ads.js — AdMob (bannière + interstitiel) avec ATT (iOS) + consentement UMP.
+// Jamais d'interstitiel au lancement ni pendant une action ; bannière discrète en
+// bas de l'accueil ; interstitiel toutes les CADENCE_INTERSTITIEL « Autre chose ».
+// Dégrade en no-op hors natif.
 
-// Identifiants AdMob de TEST (publics, fournis par Google).
-const TEST = {
-  banner: 'ca-app-pub-3940256099942544/6300978111',
-  interstitial: 'ca-app-pub-3940256099942544/1033173712',
+// ─── BASCULE PROD ────────────────────────────────────────────────────────────
+// Passer à true UNE FOIS les vrais blocs AdMob créés et remplis ci-dessous,
+// ET les App IDs renseignés dans ios/App/App/Info.plist (GADApplicationIdentifier)
+// et android/app/src/main/AndroidManifest.xml (APPLICATION_ID).
+const PROD = false;
+
+// Identifiants de BLOCS publicitaires (≠ App ID). TEST = blocs publics Google
+// (identiques iOS/Android). PROD = à créer dans AdMob, un bloc par plateforme.
+const BLOCS = {
+  test: {
+    banner: 'ca-app-pub-3940256099942544/6300978111',
+    interstitial: 'ca-app-pub-3940256099942544/1033173712',
+  },
+  prod: {
+    ios: { banner: 'REMPLIR_BANNIERE_IOS', interstitial: 'REMPLIR_INTERSTITIEL_IOS' },
+    android: { banner: 'REMPLIR_BANNIERE_ANDROID', interstitial: 'REMPLIR_INTERSTITIEL_ANDROID' },
+  },
 };
+
+function plateforme() {
+  const cap = globalThis.Capacitor;
+  return (cap && cap.getPlatform && cap.getPlatform()) || 'web';
+}
+
+/** Id du bloc (test, ou prod selon la plateforme). */
+function blocId(type) {
+  if (!PROD) return BLOCS.test[type];
+  return BLOCS.prod[plateforme() === 'android' ? 'android' : 'ios'][type];
+}
 
 export const CADENCE_INTERSTITIEL = 2; // 1 interstitiel tous les 2 « Autre chose ».
 
@@ -28,7 +52,11 @@ export async function initialiser() {
   const p = plugin();
   if (!p) return { ok: false };
   try {
-    await p.initialize({ initializeForTesting: true });
+    // App Tracking Transparency (iOS 14+) : requise par Apple avant pubs personnalisées.
+    if (p.requestTrackingAuthorization) {
+      try { await p.requestTrackingAuthorization(); } catch { /* refus = pub non personnalisée */ }
+    }
+    await p.initialize({ initializeForTesting: !PROD });
     // UMP : recueil/affichage du formulaire de consentement si nécessaire.
     if (p.requestConsentInfo) {
       await p.requestConsentInfo({});
@@ -45,10 +73,10 @@ export async function afficherBanniere() {
   if (!p || _bannereAffichee) return;
   try {
     await p.showBanner({
-      adId: TEST.banner,
+      adId: blocId('banner'),
       adSize: 'BANNER',
       position: 'BOTTOM_CENTER',
-      isTesting: true,
+      isTesting: !PROD,
     });
     _bannereAffichee = true;
   } catch {
@@ -77,7 +105,7 @@ export async function signalerAutreChose() {
   const p = plugin();
   if (!p) return;
   try {
-    await p.prepareInterstitial({ adId: TEST.interstitial, isTesting: true });
+    await p.prepareInterstitial({ adId: blocId('interstitial'), isTesting: !PROD });
     await p.showInterstitial();
   } catch {
     /* pub non bloquante */
