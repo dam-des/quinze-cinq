@@ -6,7 +6,7 @@ import { el, esc, ICONS } from '../ui.js';
 import { ingredientsManquants } from '../engine.js';
 import * as storage from '../storage.js';
 import { illustrationPour, libelleEquipement, formatQuantitePortions } from '../data.js';
-import { iconePourEtape } from '../icones.js';
+import { iconeSvgPourEtape } from '../icones.js';
 
 export default function renderDetail(ctx, { recette }) {
   const manquants = ingredientsManquants(
@@ -107,7 +107,7 @@ export default function renderDetail(ctx, { recette }) {
   const steps = el('<ol class="steps" style="list-style:none"></ol>');
   recette.etapes.forEach((etape, idx) => {
     steps.appendChild(
-      el(`<li class="step"><span class="num" aria-hidden="true">${idx + 1}</span><img class="step-icon" src="${iconePourEtape(etape)}" alt="" aria-hidden="true" /><p>${esc(etape)}</p></li>`)
+      el(`<li class="step"><span class="num" aria-hidden="true">${idx + 1}</span><span class="step-icon" aria-hidden="true">${iconeSvgPourEtape(etape)}</span><p>${esc(etape)}</p></li>`)
     );
   });
   body.appendChild(steps);

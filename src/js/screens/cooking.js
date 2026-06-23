@@ -4,7 +4,7 @@
 
 import { el, esc, annoncer } from '../ui.js';
 import { streakCuisine } from '../engine.js';
-import { iconePourEtape } from '../icones.js';
+import { iconeSvgPourEtape } from '../icones.js';
 import * as keepawake from '../keepawake.js';
 import * as haptics from '../haptics.js';
 import * as notifications from '../notifications.js';
@@ -123,6 +123,7 @@ export default function renderCuisine(ctx, { recette }) {
     arreterTimer();
     keepawake.laisserDormir();
     ctx.calculerProposition();
+    ctx.rafraichirNotif(); // après cuisine : le rappel suit la nouvelle proposition
     ctx.aller('home');
   };
 
@@ -143,7 +144,7 @@ export default function renderCuisine(ctx, { recette }) {
     body.appendChild(el(`<div class="cook-step-no">Étape ${i + 1} sur ${etapes.length}</div>`));
     // Icône d'action au-dessus du texte (décorative : le texte porte le sens).
     body.appendChild(
-      el(`<div class="cook-step-icon"><img src="${iconePourEtape(etapes[i])}" alt="" aria-hidden="true" /></div>`)
+      el(`<div class="cook-step-icon">${iconeSvgPourEtape(etapes[i])}</div>`)
     );
     body.appendChild(el(`<h1 class="cook-text">${esc(etapes[i])}</h1>`));
 

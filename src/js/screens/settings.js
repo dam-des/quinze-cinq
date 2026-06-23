@@ -239,7 +239,8 @@ export default function renderReglages(ctx) {
   inputHeure.addEventListener('change', async () => {
     notif.heure = inputHeure.value || '18:00';
     await ctx.sauver(storage.CLES.REGLAGE_NOTIF, notif);
-    if (notif.actif) await notifications.planifierQuotidien(notif.heure);
+    // Passe par rafraichirNotif : corps (nom du plat) + NOTIF_RECETTE restent cohérents.
+    if (notif.actif) await ctx.rafraichirNotif();
   });
 
   cardNotif.appendChild(
@@ -254,7 +255,8 @@ export default function renderReglages(ctx) {
           return false;
         }
         notif.actif = true;
-        await notifications.planifierQuotidien(notif.heure);
+        // Idem : planifie avec le plat courant et mémorise son id pour le tap.
+        await ctx.rafraichirNotif();
       } else {
         notif.actif = false;
         await notifications.annuler();

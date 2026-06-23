@@ -142,7 +142,8 @@ export default function renderOnboarding(ctx) {
         const ok = await notifications.demanderPermission();
         ctx.etat.reglage_notif = { actif: ok, heure: '18:00' };
         await ctx.sauver(storage.CLES.REGLAGE_NOTIF, ctx.etat.reglage_notif);
-        if (ok) await notifications.planifierQuotidien('18:00');
+        // La planification effective (corps nommé + NOTIF_RECETTE) est faite par
+        // terminerOnboarding → rafraichirNotif, une fois la 1re proposition calculée.
         suivant();
       });
       const non = el('<button class="btn btn-ghost">Pas maintenant</button>');

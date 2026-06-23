@@ -39,7 +39,7 @@ function blocId(type) {
   return BLOCS.prod[plateforme() === 'android' ? 'android' : 'ios'][type];
 }
 
-export const CADENCE_INTERSTITIEL = 2; // 1 interstitiel tous les 2 « Autre chose ».
+export const CADENCE_INTERSTITIEL = 4; // 1 interstitiel tous les 4 « Autre chose » (moins intrusif).
 
 let _compteurAutreChose = 0;
 let _bannereAffichee = false;

@@ -175,16 +175,21 @@ body {
 .appoint-note strong { color: var(--ink); font-weight: 800; }
 .note-muted { color: var(--ink-soft); font-weight: 600; }
 .steps { margin-top: 4px; }
-.step { display: flex; gap: 13px; padding: 12px 0; border-bottom: 1px solid var(--line); }
+.step { display: flex; align-items: center; gap: 13px; padding: 12px 0; border-bottom: 1px solid var(--line); }
 .step:last-child { border-bottom: none; }
 .step .num {
   flex: none; width: 28px; height: 28px; border-radius: 8px; background: var(--accent);
   font-family: var(--display); font-weight: 700; font-size: 14px;
   display: flex; align-items: center; justify-content: center; color: var(--on-accent);
 }
-.step p { font-size: 15px; line-height: 1.45; padding-top: 3px; flex: 1; }
-/* Icône d'action à côté du texte de l'étape (détail). */
-.step-icon { flex: none; width: 46px; height: 46px; align-self: flex-start; }
+.step p { font-size: 15px; line-height: 1.45; flex: 1; }
+/* Icône d'action à côté du texte de l'étape (détail). SVG inline : le trait
+   suit `currentColor` (= --ink), donc sombre en thème clair, clair en sombre. */
+.step-icon {
+  flex: none; width: 46px; height: 46px;
+  display: flex; color: var(--ink);
+}
+.step-icon svg { width: 100%; height: 100%; }
 
 /* Onboarding */
 .ob-progress { display: flex; gap: 6px; padding: 4px 0 18px; }
@@ -303,8 +308,8 @@ body {
 .cook-timer.done { background: #16171B; color: #fff; }
 /* Illustration de catégorie en mode cuisine : comble le blanc entre l'étape et la nav. */
 /* Icône d'action au-dessus du texte de l'étape (mode cuisine). */
-.cook-step-icon { display: flex; justify-content: center; margin-top: 18px; }
-.cook-step-icon img { width: 88px; height: 88px; }
+.cook-step-icon { display: flex; justify-content: center; margin-top: 18px; color: var(--ink); }
+.cook-step-icon svg, .cook-step-icon img { width: 88px; height: 88px; }
 /* Barre de minuteur persistante (dernier enfant de l'écran : toujours visible, ne défile pas). */
 .timer-bar { display: flex; align-items: center; gap: 8px; padding: 12px 20px calc(var(--safe-bottom) + 12px); background: var(--accent); color: var(--on-accent); }
 .timer-bar[hidden] { display: none; } /* sinon display:flex l'emporte sur l'attribut hidden */

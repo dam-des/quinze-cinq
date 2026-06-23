@@ -99,6 +99,7 @@ const ctx = {
     }
     ads.signalerAutreChose(); // interstitiel cadencé (jamais pendant détail/cuisine)
     ctx.calculerProposition();
+    ctx.rafraichirNotif(); // le rappel du soir suit le plat réellement proposé
     ctx.aller('home');
     const r = ctx.proposition.recette;
     annoncer(r ? `Nouvelle proposition : ${r.nom}` : 'Aucune proposition');

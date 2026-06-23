@@ -8831,6 +8831,4958 @@
       "tags": [
         "vegetarien"
       ]
+    },
+    {
+      "id": "frites-maison-uf-airfryer",
+      "nom": "Frites maison & œuf airfryer",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "pommes de terre",
+      "categorie": "feculent",
+      "ingredients": [
+        {
+          "nom": "pommes de terre",
+          "type": "frais",
+          "quantite": {
+            "valeur": 3,
+            "unite": null
+          }
+        },
+        {
+          "nom": "œufs",
+          "type": "base",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 2,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Tailler les pommes de terre en frites.",
+        "Cuire à l'airfryer 200°C, 18 min en secouant à mi-cuisson.",
+        "Servir avec un œuf au plat."
+      ],
+      "tags": [
+        "enfant_friendly",
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "wedges-de-pommes-de-terre-airfryer",
+      "nom": "Wedges de pommes de terre airfryer",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "pommes de terre",
+      "categorie": "feculent",
+      "ingredients": [
+        {
+          "nom": "pommes de terre",
+          "type": "frais",
+          "quantite": {
+            "valeur": 3,
+            "unite": null
+          }
+        },
+        {
+          "nom": "ail",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": "gousse"
+          }
+        },
+        {
+          "nom": "persil",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "poignée"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Couper les pommes de terre en quartiers.",
+        "Mélanger avec l'ail haché.",
+        "Cuire 200°C, 18 min. Parsemer de persil."
+      ],
+      "tags": [
+        "enfant_friendly",
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "patate-douce-rotie-au-miel-airfryer",
+      "nom": "Patate douce rôtie au miel airfryer",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "patate douce",
+      "categorie": "vegetarien",
+      "ingredients": [
+        {
+          "nom": "patate douce",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "miel",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "c. à soupe"
+          }
+        }
+      ],
+      "nb_comptables": 2,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Couper la patate douce en cubes, enrober de miel.",
+        "Cuire à l'airfryer 190°C, 15 min.",
+        "Servir."
+      ],
+      "tags": [
+        "enfant_friendly",
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "wedges-de-patate-douce-airfryer",
+      "nom": "Wedges de patate douce airfryer",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "patate douce",
+      "categorie": "vegetarien",
+      "ingredients": [
+        {
+          "nom": "patate douce",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "ail",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": "gousse"
+          }
+        }
+      ],
+      "nb_comptables": 2,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Tailler la patate douce en quartiers.",
+        "Mélanger à l'ail.",
+        "Cuire 190°C, 16 min en secouant à mi-cuisson."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "poulet-marine-soja-miel-airfryer",
+      "nom": "Poulet mariné soja-miel airfryer",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "escalope de poulet",
+      "categorie": "volaille",
+      "ingredients": [
+        {
+          "nom": "escalope de poulet",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "sauce soja",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": "c. à soupe"
+          }
+        },
+        {
+          "nom": "miel",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "c. à soupe"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Mélanger sauce soja et miel.",
+        "Enrober le poulet taillé en lanières.",
+        "Cuire à l'airfryer 190°C, 12 min."
+      ],
+      "tags": [
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "poulet-citron-airfryer",
+      "nom": "Poulet citron airfryer",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "escalope de poulet",
+      "categorie": "volaille",
+      "ingredients": [
+        {
+          "nom": "escalope de poulet",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "citron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "ail",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": "gousse"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Arroser le poulet de jus de citron et d'ail.",
+        "Cuire à l'airfryer 190°C, 12 min.",
+        "Servir aussitôt."
+      ],
+      "tags": []
+    },
+    {
+      "id": "poulet-moutarde-miel-airfryer",
+      "nom": "Poulet moutarde-miel airfryer",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "escalope de poulet",
+      "categorie": "volaille",
+      "ingredients": [
+        {
+          "nom": "escalope de poulet",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "moutarde",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": "c. à soupe"
+          }
+        },
+        {
+          "nom": "miel",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "c. à soupe"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Mélanger moutarde et miel.",
+        "Enrober les escalopes.",
+        "Cuire 190°C, 13 min."
+      ],
+      "tags": [
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "brochettes-de-poulet-poivron-airfryer",
+      "nom": "Brochettes de poulet & poivron airfryer",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "escalope de poulet",
+      "categorie": "volaille",
+      "ingredients": [
+        {
+          "nom": "escalope de poulet",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "poivron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 2,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Tailler poulet et poivron en cubes.",
+        "Enfiler sur des pics.",
+        "Cuire à l'airfryer 190°C, 12 min en retournant."
+      ],
+      "tags": [
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "poulet-patate-douce-airfryer",
+      "nom": "Poulet & patate douce airfryer",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "escalope de poulet",
+      "categorie": "volaille",
+      "ingredients": [
+        {
+          "nom": "escalope de poulet",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "patate douce",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 2,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Couper poulet et patate douce.",
+        "Disposer dans le panier.",
+        "Cuire 190°C, 15 min en secouant à mi-cuisson."
+      ],
+      "tags": [
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "tenders-de-dinde-airfryer",
+      "nom": "Tenders de dinde airfryer",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "aiguillettes de dinde",
+      "categorie": "volaille",
+      "ingredients": [
+        {
+          "nom": "aiguillettes de dinde",
+          "type": "frais",
+          "quantite": {
+            "valeur": 250,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "chapelure",
+          "type": "base",
+          "quantite": {
+            "valeur": 4,
+            "unite": "c. à soupe"
+          }
+        },
+        {
+          "nom": "œufs",
+          "type": "base",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Passer les aiguillettes dans l'œuf battu puis la chapelure.",
+        "Cuire à l'airfryer 190°C, 12 min.",
+        "Retourner à mi-cuisson."
+      ],
+      "tags": [
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "aiguillettes-de-dinde-au-miel-airfryer",
+      "nom": "Aiguillettes de dinde au miel airfryer",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "aiguillettes de dinde",
+      "categorie": "volaille",
+      "ingredients": [
+        {
+          "nom": "aiguillettes de dinde",
+          "type": "frais",
+          "quantite": {
+            "valeur": 250,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "miel",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "c. à soupe"
+          }
+        },
+        {
+          "nom": "sauce soja",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": "c. à soupe"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Enrober les aiguillettes de miel et sauce soja.",
+        "Cuire 190°C, 11 min.",
+        "Servir laqué."
+      ],
+      "tags": [
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "saumon-citron-airfryer",
+      "nom": "Saumon citron airfryer",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "pavé de saumon",
+      "categorie": "poisson",
+      "ingredients": [
+        {
+          "nom": "pavé de saumon",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "citron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 2,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Arroser le saumon de jus de citron.",
+        "Cuire à l'airfryer 180°C, 10 min.",
+        "Servir."
+      ],
+      "tags": []
+    },
+    {
+      "id": "saumon-teriyaki-airfryer",
+      "nom": "Saumon teriyaki airfryer",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "pavé de saumon",
+      "categorie": "poisson",
+      "ingredients": [
+        {
+          "nom": "pavé de saumon",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "sauce soja",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": "c. à soupe"
+          }
+        },
+        {
+          "nom": "miel",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "c. à soupe"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Mélanger sauce soja et miel.",
+        "Napper le saumon.",
+        "Cuire 180°C, 10 min."
+      ],
+      "tags": []
+    },
+    {
+      "id": "saumon-courgettes-airfryer",
+      "nom": "Saumon & courgettes airfryer",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "pavé de saumon",
+      "categorie": "poisson",
+      "ingredients": [
+        {
+          "nom": "pavé de saumon",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "courgette",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 2,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Couper la courgette en rondelles.",
+        "Disposer avec le saumon.",
+        "Cuire 180°C, 12 min."
+      ],
+      "tags": []
+    },
+    {
+      "id": "cabillaud-pane-airfryer",
+      "nom": "Cabillaud pané airfryer",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "dos de cabillaud",
+      "categorie": "poisson",
+      "ingredients": [
+        {
+          "nom": "dos de cabillaud",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "chapelure",
+          "type": "base",
+          "quantite": {
+            "valeur": 4,
+            "unite": "c. à soupe"
+          }
+        },
+        {
+          "nom": "œufs",
+          "type": "base",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Passer le cabillaud dans l'œuf puis la chapelure.",
+        "Cuire à l'airfryer 190°C, 12 min.",
+        "Retourner à mi-cuisson."
+      ],
+      "tags": [
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "cabillaud-au-pesto-airfryer",
+      "nom": "Cabillaud au pesto airfryer",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "dos de cabillaud",
+      "categorie": "poisson",
+      "ingredients": [
+        {
+          "nom": "dos de cabillaud",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "pesto",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "c. à soupe"
+          }
+        }
+      ],
+      "nb_comptables": 2,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Tartiner le cabillaud de pesto.",
+        "Cuire 180°C, 11 min.",
+        "Servir."
+      ],
+      "tags": []
+    },
+    {
+      "id": "colin-pane-parmesan-airfryer",
+      "nom": "Colin pané parmesan airfryer",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "filet de colin",
+      "categorie": "poisson",
+      "ingredients": [
+        {
+          "nom": "filet de colin",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "parmesan",
+          "type": "frais",
+          "quantite": {
+            "valeur": 40,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "chapelure",
+          "type": "base",
+          "quantite": {
+            "valeur": 4,
+            "unite": "c. à soupe"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Mélanger parmesan et chapelure.",
+        "Enrober le colin.",
+        "Cuire 190°C, 12 min."
+      ],
+      "tags": [
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "colin-tomates-cerises-airfryer",
+      "nom": "Colin & tomates cerises airfryer",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "filet de colin",
+      "categorie": "poisson",
+      "ingredients": [
+        {
+          "nom": "filet de colin",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "tomates cerises",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "poignée"
+          }
+        }
+      ],
+      "nb_comptables": 2,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Disposer colin et tomates cerises dans le panier.",
+        "Cuire 180°C, 12 min.",
+        "Servir."
+      ],
+      "tags": []
+    },
+    {
+      "id": "crevettes-au-pesto-airfryer",
+      "nom": "Crevettes au pesto airfryer",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "crevettes",
+      "categorie": "poisson",
+      "ingredients": [
+        {
+          "nom": "crevettes",
+          "type": "frais",
+          "quantite": {
+            "valeur": 200,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "pesto",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "c. à soupe"
+          }
+        }
+      ],
+      "nb_comptables": 2,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Mélanger les crevettes au pesto.",
+        "Cuire à l'airfryer 190°C, 8 min.",
+        "Servir chaud."
+      ],
+      "tags": []
+    },
+    {
+      "id": "crevettes-citron-ail-airfryer",
+      "nom": "Crevettes citron-ail airfryer",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "crevettes",
+      "categorie": "poisson",
+      "ingredients": [
+        {
+          "nom": "crevettes",
+          "type": "frais",
+          "quantite": {
+            "valeur": 200,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "citron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "ail",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": "gousse"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Mélanger crevettes, ail et jus de citron.",
+        "Cuire 190°C, 8 min.",
+        "Servir."
+      ],
+      "tags": []
+    },
+    {
+      "id": "sardines-au-citron-airfryer",
+      "nom": "Sardines au citron airfryer",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "sardines en boîte",
+      "categorie": "poisson",
+      "ingredients": [
+        {
+          "nom": "sardines en boîte",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": "boîtes"
+          }
+        },
+        {
+          "nom": "citron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 2,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Égoutter les sardines, arroser de citron.",
+        "Réchauffer à l'airfryer 180°C, 6 min.",
+        "Servir."
+      ],
+      "tags": []
+    },
+    {
+      "id": "saucisses-poivrons-airfryer",
+      "nom": "Saucisses & poivrons airfryer",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "saucisses",
+      "categorie": "viande",
+      "ingredients": [
+        {
+          "nom": "saucisses",
+          "type": "frais",
+          "quantite": {
+            "valeur": 3,
+            "unite": null
+          }
+        },
+        {
+          "nom": "poivron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Couper poivron et oignon.",
+        "Disposer avec les saucisses.",
+        "Cuire 190°C, 14 min en secouant."
+      ],
+      "tags": [
+        "enfant_friendly",
+        "porc"
+      ]
+    },
+    {
+      "id": "merguez-pommes-de-terre-airfryer",
+      "nom": "Merguez & pommes de terre airfryer",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "merguez",
+      "categorie": "viande",
+      "ingredients": [
+        {
+          "nom": "merguez",
+          "type": "frais",
+          "quantite": {
+            "valeur": 4,
+            "unite": null
+          }
+        },
+        {
+          "nom": "pommes de terre",
+          "type": "frais",
+          "quantite": {
+            "valeur": 3,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 2,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Tailler les pommes de terre en cubes.",
+        "Disposer avec les merguez.",
+        "Cuire 190°C, 16 min en secouant."
+      ],
+      "tags": []
+    },
+    {
+      "id": "cote-de-porc-pommes-de-terre-airfryer",
+      "nom": "Côte de porc & pommes de terre airfryer",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "côte de porc",
+      "categorie": "viande",
+      "ingredients": [
+        {
+          "nom": "côte de porc",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "pommes de terre",
+          "type": "frais",
+          "quantite": {
+            "valeur": 3,
+            "unite": null
+          }
+        },
+        {
+          "nom": "ail",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": "gousse"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Couper les pommes de terre, mélanger à l'ail.",
+        "Disposer avec la côte de porc.",
+        "Cuire 190°C, 16 min."
+      ],
+      "tags": [
+        "porc"
+      ]
+    },
+    {
+      "id": "chipolatas-courgettes-airfryer",
+      "nom": "Chipolatas & courgettes airfryer",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "chipolatas",
+      "categorie": "viande",
+      "ingredients": [
+        {
+          "nom": "chipolatas",
+          "type": "frais",
+          "quantite": {
+            "valeur": 4,
+            "unite": null
+          }
+        },
+        {
+          "nom": "courgette",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 2,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Couper la courgette en rondelles.",
+        "Disposer avec les chipolatas.",
+        "Cuire 190°C, 14 min."
+      ],
+      "tags": [
+        "enfant_friendly",
+        "porc"
+      ]
+    },
+    {
+      "id": "croque-monsieur-airfryer",
+      "nom": "Croque-monsieur airfryer",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "jambon",
+      "categorie": "feculent",
+      "ingredients": [
+        {
+          "nom": "pain de mie",
+          "type": "frais",
+          "quantite": {
+            "valeur": 4,
+            "unite": "tranches"
+          }
+        },
+        {
+          "nom": "jambon",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": "tranches"
+          }
+        },
+        {
+          "nom": "fromage râpé",
+          "type": "frais",
+          "quantite": {
+            "valeur": 60,
+            "unite": "g"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Garnir le pain de jambon et fromage.",
+        "Cuire à l'airfryer 180°C, 6 min.",
+        "Servir doré."
+      ],
+      "tags": [
+        "enfant_friendly",
+        "porc"
+      ]
+    },
+    {
+      "id": "tartines-chevre-miel-airfryer",
+      "nom": "Tartines chèvre-miel airfryer",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "bûche de chèvre",
+      "categorie": "vegetarien",
+      "ingredients": [
+        {
+          "nom": "pain de campagne",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": "tranches"
+          }
+        },
+        {
+          "nom": "bûche de chèvre",
+          "type": "frais",
+          "quantite": {
+            "valeur": 80,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "miel",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "c. à soupe"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Déposer le chèvre sur le pain.",
+        "Cuire 180°C, 6 min.",
+        "Arroser de miel."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "boulettes-de-b-uf-a-la-tomate-airfryer",
+      "nom": "Boulettes de bœuf à la tomate airfryer",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "steak haché",
+      "categorie": "viande",
+      "ingredients": [
+        {
+          "nom": "steak haché",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "chapelure",
+          "type": "base",
+          "quantite": {
+            "valeur": 4,
+            "unite": "c. à soupe"
+          }
+        },
+        {
+          "nom": "tomates concassées",
+          "type": "base",
+          "quantite": {
+            "valeur": 400,
+            "unite": "g"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Mélanger le steak haché et la chapelure, former des boulettes.",
+        "Cuire à l'airfryer 190°C, 10 min.",
+        "Réchauffer dans la tomate concassée."
+      ],
+      "tags": [
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "b-uf-marine-soja-airfryer",
+      "nom": "Bœuf mariné soja airfryer",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "bœuf émincé",
+      "categorie": "viande",
+      "ingredients": [
+        {
+          "nom": "bœuf émincé",
+          "type": "frais",
+          "quantite": {
+            "valeur": 250,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "sauce soja",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": "c. à soupe"
+          }
+        },
+        {
+          "nom": "miel",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "c. à soupe"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Mélanger le bœuf à la sauce soja et au miel.",
+        "Cuire à l'airfryer 200°C, 8 min.",
+        "Servir."
+      ],
+      "tags": []
+    },
+    {
+      "id": "frites-de-courgette-panees-airfryer",
+      "nom": "Frites de courgette panées airfryer",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "courgette",
+      "categorie": "vegetarien",
+      "ingredients": [
+        {
+          "nom": "courgette",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "chapelure",
+          "type": "base",
+          "quantite": {
+            "valeur": 4,
+            "unite": "c. à soupe"
+          }
+        },
+        {
+          "nom": "œufs",
+          "type": "base",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Tailler la courgette en bâtonnets.",
+        "Passer dans l'œuf puis la chapelure.",
+        "Cuire 190°C, 12 min."
+      ],
+      "tags": [
+        "enfant_friendly",
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "gnocchi-croustillants-airfryer",
+      "nom": "Gnocchi croustillants airfryer",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "gnocchi",
+      "categorie": "vegetarien",
+      "ingredients": [
+        {
+          "nom": "gnocchi",
+          "type": "frais",
+          "quantite": {
+            "valeur": 400,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "parmesan",
+          "type": "frais",
+          "quantite": {
+            "valeur": 40,
+            "unite": "g"
+          }
+        }
+      ],
+      "nb_comptables": 2,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Mélanger les gnocchi avec un peu d'huile.",
+        "Cuire à l'airfryer 190°C, 12 min en secouant.",
+        "Parsemer de parmesan."
+      ],
+      "tags": [
+        "enfant_friendly",
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "poivrons-farcis-au-riz-airfryer",
+      "nom": "Poivrons farcis au riz airfryer",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "poivron",
+      "categorie": "vegetarien",
+      "ingredients": [
+        {
+          "nom": "poivron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "riz cuit",
+          "type": "base",
+          "quantite": {
+            "valeur": 250,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "fromage râpé",
+          "type": "frais",
+          "quantite": {
+            "valeur": 60,
+            "unite": "g"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Évider les poivrons, garnir de riz.",
+        "Couvrir de fromage.",
+        "Cuire 180°C, 14 min."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "tomates-cerises-roties-a-l-ail-airfryer",
+      "nom": "Tomates cerises rôties à l'ail airfryer",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "tomates cerises",
+      "categorie": "vegetarien",
+      "ingredients": [
+        {
+          "nom": "tomates cerises",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "poignée"
+          }
+        },
+        {
+          "nom": "ail",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": "gousse"
+          }
+        }
+      ],
+      "nb_comptables": 2,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Mélanger les tomates cerises à l'ail.",
+        "Cuire à l'airfryer 180°C, 8 min.",
+        "Servir."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "feta-rotie-tomates-cerises-airfryer",
+      "nom": "Feta rôtie & tomates cerises airfryer",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "feta",
+      "categorie": "vegetarien",
+      "ingredients": [
+        {
+          "nom": "feta",
+          "type": "frais",
+          "quantite": {
+            "valeur": 80,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "tomates cerises",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "poignée"
+          }
+        }
+      ],
+      "nb_comptables": 2,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Déposer la feta au centre, entourer de tomates cerises.",
+        "Cuire 180°C, 12 min.",
+        "Mélanger et servir."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "chevre-pane-au-miel-airfryer",
+      "nom": "Chèvre pané au miel airfryer",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "bûche de chèvre",
+      "categorie": "vegetarien",
+      "ingredients": [
+        {
+          "nom": "bûche de chèvre",
+          "type": "frais",
+          "quantite": {
+            "valeur": 80,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "chapelure",
+          "type": "base",
+          "quantite": {
+            "valeur": 4,
+            "unite": "c. à soupe"
+          }
+        },
+        {
+          "nom": "miel",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "c. à soupe"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Paner le chèvre dans la chapelure.",
+        "Cuire à l'airfryer 180°C, 7 min.",
+        "Arroser de miel."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "gratin-de-courgettes-airfryer",
+      "nom": "Gratin de courgettes airfryer",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "courgette",
+      "categorie": "vegetarien",
+      "ingredients": [
+        {
+          "nom": "courgette",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "crème fraîche",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": "c. à soupe"
+          }
+        },
+        {
+          "nom": "fromage râpé",
+          "type": "frais",
+          "quantite": {
+            "valeur": 60,
+            "unite": "g"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Disposer les rondelles de courgette, napper de crème.",
+        "Couvrir de fromage.",
+        "Cuire 180°C, 15 min."
+      ],
+      "tags": [
+        "enfant_friendly",
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "galettes-de-patate-douce-airfryer",
+      "nom": "Galettes de patate douce airfryer",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "patate douce",
+      "categorie": "vegetarien",
+      "ingredients": [
+        {
+          "nom": "patate douce",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "œufs",
+          "type": "base",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "chapelure",
+          "type": "base",
+          "quantite": {
+            "valeur": 4,
+            "unite": "c. à soupe"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Râper la patate douce, mélanger œuf et chapelure.",
+        "Former des galettes.",
+        "Cuire 190°C, 14 min."
+      ],
+      "tags": [
+        "enfant_friendly",
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "rosti-de-pommes-de-terre-airfryer",
+      "nom": "Rösti de pommes de terre airfryer",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "pommes de terre",
+      "categorie": "vegetarien",
+      "ingredients": [
+        {
+          "nom": "pommes de terre",
+          "type": "frais",
+          "quantite": {
+            "valeur": 3,
+            "unite": null
+          }
+        },
+        {
+          "nom": "œufs",
+          "type": "base",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 2,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Râper les pommes de terre, mélanger à l'œuf.",
+        "Former des galettes.",
+        "Cuire 190°C, 16 min."
+      ],
+      "tags": [
+        "enfant_friendly",
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "ufs-cocotte-aux-champignons-airfryer",
+      "nom": "Œufs cocotte aux champignons airfryer",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "champignons",
+      "categorie": "oeufs",
+      "ingredients": [
+        {
+          "nom": "œufs",
+          "type": "base",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "champignons",
+          "type": "frais",
+          "quantite": {
+            "valeur": 200,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "crème fraîche",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": "c. à soupe"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Répartir champignons et crème dans des ramequins.",
+        "Casser un œuf dessus.",
+        "Cuire à l'airfryer 160°C, 10 min."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "ufs-cocotte-au-jambon-airfryer",
+      "nom": "Œufs cocotte au jambon airfryer",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "jambon",
+      "categorie": "oeufs",
+      "ingredients": [
+        {
+          "nom": "œufs",
+          "type": "base",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "jambon",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": "tranches"
+          }
+        },
+        {
+          "nom": "crème fraîche",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": "c. à soupe"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Tapisser les ramequins de jambon et crème.",
+        "Casser un œuf dessus.",
+        "Cuire 160°C, 10 min."
+      ],
+      "tags": [
+        "enfant_friendly",
+        "porc"
+      ]
+    },
+    {
+      "id": "tortilla-de-pommes-de-terre-airfryer",
+      "nom": "Tortilla de pommes de terre airfryer",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "pommes de terre",
+      "categorie": "oeufs",
+      "ingredients": [
+        {
+          "nom": "œufs",
+          "type": "base",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "pommes de terre",
+          "type": "frais",
+          "quantite": {
+            "valeur": 3,
+            "unite": null
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Précuire pommes de terre et oignon.",
+        "Verser les œufs battus dans un moule.",
+        "Cuire à l'airfryer 170°C, 15 min."
+      ],
+      "tags": [
+        "enfant_friendly",
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "frittata-aux-legumes-airfryer",
+      "nom": "Frittata aux légumes airfryer",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "courgette",
+      "categorie": "oeufs",
+      "ingredients": [
+        {
+          "nom": "œufs",
+          "type": "base",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "courgette",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "poivron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Battre les œufs avec les légumes en dés.",
+        "Verser dans un moule.",
+        "Cuire 170°C, 14 min."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "quesadilla-poulet-fromage-airfryer",
+      "nom": "Quesadilla poulet-fromage airfryer",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "escalope de poulet",
+      "categorie": "volaille",
+      "ingredients": [
+        {
+          "nom": "tortillas",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "escalope de poulet",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "fromage râpé",
+          "type": "frais",
+          "quantite": {
+            "valeur": 60,
+            "unite": "g"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Garnir la tortilla de poulet émincé et fromage.",
+        "Plier en deux.",
+        "Cuire à l'airfryer 180°C, 7 min."
+      ],
+      "tags": [
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "quesadilla-au-thon-airfryer",
+      "nom": "Quesadilla au thon airfryer",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "thon en conserve",
+      "categorie": "feculent",
+      "ingredients": [
+        {
+          "nom": "tortillas",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "thon en conserve",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": "boîte"
+          }
+        },
+        {
+          "nom": "fromage râpé",
+          "type": "frais",
+          "quantite": {
+            "valeur": 60,
+            "unite": "g"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Garnir la tortilla de thon et fromage.",
+        "Plier en deux.",
+        "Cuire 180°C, 7 min."
+      ],
+      "tags": []
+    },
+    {
+      "id": "pois-chiches-rotis-au-paprika-airfryer",
+      "nom": "Pois chiches rôtis au paprika airfryer",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "pois chiches",
+      "categorie": "vegetarien",
+      "ingredients": [
+        {
+          "nom": "pois chiches",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "boîte"
+          }
+        },
+        {
+          "nom": "ail",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": "gousse"
+          }
+        }
+      ],
+      "nb_comptables": 2,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Égoutter et sécher les pois chiches, mélanger à l'ail.",
+        "Cuire à l'airfryer 190°C, 14 min en secouant.",
+        "Saler et servir."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "champignons-farcis-au-chevre-airfryer",
+      "nom": "Champignons farcis au chèvre airfryer",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "champignons",
+      "categorie": "vegetarien",
+      "ingredients": [
+        {
+          "nom": "champignons",
+          "type": "frais",
+          "quantite": {
+            "valeur": 200,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "bûche de chèvre",
+          "type": "frais",
+          "quantite": {
+            "valeur": 80,
+            "unite": "g"
+          }
+        }
+      ],
+      "nb_comptables": 2,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Retirer les pieds des champignons, garnir de chèvre.",
+        "Cuire 180°C, 10 min.",
+        "Servir."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "carottes-roties-au-cumin-airfryer",
+      "nom": "Carottes rôties au cumin airfryer",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "carotte",
+      "categorie": "vegetarien",
+      "ingredients": [
+        {
+          "nom": "carotte",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "miel",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "c. à soupe"
+          }
+        }
+      ],
+      "nb_comptables": 2,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Tailler les carottes en bâtonnets.",
+        "Enrober de miel.",
+        "Cuire à l'airfryer 190°C, 15 min."
+      ],
+      "tags": [
+        "enfant_friendly",
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "potiron-roti-airfryer",
+      "nom": "Potiron rôti airfryer",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "potiron",
+      "categorie": "vegetarien",
+      "ingredients": [
+        {
+          "nom": "potiron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 400,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "ail",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": "gousse"
+          }
+        }
+      ],
+      "nb_comptables": 2,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Couper le potiron en cubes, mélanger à l'ail.",
+        "Cuire 190°C, 16 min en secouant.",
+        "Servir."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "avocat-uf-cocotte-airfryer",
+      "nom": "Avocat œuf cocotte airfryer",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "avocat",
+      "categorie": "oeufs",
+      "ingredients": [
+        {
+          "nom": "avocat",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "œufs",
+          "type": "base",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "fromage râpé",
+          "type": "frais",
+          "quantite": {
+            "valeur": 60,
+            "unite": "g"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Creuser l'avocat, y casser un œuf.",
+        "Couvrir de fromage.",
+        "Cuire à l'airfryer 180°C, 10 min."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "saumon-fume-pommes-de-terre-airfryer",
+      "nom": "Saumon fumé & pommes de terre airfryer",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "saumon fumé",
+      "categorie": "poisson",
+      "ingredients": [
+        {
+          "nom": "saumon fumé",
+          "type": "frais",
+          "quantite": {
+            "valeur": 120,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "pommes de terre",
+          "type": "frais",
+          "quantite": {
+            "valeur": 3,
+            "unite": null
+          }
+        },
+        {
+          "nom": "crème fraîche",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": "c. à soupe"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Cuire les pommes de terre à l'airfryer 200°C, 18 min.",
+        "Servir avec crème et saumon fumé.",
+        "Poivrer."
+      ],
+      "tags": []
+    },
+    {
+      "id": "dinde-panee-au-parmesan-airfryer",
+      "nom": "Dinde panée au parmesan airfryer",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "aiguillettes de dinde",
+      "categorie": "volaille",
+      "ingredients": [
+        {
+          "nom": "aiguillettes de dinde",
+          "type": "frais",
+          "quantite": {
+            "valeur": 250,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "parmesan",
+          "type": "frais",
+          "quantite": {
+            "valeur": 40,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "chapelure",
+          "type": "base",
+          "quantite": {
+            "valeur": 4,
+            "unite": "c. à soupe"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Mélanger parmesan et chapelure.",
+        "Enrober les aiguillettes.",
+        "Cuire 190°C, 12 min."
+      ],
+      "tags": [
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "risotto-au-chorizo-cookeo",
+      "nom": "Risotto au chorizo Cookeo",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "chorizo",
+      "categorie": "feculent",
+      "ingredients": [
+        {
+          "nom": "riz",
+          "type": "base",
+          "quantite": {
+            "valeur": 180,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "chorizo",
+          "type": "frais",
+          "quantite": {
+            "valeur": 80,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "parmesan",
+          "type": "frais",
+          "quantite": {
+            "valeur": 40,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "bouillon cube",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 5,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Dorer oignon et chorizo en mode dorer.",
+        "Ajouter riz, bouillon et eau à hauteur.",
+        "Cuisson sous pression 6 min.",
+        "Mélanger le parmesan et servir."
+      ],
+      "tags": [
+        "porc"
+      ]
+    },
+    {
+      "id": "risotto-aux-crevettes-cookeo",
+      "nom": "Risotto aux crevettes Cookeo",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "crevettes",
+      "categorie": "feculent",
+      "ingredients": [
+        {
+          "nom": "riz",
+          "type": "base",
+          "quantite": {
+            "valeur": 180,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "crevettes",
+          "type": "frais",
+          "quantite": {
+            "valeur": 200,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "parmesan",
+          "type": "frais",
+          "quantite": {
+            "valeur": 40,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "bouillon cube",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 5,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Dorer l'oignon en mode dorer.",
+        "Ajouter riz, bouillon et eau à hauteur.",
+        "Cuisson sous pression 6 min, ajouter les crevettes.",
+        "Mélanger le parmesan et servir."
+      ],
+      "tags": []
+    },
+    {
+      "id": "risotto-aux-epinards-cookeo",
+      "nom": "Risotto aux épinards Cookeo",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "épinards",
+      "categorie": "feculent",
+      "ingredients": [
+        {
+          "nom": "riz",
+          "type": "base",
+          "quantite": {
+            "valeur": 180,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "épinards",
+          "type": "frais",
+          "quantite": {
+            "valeur": 150,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "parmesan",
+          "type": "frais",
+          "quantite": {
+            "valeur": 40,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "bouillon cube",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 5,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Dorer l'oignon.",
+        "Ajouter riz, bouillon et eau à hauteur.",
+        "Cuisson sous pression 6 min, incorporer les épinards.",
+        "Mélanger le parmesan."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "risotto-au-thon-cookeo",
+      "nom": "Risotto au thon Cookeo",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "thon en conserve",
+      "categorie": "feculent",
+      "ingredients": [
+        {
+          "nom": "riz",
+          "type": "base",
+          "quantite": {
+            "valeur": 180,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "thon en conserve",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": "boîte"
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "parmesan",
+          "type": "frais",
+          "quantite": {
+            "valeur": 40,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "bouillon cube",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 5,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Dorer l'oignon.",
+        "Ajouter riz, bouillon et eau à hauteur.",
+        "Cuisson sous pression 6 min.",
+        "Ajouter le thon et le parmesan."
+      ],
+      "tags": []
+    },
+    {
+      "id": "risotto-a-la-carotte-cookeo",
+      "nom": "Risotto à la carotte Cookeo",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "carotte",
+      "categorie": "feculent",
+      "ingredients": [
+        {
+          "nom": "riz",
+          "type": "base",
+          "quantite": {
+            "valeur": 180,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "carotte",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "parmesan",
+          "type": "frais",
+          "quantite": {
+            "valeur": 40,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "bouillon cube",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 5,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Dorer oignon et carotte râpée.",
+        "Ajouter riz, bouillon et eau à hauteur.",
+        "Cuisson sous pression 6 min.",
+        "Mélanger le parmesan."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "risotto-saumon-epinards-cookeo",
+      "nom": "Risotto saumon-épinards Cookeo",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "pavé de saumon",
+      "categorie": "feculent",
+      "ingredients": [
+        {
+          "nom": "riz",
+          "type": "base",
+          "quantite": {
+            "valeur": 180,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "pavé de saumon",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "épinards",
+          "type": "frais",
+          "quantite": {
+            "valeur": 150,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "bouillon cube",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 5,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Dorer l'oignon.",
+        "Ajouter riz, bouillon et eau à hauteur.",
+        "Cuisson 6 min avec le saumon en morceaux.",
+        "Incorporer les épinards et servir."
+      ],
+      "tags": []
+    },
+    {
+      "id": "riz-au-poulet-curry-cookeo",
+      "nom": "Riz au poulet & curry Cookeo",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "escalope de poulet",
+      "categorie": "volaille",
+      "ingredients": [
+        {
+          "nom": "riz",
+          "type": "base",
+          "quantite": {
+            "valeur": 180,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "escalope de poulet",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "curry",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "c. à café"
+          }
+        },
+        {
+          "nom": "lait de coco",
+          "type": "frais",
+          "quantite": {
+            "valeur": 20,
+            "unite": "cl"
+          }
+        },
+        {
+          "nom": "bouillon cube",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 5,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Dorer le poulet en morceaux.",
+        "Ajouter riz, curry, lait de coco et bouillon.",
+        "Cuisson sous pression 7 min.",
+        "Mélanger et servir."
+      ],
+      "tags": []
+    },
+    {
+      "id": "riz-aux-legumes-cookeo",
+      "nom": "Riz aux légumes Cookeo",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "courgette",
+      "categorie": "feculent",
+      "ingredients": [
+        {
+          "nom": "riz",
+          "type": "base",
+          "quantite": {
+            "valeur": 180,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "courgette",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "poivron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "carotte",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "bouillon cube",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 5,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Dorer les légumes en dés.",
+        "Ajouter riz, bouillon et eau à hauteur.",
+        "Cuisson sous pression 6 min.",
+        "Mélanger et servir."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "riz-petits-pois-carotte-cookeo",
+      "nom": "Riz petits pois-carotte Cookeo",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "petits pois",
+      "categorie": "feculent",
+      "ingredients": [
+        {
+          "nom": "riz",
+          "type": "base",
+          "quantite": {
+            "valeur": 180,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "petits pois",
+          "type": "frais",
+          "quantite": {
+            "valeur": 100,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "carotte",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "bouillon cube",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Faire revenir la carotte en dés.",
+        "Ajouter riz, petits pois et bouillon.",
+        "Cuisson sous pression 6 min.",
+        "Servir."
+      ],
+      "tags": [
+        "enfant_friendly",
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "riz-tomate-feta-cookeo",
+      "nom": "Riz tomate-feta Cookeo",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "feta",
+      "categorie": "feculent",
+      "ingredients": [
+        {
+          "nom": "riz",
+          "type": "base",
+          "quantite": {
+            "valeur": 180,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "tomates concassées",
+          "type": "base",
+          "quantite": {
+            "valeur": 400,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "feta",
+          "type": "frais",
+          "quantite": {
+            "valeur": 80,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "bouillon cube",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 5,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Dorer l'oignon.",
+        "Ajouter riz, tomate et bouillon.",
+        "Cuisson sous pression 6 min.",
+        "Émietter la feta et servir."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "pates-au-saumon-creme-cookeo",
+      "nom": "Pâtes au saumon & crème Cookeo",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "pavé de saumon",
+      "categorie": "feculent",
+      "ingredients": [
+        {
+          "nom": "pâtes",
+          "type": "base",
+          "quantite": {
+            "valeur": 200,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "pavé de saumon",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "crème fraîche",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": "c. à soupe"
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Dorer l'oignon.",
+        "Ajouter pâtes et eau à hauteur, cuisson 4 min.",
+        "Incorporer saumon en morceaux et crème.",
+        "Mélanger et servir."
+      ],
+      "tags": []
+    },
+    {
+      "id": "pates-pesto-poulet-cookeo",
+      "nom": "Pâtes pesto-poulet Cookeo",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "escalope de poulet",
+      "categorie": "feculent",
+      "ingredients": [
+        {
+          "nom": "pâtes",
+          "type": "base",
+          "quantite": {
+            "valeur": 200,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "escalope de poulet",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "pesto",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "c. à soupe"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Dorer le poulet en morceaux.",
+        "Ajouter pâtes et eau à hauteur, cuisson 4 min.",
+        "Mélanger le pesto et servir."
+      ],
+      "tags": [
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "pates-jambon-creme-cookeo",
+      "nom": "Pâtes jambon-crème Cookeo",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "jambon",
+      "categorie": "feculent",
+      "ingredients": [
+        {
+          "nom": "pâtes",
+          "type": "base",
+          "quantite": {
+            "valeur": 200,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "jambon",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": "tranches"
+          }
+        },
+        {
+          "nom": "crème fraîche",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": "c. à soupe"
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Dorer l'oignon.",
+        "Ajouter pâtes et eau à hauteur, cuisson 4 min.",
+        "Incorporer jambon et crème.",
+        "Servir."
+      ],
+      "tags": [
+        "enfant_friendly",
+        "porc"
+      ]
+    },
+    {
+      "id": "pates-aux-crevettes-cookeo",
+      "nom": "Pâtes aux crevettes Cookeo",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "crevettes",
+      "categorie": "feculent",
+      "ingredients": [
+        {
+          "nom": "pâtes",
+          "type": "base",
+          "quantite": {
+            "valeur": 200,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "crevettes",
+          "type": "frais",
+          "quantite": {
+            "valeur": 200,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "tomates concassées",
+          "type": "base",
+          "quantite": {
+            "valeur": 400,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "ail",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": "gousse"
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Faire revenir l'ail.",
+        "Ajouter pâtes, tomate et eau à hauteur, cuisson 4 min.",
+        "Ajouter les crevettes en fin de cuisson.",
+        "Mélanger et servir."
+      ],
+      "tags": []
+    },
+    {
+      "id": "pates-champignons-creme-cookeo",
+      "nom": "Pâtes champignons-crème Cookeo",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "champignons",
+      "categorie": "feculent",
+      "ingredients": [
+        {
+          "nom": "pâtes",
+          "type": "base",
+          "quantite": {
+            "valeur": 200,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "champignons",
+          "type": "frais",
+          "quantite": {
+            "valeur": 200,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "crème fraîche",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": "c. à soupe"
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Dorer oignon et champignons.",
+        "Ajouter pâtes et eau à hauteur, cuisson 4 min.",
+        "Incorporer la crème.",
+        "Servir."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "pates-carbonara-cookeo",
+      "nom": "Pâtes carbonara Cookeo",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "lardons",
+      "categorie": "feculent",
+      "ingredients": [
+        {
+          "nom": "pâtes",
+          "type": "base",
+          "quantite": {
+            "valeur": 200,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "lardons",
+          "type": "frais",
+          "quantite": {
+            "valeur": 150,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "œufs",
+          "type": "base",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "parmesan",
+          "type": "frais",
+          "quantite": {
+            "valeur": 40,
+            "unite": "g"
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Dorer les lardons en mode dorer.",
+        "Ajouter pâtes et eau à hauteur, cuisson 4 min.",
+        "Hors pression, mélanger œuf battu et parmesan.",
+        "Servir crémeux."
+      ],
+      "tags": [
+        "enfant_friendly",
+        "porc"
+      ]
+    },
+    {
+      "id": "pates-epinards-chevre-cookeo",
+      "nom": "Pâtes épinards-chèvre Cookeo",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "épinards",
+      "categorie": "feculent",
+      "ingredients": [
+        {
+          "nom": "pâtes",
+          "type": "base",
+          "quantite": {
+            "valeur": 200,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "épinards",
+          "type": "frais",
+          "quantite": {
+            "valeur": 150,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "bûche de chèvre",
+          "type": "frais",
+          "quantite": {
+            "valeur": 80,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Dorer l'oignon.",
+        "Ajouter pâtes et eau à hauteur, cuisson 4 min.",
+        "Incorporer épinards et chèvre.",
+        "Mélanger et servir."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "soupe-de-carotte-cookeo",
+      "nom": "Soupe de carotte Cookeo",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "carotte",
+      "categorie": "soupe",
+      "ingredients": [
+        {
+          "nom": "carotte",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "bouillon cube",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Faire revenir l'oignon.",
+        "Ajouter carottes, bouillon et eau.",
+        "Cuisson sous pression 10 min.",
+        "Mixer et servir."
+      ],
+      "tags": [
+        "enfant_friendly",
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "soupe-de-petits-pois-cookeo",
+      "nom": "Soupe de petits pois Cookeo",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "petits pois",
+      "categorie": "soupe",
+      "ingredients": [
+        {
+          "nom": "petits pois",
+          "type": "frais",
+          "quantite": {
+            "valeur": 100,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "crème fraîche",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": "c. à soupe"
+          }
+        },
+        {
+          "nom": "bouillon cube",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Faire revenir l'oignon.",
+        "Ajouter petits pois, bouillon et eau.",
+        "Cuisson sous pression 8 min.",
+        "Mixer avec la crème."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "soupe-tomate-vermicelles-cookeo",
+      "nom": "Soupe tomate-vermicelles Cookeo",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": null,
+      "categorie": "soupe",
+      "ingredients": [
+        {
+          "nom": "tomates concassées",
+          "type": "base",
+          "quantite": {
+            "valeur": 400,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "vermicelles",
+          "type": "base",
+          "quantite": {
+            "valeur": 80,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "bouillon cube",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Faire revenir l'oignon.",
+        "Ajouter tomate, bouillon et eau.",
+        "Cuisson sous pression 6 min, ajouter les vermicelles.",
+        "Laisser gonfler et servir."
+      ],
+      "tags": [
+        "enfant_friendly",
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "veloute-courgette-chevre-cookeo",
+      "nom": "Velouté courgette-chèvre Cookeo",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "courgette",
+      "categorie": "soupe",
+      "ingredients": [
+        {
+          "nom": "courgette",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "bûche de chèvre",
+          "type": "frais",
+          "quantite": {
+            "valeur": 80,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "bouillon cube",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Faire revenir l'oignon.",
+        "Ajouter courgettes, bouillon et eau.",
+        "Cuisson sous pression 8 min.",
+        "Mixer avec le chèvre."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "soupe-lentilles-coco-cookeo",
+      "nom": "Soupe lentilles-coco Cookeo",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "lentilles corail",
+      "categorie": "soupe",
+      "ingredients": [
+        {
+          "nom": "lentilles corail",
+          "type": "frais",
+          "quantite": {
+            "valeur": 150,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "lait de coco",
+          "type": "frais",
+          "quantite": {
+            "valeur": 20,
+            "unite": "cl"
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "bouillon cube",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Faire revenir l'oignon.",
+        "Ajouter lentilles, lait de coco, bouillon et eau.",
+        "Cuisson sous pression 8 min.",
+        "Mixer et servir."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "minestrone-cookeo",
+      "nom": "Minestrone Cookeo",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "carotte",
+      "categorie": "soupe",
+      "ingredients": [
+        {
+          "nom": "tomates concassées",
+          "type": "base",
+          "quantite": {
+            "valeur": 400,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "pâtes",
+          "type": "base",
+          "quantite": {
+            "valeur": 200,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "carotte",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "courgette",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "bouillon cube",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 5,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Faire revenir carotte et courgette en dés.",
+        "Ajouter tomate, bouillon et eau.",
+        "Cuisson sous pression 6 min, ajouter les pâtes.",
+        "Laisser cuire et servir."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "curry-de-poulet-patate-douce-cookeo",
+      "nom": "Curry de poulet & patate douce Cookeo",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "escalope de poulet",
+      "categorie": "volaille",
+      "ingredients": [
+        {
+          "nom": "escalope de poulet",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "patate douce",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "curry",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "c. à café"
+          }
+        },
+        {
+          "nom": "lait de coco",
+          "type": "frais",
+          "quantite": {
+            "valeur": 20,
+            "unite": "cl"
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 5,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Dorer poulet et oignon.",
+        "Ajouter patate douce, curry et lait de coco.",
+        "Cuisson sous pression 8 min.",
+        "Mélanger et servir."
+      ],
+      "tags": []
+    },
+    {
+      "id": "curry-de-crevettes-coco-cookeo",
+      "nom": "Curry de crevettes coco Cookeo",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "crevettes",
+      "categorie": "poisson",
+      "ingredients": [
+        {
+          "nom": "crevettes",
+          "type": "frais",
+          "quantite": {
+            "valeur": 200,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "lait de coco",
+          "type": "frais",
+          "quantite": {
+            "valeur": 20,
+            "unite": "cl"
+          }
+        },
+        {
+          "nom": "curry",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "c. à café"
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Dorer l'oignon.",
+        "Ajouter curry et lait de coco, porter à frémissement.",
+        "Cuisson 3 min avec les crevettes.",
+        "Servir avec du riz."
+      ],
+      "tags": []
+    },
+    {
+      "id": "curry-de-lentilles-epinards-cookeo",
+      "nom": "Curry de lentilles & épinards Cookeo",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "lentilles corail",
+      "categorie": "vegetarien",
+      "ingredients": [
+        {
+          "nom": "lentilles corail",
+          "type": "frais",
+          "quantite": {
+            "valeur": 150,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "épinards",
+          "type": "frais",
+          "quantite": {
+            "valeur": 150,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "curry",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "c. à café"
+          }
+        },
+        {
+          "nom": "lait de coco",
+          "type": "frais",
+          "quantite": {
+            "valeur": 20,
+            "unite": "cl"
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Faire revenir le curry.",
+        "Ajouter lentilles, lait de coco et eau.",
+        "Cuisson sous pression 8 min.",
+        "Incorporer les épinards et servir."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "curry-de-courgette-coco-cookeo",
+      "nom": "Curry de courgette coco Cookeo",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "courgette",
+      "categorie": "vegetarien",
+      "ingredients": [
+        {
+          "nom": "courgette",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "lait de coco",
+          "type": "frais",
+          "quantite": {
+            "valeur": 20,
+            "unite": "cl"
+          }
+        },
+        {
+          "nom": "curry",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "c. à café"
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Dorer l'oignon.",
+        "Ajouter courgettes, curry et lait de coco.",
+        "Cuisson sous pression 6 min.",
+        "Servir."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "b-uf-bourguignon-express-cookeo",
+      "nom": "Bœuf bourguignon express Cookeo",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "bœuf émincé",
+      "categorie": "viande",
+      "ingredients": [
+        {
+          "nom": "bœuf émincé",
+          "type": "frais",
+          "quantite": {
+            "valeur": 250,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "champignons",
+          "type": "frais",
+          "quantite": {
+            "valeur": 200,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "bouillon cube",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Dorer bœuf et oignon.",
+        "Ajouter champignons, bouillon et eau.",
+        "Cuisson sous pression 12 min.",
+        "Servir."
+      ],
+      "tags": []
+    },
+    {
+      "id": "b-uf-aux-champignons-creme-cookeo",
+      "nom": "Bœuf aux champignons crème Cookeo",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "bœuf émincé",
+      "categorie": "viande",
+      "ingredients": [
+        {
+          "nom": "bœuf émincé",
+          "type": "frais",
+          "quantite": {
+            "valeur": 250,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "champignons",
+          "type": "frais",
+          "quantite": {
+            "valeur": 200,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "crème fraîche",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": "c. à soupe"
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Dorer bœuf et oignon.",
+        "Ajouter les champignons.",
+        "Cuisson sous pression 10 min.",
+        "Incorporer la crème et servir."
+      ],
+      "tags": []
+    },
+    {
+      "id": "poulet-creme-champignons-cookeo",
+      "nom": "Poulet crème & champignons Cookeo",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "escalope de poulet",
+      "categorie": "volaille",
+      "ingredients": [
+        {
+          "nom": "escalope de poulet",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "champignons",
+          "type": "frais",
+          "quantite": {
+            "valeur": 200,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "crème fraîche",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": "c. à soupe"
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Dorer poulet et oignon.",
+        "Ajouter les champignons.",
+        "Cuisson sous pression 8 min.",
+        "Incorporer la crème et servir."
+      ],
+      "tags": [
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "poulet-au-chorizo-cookeo",
+      "nom": "Poulet au chorizo Cookeo",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "escalope de poulet",
+      "categorie": "volaille",
+      "ingredients": [
+        {
+          "nom": "escalope de poulet",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "chorizo",
+          "type": "frais",
+          "quantite": {
+            "valeur": 80,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "tomates concassées",
+          "type": "base",
+          "quantite": {
+            "valeur": 400,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Dorer poulet, chorizo et oignon.",
+        "Ajouter la tomate.",
+        "Cuisson sous pression 8 min.",
+        "Servir."
+      ],
+      "tags": [
+        "porc"
+      ]
+    },
+    {
+      "id": "saucisses-pommes-de-terre-cookeo",
+      "nom": "Saucisses & pommes de terre Cookeo",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "saucisses",
+      "categorie": "viande",
+      "ingredients": [
+        {
+          "nom": "saucisses",
+          "type": "frais",
+          "quantite": {
+            "valeur": 3,
+            "unite": null
+          }
+        },
+        {
+          "nom": "pommes de terre",
+          "type": "frais",
+          "quantite": {
+            "valeur": 3,
+            "unite": null
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "bouillon cube",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Dorer les saucisses et l'oignon.",
+        "Ajouter pommes de terre, bouillon et eau.",
+        "Cuisson sous pression 10 min.",
+        "Servir."
+      ],
+      "tags": [
+        "enfant_friendly",
+        "porc"
+      ]
+    },
+    {
+      "id": "chipolatas-pommes-de-terre-cookeo",
+      "nom": "Chipolatas & pommes de terre Cookeo",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "chipolatas",
+      "categorie": "viande",
+      "ingredients": [
+        {
+          "nom": "chipolatas",
+          "type": "frais",
+          "quantite": {
+            "valeur": 4,
+            "unite": null
+          }
+        },
+        {
+          "nom": "pommes de terre",
+          "type": "frais",
+          "quantite": {
+            "valeur": 3,
+            "unite": null
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Dorer chipolatas et oignon.",
+        "Ajouter pommes de terre et eau à hauteur.",
+        "Cuisson sous pression 10 min.",
+        "Servir."
+      ],
+      "tags": [
+        "enfant_friendly",
+        "porc"
+      ]
+    },
+    {
+      "id": "cote-de-porc-aux-champignons-cookeo",
+      "nom": "Côte de porc aux champignons Cookeo",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "côte de porc",
+      "categorie": "viande",
+      "ingredients": [
+        {
+          "nom": "côte de porc",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "champignons",
+          "type": "frais",
+          "quantite": {
+            "valeur": 200,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "crème fraîche",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": "c. à soupe"
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Dorer la côte de porc et l'oignon.",
+        "Ajouter les champignons.",
+        "Cuisson sous pression 12 min.",
+        "Incorporer la crème et servir."
+      ],
+      "tags": [
+        "porc"
+      ]
+    },
+    {
+      "id": "merguez-lentilles-cookeo",
+      "nom": "Merguez & lentilles Cookeo",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "merguez",
+      "categorie": "viande",
+      "ingredients": [
+        {
+          "nom": "merguez",
+          "type": "frais",
+          "quantite": {
+            "valeur": 4,
+            "unite": null
+          }
+        },
+        {
+          "nom": "lentilles corail",
+          "type": "frais",
+          "quantite": {
+            "valeur": 150,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "bouillon cube",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Dorer les merguez et l'oignon.",
+        "Ajouter lentilles, bouillon et eau.",
+        "Cuisson sous pression 8 min.",
+        "Servir."
+      ],
+      "tags": []
+    },
+    {
+      "id": "b-uf-au-curry-cookeo",
+      "nom": "Bœuf au curry Cookeo",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "bœuf émincé",
+      "categorie": "viande",
+      "ingredients": [
+        {
+          "nom": "bœuf émincé",
+          "type": "frais",
+          "quantite": {
+            "valeur": 250,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "curry",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "c. à café"
+          }
+        },
+        {
+          "nom": "lait de coco",
+          "type": "frais",
+          "quantite": {
+            "valeur": 20,
+            "unite": "cl"
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Dorer bœuf et oignon.",
+        "Ajouter curry et lait de coco.",
+        "Cuisson sous pression 10 min.",
+        "Servir avec du riz."
+      ],
+      "tags": []
+    },
+    {
+      "id": "lentilles-au-chorizo-cookeo",
+      "nom": "Lentilles au chorizo Cookeo",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "chorizo",
+      "categorie": "feculent",
+      "ingredients": [
+        {
+          "nom": "lentilles corail",
+          "type": "frais",
+          "quantite": {
+            "valeur": 150,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "chorizo",
+          "type": "frais",
+          "quantite": {
+            "valeur": 80,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "bouillon cube",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Dorer chorizo et oignon.",
+        "Ajouter lentilles, bouillon et eau.",
+        "Cuisson sous pression 8 min.",
+        "Servir."
+      ],
+      "tags": [
+        "porc"
+      ]
+    },
+    {
+      "id": "haricots-rouges-a-la-tomate-cookeo",
+      "nom": "Haricots rouges à la tomate Cookeo",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "haricots rouges",
+      "categorie": "vegetarien",
+      "ingredients": [
+        {
+          "nom": "haricots rouges",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "boîte"
+          }
+        },
+        {
+          "nom": "tomates concassées",
+          "type": "base",
+          "quantite": {
+            "valeur": 400,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Dorer l'oignon.",
+        "Ajouter haricots rouges et tomate.",
+        "Cuisson sous pression 5 min.",
+        "Servir."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "chili-vegetarien-cookeo",
+      "nom": "Chili végétarien Cookeo",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "haricots rouges",
+      "categorie": "vegetarien",
+      "ingredients": [
+        {
+          "nom": "haricots rouges",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "boîte"
+          }
+        },
+        {
+          "nom": "maïs",
+          "type": "base",
+          "quantite": {
+            "valeur": 150,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "tomates concassées",
+          "type": "base",
+          "quantite": {
+            "valeur": 400,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Dorer l'oignon.",
+        "Ajouter haricots, maïs et tomate.",
+        "Cuisson sous pression 6 min.",
+        "Servir."
+      ],
+      "tags": [
+        "enfant_friendly",
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "gnocchi-creme-champignons-cookeo",
+      "nom": "Gnocchi crème-champignons Cookeo",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "champignons",
+      "categorie": "feculent",
+      "ingredients": [
+        {
+          "nom": "gnocchi",
+          "type": "frais",
+          "quantite": {
+            "valeur": 400,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "champignons",
+          "type": "frais",
+          "quantite": {
+            "valeur": 200,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "crème fraîche",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": "c. à soupe"
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Dorer oignon et champignons.",
+        "Ajouter les gnocchi et un peu d'eau.",
+        "Cuisson sous pression 2 min.",
+        "Incorporer la crème et servir."
+      ],
+      "tags": [
+        "enfant_friendly",
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "semoule-aux-legumes-cookeo",
+      "nom": "Semoule aux légumes Cookeo",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "semoule",
+      "categorie": "feculent",
+      "ingredients": [
+        {
+          "nom": "semoule",
+          "type": "frais",
+          "quantite": {
+            "valeur": 200,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "courgette",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "poivron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "bouillon cube",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Faire revenir courgette et poivron en dés.",
+        "Ajouter le bouillon et porter à ébullition.",
+        "Verser sur la semoule, couvrir 5 min.",
+        "Égrener et servir."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "nouilles-sautees-au-poulet-cookeo",
+      "nom": "Nouilles sautées au poulet Cookeo",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "escalope de poulet",
+      "categorie": "volaille",
+      "ingredients": [
+        {
+          "nom": "nouilles chinoises",
+          "type": "frais",
+          "quantite": {
+            "valeur": 200,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "escalope de poulet",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "sauce soja",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": "c. à soupe"
+          }
+        },
+        {
+          "nom": "poivron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Dorer poulet et poivron en mode dorer.",
+        "Ajouter sauce soja et un peu d'eau.",
+        "Ajouter les nouilles, cuisson 3 min.",
+        "Mélanger et servir."
+      ],
+      "tags": [
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "nouilles-aux-crevettes-cookeo",
+      "nom": "Nouilles aux crevettes Cookeo",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "crevettes",
+      "categorie": "feculent",
+      "ingredients": [
+        {
+          "nom": "nouilles chinoises",
+          "type": "frais",
+          "quantite": {
+            "valeur": 200,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "crevettes",
+          "type": "frais",
+          "quantite": {
+            "valeur": 200,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "sauce soja",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": "c. à soupe"
+          }
+        },
+        {
+          "nom": "poivron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Faire revenir le poivron.",
+        "Ajouter sauce soja et eau.",
+        "Ajouter nouilles et crevettes, cuisson 3 min.",
+        "Servir."
+      ],
+      "tags": []
+    },
+    {
+      "id": "potee-de-saucisses-cookeo",
+      "nom": "Potée de saucisses Cookeo",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "saucisses",
+      "categorie": "viande",
+      "ingredients": [
+        {
+          "nom": "saucisses",
+          "type": "frais",
+          "quantite": {
+            "valeur": 3,
+            "unite": null
+          }
+        },
+        {
+          "nom": "carotte",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "pommes de terre",
+          "type": "frais",
+          "quantite": {
+            "valeur": 3,
+            "unite": null
+          }
+        },
+        {
+          "nom": "bouillon cube",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Dorer les saucisses.",
+        "Ajouter carottes, pommes de terre et bouillon.",
+        "Cuisson sous pression 12 min.",
+        "Servir."
+      ],
+      "tags": [
+        "porc"
+      ]
+    },
+    {
+      "id": "soupe-de-potiron-carotte-cookeo",
+      "nom": "Soupe de potiron-carotte Cookeo",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "potiron",
+      "categorie": "soupe",
+      "ingredients": [
+        {
+          "nom": "potiron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 400,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "carotte",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "bouillon cube",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Faire revenir l'oignon.",
+        "Ajouter potiron, carotte et bouillon.",
+        "Cuisson sous pression 10 min.",
+        "Mixer et servir."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "soupe-epinards-pommes-de-terre-cookeo",
+      "nom": "Soupe épinards-pommes de terre Cookeo",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "épinards",
+      "categorie": "soupe",
+      "ingredients": [
+        {
+          "nom": "épinards",
+          "type": "frais",
+          "quantite": {
+            "valeur": 150,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "pommes de terre",
+          "type": "frais",
+          "quantite": {
+            "valeur": 3,
+            "unite": null
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "bouillon cube",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Faire revenir l'oignon.",
+        "Ajouter pommes de terre et bouillon.",
+        "Cuisson sous pression 8 min, ajouter les épinards.",
+        "Mixer et servir."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "quinoa-aux-legumes-cookeo",
+      "nom": "Quinoa aux légumes Cookeo",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "quinoa cuit",
+      "categorie": "vegetarien",
+      "ingredients": [
+        {
+          "nom": "quinoa cuit",
+          "type": "frais",
+          "quantite": {
+            "valeur": 150,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "courgette",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "poivron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "bouillon cube",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Faire revenir courgette et poivron.",
+        "Ajouter un peu de bouillon.",
+        "Incorporer le quinoa cuit et réchauffer 2 min.",
+        "Servir."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "dahl-de-lentilles-a-la-tomate-cookeo",
+      "nom": "Dahl de lentilles à la tomate Cookeo",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "lentilles corail",
+      "categorie": "vegetarien",
+      "ingredients": [
+        {
+          "nom": "lentilles corail",
+          "type": "frais",
+          "quantite": {
+            "valeur": 150,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "tomates concassées",
+          "type": "base",
+          "quantite": {
+            "valeur": 400,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "curry",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "c. à café"
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Dorer l'oignon avec le curry.",
+        "Ajouter lentilles, tomate et eau.",
+        "Cuisson sous pression 8 min.",
+        "Mélanger et servir."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "poulet-coco-epinards-cookeo",
+      "nom": "Poulet coco-épinards Cookeo",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "escalope de poulet",
+      "categorie": "volaille",
+      "ingredients": [
+        {
+          "nom": "escalope de poulet",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "épinards",
+          "type": "frais",
+          "quantite": {
+            "valeur": 150,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "lait de coco",
+          "type": "frais",
+          "quantite": {
+            "valeur": 20,
+            "unite": "cl"
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Dorer poulet et oignon.",
+        "Ajouter le lait de coco.",
+        "Cuisson sous pression 8 min, incorporer les épinards.",
+        "Servir."
+      ],
+      "tags": []
+    },
+    {
+      "id": "pates-tomate-thon-cookeo",
+      "nom": "Pâtes tomate-thon Cookeo",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "thon en conserve",
+      "categorie": "feculent",
+      "ingredients": [
+        {
+          "nom": "pâtes",
+          "type": "base",
+          "quantite": {
+            "valeur": 200,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "thon en conserve",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": "boîte"
+          }
+        },
+        {
+          "nom": "tomates concassées",
+          "type": "base",
+          "quantite": {
+            "valeur": 400,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Dorer l'oignon.",
+        "Ajouter pâtes, tomate et eau à hauteur, cuisson 4 min.",
+        "Incorporer le thon égoutté.",
+        "Mélanger et servir."
+      ],
+      "tags": [
+        "enfant_friendly"
+      ]
     }
   ]
 }
