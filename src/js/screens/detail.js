@@ -2,10 +2,10 @@
 // (quantités mises à l'échelle), ingrédients (ce qu'on a / ce qui manque),
 // étapes, bouton « Je cuisine ça ».
 
-import { el, esc, ICONS } from '../ui.js';
+import { el, esc, ICONS, ICONES_APPAREIL } from '../ui.js';
 import { ingredientsManquants } from '../engine.js';
 import * as storage from '../storage.js';
-import { illustrationPour, libelleEquipement, formatQuantitePortions } from '../data.js';
+import { illustrationPour, libelleEquipement, categorieAppareil, formatQuantitePortions } from '../data.js';
 import { iconeSvgPourEtape } from '../icones.js';
 
 export default function renderDetail(ctx, { recette }) {
@@ -36,7 +36,7 @@ export default function renderDetail(ctx, { recette }) {
     el(`<div class="badges">
       <span class="badge hl">${ICONS.horloge} ${recette.temps_min} min</span>
       <span class="badge">${ICONS.liste} ${recette.nb_comptables} ingrédients</span>
-      <span class="badge">${ICONS.poele} ${esc(libelleEquipement(recette))}</span>
+      <span class="badge">${ICONES_APPAREIL[categorieAppareil(recette)]} ${esc(libelleEquipement(recette))}</span>
     </div>`)
   );
 

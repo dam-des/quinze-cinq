@@ -24,6 +24,12 @@ export const ICONS = {
     '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M3 7h18M3 12h18M3 17h12"/></svg>',
   poele:
     '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="13" r="7"/><path d="M18 9l3-3"/></svg>',
+  airfryer:
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="4" y="7" width="16" height="13" rx="3"/><path d="M9 7V5a3 3 0 0 1 6 0v2"/><path d="M8 12h8M8 15.5h8"/></svg>',
+  cookeo:
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M4 11h16v4a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5v-4z"/><path d="M4 11a8 8 0 0 1 16 0"/><path d="M12 3v2"/></svg>',
+  plancha:
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="13" width="18" height="6" rx="1.5"/><path d="M7 9c0-1.2 1-1.8 1-3s-.5-1.8-1-2M12 9c0-1.2 1-1.8 1-3s-.5-1.8-1-2M17 9c0-1.2 1-1.8 1-3s-.5-1.8-1-2"/></svg>',
   portions:
     '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M16 11a4 4 0 1 0-8 0M4 21h16M7 21v-4M17 21v-4"/></svg>',
   check:
@@ -32,6 +38,14 @@ export const ICONS = {
     '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M15 18l-6-6 6-6"/></svg>',
   panier:
     '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 4h2l2.4 12.3a1 1 0 0 0 1 .7h8.5a1 1 0 0 0 1-.8L21 8H6"/><circle cx="9" cy="20" r="1.2"/><circle cx="18" cy="20" r="1.2"/></svg>',
+};
+
+// Icône de badge équipement par catégorie d'appareil (cf. data.js:categorieAppareil).
+export const ICONES_APPAREIL = {
+  classique: ICONS.poele,
+  airfryer: ICONS.airfryer,
+  cookeo: ICONS.cookeo,
+  plancha: ICONS.plancha,
 };
 
 /** Annonce un message au lecteur d'écran via la live region (#sr-live). */
