@@ -59,3 +59,14 @@ test('contenu — pool sans équipement : au moins 65 taguées vegetarien', () =
   const n = sansEquip().filter((r) => (r.tags || []).includes('vegetarien')).length;
   assert.ok(n >= 65, `seulement ${n} recettes sans équipement taguées vegetarien`);
 });
+
+test('contenu — plancha : 45 recettes, réparties, total 396', () => {
+  const plancha = R.filter((r) => (r.equipement_requis || []).includes('plancha'));
+  assert.equal(plancha.length, 45);
+  const par = (cat) => plancha.filter((r) => r.categorie === cat).length;
+  assert.equal(par('viande'), 12);
+  assert.equal(par('poisson'), 10);
+  assert.equal(par('volaille'), 12);
+  assert.equal(par('vegetarien'), 11);
+  assert.equal(R.length, 396);
+});

@@ -86,7 +86,11 @@ export default function renderReglages(ctx) {
     ctx.etat.equipements.cookeo = v;
     await ctx.sauver(storage.CLES.EQUIPEMENTS, ctx.etat.equipements);
   });
-  cardEquip.append(rowFour, rowAir, rowCookeo);
+  const rowPlancha = toggleRow('Plancha', !!ctx.etat.equipements.plancha, async (v) => {
+    ctx.etat.equipements.plancha = v;
+    await ctx.sauver(storage.CLES.EQUIPEMENTS, ctx.etat.equipements);
+  });
+  cardEquip.append(rowFour, rowAir, rowCookeo, rowPlancha);
   gEquip.appendChild(cardEquip);
   body.appendChild(gEquip);
 
@@ -95,7 +99,7 @@ export default function renderReglages(ctx) {
     if (ctx.etat.equipements[nom]) return;
     ctx.etat.equipements[nom] = true;
     ctx.sauver(storage.CLES.EQUIPEMENTS, ctx.etat.equipements);
-    const row = nom === 'airfryer' ? rowAir : rowCookeo;
+    const row = nom === 'airfryer' ? rowAir : nom === 'cookeo' ? rowCookeo : rowPlancha;
     const t = row.querySelector('.toggle');
     if (t) { t.classList.add('on'); t.setAttribute('aria-checked', 'true'); }
   };
@@ -108,7 +112,7 @@ export default function renderReglages(ctx) {
   );
   // Compteurs par catégorie d'appareil (visibilité sur le nombre de recettes).
   const _R = ctx.catalogue.recettes;
-  const nb = { classique: 0, airfryer: 0, cookeo: 0 };
+  const nb = { classique: 0, airfryer: 0, cookeo: 0, plancha: 0 };
   for (const r of _R) nb[categorieAppareil(r)]++;
   const modes = ctx.etat.preferences.modes_appareil; // référence vivante (array)
 
@@ -141,7 +145,7 @@ export default function renderReglages(ctx) {
         modes.splice(idx, 1);
       } else {
         modes.push(ap.cle);
-        if (ap.cle === 'airfryer' || ap.cle === 'cookeo') forcerEquip(ap.cle);
+        if (ap.cle === 'airfryer' || ap.cle === 'cookeo' || ap.cle === 'plancha') forcerEquip(ap.cle);
       }
       rafraichirModes();
       await persistModes();

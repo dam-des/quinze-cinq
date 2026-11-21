@@ -17596,6 +17596,2063 @@
       "tags": [
         "enfant_friendly"
       ]
+    },
+    {
+      "id": "plancha-steak-haricots-persil",
+      "nom": "Steak haché grillé, haricots rouges & persil",
+      "temps_min": 12,
+      "portions": 2,
+      "ingredient_vedette": "steak haché",
+      "categorie": "viande",
+      "ingredients": [
+        {
+          "nom": "steak haché",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "haricots rouges",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "boîte"
+          }
+        },
+        {
+          "nom": "persil",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "poignée"
+          }
+        },
+        {
+          "nom": "ail",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": "gousse"
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [
+        "plancha"
+      ],
+      "etapes": [
+        "Faire chauffer la plancha.",
+        "Griller le steak haché avec l’ail, servir avec les haricots et le persil 8 min en retournant à mi-cuisson.",
+        "Servir."
+      ],
+      "tags": [
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "plancha-merguez-poivron",
+      "nom": "Merguez grillées & poivron",
+      "temps_min": 12,
+      "portions": 2,
+      "ingredient_vedette": "merguez",
+      "categorie": "viande",
+      "ingredients": [
+        {
+          "nom": "merguez",
+          "type": "frais",
+          "quantite": {
+            "valeur": 4,
+            "unite": null
+          }
+        },
+        {
+          "nom": "poivron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "citron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [
+        "plancha"
+      ],
+      "etapes": [
+        "Faire chauffer la plancha.",
+        "Griller les merguez avec le poivron et l’oignon, arroser de citron 9 min en retournant à mi-cuisson.",
+        "Servir."
+      ],
+      "tags": []
+    },
+    {
+      "id": "plancha-chipolatas-courgette",
+      "nom": "Chipolatas grillées & courgette",
+      "temps_min": 12,
+      "portions": 2,
+      "ingredient_vedette": "chipolatas",
+      "categorie": "viande",
+      "ingredients": [
+        {
+          "nom": "chipolatas",
+          "type": "frais",
+          "quantite": {
+            "valeur": 4,
+            "unite": null
+          }
+        },
+        {
+          "nom": "courgette",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "moutarde",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": "c. à soupe"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "plancha"
+      ],
+      "etapes": [
+        "Faire chauffer la plancha.",
+        "Griller les chipolatas et la courgette en tranches, servir avec la moutarde 9 min en retournant à mi-cuisson.",
+        "Servir."
+      ],
+      "tags": [
+        "porc",
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "plancha-cote-porc-patate-douce",
+      "nom": "Côte de porc grillée & patate douce",
+      "temps_min": 14,
+      "portions": 2,
+      "ingredient_vedette": "côte de porc",
+      "categorie": "viande",
+      "ingredients": [
+        {
+          "nom": "côte de porc",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "patate douce",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "moutarde",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": "c. à soupe"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "plancha"
+      ],
+      "etapes": [
+        "Faire chauffer la plancha.",
+        "Griller la côte de porc et les tranches de patate douce, servir avec la moutarde 10 min en retournant à mi-cuisson.",
+        "Servir."
+      ],
+      "tags": [
+        "porc"
+      ]
+    },
+    {
+      "id": "plancha-boeuf-oignon-persil",
+      "nom": "Émincé de bœuf grillé, oignon & persil",
+      "temps_min": 12,
+      "portions": 2,
+      "ingredient_vedette": "bœuf émincé",
+      "categorie": "viande",
+      "ingredients": [
+        {
+          "nom": "bœuf émincé",
+          "type": "frais",
+          "quantite": {
+            "valeur": 250,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "persil",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "poignée"
+          }
+        },
+        {
+          "nom": "citron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [
+        "plancha"
+      ],
+      "etapes": [
+        "Faire chauffer la plancha.",
+        "Griller le bœuf émincé et l’oignon, parsemer de persil et de citron 7 min en retournant à mi-cuisson.",
+        "Servir."
+      ],
+      "tags": []
+    },
+    {
+      "id": "plancha-chorizo-pois-chiches",
+      "nom": "Chorizo grillé & pois chiches",
+      "temps_min": 11,
+      "portions": 2,
+      "ingredient_vedette": "chorizo",
+      "categorie": "viande",
+      "ingredients": [
+        {
+          "nom": "chorizo",
+          "type": "frais",
+          "quantite": {
+            "valeur": 100,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "pois chiches",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "boîte"
+          }
+        },
+        {
+          "nom": "persil",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "poignée"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "plancha"
+      ],
+      "etapes": [
+        "Faire chauffer la plancha.",
+        "Griller les tranches de chorizo, servir avec les pois chiches et le persil 7 min en retournant à mi-cuisson.",
+        "Servir."
+      ],
+      "tags": [
+        "porc"
+      ]
+    },
+    {
+      "id": "plancha-lardons-pdt-oignon",
+      "nom": "Lardons grillés, pommes de terre & oignon",
+      "temps_min": 14,
+      "portions": 2,
+      "ingredient_vedette": "lardons",
+      "categorie": "viande",
+      "ingredients": [
+        {
+          "nom": "lardons",
+          "type": "frais",
+          "quantite": {
+            "valeur": 150,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "pommes de terre",
+          "type": "frais",
+          "quantite": {
+            "valeur": 3,
+            "unite": null
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "plancha"
+      ],
+      "etapes": [
+        "Faire chauffer la plancha.",
+        "Griller les lardons, les pommes de terre en tranches et l’oignon 10 min en retournant à mi-cuisson.",
+        "Servir."
+      ],
+      "tags": [
+        "porc",
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "plancha-saucisses-poivron-tomate",
+      "nom": "Saucisses grillées, poivron & tomate",
+      "temps_min": 13,
+      "portions": 2,
+      "ingredient_vedette": "saucisses",
+      "categorie": "viande",
+      "ingredients": [
+        {
+          "nom": "saucisses",
+          "type": "frais",
+          "quantite": {
+            "valeur": 3,
+            "unite": null
+          }
+        },
+        {
+          "nom": "poivron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "tomate",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "plancha"
+      ],
+      "etapes": [
+        "Faire chauffer la plancha.",
+        "Griller les saucisses, le poivron et la tomate en tranches 9 min en retournant à mi-cuisson.",
+        "Servir."
+      ],
+      "tags": [
+        "porc",
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "plancha-steak-champignons-ail",
+      "nom": "Steak haché grillé, champignons & ail",
+      "temps_min": 12,
+      "portions": 2,
+      "ingredient_vedette": "steak haché",
+      "categorie": "viande",
+      "ingredients": [
+        {
+          "nom": "steak haché",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "champignons",
+          "type": "frais",
+          "quantite": {
+            "valeur": 200,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "ail",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": "gousse"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "plancha"
+      ],
+      "etapes": [
+        "Faire chauffer la plancha.",
+        "Griller le steak haché, griller les champignons et l’ail à côté 8 min en retournant à mi-cuisson.",
+        "Servir."
+      ],
+      "tags": []
+    },
+    {
+      "id": "plancha-merguez-tomates-cerises",
+      "nom": "Merguez grillées & tomates cerises",
+      "temps_min": 11,
+      "portions": 2,
+      "ingredient_vedette": "merguez",
+      "categorie": "viande",
+      "ingredients": [
+        {
+          "nom": "merguez",
+          "type": "frais",
+          "quantite": {
+            "valeur": 4,
+            "unite": null
+          }
+        },
+        {
+          "nom": "tomates cerises",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "poignée"
+          }
+        },
+        {
+          "nom": "citron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "plancha"
+      ],
+      "etapes": [
+        "Faire chauffer la plancha.",
+        "Griller les merguez et les tomates cerises, arroser de citron 9 min en retournant à mi-cuisson.",
+        "Servir."
+      ],
+      "tags": []
+    },
+    {
+      "id": "plancha-jambon-courgette-fromage",
+      "nom": "Jambon & courgette grillés au fromage",
+      "temps_min": 11,
+      "portions": 2,
+      "ingredient_vedette": "jambon",
+      "categorie": "viande",
+      "ingredients": [
+        {
+          "nom": "jambon",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": "tranches"
+          }
+        },
+        {
+          "nom": "courgette",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "fromage râpé",
+          "type": "frais",
+          "quantite": {
+            "valeur": 50,
+            "unite": "g"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "plancha"
+      ],
+      "etapes": [
+        "Faire chauffer la plancha.",
+        "Griller la courgette et le jambon, parsemer de fromage en fin de cuisson 7 min en retournant à mi-cuisson.",
+        "Servir."
+      ],
+      "tags": [
+        "porc",
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "plancha-chipolatas-mais-oignon",
+      "nom": "Chipolatas grillées, maïs & oignon",
+      "temps_min": 12,
+      "portions": 2,
+      "ingredient_vedette": "chipolatas",
+      "categorie": "viande",
+      "ingredients": [
+        {
+          "nom": "chipolatas",
+          "type": "frais",
+          "quantite": {
+            "valeur": 4,
+            "unite": null
+          }
+        },
+        {
+          "nom": "maïs",
+          "type": "base",
+          "quantite": {
+            "valeur": 150,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "plancha"
+      ],
+      "etapes": [
+        "Faire chauffer la plancha.",
+        "Griller les chipolatas et l’oignon, réchauffer le maïs à côté 9 min en retournant à mi-cuisson.",
+        "Servir."
+      ],
+      "tags": [
+        "porc",
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "plancha-saumon-citron-persil",
+      "nom": "Pavé de saumon grillé, citron & persil",
+      "temps_min": 12,
+      "portions": 2,
+      "ingredient_vedette": "pavé de saumon",
+      "categorie": "poisson",
+      "ingredients": [
+        {
+          "nom": "pavé de saumon",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "citron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "persil",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "poignée"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "plancha"
+      ],
+      "etapes": [
+        "Faire chauffer la plancha.",
+        "Griller le saumon côté peau, arroser de citron et parsemer de persil 8 min en retournant à mi-cuisson.",
+        "Servir."
+      ],
+      "tags": []
+    },
+    {
+      "id": "plancha-colin-poivron",
+      "nom": "Filet de colin grillé & poivron",
+      "temps_min": 13,
+      "portions": 2,
+      "ingredient_vedette": "filet de colin",
+      "categorie": "poisson",
+      "ingredients": [
+        {
+          "nom": "filet de colin",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "poivron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "citron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "plancha"
+      ],
+      "etapes": [
+        "Faire chauffer la plancha.",
+        "Griller le colin et le poivron en lanières, arroser de citron 9 min en retournant à mi-cuisson.",
+        "Servir."
+      ],
+      "tags": [
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "plancha-crevettes-ail-persil",
+      "nom": "Crevettes grillées, ail & persil",
+      "temps_min": 9,
+      "portions": 2,
+      "ingredient_vedette": "crevettes",
+      "categorie": "poisson",
+      "ingredients": [
+        {
+          "nom": "crevettes",
+          "type": "frais",
+          "quantite": {
+            "valeur": 200,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "ail",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": "gousse"
+          }
+        },
+        {
+          "nom": "persil",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "poignée"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "plancha"
+      ],
+      "etapes": [
+        "Faire chauffer la plancha.",
+        "Griller les crevettes avec l’ail, parsemer de persil 5 min en retournant à mi-cuisson.",
+        "Servir."
+      ],
+      "tags": []
+    },
+    {
+      "id": "plancha-cabillaud-tomates-cerises",
+      "nom": "Dos de cabillaud grillé & tomates cerises",
+      "temps_min": 13,
+      "portions": 2,
+      "ingredient_vedette": "dos de cabillaud",
+      "categorie": "poisson",
+      "ingredients": [
+        {
+          "nom": "dos de cabillaud",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "tomates cerises",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "poignée"
+          }
+        },
+        {
+          "nom": "citron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "plancha"
+      ],
+      "etapes": [
+        "Faire chauffer la plancha.",
+        "Griller le cabillaud et les tomates cerises, arroser de citron 9 min en retournant à mi-cuisson.",
+        "Servir."
+      ],
+      "tags": []
+    },
+    {
+      "id": "plancha-saumon-courgette",
+      "nom": "Pavé de saumon grillé & courgette",
+      "temps_min": 13,
+      "portions": 2,
+      "ingredient_vedette": "pavé de saumon",
+      "categorie": "poisson",
+      "ingredients": [
+        {
+          "nom": "pavé de saumon",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "courgette",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "citron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "plancha"
+      ],
+      "etapes": [
+        "Faire chauffer la plancha.",
+        "Griller le saumon et la courgette en tranches, arroser de citron 9 min en retournant à mi-cuisson.",
+        "Servir."
+      ],
+      "tags": []
+    },
+    {
+      "id": "plancha-crevettes-citron-poivron",
+      "nom": "Crevettes grillées, citron & poivron",
+      "temps_min": 10,
+      "portions": 2,
+      "ingredient_vedette": "crevettes",
+      "categorie": "poisson",
+      "ingredients": [
+        {
+          "nom": "crevettes",
+          "type": "frais",
+          "quantite": {
+            "valeur": 200,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "poivron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "citron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "plancha"
+      ],
+      "etapes": [
+        "Faire chauffer la plancha.",
+        "Griller les crevettes et le poivron, arroser de citron 6 min en retournant à mi-cuisson.",
+        "Servir."
+      ],
+      "tags": []
+    },
+    {
+      "id": "plancha-colin-persil-ail",
+      "nom": "Filet de colin grillé, persil & ail",
+      "temps_min": 12,
+      "portions": 2,
+      "ingredient_vedette": "filet de colin",
+      "categorie": "poisson",
+      "ingredients": [
+        {
+          "nom": "filet de colin",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "persil",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "poignée"
+          }
+        },
+        {
+          "nom": "ail",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": "gousse"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "plancha"
+      ],
+      "etapes": [
+        "Faire chauffer la plancha.",
+        "Griller le colin avec l’ail, parsemer de persil 8 min en retournant à mi-cuisson.",
+        "Servir."
+      ],
+      "tags": [
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "plancha-cabillaud-poivron-citron",
+      "nom": "Dos de cabillaud grillé, poivron & citron",
+      "temps_min": 13,
+      "portions": 2,
+      "ingredient_vedette": "dos de cabillaud",
+      "categorie": "poisson",
+      "ingredients": [
+        {
+          "nom": "dos de cabillaud",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "poivron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "citron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "plancha"
+      ],
+      "etapes": [
+        "Faire chauffer la plancha.",
+        "Griller le cabillaud et le poivron en lanières, arroser de citron 9 min en retournant à mi-cuisson.",
+        "Servir."
+      ],
+      "tags": []
+    },
+    {
+      "id": "plancha-saumon-tomates-cerises-persil",
+      "nom": "Pavé de saumon grillé, tomates cerises & persil",
+      "temps_min": 12,
+      "portions": 2,
+      "ingredient_vedette": "pavé de saumon",
+      "categorie": "poisson",
+      "ingredients": [
+        {
+          "nom": "pavé de saumon",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "tomates cerises",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "poignée"
+          }
+        },
+        {
+          "nom": "persil",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "poignée"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "plancha"
+      ],
+      "etapes": [
+        "Faire chauffer la plancha.",
+        "Griller le saumon et les tomates cerises, parsemer de persil 8 min en retournant à mi-cuisson.",
+        "Servir."
+      ],
+      "tags": []
+    },
+    {
+      "id": "plancha-crevettes-courgette-ail",
+      "nom": "Crevettes grillées, courgette & ail",
+      "temps_min": 10,
+      "portions": 2,
+      "ingredient_vedette": "crevettes",
+      "categorie": "poisson",
+      "ingredients": [
+        {
+          "nom": "crevettes",
+          "type": "frais",
+          "quantite": {
+            "valeur": 200,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "courgette",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "ail",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": "gousse"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "plancha"
+      ],
+      "etapes": [
+        "Faire chauffer la plancha.",
+        "Griller la courgette et l’ail, ajouter les crevettes en fin de cuisson 6 min en retournant à mi-cuisson.",
+        "Servir."
+      ],
+      "tags": []
+    },
+    {
+      "id": "plancha-poulet-citron-persil",
+      "nom": "Escalope de poulet grillée, citron & persil",
+      "temps_min": 12,
+      "portions": 2,
+      "ingredient_vedette": "escalope de poulet",
+      "categorie": "volaille",
+      "ingredients": [
+        {
+          "nom": "escalope de poulet",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "citron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "persil",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "poignée"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "plancha"
+      ],
+      "etapes": [
+        "Faire chauffer la plancha.",
+        "Griller le poulet, arroser de citron et parsemer de persil 9 min en retournant à mi-cuisson.",
+        "Servir."
+      ],
+      "tags": [
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "plancha-dinde-poivron-oignon",
+      "nom": "Aiguillettes de dinde grillées, poivron & oignon",
+      "temps_min": 13,
+      "portions": 2,
+      "ingredient_vedette": "aiguillettes de dinde",
+      "categorie": "volaille",
+      "ingredients": [
+        {
+          "nom": "aiguillettes de dinde",
+          "type": "frais",
+          "quantite": {
+            "valeur": 250,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "poivron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "plancha"
+      ],
+      "etapes": [
+        "Faire chauffer la plancha.",
+        "Griller la dinde, le poivron et l’oignon 9 min en retournant à mi-cuisson.",
+        "Servir."
+      ],
+      "tags": []
+    },
+    {
+      "id": "plancha-poulet-courgette-ail",
+      "nom": "Escalope de poulet grillée, courgette & ail",
+      "temps_min": 13,
+      "portions": 2,
+      "ingredient_vedette": "escalope de poulet",
+      "categorie": "volaille",
+      "ingredients": [
+        {
+          "nom": "escalope de poulet",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "courgette",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "ail",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": "gousse"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "plancha"
+      ],
+      "etapes": [
+        "Faire chauffer la plancha.",
+        "Griller le poulet et la courgette avec l’ail 9 min en retournant à mi-cuisson.",
+        "Servir."
+      ],
+      "tags": []
+    },
+    {
+      "id": "plancha-dinde-soja-citron",
+      "nom": "Aiguillettes de dinde grillées, soja & citron",
+      "temps_min": 11,
+      "portions": 2,
+      "ingredient_vedette": "aiguillettes de dinde",
+      "categorie": "volaille",
+      "ingredients": [
+        {
+          "nom": "aiguillettes de dinde",
+          "type": "frais",
+          "quantite": {
+            "valeur": 250,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "sauce soja",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "c. à soupe"
+          }
+        },
+        {
+          "nom": "citron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "plancha"
+      ],
+      "etapes": [
+        "Faire chauffer la plancha.",
+        "Griller la dinde, déglacer au soja et arroser de citron 8 min en retournant à mi-cuisson.",
+        "Servir."
+      ],
+      "tags": [
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "plancha-poulet-poivron-tomates-cerises",
+      "nom": "Escalope de poulet grillée, poivron & tomates cerises",
+      "temps_min": 13,
+      "portions": 2,
+      "ingredient_vedette": "escalope de poulet",
+      "categorie": "volaille",
+      "ingredients": [
+        {
+          "nom": "escalope de poulet",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "poivron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "tomates cerises",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "poignée"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "plancha"
+      ],
+      "etapes": [
+        "Faire chauffer la plancha.",
+        "Griller le poulet et le poivron, ajouter les tomates cerises en fin de cuisson 9 min en retournant à mi-cuisson.",
+        "Servir."
+      ],
+      "tags": []
+    },
+    {
+      "id": "plancha-dinde-champignons-persil",
+      "nom": "Aiguillettes de dinde grillées, champignons & persil",
+      "temps_min": 13,
+      "portions": 2,
+      "ingredient_vedette": "aiguillettes de dinde",
+      "categorie": "volaille",
+      "ingredients": [
+        {
+          "nom": "aiguillettes de dinde",
+          "type": "frais",
+          "quantite": {
+            "valeur": 250,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "champignons",
+          "type": "frais",
+          "quantite": {
+            "valeur": 200,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "persil",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "poignée"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "plancha"
+      ],
+      "etapes": [
+        "Faire chauffer la plancha.",
+        "Griller la dinde et les champignons, parsemer de persil 9 min en retournant à mi-cuisson.",
+        "Servir."
+      ],
+      "tags": []
+    },
+    {
+      "id": "plancha-poulet-avocat-citron",
+      "nom": "Escalope de poulet grillée, avocat & citron",
+      "temps_min": 10,
+      "portions": 2,
+      "ingredient_vedette": "escalope de poulet",
+      "categorie": "volaille",
+      "ingredients": [
+        {
+          "nom": "escalope de poulet",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "avocat",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "citron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "plancha"
+      ],
+      "etapes": [
+        "Faire chauffer la plancha.",
+        "Griller le poulet, dresser avec l’avocat et un trait de citron 8 min en retournant à mi-cuisson.",
+        "Servir."
+      ],
+      "tags": []
+    },
+    {
+      "id": "plancha-dinde-poivron-persil",
+      "nom": "Aiguillettes de dinde grillées, poivron & persil",
+      "temps_min": 12,
+      "portions": 2,
+      "ingredient_vedette": "aiguillettes de dinde",
+      "categorie": "volaille",
+      "ingredients": [
+        {
+          "nom": "aiguillettes de dinde",
+          "type": "frais",
+          "quantite": {
+            "valeur": 250,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "poivron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "persil",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "poignée"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "plancha"
+      ],
+      "etapes": [
+        "Faire chauffer la plancha.",
+        "Griller la dinde et le poivron, parsemer de persil 9 min en retournant à mi-cuisson.",
+        "Servir."
+      ],
+      "tags": []
+    },
+    {
+      "id": "plancha-poulet-feta-tomate",
+      "nom": "Escalope de poulet grillée, feta & tomate",
+      "temps_min": 12,
+      "portions": 2,
+      "ingredient_vedette": "escalope de poulet",
+      "categorie": "volaille",
+      "ingredients": [
+        {
+          "nom": "escalope de poulet",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "feta",
+          "type": "frais",
+          "quantite": {
+            "valeur": 60,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "tomate",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "plancha"
+      ],
+      "etapes": [
+        "Faire chauffer la plancha.",
+        "Griller le poulet et la tomate, émietter la feta en fin de cuisson 9 min en retournant à mi-cuisson.",
+        "Servir."
+      ],
+      "tags": []
+    },
+    {
+      "id": "plancha-dinde-citron-ail",
+      "nom": "Aiguillettes de dinde grillées, citron & ail",
+      "temps_min": 11,
+      "portions": 2,
+      "ingredient_vedette": "aiguillettes de dinde",
+      "categorie": "volaille",
+      "ingredients": [
+        {
+          "nom": "aiguillettes de dinde",
+          "type": "frais",
+          "quantite": {
+            "valeur": 250,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "ail",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": "gousse"
+          }
+        },
+        {
+          "nom": "citron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "plancha"
+      ],
+      "etapes": [
+        "Faire chauffer la plancha.",
+        "Griller la dinde avec l’ail, arroser de citron 8 min en retournant à mi-cuisson.",
+        "Servir."
+      ],
+      "tags": [
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "plancha-poulet-champignons-oignon",
+      "nom": "Escalope de poulet grillée, champignons & oignon",
+      "temps_min": 13,
+      "portions": 2,
+      "ingredient_vedette": "escalope de poulet",
+      "categorie": "volaille",
+      "ingredients": [
+        {
+          "nom": "escalope de poulet",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "champignons",
+          "type": "frais",
+          "quantite": {
+            "valeur": 150,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "plancha"
+      ],
+      "etapes": [
+        "Faire chauffer la plancha.",
+        "Griller le poulet, l’oignon et les champignons 9 min en retournant à mi-cuisson.",
+        "Servir."
+      ],
+      "tags": []
+    },
+    {
+      "id": "plancha-dinde-tomates-cerises-citron",
+      "nom": "Aiguillettes de dinde grillées, tomates cerises & citron",
+      "temps_min": 11,
+      "portions": 2,
+      "ingredient_vedette": "aiguillettes de dinde",
+      "categorie": "volaille",
+      "ingredients": [
+        {
+          "nom": "aiguillettes de dinde",
+          "type": "frais",
+          "quantite": {
+            "valeur": 250,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "tomates cerises",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "poignée"
+          }
+        },
+        {
+          "nom": "citron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "plancha"
+      ],
+      "etapes": [
+        "Faire chauffer la plancha.",
+        "Griller la dinde et les tomates cerises, arroser de citron 8 min en retournant à mi-cuisson.",
+        "Servir."
+      ],
+      "tags": []
+    },
+    {
+      "id": "plancha-courgette-champignons-parmesan",
+      "nom": "Courgette & champignons grillés au parmesan",
+      "temps_min": 11,
+      "portions": 2,
+      "ingredient_vedette": "courgette",
+      "categorie": "vegetarien",
+      "ingredients": [
+        {
+          "nom": "courgette",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "champignons",
+          "type": "frais",
+          "quantite": {
+            "valeur": 200,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "parmesan",
+          "type": "frais",
+          "quantite": {
+            "valeur": 30,
+            "unite": "g"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "plancha"
+      ],
+      "etapes": [
+        "Faire chauffer la plancha.",
+        "Griller la courgette et les champignons, parsemer de parmesan 7 min en retournant à mi-cuisson.",
+        "Servir."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "plancha-feta-poivron-tomate",
+      "nom": "Poivron & tomate grillés à la feta",
+      "temps_min": 12,
+      "portions": 2,
+      "ingredient_vedette": "poivron",
+      "categorie": "vegetarien",
+      "ingredients": [
+        {
+          "nom": "poivron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "tomate",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "feta",
+          "type": "frais",
+          "quantite": {
+            "valeur": 80,
+            "unite": "g"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "plancha"
+      ],
+      "etapes": [
+        "Faire chauffer la plancha.",
+        "Griller le poivron et la tomate, émietter la feta en fin de cuisson 9 min en retournant à mi-cuisson.",
+        "Servir."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "plancha-champignons-ail-persil",
+      "nom": "Champignons grillés, ail & persil",
+      "temps_min": 10,
+      "portions": 2,
+      "ingredient_vedette": "champignons",
+      "categorie": "vegetarien",
+      "ingredients": [
+        {
+          "nom": "champignons",
+          "type": "frais",
+          "quantite": {
+            "valeur": 250,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "ail",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": "gousse"
+          }
+        },
+        {
+          "nom": "persil",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "poignée"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "plancha"
+      ],
+      "etapes": [
+        "Faire chauffer la plancha.",
+        "Griller les champignons avec l’ail, parsemer de persil 7 min en retournant à mi-cuisson.",
+        "Servir."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "plancha-potiron-feta-miel",
+      "nom": "Potiron grillé, feta & miel",
+      "temps_min": 14,
+      "portions": 2,
+      "ingredient_vedette": "potiron",
+      "categorie": "vegetarien",
+      "ingredients": [
+        {
+          "nom": "potiron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 300,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "feta",
+          "type": "frais",
+          "quantite": {
+            "valeur": 80,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "miel",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "c. à café"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "plancha"
+      ],
+      "etapes": [
+        "Faire chauffer la plancha.",
+        "Griller les tranches de potiron, émietter la feta et filet de miel 10 min en retournant à mi-cuisson.",
+        "Servir."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "plancha-courgette-mozzarella-tomate",
+      "nom": "Courgette & tomate grillées à la mozzarella",
+      "temps_min": 11,
+      "portions": 2,
+      "ingredient_vedette": "courgette",
+      "categorie": "vegetarien",
+      "ingredients": [
+        {
+          "nom": "courgette",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "tomate",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "mozzarella",
+          "type": "frais",
+          "quantite": {
+            "valeur": 100,
+            "unite": "g"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "plancha"
+      ],
+      "etapes": [
+        "Faire chauffer la plancha.",
+        "Griller la courgette et la tomate, ajouter la mozzarella en fin de cuisson 7 min en retournant à mi-cuisson.",
+        "Servir."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "plancha-patate-douce-oignon-persil",
+      "nom": "Patate douce & oignon grillés, persil",
+      "temps_min": 14,
+      "portions": 2,
+      "ingredient_vedette": "patate douce",
+      "categorie": "vegetarien",
+      "ingredients": [
+        {
+          "nom": "patate douce",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "persil",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "poignée"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "plancha"
+      ],
+      "etapes": [
+        "Faire chauffer la plancha.",
+        "Griller les tranches de patate douce et l’oignon, parsemer de persil 10 min en retournant à mi-cuisson.",
+        "Servir."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "plancha-poivron-avocat-mais",
+      "nom": "Poivron grillé, avocat & maïs",
+      "temps_min": 9,
+      "portions": 2,
+      "ingredient_vedette": "avocat",
+      "categorie": "vegetarien",
+      "ingredients": [
+        {
+          "nom": "poivron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "avocat",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "maïs",
+          "type": "base",
+          "quantite": {
+            "valeur": 150,
+            "unite": "g"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "plancha"
+      ],
+      "etapes": [
+        "Faire chauffer la plancha.",
+        "Griller le poivron, dresser avec l’avocat et le maïs 6 min en retournant à mi-cuisson.",
+        "Servir."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "plancha-champignons-tomates-cerises-parmesan",
+      "nom": "Champignons & tomates cerises grillés au parmesan",
+      "temps_min": 11,
+      "portions": 2,
+      "ingredient_vedette": "champignons",
+      "categorie": "vegetarien",
+      "ingredients": [
+        {
+          "nom": "champignons",
+          "type": "frais",
+          "quantite": {
+            "valeur": 250,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "tomates cerises",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "poignée"
+          }
+        },
+        {
+          "nom": "parmesan",
+          "type": "frais",
+          "quantite": {
+            "valeur": 30,
+            "unite": "g"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "plancha"
+      ],
+      "etapes": [
+        "Faire chauffer la plancha.",
+        "Griller les champignons et les tomates cerises, parsemer de parmesan 7 min en retournant à mi-cuisson.",
+        "Servir."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "plancha-poivron-oignon-feta",
+      "nom": "Poivron & oignon grillés à la feta",
+      "temps_min": 12,
+      "portions": 2,
+      "ingredient_vedette": "poivron",
+      "categorie": "vegetarien",
+      "ingredients": [
+        {
+          "nom": "poivron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "feta",
+          "type": "frais",
+          "quantite": {
+            "valeur": 60,
+            "unite": "g"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "plancha"
+      ],
+      "etapes": [
+        "Faire chauffer la plancha.",
+        "Griller le poivron et l’oignon, émietter la feta en fin de cuisson 9 min en retournant à mi-cuisson.",
+        "Servir."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "plancha-courgette-potiron-persil",
+      "nom": "Courgette & potiron grillés, persil",
+      "temps_min": 14,
+      "portions": 2,
+      "ingredient_vedette": "courgette",
+      "categorie": "vegetarien",
+      "ingredients": [
+        {
+          "nom": "courgette",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "potiron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 200,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "persil",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "poignée"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "plancha"
+      ],
+      "etapes": [
+        "Faire chauffer la plancha.",
+        "Griller la courgette et le potiron en tranches, parsemer de persil 10 min en retournant à mi-cuisson.",
+        "Servir."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "plancha-tomate-mozzarella-persil",
+      "nom": "Tomate & mozzarella grillées, persil",
+      "temps_min": 9,
+      "portions": 2,
+      "ingredient_vedette": "tomate",
+      "categorie": "vegetarien",
+      "ingredients": [
+        {
+          "nom": "tomate",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "mozzarella",
+          "type": "frais",
+          "quantite": {
+            "valeur": 100,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "persil",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "poignée"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "plancha"
+      ],
+      "etapes": [
+        "Faire chauffer la plancha.",
+        "Griller les tranches de tomate, ajouter la mozzarella en fin de cuisson et parsemer de persil 6 min en retournant à mi-cuisson.",
+        "Servir."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
     }
   ]
 }

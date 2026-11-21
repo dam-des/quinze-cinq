@@ -39,19 +39,21 @@ export const APPAREILS = [
   { cle: 'classique', label: 'Classiques' },
   { cle: 'airfryer', label: 'Airfryer' },
   { cle: 'cookeo', label: 'Cookeo' },
+  { cle: 'plancha', label: 'Plancha' },
 ];
 
-/** Catégorie d'appareil d'une recette : 'airfryer' | 'cookeo' | 'classique'. */
+/** Catégorie d'appareil d'une recette : 'airfryer' | 'cookeo' | 'plancha' | 'classique'. */
 export function categorieAppareil(recette) {
   const eq = recette.equipement_requis || [];
   if (eq.includes('airfryer')) return 'airfryer';
   if (eq.includes('cookeo')) return 'cookeo';
+  if (eq.includes('plancha')) return 'plancha';
   return 'classique';
 }
 
 /** Équipements par défaut (poêle/plaque toujours supposés). */
 export function equipementsParDefaut() {
-  return { four: true, airfryer: false, cookeo: false };
+  return { four: true, airfryer: false, cookeo: false, plancha: false };
 }
 
 // Catégorie → fichier d'illustration (les 7 SVG fournis, intégrés tels quels).
@@ -76,6 +78,7 @@ export function libelleEquipement(recette) {
   const eq = recette.equipement_requis || [];
   if (eq.includes('airfryer')) return 'Airfryer';
   if (eq.includes('cookeo')) return 'Cookeo';
+  if (eq.includes('plancha')) return 'Plancha';
   if (eq.includes('four')) return 'Four';
   return 'Poêle';
 }
