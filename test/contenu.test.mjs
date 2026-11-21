@@ -44,15 +44,15 @@ function sansEquip(cat) {
   return R.filter((r) => (r.equipement_requis || []).length === 0 && (!cat || r.categorie === cat));
 }
 
-test('contenu — pool sans équipement : 150 au total, réparti par catégorie', () => {
-  assert.equal(sansEquip().length, 150);
+test('contenu — pool sans équipement : 180 au total, réparti par catégorie', () => {
+  assert.equal(sansEquip().length, 180);
   assert.equal(sansEquip('feculent').length, 25);
   assert.equal(sansEquip('volaille').length, 25);
   assert.equal(sansEquip('vegetarien').length, 25);
-  assert.equal(sansEquip('oeufs').length, 20);
+  assert.equal(sansEquip('oeufs').length, 40);
   assert.equal(sansEquip('poisson').length, 20);
   assert.equal(sansEquip('viande').length, 20);
-  assert.equal(sansEquip('soupe').length, 15);
+  assert.equal(sansEquip('soupe').length, 25);
 });
 
 test('contenu — pool sans équipement : au moins 65 taguées vegetarien', () => {
@@ -60,7 +60,7 @@ test('contenu — pool sans équipement : au moins 65 taguées vegetarien', () =
   assert.ok(n >= 65, `seulement ${n} recettes sans équipement taguées vegetarien`);
 });
 
-test('contenu — plancha : 45 recettes, réparties, total 396', () => {
+test('contenu — plancha : 45 recettes, réparties', () => {
   const plancha = R.filter((r) => (r.equipement_requis || []).includes('plancha'));
   assert.equal(plancha.length, 45);
   const par = (cat) => plancha.filter((r) => r.categorie === cat).length;
@@ -68,5 +68,14 @@ test('contenu — plancha : 45 recettes, réparties, total 396', () => {
   assert.equal(par('poisson'), 10);
   assert.equal(par('volaille'), 12);
   assert.equal(par('vegetarien'), 11);
-  assert.equal(R.length, 396);
+});
+
+function parEquip(equip, categorie) {
+  return R.filter((r) => (r.equipement_requis || []).includes(equip) && r.categorie === categorie).length;
+}
+
+test('contenu — lot œufs/soupe : +61 recettes, total 457', () => {
+  assert.equal(parEquip('airfryer', 'oeufs'), 20);
+  assert.equal(parEquip('cookeo', 'soupe'), 35);
+  assert.equal(R.length, 457);
 });

@@ -19653,6 +19653,2800 @@
       "tags": [
         "vegetarien"
       ]
+    },
+    {
+      "id": "oeufs-omelette-fromage-persil",
+      "nom": "Omelette au fromage & persil",
+      "temps_min": 8,
+      "portions": 2,
+      "ingredient_vedette": "œufs",
+      "categorie": "oeufs",
+      "ingredients": [
+        {
+          "nom": "œufs",
+          "type": "base",
+          "quantite": {
+            "valeur": 4,
+            "unite": null
+          }
+        },
+        {
+          "nom": "fromage râpé",
+          "type": "frais",
+          "quantite": {
+            "valeur": 60,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "persil",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "poignée"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [],
+      "etapes": [
+        "Battre les œufs.",
+        "Cuire à la poêle en ajoutant le fromage.",
+        "Parsemer de persil et servir."
+      ],
+      "tags": [
+        "vegetarien",
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "oeufs-omelette-jambon-fromage",
+      "nom": "Omelette jambon & fromage",
+      "temps_min": 8,
+      "portions": 2,
+      "ingredient_vedette": "œufs",
+      "categorie": "oeufs",
+      "ingredients": [
+        {
+          "nom": "œufs",
+          "type": "base",
+          "quantite": {
+            "valeur": 4,
+            "unite": null
+          }
+        },
+        {
+          "nom": "jambon",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": "tranches"
+          }
+        },
+        {
+          "nom": "fromage râpé",
+          "type": "frais",
+          "quantite": {
+            "valeur": 60,
+            "unite": "g"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [],
+      "etapes": [
+        "Battre les œufs.",
+        "Ajouter le jambon coupé et le fromage, cuire à la poêle.",
+        "Servir."
+      ],
+      "tags": [
+        "porc",
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "oeufs-brouilles-epinards-parmesan",
+      "nom": "Œufs brouillés, épinards & parmesan",
+      "temps_min": 10,
+      "portions": 2,
+      "ingredient_vedette": "œufs",
+      "categorie": "oeufs",
+      "ingredients": [
+        {
+          "nom": "œufs",
+          "type": "base",
+          "quantite": {
+            "valeur": 4,
+            "unite": null
+          }
+        },
+        {
+          "nom": "épinards",
+          "type": "frais",
+          "quantite": {
+            "valeur": 150,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "parmesan",
+          "type": "frais",
+          "quantite": {
+            "valeur": 30,
+            "unite": "g"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire tomber les épinards à la poêle.",
+        "Ajouter les œufs battus, brouiller.",
+        "Parsemer de parmesan et servir."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "oeufs-omelette-champignons-ail",
+      "nom": "Omelette aux champignons & ail",
+      "temps_min": 10,
+      "portions": 2,
+      "ingredient_vedette": "œufs",
+      "categorie": "oeufs",
+      "ingredients": [
+        {
+          "nom": "œufs",
+          "type": "base",
+          "quantite": {
+            "valeur": 4,
+            "unite": null
+          }
+        },
+        {
+          "nom": "champignons",
+          "type": "frais",
+          "quantite": {
+            "valeur": 200,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "ail",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": "gousse"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire revenir les champignons avec l’ail.",
+        "Ajouter les œufs battus, cuire.",
+        "Servir."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "oeufs-plat-tomates-cerises-persil",
+      "nom": "Œufs au plat, tomates cerises & persil",
+      "temps_min": 8,
+      "portions": 2,
+      "ingredient_vedette": "œufs",
+      "categorie": "oeufs",
+      "ingredients": [
+        {
+          "nom": "œufs",
+          "type": "base",
+          "quantite": {
+            "valeur": 4,
+            "unite": null
+          }
+        },
+        {
+          "nom": "tomates cerises",
+          "type": "frais",
+          "quantite": {
+            "valeur": 150,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "persil",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "poignée"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire revenir les tomates cerises.",
+        "Cuire les œufs au plat à côté.",
+        "Parsemer de persil et servir."
+      ],
+      "tags": [
+        "vegetarien",
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "oeufs-omelette-poivron-oignon-2",
+      "nom": "Omelette poivron & oignon",
+      "temps_min": 12,
+      "portions": 2,
+      "ingredient_vedette": "œufs",
+      "categorie": "oeufs",
+      "ingredients": [
+        {
+          "nom": "œufs",
+          "type": "base",
+          "quantite": {
+            "valeur": 4,
+            "unite": null
+          }
+        },
+        {
+          "nom": "poivron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire revenir le poivron et l’oignon.",
+        "Ajouter les œufs battus, cuire.",
+        "Servir."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "oeufs-brouilles-lardons-fromage",
+      "nom": "Œufs brouillés, lardons & fromage râpé",
+      "temps_min": 10,
+      "portions": 2,
+      "ingredient_vedette": "œufs",
+      "categorie": "oeufs",
+      "ingredients": [
+        {
+          "nom": "œufs",
+          "type": "base",
+          "quantite": {
+            "valeur": 4,
+            "unite": null
+          }
+        },
+        {
+          "nom": "lardons",
+          "type": "frais",
+          "quantite": {
+            "valeur": 100,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "fromage râpé",
+          "type": "frais",
+          "quantite": {
+            "valeur": 50,
+            "unite": "g"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire revenir les lardons.",
+        "Ajouter les œufs battus, brouiller avec le fromage.",
+        "Servir."
+      ],
+      "tags": [
+        "porc"
+      ]
+    },
+    {
+      "id": "oeufs-tortilla-pdt-oignon-2",
+      "nom": "Tortilla de pommes de terre & oignon",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "œufs",
+      "categorie": "oeufs",
+      "ingredients": [
+        {
+          "nom": "œufs",
+          "type": "base",
+          "quantite": {
+            "valeur": 4,
+            "unite": null
+          }
+        },
+        {
+          "nom": "pommes de terre",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire revenir les pommes de terre en tranches fines et l’oignon.",
+        "Ajouter les œufs battus, cuire à couvert.",
+        "Servir."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "oeufs-omelette-courgette-parmesan",
+      "nom": "Omelette courgette & parmesan",
+      "temps_min": 10,
+      "portions": 2,
+      "ingredient_vedette": "œufs",
+      "categorie": "oeufs",
+      "ingredients": [
+        {
+          "nom": "œufs",
+          "type": "base",
+          "quantite": {
+            "valeur": 4,
+            "unite": null
+          }
+        },
+        {
+          "nom": "courgette",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "parmesan",
+          "type": "frais",
+          "quantite": {
+            "valeur": 30,
+            "unite": "g"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire revenir la courgette en dés.",
+        "Ajouter les œufs battus et le parmesan, cuire.",
+        "Servir."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "oeufs-cocotte-creme-ciboulette",
+      "nom": "Œufs cocotte, crème fraîche & ciboulette",
+      "temps_min": 12,
+      "portions": 2,
+      "ingredient_vedette": "œufs",
+      "categorie": "oeufs",
+      "ingredients": [
+        {
+          "nom": "œufs",
+          "type": "base",
+          "quantite": {
+            "valeur": 4,
+            "unite": null
+          }
+        },
+        {
+          "nom": "crème fraîche",
+          "type": "frais",
+          "quantite": {
+            "valeur": 15,
+            "unite": "cl"
+          }
+        },
+        {
+          "nom": "ciboulette",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "poignée"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [],
+      "etapes": [
+        "Répartir la crème dans des ramequins.",
+        "Casser un œuf par ramequin, cuire au bain-marie ou au four.",
+        "Parsemer de ciboulette et servir."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "oeufs-omelette-crevettes-persil",
+      "nom": "Omelette aux crevettes & persil",
+      "temps_min": 10,
+      "portions": 2,
+      "ingredient_vedette": "œufs",
+      "categorie": "oeufs",
+      "ingredients": [
+        {
+          "nom": "œufs",
+          "type": "base",
+          "quantite": {
+            "valeur": 4,
+            "unite": null
+          }
+        },
+        {
+          "nom": "crevettes",
+          "type": "frais",
+          "quantite": {
+            "valeur": 150,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "persil",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "poignée"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire revenir les crevettes.",
+        "Ajouter les œufs battus, cuire.",
+        "Parsemer de persil et servir."
+      ],
+      "tags": []
+    },
+    {
+      "id": "oeufs-brouilles-saumon-ciboulette-2",
+      "nom": "Œufs brouillés, saumon fumé & ciboulette",
+      "temps_min": 8,
+      "portions": 2,
+      "ingredient_vedette": "œufs",
+      "categorie": "oeufs",
+      "ingredients": [
+        {
+          "nom": "œufs",
+          "type": "base",
+          "quantite": {
+            "valeur": 4,
+            "unite": null
+          }
+        },
+        {
+          "nom": "saumon fumé",
+          "type": "frais",
+          "quantite": {
+            "valeur": 100,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "ciboulette",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "poignée"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [],
+      "etapes": [
+        "Brouiller les œufs à feu doux.",
+        "Ajouter le saumon fumé en lamelles et la ciboulette en fin de cuisson.",
+        "Servir."
+      ],
+      "tags": []
+    },
+    {
+      "id": "oeufs-omelette-chorizo-poivron-2",
+      "nom": "Omelette chorizo & poivron",
+      "temps_min": 12,
+      "portions": 2,
+      "ingredient_vedette": "œufs",
+      "categorie": "oeufs",
+      "ingredients": [
+        {
+          "nom": "œufs",
+          "type": "base",
+          "quantite": {
+            "valeur": 4,
+            "unite": null
+          }
+        },
+        {
+          "nom": "chorizo",
+          "type": "frais",
+          "quantite": {
+            "valeur": 80,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "poivron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire revenir le chorizo et le poivron.",
+        "Ajouter les œufs battus, cuire.",
+        "Servir."
+      ],
+      "tags": [
+        "porc"
+      ]
+    },
+    {
+      "id": "oeufs-mimosa-mayo-persil",
+      "nom": "Œufs mimosa, mayonnaise & persil",
+      "temps_min": 12,
+      "portions": 2,
+      "ingredient_vedette": "œufs",
+      "categorie": "oeufs",
+      "ingredients": [
+        {
+          "nom": "œufs",
+          "type": "base",
+          "quantite": {
+            "valeur": 4,
+            "unite": null
+          }
+        },
+        {
+          "nom": "mayonnaise",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": "c. à soupe"
+          }
+        },
+        {
+          "nom": "persil",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "poignée"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire cuire les œufs durs puis les écaler.",
+        "Mélanger les jaunes avec la mayonnaise, garnir les blancs.",
+        "Parsemer de persil et servir."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "oeufs-omelette-champignons-jambon",
+      "nom": "Omelette champignons & jambon",
+      "temps_min": 12,
+      "portions": 2,
+      "ingredient_vedette": "œufs",
+      "categorie": "oeufs",
+      "ingredients": [
+        {
+          "nom": "œufs",
+          "type": "base",
+          "quantite": {
+            "valeur": 4,
+            "unite": null
+          }
+        },
+        {
+          "nom": "champignons",
+          "type": "frais",
+          "quantite": {
+            "valeur": 150,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "jambon",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": "tranches"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire revenir les champignons et le jambon coupé.",
+        "Ajouter les œufs battus, cuire.",
+        "Servir."
+      ],
+      "tags": [
+        "porc"
+      ]
+    },
+    {
+      "id": "oeufs-plat-lardons-2",
+      "nom": "Œufs au plat & lardons",
+      "temps_min": 8,
+      "portions": 2,
+      "ingredient_vedette": "œufs",
+      "categorie": "oeufs",
+      "ingredients": [
+        {
+          "nom": "œufs",
+          "type": "base",
+          "quantite": {
+            "valeur": 4,
+            "unite": null
+          }
+        },
+        {
+          "nom": "lardons",
+          "type": "frais",
+          "quantite": {
+            "valeur": 100,
+            "unite": "g"
+          }
+        }
+      ],
+      "nb_comptables": 2,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire revenir les lardons.",
+        "Cuire les œufs au plat par-dessus.",
+        "Servir."
+      ],
+      "tags": [
+        "porc"
+      ]
+    },
+    {
+      "id": "oeufs-omelette-petits-pois-jambon-2",
+      "nom": "Omelette petits pois & jambon",
+      "temps_min": 10,
+      "portions": 2,
+      "ingredient_vedette": "œufs",
+      "categorie": "oeufs",
+      "ingredients": [
+        {
+          "nom": "œufs",
+          "type": "base",
+          "quantite": {
+            "valeur": 4,
+            "unite": null
+          }
+        },
+        {
+          "nom": "petits pois",
+          "type": "frais",
+          "quantite": {
+            "valeur": 150,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "jambon",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": "tranches"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [],
+      "etapes": [
+        "Réchauffer les petits pois et le jambon coupé.",
+        "Ajouter les œufs battus, cuire.",
+        "Servir."
+      ],
+      "tags": [
+        "porc",
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "oeufs-brouilles-tomate-ciboulette-2",
+      "nom": "Œufs brouillés, tomate & ciboulette",
+      "temps_min": 8,
+      "portions": 2,
+      "ingredient_vedette": "œufs",
+      "categorie": "oeufs",
+      "ingredients": [
+        {
+          "nom": "œufs",
+          "type": "base",
+          "quantite": {
+            "valeur": 4,
+            "unite": null
+          }
+        },
+        {
+          "nom": "tomate",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "ciboulette",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "poignée"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire revenir la tomate en dés.",
+        "Ajouter les œufs battus, brouiller.",
+        "Parsemer de ciboulette et servir."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "oeufs-omelette-feta-epinards-2",
+      "nom": "Omelette feta & épinards",
+      "temps_min": 10,
+      "portions": 2,
+      "ingredient_vedette": "œufs",
+      "categorie": "oeufs",
+      "ingredients": [
+        {
+          "nom": "œufs",
+          "type": "base",
+          "quantite": {
+            "valeur": 4,
+            "unite": null
+          }
+        },
+        {
+          "nom": "feta",
+          "type": "frais",
+          "quantite": {
+            "valeur": 60,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "épinards",
+          "type": "frais",
+          "quantite": {
+            "valeur": 150,
+            "unite": "g"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire tomber les épinards à la poêle.",
+        "Ajouter les œufs battus, émietter la feta, cuire.",
+        "Servir."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "oeufs-durs-mayo-salade",
+      "nom": "Œufs durs, mayonnaise & salade",
+      "temps_min": 12,
+      "portions": 2,
+      "ingredient_vedette": "œufs",
+      "categorie": "oeufs",
+      "ingredients": [
+        {
+          "nom": "œufs",
+          "type": "base",
+          "quantite": {
+            "valeur": 4,
+            "unite": null
+          }
+        },
+        {
+          "nom": "mayonnaise",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": "c. à soupe"
+          }
+        },
+        {
+          "nom": "salade",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "poignée"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire cuire les œufs durs puis les écaler.",
+        "Couper en deux, napper de mayonnaise.",
+        "Servir sur un lit de salade."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "oeufs-air-cocotte-jambon-fromage-2",
+      "nom": "Œufs cocotte à l’airfryer, jambon & fromage",
+      "temps_min": 12,
+      "portions": 2,
+      "ingredient_vedette": "œufs",
+      "categorie": "oeufs",
+      "ingredients": [
+        {
+          "nom": "œufs",
+          "type": "base",
+          "quantite": {
+            "valeur": 4,
+            "unite": null
+          }
+        },
+        {
+          "nom": "jambon",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": "tranches"
+          }
+        },
+        {
+          "nom": "fromage râpé",
+          "type": "frais",
+          "quantite": {
+            "valeur": 50,
+            "unite": "g"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Répartir le jambon coupé dans des ramequins.",
+        "Casser un œuf par ramequin, parsemer de fromage.",
+        "Cuire à l’airfryer 10 min à 180°C."
+      ],
+      "tags": [
+        "porc"
+      ]
+    },
+    {
+      "id": "oeufs-air-omelette-champignons-persil-2",
+      "nom": "Omelette soufflée à l’airfryer, champignons & persil",
+      "temps_min": 14,
+      "portions": 2,
+      "ingredient_vedette": "œufs",
+      "categorie": "oeufs",
+      "ingredients": [
+        {
+          "nom": "œufs",
+          "type": "base",
+          "quantite": {
+            "valeur": 4,
+            "unite": null
+          }
+        },
+        {
+          "nom": "champignons",
+          "type": "frais",
+          "quantite": {
+            "valeur": 150,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "persil",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "poignée"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Faire revenir les champignons.",
+        "Verser les œufs battus dans un moule, ajouter les champignons.",
+        "Cuire à l’airfryer 10 min à 170°C, parsemer de persil."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "oeufs-air-cocotte-epinards-creme-2",
+      "nom": "Œufs cocotte à l’airfryer, épinards & crème fraîche",
+      "temps_min": 13,
+      "portions": 2,
+      "ingredient_vedette": "œufs",
+      "categorie": "oeufs",
+      "ingredients": [
+        {
+          "nom": "œufs",
+          "type": "base",
+          "quantite": {
+            "valeur": 4,
+            "unite": null
+          }
+        },
+        {
+          "nom": "épinards",
+          "type": "frais",
+          "quantite": {
+            "valeur": 150,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "crème fraîche",
+          "type": "frais",
+          "quantite": {
+            "valeur": 15,
+            "unite": "cl"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Répartir les épinards et la crème dans des ramequins.",
+        "Casser un œuf par ramequin.",
+        "Cuire à l’airfryer 10 min à 180°C."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "oeufs-air-muffins-lardons-fromage",
+      "nom": "Muffins aux œufs, lardons & fromage",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "œufs",
+      "categorie": "oeufs",
+      "ingredients": [
+        {
+          "nom": "œufs",
+          "type": "base",
+          "quantite": {
+            "valeur": 4,
+            "unite": null
+          }
+        },
+        {
+          "nom": "lardons",
+          "type": "frais",
+          "quantite": {
+            "valeur": 100,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "fromage râpé",
+          "type": "frais",
+          "quantite": {
+            "valeur": 50,
+            "unite": "g"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Faire revenir les lardons.",
+        "Répartir œufs battus, lardons et fromage dans des moules à muffins.",
+        "Cuire à l’airfryer 12 min à 180°C."
+      ],
+      "tags": [
+        "porc"
+      ]
+    },
+    {
+      "id": "oeufs-air-cocotte-tomate-persil-2",
+      "nom": "Œufs cocotte à l’airfryer, tomate & persil",
+      "temps_min": 12,
+      "portions": 2,
+      "ingredient_vedette": "œufs",
+      "categorie": "oeufs",
+      "ingredients": [
+        {
+          "nom": "œufs",
+          "type": "base",
+          "quantite": {
+            "valeur": 4,
+            "unite": null
+          }
+        },
+        {
+          "nom": "tomate",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "persil",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "poignée"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Répartir la tomate en dés dans des ramequins.",
+        "Casser un œuf par ramequin.",
+        "Cuire à l’airfryer 10 min à 180°C, parsemer de persil."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "oeufs-air-omelette-poivron-oignon-2",
+      "nom": "Omelette à l’airfryer, poivron & oignon",
+      "temps_min": 14,
+      "portions": 2,
+      "ingredient_vedette": "œufs",
+      "categorie": "oeufs",
+      "ingredients": [
+        {
+          "nom": "œufs",
+          "type": "base",
+          "quantite": {
+            "valeur": 4,
+            "unite": null
+          }
+        },
+        {
+          "nom": "poivron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Faire revenir le poivron et l’oignon.",
+        "Verser les œufs battus dans un moule avec les légumes.",
+        "Cuire à l’airfryer 10 min à 170°C."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "oeufs-air-cocotte-saumon-ciboulette-2",
+      "nom": "Œufs cocotte à l’airfryer, saumon fumé & ciboulette",
+      "temps_min": 12,
+      "portions": 2,
+      "ingredient_vedette": "œufs",
+      "categorie": "oeufs",
+      "ingredients": [
+        {
+          "nom": "œufs",
+          "type": "base",
+          "quantite": {
+            "valeur": 4,
+            "unite": null
+          }
+        },
+        {
+          "nom": "saumon fumé",
+          "type": "frais",
+          "quantite": {
+            "valeur": 100,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "ciboulette",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "poignée"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Répartir le saumon fumé dans des ramequins.",
+        "Casser un œuf par ramequin.",
+        "Cuire à l’airfryer 10 min à 180°C, parsemer de ciboulette."
+      ],
+      "tags": []
+    },
+    {
+      "id": "oeufs-air-muffins-courgette-parmesan",
+      "nom": "Muffins aux œufs, courgette & parmesan",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "œufs",
+      "categorie": "oeufs",
+      "ingredients": [
+        {
+          "nom": "œufs",
+          "type": "base",
+          "quantite": {
+            "valeur": 4,
+            "unite": null
+          }
+        },
+        {
+          "nom": "courgette",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "parmesan",
+          "type": "frais",
+          "quantite": {
+            "valeur": 30,
+            "unite": "g"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Râper la courgette.",
+        "Répartir œufs battus, courgette et parmesan dans des moules à muffins.",
+        "Cuire à l’airfryer 12 min à 180°C."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "oeufs-air-cocotte-chorizo-poivron-2",
+      "nom": "Œufs cocotte à l’airfryer, chorizo & poivron",
+      "temps_min": 13,
+      "portions": 2,
+      "ingredient_vedette": "œufs",
+      "categorie": "oeufs",
+      "ingredients": [
+        {
+          "nom": "œufs",
+          "type": "base",
+          "quantite": {
+            "valeur": 4,
+            "unite": null
+          }
+        },
+        {
+          "nom": "chorizo",
+          "type": "frais",
+          "quantite": {
+            "valeur": 80,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "poivron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Répartir le chorizo et le poivron dans des ramequins.",
+        "Casser un œuf par ramequin.",
+        "Cuire à l’airfryer 10 min à 180°C."
+      ],
+      "tags": [
+        "porc"
+      ]
+    },
+    {
+      "id": "oeufs-air-omelette-feta-epinards-2",
+      "nom": "Omelette à l’airfryer, feta & épinards",
+      "temps_min": 14,
+      "portions": 2,
+      "ingredient_vedette": "œufs",
+      "categorie": "oeufs",
+      "ingredients": [
+        {
+          "nom": "œufs",
+          "type": "base",
+          "quantite": {
+            "valeur": 4,
+            "unite": null
+          }
+        },
+        {
+          "nom": "feta",
+          "type": "frais",
+          "quantite": {
+            "valeur": 60,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "épinards",
+          "type": "frais",
+          "quantite": {
+            "valeur": 150,
+            "unite": "g"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Faire tomber les épinards.",
+        "Verser les œufs battus dans un moule, émietter la feta.",
+        "Cuire à l’airfryer 10 min à 170°C."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "oeufs-air-cocotte-petits-pois-jambon-2",
+      "nom": "Œufs cocotte à l’airfryer, petits pois & jambon",
+      "temps_min": 13,
+      "portions": 2,
+      "ingredient_vedette": "œufs",
+      "categorie": "oeufs",
+      "ingredients": [
+        {
+          "nom": "œufs",
+          "type": "base",
+          "quantite": {
+            "valeur": 4,
+            "unite": null
+          }
+        },
+        {
+          "nom": "petits pois",
+          "type": "frais",
+          "quantite": {
+            "valeur": 150,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "jambon",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": "tranches"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Répartir les petits pois et le jambon coupé dans des ramequins.",
+        "Casser un œuf par ramequin.",
+        "Cuire à l’airfryer 10 min à 180°C."
+      ],
+      "tags": [
+        "porc"
+      ]
+    },
+    {
+      "id": "oeufs-air-muffins-champignons-fromage",
+      "nom": "Muffins aux œufs, champignons & fromage",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "œufs",
+      "categorie": "oeufs",
+      "ingredients": [
+        {
+          "nom": "œufs",
+          "type": "base",
+          "quantite": {
+            "valeur": 4,
+            "unite": null
+          }
+        },
+        {
+          "nom": "champignons",
+          "type": "frais",
+          "quantite": {
+            "valeur": 150,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "fromage râpé",
+          "type": "frais",
+          "quantite": {
+            "valeur": 50,
+            "unite": "g"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Faire revenir les champignons.",
+        "Répartir œufs battus, champignons et fromage dans des moules à muffins.",
+        "Cuire à l’airfryer 12 min à 180°C."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "oeufs-air-cocotte-crevettes-persil-2",
+      "nom": "Œufs cocotte à l’airfryer, crevettes & persil",
+      "temps_min": 13,
+      "portions": 2,
+      "ingredient_vedette": "œufs",
+      "categorie": "oeufs",
+      "ingredients": [
+        {
+          "nom": "œufs",
+          "type": "base",
+          "quantite": {
+            "valeur": 4,
+            "unite": null
+          }
+        },
+        {
+          "nom": "crevettes",
+          "type": "frais",
+          "quantite": {
+            "valeur": 150,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "persil",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "poignée"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Répartir les crevettes dans des ramequins.",
+        "Casser un œuf par ramequin.",
+        "Cuire à l’airfryer 10 min à 180°C, parsemer de persil."
+      ],
+      "tags": []
+    },
+    {
+      "id": "soupe-veloute-potiron-creme-2",
+      "nom": "Velouté de potiron express",
+      "temps_min": 14,
+      "portions": 2,
+      "ingredient_vedette": "potiron",
+      "categorie": "soupe",
+      "ingredients": [
+        {
+          "nom": "potiron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 400,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "bouillon cube",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "crème fraîche",
+          "type": "frais",
+          "quantite": {
+            "valeur": 15,
+            "unite": "cl"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire cuire le potiron coupé dans le bouillon.",
+        "Mixer avec la crème fraîche.",
+        "Servir chaud."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "soupe-lentilles-curry-2",
+      "nom": "Soupe de lentilles corail au curry",
+      "temps_min": 14,
+      "portions": 2,
+      "ingredient_vedette": "lentilles corail",
+      "categorie": "soupe",
+      "ingredients": [
+        {
+          "nom": "lentilles corail",
+          "type": "frais",
+          "quantite": {
+            "valeur": 150,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "bouillon cube",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "curry",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "c. à café"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire cuire les lentilles dans le bouillon avec le curry.",
+        "Mixer légèrement si besoin.",
+        "Servir chaud."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "soupe-petits-pois-persil-2",
+      "nom": "Soupe de petits pois au persil",
+      "temps_min": 12,
+      "portions": 2,
+      "ingredient_vedette": "petits pois",
+      "categorie": "soupe",
+      "ingredients": [
+        {
+          "nom": "petits pois",
+          "type": "frais",
+          "quantite": {
+            "valeur": 200,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "bouillon cube",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "persil",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "poignée"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire cuire les petits pois dans le bouillon.",
+        "Mixer avec le persil.",
+        "Servir chaud."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "soupe-veloute-carotte-curry-2",
+      "nom": "Velouté de carotte au curry",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "carotte",
+      "categorie": "soupe",
+      "ingredients": [
+        {
+          "nom": "carotte",
+          "type": "frais",
+          "quantite": {
+            "valeur": 3,
+            "unite": null
+          }
+        },
+        {
+          "nom": "bouillon cube",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "curry",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "c. à café"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire cuire la carotte en rondelles dans le bouillon.",
+        "Mixer avec le curry.",
+        "Servir chaud."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "soupe-tomate-vermicelles-persil",
+      "nom": "Soupe de tomates concassées & vermicelles",
+      "temps_min": 12,
+      "portions": 2,
+      "ingredient_vedette": "tomates concassées",
+      "categorie": "soupe",
+      "ingredients": [
+        {
+          "nom": "tomates concassées",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": "boîte"
+          }
+        },
+        {
+          "nom": "bouillon cube",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "vermicelles",
+          "type": "base",
+          "quantite": {
+            "valeur": 60,
+            "unite": "g"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire chauffer les tomates concassées dans le bouillon.",
+        "Ajouter les vermicelles, cuire quelques minutes.",
+        "Servir chaud."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "soupe-veloute-champignons-creme-2",
+      "nom": "Velouté de champignons & crème fraîche",
+      "temps_min": 14,
+      "portions": 2,
+      "ingredient_vedette": "champignons",
+      "categorie": "soupe",
+      "ingredients": [
+        {
+          "nom": "champignons",
+          "type": "frais",
+          "quantite": {
+            "valeur": 250,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "bouillon cube",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "crème fraîche",
+          "type": "frais",
+          "quantite": {
+            "valeur": 15,
+            "unite": "cl"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire revenir puis cuire les champignons dans le bouillon.",
+        "Mixer avec la crème fraîche.",
+        "Servir chaud."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "soupe-pdt-oignon-2",
+      "nom": "Soupe de pommes de terre & oignon",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "pommes de terre",
+      "categorie": "soupe",
+      "ingredients": [
+        {
+          "nom": "pommes de terre",
+          "type": "frais",
+          "quantite": {
+            "valeur": 3,
+            "unite": null
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "bouillon cube",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire cuire les pommes de terre et l’oignon dans le bouillon.",
+        "Mixer.",
+        "Servir chaud."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "soupe-thai-coco-crevettes-2",
+      "nom": "Soupe thaï, lait de coco & crevettes",
+      "temps_min": 13,
+      "portions": 2,
+      "ingredient_vedette": "crevettes",
+      "categorie": "soupe",
+      "ingredients": [
+        {
+          "nom": "crevettes",
+          "type": "frais",
+          "quantite": {
+            "valeur": 150,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "lait de coco",
+          "type": "frais",
+          "quantite": {
+            "valeur": 20,
+            "unite": "cl"
+          }
+        },
+        {
+          "nom": "bouillon cube",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "curry",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "c. à café"
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire chauffer le bouillon avec le lait de coco et le curry.",
+        "Ajouter les crevettes, cuire 5 min.",
+        "Servir chaud."
+      ],
+      "tags": []
+    },
+    {
+      "id": "soupe-veloute-epinards-creme-2",
+      "nom": "Velouté d’épinards & crème fraîche",
+      "temps_min": 12,
+      "portions": 2,
+      "ingredient_vedette": "épinards",
+      "categorie": "soupe",
+      "ingredients": [
+        {
+          "nom": "épinards",
+          "type": "frais",
+          "quantite": {
+            "valeur": 200,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "bouillon cube",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "crème fraîche",
+          "type": "frais",
+          "quantite": {
+            "valeur": 15,
+            "unite": "cl"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire tomber les épinards dans le bouillon.",
+        "Mixer avec la crème fraîche.",
+        "Servir chaud."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "soupe-riz-ciboulette-2",
+      "nom": "Soupe de riz & ciboulette",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "riz",
+      "categorie": "soupe",
+      "ingredients": [
+        {
+          "nom": "riz",
+          "type": "base",
+          "quantite": {
+            "valeur": 100,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "bouillon cube",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "ciboulette",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "poignée"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire cuire le riz dans le bouillon.",
+        "Parsemer de ciboulette.",
+        "Servir chaud."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "soupe-cookeo-potiron-creme-2",
+      "nom": "Soupe de potiron au cookeo, crème fraîche",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "potiron",
+      "categorie": "soupe",
+      "ingredients": [
+        {
+          "nom": "potiron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 500,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "bouillon cube",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "crème fraîche",
+          "type": "frais",
+          "quantite": {
+            "valeur": 15,
+            "unite": "cl"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Cuire le potiron au cookeo avec le bouillon (mode soupe/pression).",
+        "Mixer avec la crème fraîche.",
+        "Servir chaud."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "soupe-cookeo-carotte-curry-2",
+      "nom": "Velouté de carotte au cookeo, curry",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "carotte",
+      "categorie": "soupe",
+      "ingredients": [
+        {
+          "nom": "carotte",
+          "type": "frais",
+          "quantite": {
+            "valeur": 4,
+            "unite": null
+          }
+        },
+        {
+          "nom": "bouillon cube",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "curry",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "c. à café"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Cuire la carotte au cookeo avec le bouillon.",
+        "Mixer avec le curry.",
+        "Servir chaud."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "soupe-cookeo-lentilles-curry-2",
+      "nom": "Soupe de lentilles corail au cookeo, curry",
+      "temps_min": 14,
+      "portions": 2,
+      "ingredient_vedette": "lentilles corail",
+      "categorie": "soupe",
+      "ingredients": [
+        {
+          "nom": "lentilles corail",
+          "type": "frais",
+          "quantite": {
+            "valeur": 200,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "bouillon cube",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "curry",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "c. à café"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Cuire les lentilles au cookeo avec le bouillon et le curry.",
+        "Mixer légèrement si besoin.",
+        "Servir chaud."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "soupe-cookeo-pdt-lardons-oignon",
+      "nom": "Soupe de pommes de terre au cookeo, lardons & oignon",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "pommes de terre",
+      "categorie": "soupe",
+      "ingredients": [
+        {
+          "nom": "pommes de terre",
+          "type": "frais",
+          "quantite": {
+            "valeur": 3,
+            "unite": null
+          }
+        },
+        {
+          "nom": "lardons",
+          "type": "frais",
+          "quantite": {
+            "valeur": 100,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "bouillon cube",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Cuire les pommes de terre et l’oignon au cookeo avec le bouillon.",
+        "Faire revenir les lardons à part, ajouter.",
+        "Servir chaud."
+      ],
+      "tags": [
+        "porc"
+      ]
+    },
+    {
+      "id": "soupe-cookeo-champignons-creme-2",
+      "nom": "Velouté de champignons au cookeo",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "champignons",
+      "categorie": "soupe",
+      "ingredients": [
+        {
+          "nom": "champignons",
+          "type": "frais",
+          "quantite": {
+            "valeur": 300,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "bouillon cube",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "crème fraîche",
+          "type": "frais",
+          "quantite": {
+            "valeur": 15,
+            "unite": "cl"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Cuire les champignons au cookeo avec le bouillon.",
+        "Mixer avec la crème fraîche.",
+        "Servir chaud."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "soupe-cookeo-petits-pois-jambon-2",
+      "nom": "Soupe de petits pois au cookeo, jambon",
+      "temps_min": 13,
+      "portions": 2,
+      "ingredient_vedette": "petits pois",
+      "categorie": "soupe",
+      "ingredients": [
+        {
+          "nom": "petits pois",
+          "type": "frais",
+          "quantite": {
+            "valeur": 250,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "jambon",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": "tranches"
+          }
+        },
+        {
+          "nom": "bouillon cube",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Cuire les petits pois au cookeo avec le bouillon.",
+        "Ajouter le jambon coupé.",
+        "Servir chaud."
+      ],
+      "tags": [
+        "porc"
+      ]
+    },
+    {
+      "id": "soupe-cookeo-carotte-pdt-oignon",
+      "nom": "Soupe de légumes au cookeo, carotte & pommes de terre",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "carotte",
+      "categorie": "soupe",
+      "ingredients": [
+        {
+          "nom": "carotte",
+          "type": "frais",
+          "quantite": {
+            "valeur": 3,
+            "unite": null
+          }
+        },
+        {
+          "nom": "pommes de terre",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "bouillon cube",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Cuire les légumes au cookeo avec le bouillon.",
+        "Mixer ou servir en morceaux.",
+        "Servir chaud."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "soupe-cookeo-epinards-creme-2",
+      "nom": "Velouté d’épinards au cookeo",
+      "temps_min": 13,
+      "portions": 2,
+      "ingredient_vedette": "épinards",
+      "categorie": "soupe",
+      "ingredients": [
+        {
+          "nom": "épinards",
+          "type": "frais",
+          "quantite": {
+            "valeur": 250,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "bouillon cube",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "crème fraîche",
+          "type": "frais",
+          "quantite": {
+            "valeur": 15,
+            "unite": "cl"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Cuire les épinards au cookeo avec le bouillon.",
+        "Mixer avec la crème fraîche.",
+        "Servir chaud."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "soupe-cookeo-potiron-lardons",
+      "nom": "Soupe de potiron au cookeo, lardons",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "potiron",
+      "categorie": "soupe",
+      "ingredients": [
+        {
+          "nom": "potiron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 400,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "lardons",
+          "type": "frais",
+          "quantite": {
+            "valeur": 100,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "bouillon cube",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Cuire le potiron au cookeo avec le bouillon.",
+        "Faire revenir les lardons, ajouter.",
+        "Servir chaud."
+      ],
+      "tags": [
+        "porc"
+      ]
+    },
+    {
+      "id": "soupe-cookeo-thai-coco-crevettes-2",
+      "nom": "Soupe thaï au cookeo, lait de coco & crevettes",
+      "temps_min": 14,
+      "portions": 2,
+      "ingredient_vedette": "crevettes",
+      "categorie": "soupe",
+      "ingredients": [
+        {
+          "nom": "crevettes",
+          "type": "frais",
+          "quantite": {
+            "valeur": 200,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "lait de coco",
+          "type": "frais",
+          "quantite": {
+            "valeur": 20,
+            "unite": "cl"
+          }
+        },
+        {
+          "nom": "bouillon cube",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "curry",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "c. à café"
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Cuire le bouillon, le lait de coco et le curry au cookeo quelques minutes.",
+        "Ajouter les crevettes en fin de cuisson.",
+        "Servir chaud."
+      ],
+      "tags": []
+    },
+    {
+      "id": "soupe-cookeo-carotte-chorizo",
+      "nom": "Soupe de carotte au cookeo, chorizo",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "carotte",
+      "categorie": "soupe",
+      "ingredients": [
+        {
+          "nom": "carotte",
+          "type": "frais",
+          "quantite": {
+            "valeur": 3,
+            "unite": null
+          }
+        },
+        {
+          "nom": "chorizo",
+          "type": "frais",
+          "quantite": {
+            "valeur": 80,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "bouillon cube",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Cuire la carotte au cookeo avec le bouillon.",
+        "Ajouter le chorizo en tranches.",
+        "Servir chaud."
+      ],
+      "tags": [
+        "porc"
+      ]
+    },
+    {
+      "id": "soupe-cookeo-potiron-curry-2",
+      "nom": "Velouté de potiron au cookeo, curry",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "potiron",
+      "categorie": "soupe",
+      "ingredients": [
+        {
+          "nom": "potiron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 500,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "bouillon cube",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "curry",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "c. à café"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Cuire le potiron au cookeo avec le bouillon et le curry.",
+        "Mixer.",
+        "Servir chaud."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "soupe-cookeo-pdt-saucisses-oignon",
+      "nom": "Soupe de pommes de terre au cookeo, saucisses",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "pommes de terre",
+      "categorie": "soupe",
+      "ingredients": [
+        {
+          "nom": "pommes de terre",
+          "type": "frais",
+          "quantite": {
+            "valeur": 3,
+            "unite": null
+          }
+        },
+        {
+          "nom": "saucisses",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "bouillon cube",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Cuire les pommes de terre et l’oignon au cookeo avec le bouillon.",
+        "Ajouter les saucisses coupées.",
+        "Servir chaud."
+      ],
+      "tags": [
+        "porc"
+      ]
+    },
+    {
+      "id": "soupe-cookeo-lentilles-chorizo",
+      "nom": "Soupe de lentilles corail au cookeo, chorizo",
+      "temps_min": 14,
+      "portions": 2,
+      "ingredient_vedette": "lentilles corail",
+      "categorie": "soupe",
+      "ingredients": [
+        {
+          "nom": "lentilles corail",
+          "type": "frais",
+          "quantite": {
+            "valeur": 200,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "chorizo",
+          "type": "frais",
+          "quantite": {
+            "valeur": 80,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "bouillon cube",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Cuire les lentilles au cookeo avec le bouillon.",
+        "Ajouter le chorizo en tranches.",
+        "Servir chaud."
+      ],
+      "tags": [
+        "porc"
+      ]
+    },
+    {
+      "id": "soupe-cookeo-champignons-parmesan-2",
+      "nom": "Velouté de champignons au cookeo, parmesan",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "champignons",
+      "categorie": "soupe",
+      "ingredients": [
+        {
+          "nom": "champignons",
+          "type": "frais",
+          "quantite": {
+            "valeur": 300,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "bouillon cube",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "parmesan",
+          "type": "frais",
+          "quantite": {
+            "valeur": 30,
+            "unite": "g"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Cuire les champignons au cookeo avec le bouillon.",
+        "Mixer, parsemer de parmesan.",
+        "Servir chaud."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "soupe-cookeo-petits-pois-lardons-creme",
+      "nom": "Soupe de petits pois au cookeo, lardons & crème fraîche",
+      "temps_min": 14,
+      "portions": 2,
+      "ingredient_vedette": "petits pois",
+      "categorie": "soupe",
+      "ingredients": [
+        {
+          "nom": "petits pois",
+          "type": "frais",
+          "quantite": {
+            "valeur": 250,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "lardons",
+          "type": "frais",
+          "quantite": {
+            "valeur": 100,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "crème fraîche",
+          "type": "frais",
+          "quantite": {
+            "valeur": 15,
+            "unite": "cl"
+          }
+        },
+        {
+          "nom": "bouillon cube",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Cuire les petits pois au cookeo avec le bouillon.",
+        "Faire revenir les lardons, ajouter avec la crème.",
+        "Servir chaud."
+      ],
+      "tags": [
+        "porc"
+      ]
+    },
+    {
+      "id": "soupe-cookeo-carotte-potiron-creme",
+      "nom": "Soupe de carotte & potiron au cookeo",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "potiron",
+      "categorie": "soupe",
+      "ingredients": [
+        {
+          "nom": "carotte",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "potiron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 300,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "bouillon cube",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "crème fraîche",
+          "type": "frais",
+          "quantite": {
+            "valeur": 15,
+            "unite": "cl"
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Cuire la carotte et le potiron au cookeo avec le bouillon.",
+        "Mixer avec la crème fraîche.",
+        "Servir chaud."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "soupe-cookeo-pdt-creme-ciboulette-2",
+      "nom": "Velouté de pommes de terre au cookeo, ciboulette",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "pommes de terre",
+      "categorie": "soupe",
+      "ingredients": [
+        {
+          "nom": "pommes de terre",
+          "type": "frais",
+          "quantite": {
+            "valeur": 3,
+            "unite": null
+          }
+        },
+        {
+          "nom": "bouillon cube",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "crème fraîche",
+          "type": "frais",
+          "quantite": {
+            "valeur": 15,
+            "unite": "cl"
+          }
+        },
+        {
+          "nom": "ciboulette",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "poignée"
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Cuire les pommes de terre au cookeo avec le bouillon.",
+        "Mixer avec la crème fraîche.",
+        "Parsemer de ciboulette et servir."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
     }
   ]
 }
