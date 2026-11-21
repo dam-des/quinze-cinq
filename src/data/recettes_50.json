@@ -1609,7 +1609,7 @@
       "nom": "Sardines & salade express",
       "temps_min": 8,
       "portions": 2,
-      "ingredient_vedette": "sardines",
+      "ingredient_vedette": "sardines en boîte",
       "categorie": "poisson",
       "ingredients": [
         {
@@ -2142,7 +2142,7 @@
       "nom": "Gnocchi épinards & chèvre",
       "temps_min": 14,
       "portions": 2,
-      "ingredient_vedette": "chèvre",
+      "ingredient_vedette": "bûche de chèvre",
       "categorie": "vegetarien",
       "ingredients": [
         {
@@ -2358,7 +2358,7 @@
       "nom": "Salade César express",
       "temps_min": 12,
       "portions": 2,
-      "ingredient_vedette": "poulet",
+      "ingredient_vedette": "escalope de poulet",
       "categorie": "soupe",
       "ingredients": [
         {
@@ -13779,6 +13779,3819 @@
         "Ajouter pâtes, tomate et eau à hauteur, cuisson 4 min.",
         "Incorporer le thon égoutté.",
         "Mélanger et servir."
+      ],
+      "tags": [
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "riz-petits-pois-parmesan",
+      "nom": "Riz petits pois & parmesan",
+      "temps_min": 12,
+      "portions": 2,
+      "ingredient_vedette": "petits pois",
+      "categorie": "feculent",
+      "ingredients": [
+        {
+          "nom": "riz cuit",
+          "type": "base",
+          "quantite": {
+            "valeur": 250,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "petits pois",
+          "type": "frais",
+          "quantite": {
+            "valeur": 150,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "parmesan",
+          "type": "frais",
+          "quantite": {
+            "valeur": 40,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire revenir l'oignon puis les petits pois, ajouter le riz cuit et le parmesan.",
+        "Cuire 6 min en mélangeant.",
+        "Servir."
+      ],
+      "tags": [
+        "vegetarien",
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "pates-champignons-creme",
+      "nom": "Pâtes champignons & crème",
+      "temps_min": 14,
+      "portions": 2,
+      "ingredient_vedette": "champignons",
+      "categorie": "feculent",
+      "ingredients": [
+        {
+          "nom": "pâtes",
+          "type": "base",
+          "quantite": {
+            "valeur": 200,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "champignons",
+          "type": "frais",
+          "quantite": {
+            "valeur": 200,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "crème fraîche",
+          "type": "frais",
+          "quantite": {
+            "valeur": 3,
+            "unite": "c. à soupe"
+          }
+        },
+        {
+          "nom": "ail",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": "gousse"
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire revenir l'ail et les champignons, lier à la crème, mélanger aux pâtes cuites.",
+        "Cuire 8 min en mélangeant.",
+        "Servir."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "semoule-pois-chiches-tomate",
+      "nom": "Semoule pois chiches & tomate",
+      "temps_min": 13,
+      "portions": 2,
+      "ingredient_vedette": "pois chiches",
+      "categorie": "feculent",
+      "ingredients": [
+        {
+          "nom": "semoule",
+          "type": "frais",
+          "quantite": {
+            "valeur": 150,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "pois chiches",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "boîte"
+          }
+        },
+        {
+          "nom": "tomates concassées",
+          "type": "base",
+          "quantite": {
+            "valeur": 300,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "persil",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "poignée"
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire revenir les pois chiches dans la tomate, verser sur la semoule gonflée.",
+        "Cuire 8 min en mélangeant.",
+        "Servir."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "riz-champignons-persil",
+      "nom": "Riz sauté champignons & persil",
+      "temps_min": 13,
+      "portions": 2,
+      "ingredient_vedette": "champignons",
+      "categorie": "feculent",
+      "ingredients": [
+        {
+          "nom": "riz cuit",
+          "type": "base",
+          "quantite": {
+            "valeur": 250,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "champignons",
+          "type": "frais",
+          "quantite": {
+            "valeur": 200,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "persil",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "poignée"
+          }
+        },
+        {
+          "nom": "ail",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": "gousse"
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire revenir l'ail et les champignons, ajouter le riz cuit et le persil.",
+        "Cuire 7 min en mélangeant.",
+        "Servir."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "gnocchi-petits-pois-parmesan",
+      "nom": "Gnocchi petits pois & parmesan",
+      "temps_min": 14,
+      "portions": 2,
+      "ingredient_vedette": "gnocchi",
+      "categorie": "feculent",
+      "ingredients": [
+        {
+          "nom": "gnocchi",
+          "type": "frais",
+          "quantite": {
+            "valeur": 400,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "petits pois",
+          "type": "frais",
+          "quantite": {
+            "valeur": 100,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "parmesan",
+          "type": "frais",
+          "quantite": {
+            "valeur": 30,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "crème fraîche",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": "c. à soupe"
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire revenir les gnocchis et les petits pois, lier à la crème et au parmesan.",
+        "Cuire 8 min en mélangeant.",
+        "Servir."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "omelette-tomate-persil",
+      "nom": "Omelette tomate & persil",
+      "temps_min": 10,
+      "portions": 2,
+      "ingredient_vedette": "tomate",
+      "categorie": "oeufs",
+      "ingredients": [
+        {
+          "nom": "œufs",
+          "type": "base",
+          "quantite": {
+            "valeur": 4,
+            "unite": null
+          }
+        },
+        {
+          "nom": "tomate",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "persil",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "poignée"
+          }
+        },
+        {
+          "nom": "ail",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": "gousse"
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire revenir la tomate et l’ail, verser les œufs battus par-dessus.",
+        "Cuire 5 min en mélangeant.",
+        "Servir."
+      ],
+      "tags": [
+        "vegetarien",
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "oeufs-brouilles-tomates-cerises",
+      "nom": "Œufs brouillés tomates cerises",
+      "temps_min": 8,
+      "portions": 2,
+      "ingredient_vedette": "tomates cerises",
+      "categorie": "oeufs",
+      "ingredients": [
+        {
+          "nom": "œufs",
+          "type": "base",
+          "quantite": {
+            "valeur": 4,
+            "unite": null
+          }
+        },
+        {
+          "nom": "tomates cerises",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "poignée"
+          }
+        },
+        {
+          "nom": "ciboulette",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "poignée"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire revenir les tomates cerises, ajouter les œufs battus et la ciboulette.",
+        "Cuire 4 min en mélangeant.",
+        "Servir."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "omelette-poivron-oignon",
+      "nom": "Omelette poivron & oignon",
+      "temps_min": 10,
+      "portions": 2,
+      "ingredient_vedette": "poivron",
+      "categorie": "oeufs",
+      "ingredients": [
+        {
+          "nom": "œufs",
+          "type": "base",
+          "quantite": {
+            "valeur": 4,
+            "unite": null
+          }
+        },
+        {
+          "nom": "poivron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire revenir le poivron et l'oignon, verser les œufs battus.",
+        "Cuire 6 min en mélangeant.",
+        "Servir."
+      ],
+      "tags": [
+        "vegetarien",
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "tortilla-pommes-de-terre-oignon",
+      "nom": "Tortilla pommes de terre & oignon",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "pommes de terre",
+      "categorie": "oeufs",
+      "ingredients": [
+        {
+          "nom": "œufs",
+          "type": "base",
+          "quantite": {
+            "valeur": 4,
+            "unite": null
+          }
+        },
+        {
+          "nom": "pommes de terre",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire revenir les pommes de terre en fines tranches et l’oignon, napper d’œufs battus.",
+        "Cuire 10 min en mélangeant.",
+        "Servir."
+      ],
+      "tags": [
+        "vegetarien",
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "oeufs-mayo-ciboulette",
+      "nom": "Œufs mayonnaise & ciboulette",
+      "temps_min": 12,
+      "portions": 2,
+      "ingredient_vedette": "œufs",
+      "categorie": "oeufs",
+      "ingredients": [
+        {
+          "nom": "œufs",
+          "type": "base",
+          "quantite": {
+            "valeur": 4,
+            "unite": null
+          }
+        },
+        {
+          "nom": "mayonnaise",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": "c. à soupe"
+          }
+        },
+        {
+          "nom": "ciboulette",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "poignée"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [],
+      "etapes": [
+        "Disposer les ingrédients.",
+        "Assaisonner les œufs durs coupés de mayonnaise et de ciboulette.",
+        "Servir."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "omelette-petits-pois-parmesan",
+      "nom": "Omelette petits pois & parmesan",
+      "temps_min": 10,
+      "portions": 2,
+      "ingredient_vedette": "petits pois",
+      "categorie": "oeufs",
+      "ingredients": [
+        {
+          "nom": "œufs",
+          "type": "base",
+          "quantite": {
+            "valeur": 4,
+            "unite": null
+          }
+        },
+        {
+          "nom": "petits pois",
+          "type": "frais",
+          "quantite": {
+            "valeur": 100,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "parmesan",
+          "type": "frais",
+          "quantite": {
+            "valeur": 30,
+            "unite": "g"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire revenir les petits pois, verser les œufs battus et le parmesan.",
+        "Cuire 6 min en mélangeant.",
+        "Servir."
+      ],
+      "tags": [
+        "vegetarien",
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "omelette-chorizo-poivron",
+      "nom": "Omelette chorizo & poivron",
+      "temps_min": 12,
+      "portions": 2,
+      "ingredient_vedette": "chorizo",
+      "categorie": "oeufs",
+      "ingredients": [
+        {
+          "nom": "œufs",
+          "type": "base",
+          "quantite": {
+            "valeur": 4,
+            "unite": null
+          }
+        },
+        {
+          "nom": "chorizo",
+          "type": "frais",
+          "quantite": {
+            "valeur": 60,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "poivron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire revenir le chorizo et le poivron, verser les œufs battus.",
+        "Cuire 7 min en mélangeant.",
+        "Servir."
+      ],
+      "tags": [
+        "porc"
+      ]
+    },
+    {
+      "id": "oeufs-brouilles-jambon-fromage",
+      "nom": "Œufs brouillés jambon & fromage",
+      "temps_min": 10,
+      "portions": 2,
+      "ingredient_vedette": "jambon",
+      "categorie": "oeufs",
+      "ingredients": [
+        {
+          "nom": "œufs",
+          "type": "base",
+          "quantite": {
+            "valeur": 4,
+            "unite": null
+          }
+        },
+        {
+          "nom": "jambon",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": "tranches"
+          }
+        },
+        {
+          "nom": "fromage râpé",
+          "type": "frais",
+          "quantite": {
+            "valeur": 50,
+            "unite": "g"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire revenir le jambon en dés avec les œufs battus, ajouter le fromage.",
+        "Cuire 5 min en mélangeant.",
+        "Servir."
+      ],
+      "tags": [
+        "porc",
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "omelette-courgette-feta",
+      "nom": "Omelette courgette & feta",
+      "temps_min": 12,
+      "portions": 2,
+      "ingredient_vedette": "courgette",
+      "categorie": "oeufs",
+      "ingredients": [
+        {
+          "nom": "œufs",
+          "type": "base",
+          "quantite": {
+            "valeur": 4,
+            "unite": null
+          }
+        },
+        {
+          "nom": "courgette",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "feta",
+          "type": "frais",
+          "quantite": {
+            "valeur": 60,
+            "unite": "g"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire revenir la courgette, verser les œufs battus et émietter la feta.",
+        "Cuire 7 min en mélangeant.",
+        "Servir."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "omelette-potiron-persil",
+      "nom": "Omelette potiron & persil",
+      "temps_min": 14,
+      "portions": 2,
+      "ingredient_vedette": "potiron",
+      "categorie": "oeufs",
+      "ingredients": [
+        {
+          "nom": "œufs",
+          "type": "base",
+          "quantite": {
+            "valeur": 4,
+            "unite": null
+          }
+        },
+        {
+          "nom": "potiron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 200,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "persil",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "poignée"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire revenir le potiron en petits dés, verser les œufs battus et le persil.",
+        "Cuire 9 min en mélangeant.",
+        "Servir."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "oeufs-cocotte-tomate-fromage",
+      "nom": "Œufs pochés tomate & fromage",
+      "temps_min": 12,
+      "portions": 2,
+      "ingredient_vedette": "tomates concassées",
+      "categorie": "oeufs",
+      "ingredients": [
+        {
+          "nom": "œufs",
+          "type": "base",
+          "quantite": {
+            "valeur": 4,
+            "unite": null
+          }
+        },
+        {
+          "nom": "tomates concassées",
+          "type": "base",
+          "quantite": {
+            "valeur": 300,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "fromage râpé",
+          "type": "frais",
+          "quantite": {
+            "valeur": 50,
+            "unite": "g"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire revenir la tomate, creuser des puits et y casser les œufs, parsemer de fromage.",
+        "Cuire 6 min en mélangeant.",
+        "Servir."
+      ],
+      "tags": [
+        "vegetarien",
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "poulet-pesto-tomates-cerises",
+      "nom": "Poulet pesto & tomates cerises",
+      "temps_min": 13,
+      "portions": 2,
+      "ingredient_vedette": "escalope de poulet",
+      "categorie": "volaille",
+      "ingredients": [
+        {
+          "nom": "escalope de poulet",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "pesto",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "c. à soupe"
+          }
+        },
+        {
+          "nom": "tomates cerises",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "poignée"
+          }
+        },
+        {
+          "nom": "riz cuit",
+          "type": "base",
+          "quantite": {
+            "valeur": 250,
+            "unite": "g"
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire revenir le poulet, ajouter le pesto et les tomates cerises.",
+        "Cuire 8 min en mélangeant.",
+        "Servir."
+      ],
+      "tags": []
+    },
+    {
+      "id": "dinde-champignons-creme",
+      "nom": "Dinde & champignons à la crème",
+      "temps_min": 14,
+      "portions": 2,
+      "ingredient_vedette": "aiguillettes de dinde",
+      "categorie": "volaille",
+      "ingredients": [
+        {
+          "nom": "aiguillettes de dinde",
+          "type": "frais",
+          "quantite": {
+            "valeur": 250,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "champignons",
+          "type": "frais",
+          "quantite": {
+            "valeur": 200,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "crème fraîche",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": "c. à soupe"
+          }
+        },
+        {
+          "nom": "riz cuit",
+          "type": "base",
+          "quantite": {
+            "valeur": 250,
+            "unite": "g"
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire revenir la dinde et les champignons, lier à la crème.",
+        "Cuire 9 min en mélangeant.",
+        "Servir."
+      ],
+      "tags": []
+    },
+    {
+      "id": "poulet-poivron-oignon",
+      "nom": "Poulet poivron & oignon",
+      "temps_min": 14,
+      "portions": 2,
+      "ingredient_vedette": "escalope de poulet",
+      "categorie": "volaille",
+      "ingredients": [
+        {
+          "nom": "escalope de poulet",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "poivron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "riz cuit",
+          "type": "base",
+          "quantite": {
+            "valeur": 250,
+            "unite": "g"
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire revenir le poulet en lanières, poivron et oignon.",
+        "Cuire 9 min en mélangeant.",
+        "Servir."
+      ],
+      "tags": []
+    },
+    {
+      "id": "poulet-avocat-salade",
+      "nom": "Salade de poulet & avocat",
+      "temps_min": 10,
+      "portions": 2,
+      "ingredient_vedette": "escalope de poulet",
+      "categorie": "volaille",
+      "ingredients": [
+        {
+          "nom": "escalope de poulet",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "avocat",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "salade",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "sachet"
+          }
+        },
+        {
+          "nom": "citron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire revenir le poulet, dresser sur la salade avec l’avocat et un trait de citron.",
+        "Cuire 8 min en mélangeant.",
+        "Servir."
+      ],
+      "tags": []
+    },
+    {
+      "id": "dinde-soja-miel",
+      "nom": "Dinde sautée soja & miel",
+      "temps_min": 12,
+      "portions": 2,
+      "ingredient_vedette": "aiguillettes de dinde",
+      "categorie": "volaille",
+      "ingredients": [
+        {
+          "nom": "aiguillettes de dinde",
+          "type": "frais",
+          "quantite": {
+            "valeur": 250,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "sauce soja",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "c. à soupe"
+          }
+        },
+        {
+          "nom": "miel",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "c. à café"
+          }
+        },
+        {
+          "nom": "riz cuit",
+          "type": "base",
+          "quantite": {
+            "valeur": 250,
+            "unite": "g"
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire revenir la dinde, déglacer au soja et au miel.",
+        "Cuire 8 min en mélangeant.",
+        "Servir."
+      ],
+      "tags": [
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "poulet-cacciatore-express",
+      "nom": "Poulet chasseur express",
+      "temps_min": 14,
+      "portions": 2,
+      "ingredient_vedette": "escalope de poulet",
+      "categorie": "volaille",
+      "ingredients": [
+        {
+          "nom": "escalope de poulet",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "tomates concassées",
+          "type": "base",
+          "quantite": {
+            "valeur": 300,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "champignons",
+          "type": "frais",
+          "quantite": {
+            "valeur": 150,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire revenir le poulet et l'oignon, ajouter tomate et champignons.",
+        "Cuire 9 min en mélangeant.",
+        "Servir."
+      ],
+      "tags": []
+    },
+    {
+      "id": "poulet-feta-tomates-cerises",
+      "nom": "Salade de poulet feta & tomates cerises",
+      "temps_min": 10,
+      "portions": 2,
+      "ingredient_vedette": "escalope de poulet",
+      "categorie": "volaille",
+      "ingredients": [
+        {
+          "nom": "escalope de poulet",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "feta",
+          "type": "frais",
+          "quantite": {
+            "valeur": 60,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "tomates cerises",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "poignée"
+          }
+        },
+        {
+          "nom": "salade",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "sachet"
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire revenir le poulet, dresser sur la salade avec feta et tomates cerises.",
+        "Cuire 8 min en mélangeant.",
+        "Servir."
+      ],
+      "tags": []
+    },
+    {
+      "id": "dinde-curry-patate-douce",
+      "nom": "Dinde curry & patate douce",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "aiguillettes de dinde",
+      "categorie": "volaille",
+      "ingredients": [
+        {
+          "nom": "aiguillettes de dinde",
+          "type": "frais",
+          "quantite": {
+            "valeur": 250,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "curry",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "c. à café"
+          }
+        },
+        {
+          "nom": "patate douce",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "lait de coco",
+          "type": "frais",
+          "quantite": {
+            "valeur": 20,
+            "unite": "cl"
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire revenir la patate douce en petits dés avec la dinde, curry et lait de coco.",
+        "Cuire 10 min en mélangeant.",
+        "Servir."
+      ],
+      "tags": []
+    },
+    {
+      "id": "poulet-champignons-persil",
+      "nom": "Poulet champignons & persil",
+      "temps_min": 13,
+      "portions": 2,
+      "ingredient_vedette": "escalope de poulet",
+      "categorie": "volaille",
+      "ingredients": [
+        {
+          "nom": "escalope de poulet",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "champignons",
+          "type": "frais",
+          "quantite": {
+            "valeur": 200,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "persil",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "poignée"
+          }
+        },
+        {
+          "nom": "ail",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": "gousse"
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire revenir le poulet, ail et champignons, parsemer de persil.",
+        "Cuire 8 min en mélangeant.",
+        "Servir."
+      ],
+      "tags": []
+    },
+    {
+      "id": "wrap-poulet-avocat",
+      "nom": "Wrap poulet & avocat",
+      "temps_min": 10,
+      "portions": 2,
+      "ingredient_vedette": "escalope de poulet",
+      "categorie": "volaille",
+      "ingredients": [
+        {
+          "nom": "tortillas",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "escalope de poulet",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "avocat",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "mayonnaise",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "c. à soupe"
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire revenir le poulet, garnir les tortillas avec avocat et mayonnaise.",
+        "Cuire 7 min en mélangeant.",
+        "Servir."
+      ],
+      "tags": [
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "poulet-petits-pois-creme",
+      "nom": "Poulet petits pois à la crème",
+      "temps_min": 14,
+      "portions": 2,
+      "ingredient_vedette": "escalope de poulet",
+      "categorie": "volaille",
+      "ingredients": [
+        {
+          "nom": "escalope de poulet",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "petits pois",
+          "type": "frais",
+          "quantite": {
+            "valeur": 100,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "crème fraîche",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": "c. à soupe"
+          }
+        },
+        {
+          "nom": "riz cuit",
+          "type": "base",
+          "quantite": {
+            "valeur": 250,
+            "unite": "g"
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire revenir le poulet, ajouter petits pois et crème.",
+        "Cuire 9 min en mélangeant.",
+        "Servir."
+      ],
+      "tags": []
+    },
+    {
+      "id": "dinde-moutarde-champignons",
+      "nom": "Dinde moutarde & champignons",
+      "temps_min": 14,
+      "portions": 2,
+      "ingredient_vedette": "aiguillettes de dinde",
+      "categorie": "volaille",
+      "ingredients": [
+        {
+          "nom": "aiguillettes de dinde",
+          "type": "frais",
+          "quantite": {
+            "valeur": 250,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "moutarde",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": "c. à soupe"
+          }
+        },
+        {
+          "nom": "champignons",
+          "type": "frais",
+          "quantite": {
+            "valeur": 150,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "crème fraîche",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": "c. à soupe"
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire revenir la dinde et les champignons, lier à la moutarde et à la crème.",
+        "Cuire 9 min en mélangeant.",
+        "Servir."
+      ],
+      "tags": []
+    },
+    {
+      "id": "poulet-pois-chiches-curry",
+      "nom": "Poulet pois chiches au curry",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "escalope de poulet",
+      "categorie": "volaille",
+      "ingredients": [
+        {
+          "nom": "escalope de poulet",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "pois chiches",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "boîte"
+          }
+        },
+        {
+          "nom": "curry",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "c. à café"
+          }
+        },
+        {
+          "nom": "lait de coco",
+          "type": "frais",
+          "quantite": {
+            "valeur": 20,
+            "unite": "cl"
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire revenir le poulet, ajouter pois chiches, curry et lait de coco.",
+        "Cuire 10 min en mélangeant.",
+        "Servir."
+      ],
+      "tags": []
+    },
+    {
+      "id": "salade-poulet-avocat-croutons",
+      "nom": "Salade de poulet, avocat & croûtons",
+      "temps_min": 10,
+      "portions": 2,
+      "ingredient_vedette": "escalope de poulet",
+      "categorie": "volaille",
+      "ingredients": [
+        {
+          "nom": "salade romaine",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "sachet"
+          }
+        },
+        {
+          "nom": "escalope de poulet",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "avocat",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "croûtons",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "poignée"
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Disposer les ingrédients.",
+        "Assaisonner la salade romaine avec le poulet, l’avocat et les croûtons.",
+        "Servir."
+      ],
+      "tags": []
+    },
+    {
+      "id": "poulet-potiron-curry",
+      "nom": "Poulet potiron au curry",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "escalope de poulet",
+      "categorie": "volaille",
+      "ingredients": [
+        {
+          "nom": "escalope de poulet",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "potiron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 250,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "curry",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "c. à café"
+          }
+        },
+        {
+          "nom": "riz cuit",
+          "type": "base",
+          "quantite": {
+            "valeur": 250,
+            "unite": "g"
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire revenir le poulet et le potiron en dés, ajouter le curry.",
+        "Cuire 10 min en mélangeant.",
+        "Servir."
+      ],
+      "tags": []
+    },
+    {
+      "id": "colin-citron-persil",
+      "nom": "Colin au citron & persil",
+      "temps_min": 14,
+      "portions": 2,
+      "ingredient_vedette": "filet de colin",
+      "categorie": "poisson",
+      "ingredients": [
+        {
+          "nom": "filet de colin",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "citron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "persil",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "poignée"
+          }
+        },
+        {
+          "nom": "riz cuit",
+          "type": "base",
+          "quantite": {
+            "valeur": 250,
+            "unite": "g"
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire revenir le colin, arroser de citron et parsemer de persil.",
+        "Cuire 9 min en mélangeant.",
+        "Servir."
+      ],
+      "tags": [
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "colin-tomates-cerises-ail",
+      "nom": "Colin & tomates cerises à l’ail",
+      "temps_min": 14,
+      "portions": 2,
+      "ingredient_vedette": "filet de colin",
+      "categorie": "poisson",
+      "ingredients": [
+        {
+          "nom": "filet de colin",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "tomates cerises",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "poignée"
+          }
+        },
+        {
+          "nom": "ail",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": "gousse"
+          }
+        },
+        {
+          "nom": "riz cuit",
+          "type": "base",
+          "quantite": {
+            "valeur": 250,
+            "unite": "g"
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire revenir le colin et l’ail, ajouter les tomates cerises.",
+        "Cuire 9 min en mélangeant.",
+        "Servir."
+      ],
+      "tags": [
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "saumon-creme-persil",
+      "nom": "Saumon à la crème & persil",
+      "temps_min": 14,
+      "portions": 2,
+      "ingredient_vedette": "pavé de saumon",
+      "categorie": "poisson",
+      "ingredients": [
+        {
+          "nom": "pavé de saumon",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "crème fraîche",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": "c. à soupe"
+          }
+        },
+        {
+          "nom": "persil",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "poignée"
+          }
+        },
+        {
+          "nom": "riz cuit",
+          "type": "base",
+          "quantite": {
+            "valeur": 250,
+            "unite": "g"
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire revenir le saumon, napper de crème et de persil.",
+        "Cuire 10 min en mélangeant.",
+        "Servir."
+      ],
+      "tags": []
+    },
+    {
+      "id": "crevettes-curry-coco",
+      "nom": "Crevettes au curry & lait de coco",
+      "temps_min": 12,
+      "portions": 2,
+      "ingredient_vedette": "crevettes",
+      "categorie": "poisson",
+      "ingredients": [
+        {
+          "nom": "crevettes",
+          "type": "frais",
+          "quantite": {
+            "valeur": 200,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "curry",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "c. à café"
+          }
+        },
+        {
+          "nom": "lait de coco",
+          "type": "frais",
+          "quantite": {
+            "valeur": 20,
+            "unite": "cl"
+          }
+        },
+        {
+          "nom": "riz cuit",
+          "type": "base",
+          "quantite": {
+            "valeur": 250,
+            "unite": "g"
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire revenir les crevettes, ajouter curry et lait de coco.",
+        "Cuire 7 min en mélangeant.",
+        "Servir."
+      ],
+      "tags": []
+    },
+    {
+      "id": "crevettes-tomates-cerises-ail",
+      "nom": "Crevettes tomates cerises & ail",
+      "temps_min": 10,
+      "portions": 2,
+      "ingredient_vedette": "crevettes",
+      "categorie": "poisson",
+      "ingredients": [
+        {
+          "nom": "crevettes",
+          "type": "frais",
+          "quantite": {
+            "valeur": 200,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "tomates cerises",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "poignée"
+          }
+        },
+        {
+          "nom": "ail",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": "gousse"
+          }
+        },
+        {
+          "nom": "persil",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "poignée"
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire revenir l’ail et les crevettes, ajouter les tomates cerises et le persil.",
+        "Cuire 6 min en mélangeant.",
+        "Servir."
+      ],
+      "tags": []
+    },
+    {
+      "id": "cabillaud-champignons-creme",
+      "nom": "Cabillaud champignons à la crème",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "dos de cabillaud",
+      "categorie": "poisson",
+      "ingredients": [
+        {
+          "nom": "dos de cabillaud",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "champignons",
+          "type": "frais",
+          "quantite": {
+            "valeur": 150,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "crème fraîche",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": "c. à soupe"
+          }
+        },
+        {
+          "nom": "riz cuit",
+          "type": "base",
+          "quantite": {
+            "valeur": 250,
+            "unite": "g"
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire revenir le cabillaud et les champignons, lier à la crème.",
+        "Cuire 10 min en mélangeant.",
+        "Servir."
+      ],
+      "tags": []
+    },
+    {
+      "id": "saumon-poivron-citron",
+      "nom": "Saumon poivron & citron",
+      "temps_min": 14,
+      "portions": 2,
+      "ingredient_vedette": "pavé de saumon",
+      "categorie": "poisson",
+      "ingredients": [
+        {
+          "nom": "pavé de saumon",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "poivron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "citron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "riz cuit",
+          "type": "base",
+          "quantite": {
+            "valeur": 250,
+            "unite": "g"
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire revenir le saumon et le poivron, arroser de citron.",
+        "Cuire 9 min en mélangeant.",
+        "Servir."
+      ],
+      "tags": []
+    },
+    {
+      "id": "sardines-tomate-pain",
+      "nom": "Tartine sardines & tomate",
+      "temps_min": 8,
+      "portions": 2,
+      "ingredient_vedette": "sardines en boîte",
+      "categorie": "poisson",
+      "ingredients": [
+        {
+          "nom": "sardines en boîte",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "boîte"
+          }
+        },
+        {
+          "nom": "tomate",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "pain de campagne",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": "tranches"
+          }
+        },
+        {
+          "nom": "citron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Disposer les ingrédients.",
+        "Assaisonner les sardines égouttées et la tomate sur le pain, avec un trait de citron.",
+        "Servir."
+      ],
+      "tags": []
+    },
+    {
+      "id": "saumon-fume-salade-avocat",
+      "nom": "Salade saumon fumé & avocat",
+      "temps_min": 8,
+      "portions": 2,
+      "ingredient_vedette": "saumon fumé",
+      "categorie": "poisson",
+      "ingredients": [
+        {
+          "nom": "saumon fumé",
+          "type": "frais",
+          "quantite": {
+            "valeur": 4,
+            "unite": "tranches"
+          }
+        },
+        {
+          "nom": "avocat",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "salade",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "sachet"
+          }
+        },
+        {
+          "nom": "citron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Disposer les ingrédients.",
+        "Assaisonner la salade avec le saumon fumé et l’avocat, au citron.",
+        "Servir."
+      ],
+      "tags": []
+    },
+    {
+      "id": "colin-petits-pois-creme",
+      "nom": "Colin petits pois à la crème",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "filet de colin",
+      "categorie": "poisson",
+      "ingredients": [
+        {
+          "nom": "filet de colin",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "petits pois",
+          "type": "frais",
+          "quantite": {
+            "valeur": 100,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "crème fraîche",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": "c. à soupe"
+          }
+        },
+        {
+          "nom": "riz cuit",
+          "type": "base",
+          "quantite": {
+            "valeur": 250,
+            "unite": "g"
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire revenir le colin et les petits pois, lier à la crème.",
+        "Cuire 10 min en mélangeant.",
+        "Servir."
+      ],
+      "tags": []
+    },
+    {
+      "id": "crevettes-poivron-oignon",
+      "nom": "Crevettes poivron & oignon",
+      "temps_min": 12,
+      "portions": 2,
+      "ingredient_vedette": "crevettes",
+      "categorie": "poisson",
+      "ingredients": [
+        {
+          "nom": "crevettes",
+          "type": "frais",
+          "quantite": {
+            "valeur": 200,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "poivron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "riz cuit",
+          "type": "base",
+          "quantite": {
+            "valeur": 250,
+            "unite": "g"
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire revenir l’oignon et le poivron, ajouter les crevettes.",
+        "Cuire 8 min en mélangeant.",
+        "Servir."
+      ],
+      "tags": []
+    },
+    {
+      "id": "lardons-pdt-persil",
+      "nom": "Pommes de terre lardons & persil",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "lardons",
+      "categorie": "viande",
+      "ingredients": [
+        {
+          "nom": "lardons",
+          "type": "frais",
+          "quantite": {
+            "valeur": 150,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "pommes de terre",
+          "type": "frais",
+          "quantite": {
+            "valeur": 4,
+            "unite": null
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "persil",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "poignée"
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire revenir les lardons, pommes de terre et oignon, parsemer de persil.",
+        "Cuire 10 min en mélangeant.",
+        "Servir."
+      ],
+      "tags": [
+        "porc",
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "chorizo-poivron-riz",
+      "nom": "Riz au chorizo & poivron",
+      "temps_min": 13,
+      "portions": 2,
+      "ingredient_vedette": "chorizo",
+      "categorie": "viande",
+      "ingredients": [
+        {
+          "nom": "chorizo",
+          "type": "frais",
+          "quantite": {
+            "valeur": 80,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "poivron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "riz cuit",
+          "type": "base",
+          "quantite": {
+            "valeur": 250,
+            "unite": "g"
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire revenir le chorizo, poivron et oignon, ajouter le riz cuit.",
+        "Cuire 8 min en mélangeant.",
+        "Servir."
+      ],
+      "tags": [
+        "porc"
+      ]
+    },
+    {
+      "id": "chipolatas-pdt-moutarde",
+      "nom": "Chipolatas & pommes de terre moutarde",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "chipolatas",
+      "categorie": "viande",
+      "ingredients": [
+        {
+          "nom": "chipolatas",
+          "type": "frais",
+          "quantite": {
+            "valeur": 4,
+            "unite": null
+          }
+        },
+        {
+          "nom": "pommes de terre",
+          "type": "frais",
+          "quantite": {
+            "valeur": 4,
+            "unite": null
+          }
+        },
+        {
+          "nom": "moutarde",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": "c. à soupe"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire revenir les chipolatas et les pommes de terre, lier à la moutarde.",
+        "Cuire 10 min en mélangeant.",
+        "Servir."
+      ],
+      "tags": [
+        "porc",
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "jambon-petits-pois-creme",
+      "nom": "Jambon petits pois à la crème",
+      "temps_min": 12,
+      "portions": 2,
+      "ingredient_vedette": "jambon",
+      "categorie": "viande",
+      "ingredients": [
+        {
+          "nom": "jambon",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": "tranches"
+          }
+        },
+        {
+          "nom": "petits pois",
+          "type": "frais",
+          "quantite": {
+            "valeur": 100,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "crème fraîche",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": "c. à soupe"
+          }
+        },
+        {
+          "nom": "riz cuit",
+          "type": "base",
+          "quantite": {
+            "valeur": 250,
+            "unite": "g"
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire revenir le jambon en dés et les petits pois, lier à la crème.",
+        "Cuire 7 min en mélangeant.",
+        "Servir."
+      ],
+      "tags": [
+        "porc",
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "steak-poivron-oignon",
+      "nom": "Steak haché poivron & oignon",
+      "temps_min": 12,
+      "portions": 2,
+      "ingredient_vedette": "steak haché",
+      "categorie": "viande",
+      "ingredients": [
+        {
+          "nom": "steak haché",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "poivron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "moutarde",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": "c. à café"
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire revenir le poivron et l’oignon, cuire les steaks à côté avec la moutarde.",
+        "Cuire 8 min en mélangeant.",
+        "Servir."
+      ],
+      "tags": [
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "cote-porc-patate-douce",
+      "nom": "Côte de porc & patate douce",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "côte de porc",
+      "categorie": "viande",
+      "ingredients": [
+        {
+          "nom": "côte de porc",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "patate douce",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "moutarde",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": "c. à soupe"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire revenir la côte de porc et la patate douce en dés, lier à la moutarde.",
+        "Cuire 10 min en mélangeant.",
+        "Servir."
+      ],
+      "tags": [
+        "porc"
+      ]
+    },
+    {
+      "id": "merguez-pois-chiches-tomate",
+      "nom": "Merguez pois chiches & tomate",
+      "temps_min": 14,
+      "portions": 2,
+      "ingredient_vedette": "merguez",
+      "categorie": "viande",
+      "ingredients": [
+        {
+          "nom": "merguez",
+          "type": "frais",
+          "quantite": {
+            "valeur": 4,
+            "unite": null
+          }
+        },
+        {
+          "nom": "pois chiches",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "boîte"
+          }
+        },
+        {
+          "nom": "tomates concassées",
+          "type": "base",
+          "quantite": {
+            "valeur": 300,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire revenir les merguez et l’oignon, ajouter pois chiches et tomate.",
+        "Cuire 9 min en mélangeant.",
+        "Servir."
+      ],
+      "tags": []
+    },
+    {
+      "id": "saucisses-haricots-tomate",
+      "nom": "Saucisses haricots rouges & tomate",
+      "temps_min": 14,
+      "portions": 2,
+      "ingredient_vedette": "saucisses",
+      "categorie": "viande",
+      "ingredients": [
+        {
+          "nom": "saucisses",
+          "type": "frais",
+          "quantite": {
+            "valeur": 3,
+            "unite": null
+          }
+        },
+        {
+          "nom": "haricots rouges",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "boîte"
+          }
+        },
+        {
+          "nom": "tomates concassées",
+          "type": "base",
+          "quantite": {
+            "valeur": 300,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire revenir les saucisses et l’oignon, ajouter haricots et tomate.",
+        "Cuire 9 min en mélangeant.",
+        "Servir."
+      ],
+      "tags": [
+        "porc",
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "jambon-champignons-creme",
+      "nom": "Jambon champignons à la crème",
+      "temps_min": 13,
+      "portions": 2,
+      "ingredient_vedette": "jambon",
+      "categorie": "viande",
+      "ingredients": [
+        {
+          "nom": "jambon",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": "tranches"
+          }
+        },
+        {
+          "nom": "champignons",
+          "type": "frais",
+          "quantite": {
+            "valeur": 150,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "crème fraîche",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": "c. à soupe"
+          }
+        },
+        {
+          "nom": "riz cuit",
+          "type": "base",
+          "quantite": {
+            "valeur": 250,
+            "unite": "g"
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire revenir le jambon en dés et les champignons, lier à la crème.",
+        "Cuire 8 min en mélangeant.",
+        "Servir."
+      ],
+      "tags": [
+        "porc",
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "boeuf-tomate-persil",
+      "nom": "Bœuf émincé tomate & persil",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "bœuf émincé",
+      "categorie": "viande",
+      "ingredients": [
+        {
+          "nom": "bœuf émincé",
+          "type": "frais",
+          "quantite": {
+            "valeur": 250,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "tomates concassées",
+          "type": "base",
+          "quantite": {
+            "valeur": 300,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "persil",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "poignée"
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire revenir le bœuf et l’oignon, ajouter la tomate et le persil.",
+        "Cuire 10 min en mélangeant.",
+        "Servir."
+      ],
+      "tags": []
+    },
+    {
+      "id": "chorizo-haricots-tomate",
+      "nom": "Chorizo haricots rouges & tomate",
+      "temps_min": 14,
+      "portions": 2,
+      "ingredient_vedette": "chorizo",
+      "categorie": "viande",
+      "ingredients": [
+        {
+          "nom": "chorizo",
+          "type": "frais",
+          "quantite": {
+            "valeur": 80,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "haricots rouges",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "boîte"
+          }
+        },
+        {
+          "nom": "tomates concassées",
+          "type": "base",
+          "quantite": {
+            "valeur": 300,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire revenir le chorizo et l’oignon, ajouter haricots et tomate.",
+        "Cuire 9 min en mélangeant.",
+        "Servir."
+      ],
+      "tags": [
+        "porc"
+      ]
+    },
+    {
+      "id": "curry-pois-chiches-potiron",
+      "nom": "Curry pois chiches & potiron",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "pois chiches",
+      "categorie": "vegetarien",
+      "ingredients": [
+        {
+          "nom": "pois chiches",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "boîte"
+          }
+        },
+        {
+          "nom": "potiron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 250,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "curry",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "c. à café"
+          }
+        },
+        {
+          "nom": "lait de coco",
+          "type": "frais",
+          "quantite": {
+            "valeur": 20,
+            "unite": "cl"
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire revenir le potiron, ajouter pois chiches, curry et lait de coco.",
+        "Cuire 10 min en mélangeant.",
+        "Servir."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "salade-feta-tomates-cerises",
+      "nom": "Salade feta & tomates cerises",
+      "temps_min": 8,
+      "portions": 2,
+      "ingredient_vedette": "feta",
+      "categorie": "vegetarien",
+      "ingredients": [
+        {
+          "nom": "salade",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "sachet"
+          }
+        },
+        {
+          "nom": "feta",
+          "type": "frais",
+          "quantite": {
+            "valeur": 80,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "tomates cerises",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "poignée"
+          }
+        },
+        {
+          "nom": "citron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Disposer les ingrédients.",
+        "Assaisonner la salade avec la feta et les tomates cerises, au citron.",
+        "Servir."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "patate-douce-feta-persil",
+      "nom": "Patate douce feta & persil",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "patate douce",
+      "categorie": "vegetarien",
+      "ingredients": [
+        {
+          "nom": "patate douce",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "feta",
+          "type": "frais",
+          "quantite": {
+            "valeur": 80,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "persil",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "poignée"
+          }
+        },
+        {
+          "nom": "citron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire revenir la patate douce en dés, émietter la feta et le persil, citron en fin.",
+        "Cuire 10 min en mélangeant.",
+        "Servir."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "lentilles-epinards-curry-coco",
+      "nom": "Dahl lentilles-épinards coco",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "lentilles corail",
+      "categorie": "vegetarien",
+      "ingredients": [
+        {
+          "nom": "lentilles corail",
+          "type": "frais",
+          "quantite": {
+            "valeur": 180,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "curry",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "c. à café"
+          }
+        },
+        {
+          "nom": "épinards",
+          "type": "frais",
+          "quantite": {
+            "valeur": 150,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "lait de coco",
+          "type": "frais",
+          "quantite": {
+            "valeur": 20,
+            "unite": "cl"
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire revenir les lentilles au curry et au lait de coco, ajouter les épinards en fin.",
+        "Cuire 10 min en mélangeant.",
+        "Servir."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "galette-sarrasin-fromage-epinards",
+      "nom": "Galette de sarrasin fromage & épinards",
+      "temps_min": 10,
+      "portions": 2,
+      "ingredient_vedette": "épinards",
+      "categorie": "vegetarien",
+      "ingredients": [
+        {
+          "nom": "galette de sarrasin",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "fromage râpé",
+          "type": "frais",
+          "quantite": {
+            "valeur": 60,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "épinards",
+          "type": "frais",
+          "quantite": {
+            "valeur": 100,
+            "unite": "g"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire revenir les épinards, garnir les galettes de fromage et d’épinards.",
+        "Cuire 6 min en mélangeant.",
+        "Servir."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "quinoa-pois-chiches-poivron",
+      "nom": "Bowl quinoa pois chiches & poivron",
+      "temps_min": 10,
+      "portions": 2,
+      "ingredient_vedette": "quinoa cuit",
+      "categorie": "vegetarien",
+      "ingredients": [
+        {
+          "nom": "quinoa cuit",
+          "type": "frais",
+          "quantite": {
+            "valeur": 200,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "pois chiches",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "boîte"
+          }
+        },
+        {
+          "nom": "poivron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "citron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Disposer les ingrédients.",
+        "Assaisonner le quinoa avec pois chiches et poivron, au citron.",
+        "Servir."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "avocat-oeuf-tomate",
+      "nom": "Bowl avocat, œuf & tomate",
+      "temps_min": 10,
+      "portions": 2,
+      "ingredient_vedette": "avocat",
+      "categorie": "vegetarien",
+      "ingredients": [
+        {
+          "nom": "avocat",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "œufs",
+          "type": "base",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "tomate",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "citron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire revenir les œufs durs, dresser avec l’avocat et la tomate, au citron.",
+        "Cuire 6 min en mélangeant.",
+        "Servir."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "haricots-rouges-poivron-tomate",
+      "nom": "Chili végétarien haricots & poivron",
+      "temps_min": 14,
+      "portions": 2,
+      "ingredient_vedette": "haricots rouges",
+      "categorie": "vegetarien",
+      "ingredients": [
+        {
+          "nom": "haricots rouges",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "boîte"
+          }
+        },
+        {
+          "nom": "poivron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "tomates concassées",
+          "type": "base",
+          "quantite": {
+            "valeur": 300,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire revenir l’oignon et le poivron, ajouter haricots et tomate.",
+        "Cuire 9 min en mélangeant.",
+        "Servir."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "champignons-creme-parmesan",
+      "nom": "Champignons à la crème & parmesan",
+      "temps_min": 12,
+      "portions": 2,
+      "ingredient_vedette": "champignons",
+      "categorie": "vegetarien",
+      "ingredients": [
+        {
+          "nom": "champignons",
+          "type": "frais",
+          "quantite": {
+            "valeur": 250,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "crème fraîche",
+          "type": "frais",
+          "quantite": {
+            "valeur": 3,
+            "unite": "c. à soupe"
+          }
+        },
+        {
+          "nom": "parmesan",
+          "type": "frais",
+          "quantite": {
+            "valeur": 30,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "persil",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "poignée"
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire revenir les champignons, lier à la crème et au parmesan, parsemer de persil.",
+        "Cuire 8 min en mélangeant.",
+        "Servir."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "potiron-feta-miel",
+      "nom": "Potiron poêlé feta & miel",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "potiron",
+      "categorie": "vegetarien",
+      "ingredients": [
+        {
+          "nom": "potiron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 300,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "feta",
+          "type": "frais",
+          "quantite": {
+            "valeur": 80,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "miel",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "c. à café"
+          }
+        },
+        {
+          "nom": "persil",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "poignée"
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire revenir le potiron en dés, émietter la feta et filet de miel.",
+        "Cuire 11 min en mélangeant.",
+        "Servir."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "quesadilla-haricots-mais",
+      "nom": "Quesadilla haricots rouges & maïs",
+      "temps_min": 10,
+      "portions": 2,
+      "ingredient_vedette": "haricots rouges",
+      "categorie": "vegetarien",
+      "ingredients": [
+        {
+          "nom": "tortillas",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "haricots rouges",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "boîte"
+          }
+        },
+        {
+          "nom": "maïs",
+          "type": "base",
+          "quantite": {
+            "valeur": 100,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "fromage râpé",
+          "type": "frais",
+          "quantite": {
+            "valeur": 60,
+            "unite": "g"
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire revenir haricots et maïs, garnir les tortillas de fromage et plier.",
+        "Cuire 6 min en mélangeant.",
+        "Servir."
+      ],
+      "tags": [
+        "vegetarien",
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "salade-avocat-mais-tomate",
+      "nom": "Salade avocat, maïs & tomate",
+      "temps_min": 8,
+      "portions": 2,
+      "ingredient_vedette": "avocat",
+      "categorie": "vegetarien",
+      "ingredients": [
+        {
+          "nom": "avocat",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "maïs",
+          "type": "base",
+          "quantite": {
+            "valeur": 150,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "tomate",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "citron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Disposer les ingrédients.",
+        "Assaisonner l’avocat, le maïs et la tomate, au citron.",
+        "Servir."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "lentilles-tomate-persil",
+      "nom": "Lentilles corail tomate & persil",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "lentilles corail",
+      "categorie": "vegetarien",
+      "ingredients": [
+        {
+          "nom": "lentilles corail",
+          "type": "frais",
+          "quantite": {
+            "valeur": 180,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "tomates concassées",
+          "type": "base",
+          "quantite": {
+            "valeur": 300,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "persil",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "poignée"
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire revenir l’oignon, ajouter lentilles et tomate, parsemer de persil.",
+        "Cuire 10 min en mélangeant.",
+        "Servir."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "patate-douce-pois-chiches-curry",
+      "nom": "Patate douce & pois chiches au curry",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "patate douce",
+      "categorie": "vegetarien",
+      "ingredients": [
+        {
+          "nom": "patate douce",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "pois chiches",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "boîte"
+          }
+        },
+        {
+          "nom": "curry",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "c. à café"
+          }
+        },
+        {
+          "nom": "lait de coco",
+          "type": "frais",
+          "quantite": {
+            "valeur": 20,
+            "unite": "cl"
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Faire revenir la patate douce en dés et les pois chiches, ajouter curry et lait de coco.",
+        "Cuire 10 min en mélangeant.",
+        "Servir."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "salade-quinoa-feta-tomates-cerises",
+      "nom": "Salade quinoa feta & tomates cerises",
+      "temps_min": 8,
+      "portions": 2,
+      "ingredient_vedette": "quinoa cuit",
+      "categorie": "vegetarien",
+      "ingredients": [
+        {
+          "nom": "quinoa cuit",
+          "type": "frais",
+          "quantite": {
+            "valeur": 200,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "feta",
+          "type": "frais",
+          "quantite": {
+            "valeur": 60,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "tomates cerises",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "poignée"
+          }
+        },
+        {
+          "nom": "citron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Disposer les ingrédients.",
+        "Assaisonner le quinoa avec la feta et les tomates cerises, au citron.",
+        "Servir."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "veloute-champignons-persil",
+      "nom": "Velouté champignons & persil",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "champignons",
+      "categorie": "soupe",
+      "ingredients": [
+        {
+          "nom": "champignons",
+          "type": "frais",
+          "quantite": {
+            "valeur": 250,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "bouillon cube",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "crème fraîche",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": "c. à soupe"
+          }
+        },
+        {
+          "nom": "persil",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "poignée"
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Cuire les champignons dans le bouillon 10 min.",
+        "Mixer.",
+        "Servir."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "soupe-lentilles-corail-carotte",
+      "nom": "Soupe lentilles corail & carotte",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "lentilles corail",
+      "categorie": "soupe",
+      "ingredients": [
+        {
+          "nom": "lentilles corail",
+          "type": "frais",
+          "quantite": {
+            "valeur": 150,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "carotte",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "bouillon cube",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Cuire lentilles, carotte et oignon dans le bouillon 10 min.",
+        "Mixer.",
+        "Servir."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "veloute-patate-douce-coco",
+      "nom": "Velouté patate douce & coco",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "patate douce",
+      "categorie": "soupe",
+      "ingredients": [
+        {
+          "nom": "patate douce",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "lait de coco",
+          "type": "frais",
+          "quantite": {
+            "valeur": 20,
+            "unite": "cl"
+          }
+        },
+        {
+          "nom": "bouillon cube",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "oignon",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Cuire la patate douce et l’oignon dans le bouillon 10 min.",
+        "Mixer.",
+        "Servir."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "soupe-pois-chiches-poivron",
+      "nom": "Soupe pois chiches & poivron",
+      "temps_min": 13,
+      "portions": 2,
+      "ingredient_vedette": "pois chiches",
+      "categorie": "soupe",
+      "ingredients": [
+        {
+          "nom": "pois chiches",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "boîte"
+          }
+        },
+        {
+          "nom": "tomates concassées",
+          "type": "base",
+          "quantite": {
+            "valeur": 300,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "poivron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "ail",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": "gousse"
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Cuire poivron et ail, puis pois chiches et tomate dans le bouillon 8 min.",
+        "Mixer.",
+        "Servir."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "veloute-potiron-parmesan",
+      "nom": "Velouté de potiron au parmesan",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "potiron",
+      "categorie": "soupe",
+      "ingredients": [
+        {
+          "nom": "potiron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 350,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "bouillon cube",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "parmesan",
+          "type": "frais",
+          "quantite": {
+            "valeur": 30,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "crème fraîche",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": "c. à soupe"
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Cuire le potiron dans le bouillon 10 min.",
+        "Mixer.",
+        "Servir."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "soupe-carotte-ail-persil",
+      "nom": "Soupe carotte, ail & persil",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "carotte",
+      "categorie": "soupe",
+      "ingredients": [
+        {
+          "nom": "carotte",
+          "type": "frais",
+          "quantite": {
+            "valeur": 4,
+            "unite": null
+          }
+        },
+        {
+          "nom": "bouillon cube",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "ail",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": "gousse"
+          }
+        },
+        {
+          "nom": "persil",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "poignée"
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Cuire les carottes et l’ail dans le bouillon 11 min.",
+        "Mixer.",
+        "Servir."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "soupe-pdt-creme-persil",
+      "nom": "Soupe pommes de terre, crème & persil",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "pommes de terre",
+      "categorie": "soupe",
+      "ingredients": [
+        {
+          "nom": "pommes de terre",
+          "type": "frais",
+          "quantite": {
+            "valeur": 3,
+            "unite": null
+          }
+        },
+        {
+          "nom": "bouillon cube",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "crème fraîche",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": "c. à soupe"
+          }
+        },
+        {
+          "nom": "persil",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "poignée"
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Cuire les pommes de terre dans le bouillon 11 min.",
+        "Mixer.",
+        "Servir."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "soupe-poulet-vermicelles-carotte",
+      "nom": "Soupe poulet, vermicelles & carotte",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "escalope de poulet",
+      "categorie": "soupe",
+      "ingredients": [
+        {
+          "nom": "escalope de poulet",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "bouillon cube",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "vermicelles",
+          "type": "base",
+          "quantite": {
+            "valeur": 60,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "carotte",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [],
+      "etapes": [
+        "Cuire le poulet émincé et la carotte dans le bouillon 10 min.",
+        "Mixer.",
+        "Servir."
       ],
       "tags": [
         "enfant_friendly"
