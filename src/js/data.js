@@ -31,7 +31,14 @@ export function basiquesEditables(catalogue) {
 
 /** Préférences par défaut. `modes_appareil` : liste vide = tous les appareils. */
 export function preferencesParDefaut() {
-  return { vegetarien: false, enfant_friendly: false, exclusions: [], modes_appareil: [] };
+  return {
+    vegetarien: false,
+    enfant_friendly: false,
+    leger: false,
+    seuil_leger_kcal: 450,
+    exclusions: [],
+    modes_appareil: [],
+  };
 }
 
 // Appareils sélectionnables (extensible : ajouter ici une future entrée suffit).
