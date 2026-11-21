@@ -48,7 +48,7 @@ export const BONUS_ENFANT = 20;
 // lu dans `etat.preferences.seuil_leger_kcal` (réglable par l'utilisateur,
 // cf. Task 6) — cette constante n'est qu'une valeur de repli.
 export const BONUS_LEGER = 20;
-export const SEUIL_LEGER_KCAL_DEFAUT = 450;
+export const SEUIL_LEGER_KCAL_DEFAUT = 350;
 
 const MS_PAR_JOUR = 24 * 60 * 60 * 1000;
 

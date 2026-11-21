@@ -204,7 +204,7 @@ export default function renderReglages(ctx) {
     '<div class="set-row mode-row"><span class="set-row-txt"><span class="set-row-label">Seuil « léger »</span><span class="set-row-sub">Seuil (kcal/portion) utilisé par le réglage « Plats légers » ci-dessus.</span></span></div>'
   );
   const chipsSeuil = el('<div class="chips"></div>');
-  const SEUILS_LEGER = [350, 450, 550];
+  const SEUILS_LEGER = [300, 350, 450];
   if (prefs.seuil_leger_kcal == null) prefs.seuil_leger_kcal = SEUIL_LEGER_KCAL_DEFAUT;
   const seuilChips = [];
   const rafraichirSeuil = () => {
