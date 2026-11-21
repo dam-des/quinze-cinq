@@ -22447,6 +22447,1448 @@
       "tags": [
         "vegetarien"
       ]
+    },
+    {
+      "id": "airfryer-croquettes-riz-fromage",
+      "nom": "Croquettes de riz au fromage, airfryer",
+      "temps_min": 14,
+      "portions": 2,
+      "ingredient_vedette": "riz cuit",
+      "categorie": "feculent",
+      "ingredients": [
+        {
+          "nom": "riz cuit",
+          "type": "base",
+          "quantite": {
+            "valeur": 300,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "fromage râpé",
+          "type": "frais",
+          "quantite": {
+            "valeur": 60,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "persil",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "poignée"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Façonner des croquettes avec le riz, le fromage et le persil.",
+        "Cuire à l’airfryer 10 min à 190°C.",
+        "Servir."
+      ],
+      "tags": [
+        "vegetarien",
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "airfryer-croquettes-riz-jambon",
+      "nom": "Croquettes de riz, jambon & fromage, airfryer",
+      "temps_min": 14,
+      "portions": 2,
+      "ingredient_vedette": "riz cuit",
+      "categorie": "feculent",
+      "ingredients": [
+        {
+          "nom": "riz cuit",
+          "type": "base",
+          "quantite": {
+            "valeur": 300,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "jambon",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": "tranches"
+          }
+        },
+        {
+          "nom": "fromage râpé",
+          "type": "frais",
+          "quantite": {
+            "valeur": 50,
+            "unite": "g"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Façonner des croquettes avec le riz, le jambon coupé et le fromage.",
+        "Cuire à l’airfryer 10 min à 190°C.",
+        "Servir."
+      ],
+      "tags": [
+        "porc"
+      ]
+    },
+    {
+      "id": "airfryer-gnocchi-croustillants-parmesan",
+      "nom": "Gnocchi croustillants à l’airfryer, parmesan",
+      "temps_min": 12,
+      "portions": 2,
+      "ingredient_vedette": "gnocchi",
+      "categorie": "feculent",
+      "ingredients": [
+        {
+          "nom": "gnocchi",
+          "type": "frais",
+          "quantite": {
+            "valeur": 400,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "parmesan",
+          "type": "frais",
+          "quantite": {
+            "valeur": 30,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "persil",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "poignée"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Mélanger les gnocchi avec un filet d’huile.",
+        "Cuire à l’airfryer 10 min à 200°C en secouant à mi-cuisson.",
+        "Parsemer de parmesan et persil."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "airfryer-gnocchi-champignons",
+      "nom": "Gnocchi à l’airfryer, champignons & parmesan",
+      "temps_min": 13,
+      "portions": 2,
+      "ingredient_vedette": "gnocchi",
+      "categorie": "feculent",
+      "ingredients": [
+        {
+          "nom": "gnocchi",
+          "type": "frais",
+          "quantite": {
+            "valeur": 350,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "champignons",
+          "type": "frais",
+          "quantite": {
+            "valeur": 150,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "parmesan",
+          "type": "frais",
+          "quantite": {
+            "valeur": 30,
+            "unite": "g"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Mélanger les gnocchi et les champignons.",
+        "Cuire à l’airfryer 10 min à 200°C en secouant à mi-cuisson.",
+        "Parsemer de parmesan."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "airfryer-wedges-patate-douce-ail-persil",
+      "nom": "Wedges de patate douce à l’airfryer, ail & persil",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "patate douce",
+      "categorie": "feculent",
+      "ingredients": [
+        {
+          "nom": "patate douce",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "ail",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": "gousse"
+          }
+        },
+        {
+          "nom": "persil",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "poignée"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Couper la patate douce en quartiers.",
+        "Cuire à l’airfryer 14 min à 190°C avec l’ail.",
+        "Parsemer de persil."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "airfryer-wedges-patate-douce-feta",
+      "nom": "Wedges de patate douce à l’airfryer, feta",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "patate douce",
+      "categorie": "feculent",
+      "ingredients": [
+        {
+          "nom": "patate douce",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "feta",
+          "type": "frais",
+          "quantite": {
+            "valeur": 60,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "persil",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "poignée"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Couper la patate douce en quartiers.",
+        "Cuire à l’airfryer 14 min à 190°C.",
+        "Émietter la feta et parsemer de persil."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "airfryer-quesadilla-poulet-fromage",
+      "nom": "Quesadilla poulet & fromage, airfryer",
+      "temps_min": 12,
+      "portions": 2,
+      "ingredient_vedette": "escalope de poulet",
+      "categorie": "feculent",
+      "ingredients": [
+        {
+          "nom": "tortillas",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "escalope de poulet",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        },
+        {
+          "nom": "fromage râpé",
+          "type": "frais",
+          "quantite": {
+            "valeur": 60,
+            "unite": "g"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Garnir une tortilla de poulet cuit émincé et de fromage, refermer avec la seconde.",
+        "Cuire à l’airfryer 8 min à 180°C.",
+        "Couper en parts et servir."
+      ],
+      "tags": []
+    },
+    {
+      "id": "airfryer-quesadilla-champignons-fromage",
+      "nom": "Quesadilla champignons & fromage, airfryer",
+      "temps_min": 12,
+      "portions": 2,
+      "ingredient_vedette": "champignons",
+      "categorie": "feculent",
+      "ingredients": [
+        {
+          "nom": "tortillas",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "champignons",
+          "type": "frais",
+          "quantite": {
+            "valeur": 150,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "fromage râpé",
+          "type": "frais",
+          "quantite": {
+            "valeur": 60,
+            "unite": "g"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Faire revenir les champignons, garnir une tortilla avec le fromage, refermer avec la seconde.",
+        "Cuire à l’airfryer 8 min à 180°C.",
+        "Couper en parts et servir."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "airfryer-quesadilla-crevettes-fromage",
+      "nom": "Quesadilla crevettes & fromage, airfryer",
+      "temps_min": 12,
+      "portions": 2,
+      "ingredient_vedette": "crevettes",
+      "categorie": "feculent",
+      "ingredients": [
+        {
+          "nom": "tortillas",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "crevettes",
+          "type": "frais",
+          "quantite": {
+            "valeur": 150,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "fromage râpé",
+          "type": "frais",
+          "quantite": {
+            "valeur": 60,
+            "unite": "g"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Garnir une tortilla de crevettes et de fromage, refermer avec la seconde.",
+        "Cuire à l’airfryer 8 min à 180°C.",
+        "Couper en parts et servir."
+      ],
+      "tags": []
+    },
+    {
+      "id": "airfryer-galette-sarrasin-jambon-fromage",
+      "nom": "Galette de sarrasin, jambon & fromage, airfryer",
+      "temps_min": 12,
+      "portions": 2,
+      "ingredient_vedette": "jambon",
+      "categorie": "feculent",
+      "ingredients": [
+        {
+          "nom": "galette de sarrasin",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "jambon",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": "tranches"
+          }
+        },
+        {
+          "nom": "fromage râpé",
+          "type": "frais",
+          "quantite": {
+            "valeur": 60,
+            "unite": "g"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Garnir les galettes de jambon et de fromage, plier.",
+        "Cuire à l’airfryer 8 min à 180°C.",
+        "Servir."
+      ],
+      "tags": [
+        "porc"
+      ]
+    },
+    {
+      "id": "airfryer-galette-sarrasin-champignons-fromage",
+      "nom": "Galette de sarrasin, champignons & fromage, airfryer",
+      "temps_min": 13,
+      "portions": 2,
+      "ingredient_vedette": "champignons",
+      "categorie": "feculent",
+      "ingredients": [
+        {
+          "nom": "galette de sarrasin",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "champignons",
+          "type": "frais",
+          "quantite": {
+            "valeur": 150,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "fromage râpé",
+          "type": "frais",
+          "quantite": {
+            "valeur": 60,
+            "unite": "g"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Faire revenir les champignons, garnir les galettes avec le fromage, plier.",
+        "Cuire à l’airfryer 8 min à 180°C.",
+        "Servir."
+      ],
+      "tags": [
+        "vegetarien"
+      ]
+    },
+    {
+      "id": "airfryer-pdt-farcies-lardons-fromage",
+      "nom": "Pommes de terre farcies, lardons & fromage, airfryer",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "pommes de terre",
+      "categorie": "feculent",
+      "ingredients": [
+        {
+          "nom": "pommes de terre",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "lardons",
+          "type": "frais",
+          "quantite": {
+            "valeur": 100,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "fromage râpé",
+          "type": "frais",
+          "quantite": {
+            "valeur": 50,
+            "unite": "g"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Cuire les pommes de terre à l’airfryer 12 min à 190°C, évider.",
+        "Garnir de lardons revenus et de fromage.",
+        "Repasser 3 min à l’airfryer."
+      ],
+      "tags": [
+        "porc"
+      ]
+    },
+    {
+      "id": "airfryer-pdt-farcies-thon-mayo",
+      "nom": "Pommes de terre farcies au thon, airfryer",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "pommes de terre",
+      "categorie": "feculent",
+      "ingredients": [
+        {
+          "nom": "pommes de terre",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "thon en conserve",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": "boîte"
+          }
+        },
+        {
+          "nom": "mayonnaise",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "c. à soupe"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Cuire les pommes de terre à l’airfryer 12 min à 190°C, évider.",
+        "Garnir avec le thon mélangé à la mayonnaise.",
+        "Servir."
+      ],
+      "tags": []
+    },
+    {
+      "id": "airfryer-pain-perdu-sale-jambon-fromage",
+      "nom": "Pain perdu salé, jambon & fromage, airfryer",
+      "temps_min": 12,
+      "portions": 2,
+      "ingredient_vedette": "jambon",
+      "categorie": "feculent",
+      "ingredients": [
+        {
+          "nom": "pain de mie",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": "tranches"
+          }
+        },
+        {
+          "nom": "œufs",
+          "type": "base",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "jambon",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": "tranches"
+          }
+        },
+        {
+          "nom": "fromage râpé",
+          "type": "frais",
+          "quantite": {
+            "valeur": 40,
+            "unite": "g"
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Tremper le pain dans les œufs battus, garnir de jambon et de fromage.",
+        "Cuire à l’airfryer 8 min à 180°C.",
+        "Servir."
+      ],
+      "tags": [
+        "porc"
+      ]
+    },
+    {
+      "id": "airfryer-croquettes-pdt-chapelure-oeuf",
+      "nom": "Croquettes de pommes de terre panées, airfryer",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "pommes de terre",
+      "categorie": "feculent",
+      "ingredients": [
+        {
+          "nom": "pommes de terre",
+          "type": "frais",
+          "quantite": {
+            "valeur": 3,
+            "unite": null
+          }
+        },
+        {
+          "nom": "chapelure",
+          "type": "base",
+          "quantite": {
+            "valeur": 50,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "œufs",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Écraser les pommes de terre cuites, façonner des croquettes.",
+        "Passer dans l’œuf battu puis la chapelure.",
+        "Cuire à l’airfryer 10 min à 190°C."
+      ],
+      "tags": [
+        "vegetarien",
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "airfryer-wedges-pdt-chorizo",
+      "nom": "Wedges de pommes de terre au chorizo, airfryer",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "pommes de terre",
+      "categorie": "feculent",
+      "ingredients": [
+        {
+          "nom": "pommes de terre",
+          "type": "frais",
+          "quantite": {
+            "valeur": 3,
+            "unite": null
+          }
+        },
+        {
+          "nom": "chorizo",
+          "type": "frais",
+          "quantite": {
+            "valeur": 80,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "persil",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "poignée"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "airfryer"
+      ],
+      "etapes": [
+        "Couper les pommes de terre en quartiers, cuire à l’airfryer 14 min à 190°C avec le chorizo.",
+        "Parsemer de persil.",
+        "Servir."
+      ],
+      "tags": [
+        "porc"
+      ]
+    },
+    {
+      "id": "cookeo-riz-colin-petits-pois",
+      "nom": "Riz au cookeo, filet de colin & petits pois",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "filet de colin",
+      "categorie": "poisson",
+      "ingredients": [
+        {
+          "nom": "riz",
+          "type": "base",
+          "quantite": {
+            "valeur": 150,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "filet de colin",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "petits pois",
+          "type": "frais",
+          "quantite": {
+            "valeur": 150,
+            "unite": "g"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Cuire le riz et les petits pois au cookeo.",
+        "Ajouter le colin en fin de cuisson, cuire 5 min de plus.",
+        "Servir."
+      ],
+      "tags": []
+    },
+    {
+      "id": "cookeo-riz-cabillaud-tomate",
+      "nom": "Riz au cookeo, dos de cabillaud & tomates concassées",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "dos de cabillaud",
+      "categorie": "poisson",
+      "ingredients": [
+        {
+          "nom": "riz",
+          "type": "base",
+          "quantite": {
+            "valeur": 150,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "dos de cabillaud",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "tomates concassées",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": "boîte"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Cuire le riz avec les tomates concassées au cookeo.",
+        "Ajouter le cabillaud en fin de cuisson, cuire 5 min de plus.",
+        "Servir."
+      ],
+      "tags": []
+    },
+    {
+      "id": "cookeo-riz-thon-petits-pois",
+      "nom": "Riz au cookeo, thon & petits pois",
+      "temps_min": 13,
+      "portions": 2,
+      "ingredient_vedette": "thon en conserve",
+      "categorie": "poisson",
+      "ingredients": [
+        {
+          "nom": "riz",
+          "type": "base",
+          "quantite": {
+            "valeur": 150,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "thon en conserve",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": "boîte"
+          }
+        },
+        {
+          "nom": "petits pois",
+          "type": "frais",
+          "quantite": {
+            "valeur": 150,
+            "unite": "g"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Cuire le riz et les petits pois au cookeo.",
+        "Ajouter le thon égoutté en fin de cuisson.",
+        "Servir."
+      ],
+      "tags": [
+        "enfant_friendly"
+      ]
+    },
+    {
+      "id": "cookeo-lentilles-saumon-creme",
+      "nom": "Lentilles corail au cookeo, pavé de saumon & crème fraîche",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "pavé de saumon",
+      "categorie": "poisson",
+      "ingredients": [
+        {
+          "nom": "lentilles corail",
+          "type": "frais",
+          "quantite": {
+            "valeur": 150,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "pavé de saumon",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "crème fraîche",
+          "type": "frais",
+          "quantite": {
+            "valeur": 15,
+            "unite": "cl"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Cuire les lentilles au cookeo.",
+        "Ajouter le saumon en fin de cuisson, cuire 5 min de plus avec la crème.",
+        "Servir."
+      ],
+      "tags": []
+    },
+    {
+      "id": "cookeo-risotto-crevettes-parmesan",
+      "nom": "Risotto au cookeo, crevettes & parmesan",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "crevettes",
+      "categorie": "poisson",
+      "ingredients": [
+        {
+          "nom": "riz",
+          "type": "base",
+          "quantite": {
+            "valeur": 150,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "crevettes",
+          "type": "frais",
+          "quantite": {
+            "valeur": 200,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "parmesan",
+          "type": "frais",
+          "quantite": {
+            "valeur": 30,
+            "unite": "g"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Cuire le riz au cookeo façon risotto.",
+        "Ajouter les crevettes en fin de cuisson, parsemer de parmesan.",
+        "Servir."
+      ],
+      "tags": []
+    },
+    {
+      "id": "cookeo-riz-cabillaud-curry-coco",
+      "nom": "Riz au cookeo, dos de cabillaud au curry & coco",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "dos de cabillaud",
+      "categorie": "poisson",
+      "ingredients": [
+        {
+          "nom": "riz",
+          "type": "base",
+          "quantite": {
+            "valeur": 150,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "dos de cabillaud",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "lait de coco",
+          "type": "frais",
+          "quantite": {
+            "valeur": 20,
+            "unite": "cl"
+          }
+        },
+        {
+          "nom": "curry",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "c. à café"
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Cuire le riz avec le lait de coco et le curry au cookeo.",
+        "Ajouter le cabillaud en fin de cuisson, cuire 5 min de plus.",
+        "Servir."
+      ],
+      "tags": []
+    },
+    {
+      "id": "cookeo-riz-colin-curry-coco",
+      "nom": "Riz au cookeo, filet de colin au curry & coco",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "filet de colin",
+      "categorie": "poisson",
+      "ingredients": [
+        {
+          "nom": "riz",
+          "type": "base",
+          "quantite": {
+            "valeur": 150,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "filet de colin",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "curry",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "c. à café"
+          }
+        },
+        {
+          "nom": "lait de coco",
+          "type": "frais",
+          "quantite": {
+            "valeur": 20,
+            "unite": "cl"
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Cuire le riz avec le lait de coco et le curry au cookeo.",
+        "Ajouter le colin en fin de cuisson, cuire 5 min de plus.",
+        "Servir."
+      ],
+      "tags": []
+    },
+    {
+      "id": "cookeo-pdt-cabillaud-creme",
+      "nom": "Pommes de terre au cookeo, dos de cabillaud & crème fraîche",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "dos de cabillaud",
+      "categorie": "poisson",
+      "ingredients": [
+        {
+          "nom": "pommes de terre",
+          "type": "frais",
+          "quantite": {
+            "valeur": 3,
+            "unite": null
+          }
+        },
+        {
+          "nom": "dos de cabillaud",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "crème fraîche",
+          "type": "frais",
+          "quantite": {
+            "valeur": 15,
+            "unite": "cl"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Cuire les pommes de terre au cookeo.",
+        "Ajouter le cabillaud en fin de cuisson avec la crème, cuire 5 min de plus.",
+        "Servir."
+      ],
+      "tags": []
+    },
+    {
+      "id": "cookeo-riz-saumon-citron",
+      "nom": "Riz au cookeo, pavé de saumon & citron",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "pavé de saumon",
+      "categorie": "poisson",
+      "ingredients": [
+        {
+          "nom": "riz",
+          "type": "base",
+          "quantite": {
+            "valeur": 150,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "pavé de saumon",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "citron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Cuire le riz au cookeo.",
+        "Ajouter le saumon en fin de cuisson, cuire 5 min de plus, arroser de citron.",
+        "Servir."
+      ],
+      "tags": []
+    },
+    {
+      "id": "cookeo-lentilles-cabillaud-curry",
+      "nom": "Lentilles corail au cookeo, dos de cabillaud au curry",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "dos de cabillaud",
+      "categorie": "poisson",
+      "ingredients": [
+        {
+          "nom": "lentilles corail",
+          "type": "frais",
+          "quantite": {
+            "valeur": 150,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "dos de cabillaud",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "curry",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "c. à café"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Cuire les lentilles avec le curry au cookeo.",
+        "Ajouter le cabillaud en fin de cuisson, cuire 5 min de plus.",
+        "Servir."
+      ],
+      "tags": []
+    },
+    {
+      "id": "cookeo-riz-crevettes-tomate",
+      "nom": "Riz au cookeo, crevettes & tomates concassées",
+      "temps_min": 14,
+      "portions": 2,
+      "ingredient_vedette": "crevettes",
+      "categorie": "poisson",
+      "ingredients": [
+        {
+          "nom": "riz",
+          "type": "base",
+          "quantite": {
+            "valeur": 150,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "crevettes",
+          "type": "frais",
+          "quantite": {
+            "valeur": 200,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "tomates concassées",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": "boîte"
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Cuire le riz avec les tomates concassées au cookeo.",
+        "Ajouter les crevettes en fin de cuisson, cuire 5 min de plus.",
+        "Servir."
+      ],
+      "tags": []
+    },
+    {
+      "id": "cookeo-semoule-colin-poivron",
+      "nom": "Semoule au cookeo, filet de colin & poivron",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "filet de colin",
+      "categorie": "poisson",
+      "ingredients": [
+        {
+          "nom": "semoule",
+          "type": "frais",
+          "quantite": {
+            "valeur": 150,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "filet de colin",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "poivron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 3,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Cuire la semoule avec le poivron au cookeo.",
+        "Ajouter le colin en fin de cuisson, cuire 5 min de plus.",
+        "Servir."
+      ],
+      "tags": []
+    },
+    {
+      "id": "cookeo-riz-sardines-tomate-persil",
+      "nom": "Riz au cookeo, sardines & tomates concassées",
+      "temps_min": 13,
+      "portions": 2,
+      "ingredient_vedette": "sardines en boîte",
+      "categorie": "poisson",
+      "ingredients": [
+        {
+          "nom": "riz",
+          "type": "base",
+          "quantite": {
+            "valeur": 150,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "sardines en boîte",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "boîte"
+          }
+        },
+        {
+          "nom": "tomates concassées",
+          "type": "base",
+          "quantite": {
+            "valeur": 1,
+            "unite": "boîte"
+          }
+        },
+        {
+          "nom": "persil",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "poignée"
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Cuire le riz avec les tomates concassées au cookeo.",
+        "Ajouter les sardines égouttées en fin de cuisson, parsemer de persil.",
+        "Servir."
+      ],
+      "tags": []
+    },
+    {
+      "id": "cookeo-pdt-saumon-fume-ciboulette",
+      "nom": "Pommes de terre au cookeo, saumon fumé & ciboulette",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "saumon fumé",
+      "categorie": "poisson",
+      "ingredients": [
+        {
+          "nom": "pommes de terre",
+          "type": "frais",
+          "quantite": {
+            "valeur": 3,
+            "unite": null
+          }
+        },
+        {
+          "nom": "saumon fumé",
+          "type": "frais",
+          "quantite": {
+            "valeur": 100,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "crème fraîche",
+          "type": "frais",
+          "quantite": {
+            "valeur": 15,
+            "unite": "cl"
+          }
+        },
+        {
+          "nom": "ciboulette",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": "poignée"
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Cuire les pommes de terre au cookeo.",
+        "Écraser grossièrement, ajouter la crème, le saumon fumé et la ciboulette hors du feu.",
+        "Servir."
+      ],
+      "tags": []
+    },
+    {
+      "id": "cookeo-riz-cabillaud-petits-pois-citron",
+      "nom": "Riz au cookeo, dos de cabillaud, petits pois & citron",
+      "temps_min": 15,
+      "portions": 2,
+      "ingredient_vedette": "dos de cabillaud",
+      "categorie": "poisson",
+      "ingredients": [
+        {
+          "nom": "riz",
+          "type": "base",
+          "quantite": {
+            "valeur": 150,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "dos de cabillaud",
+          "type": "frais",
+          "quantite": {
+            "valeur": 2,
+            "unite": null
+          }
+        },
+        {
+          "nom": "petits pois",
+          "type": "frais",
+          "quantite": {
+            "valeur": 150,
+            "unite": "g"
+          }
+        },
+        {
+          "nom": "citron",
+          "type": "frais",
+          "quantite": {
+            "valeur": 1,
+            "unite": null
+          }
+        }
+      ],
+      "nb_comptables": 4,
+      "equipement_requis": [
+        "cookeo"
+      ],
+      "etapes": [
+        "Cuire le riz et les petits pois au cookeo.",
+        "Ajouter le cabillaud en fin de cuisson, cuire 5 min de plus, arroser de citron.",
+        "Servir."
+      ],
+      "tags": []
     }
   ]
 }

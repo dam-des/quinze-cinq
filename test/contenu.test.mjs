@@ -74,8 +74,13 @@ function parEquip(equip, categorie) {
   return R.filter((r) => (r.equipement_requis || []).includes(equip) && r.categorie === categorie).length;
 }
 
-test('contenu — lot œufs/soupe : +61 recettes, total 457', () => {
+test('contenu — lot œufs/soupe : +61 recettes', () => {
   assert.equal(parEquip('airfryer', 'oeufs'), 20);
   assert.equal(parEquip('cookeo', 'soupe'), 35);
-  assert.equal(R.length, 457);
+});
+
+test('contenu — lot airfryer féculent / cookeo poisson : +31 recettes, total 488', () => {
+  assert.equal(parEquip('airfryer', 'feculent'), 20);
+  assert.equal(parEquip('cookeo', 'poisson'), 18);
+  assert.equal(R.length, 488);
 });
