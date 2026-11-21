@@ -4,6 +4,7 @@
 
 import { el, esc, ICONS, ICONES_APPAREIL } from '../ui.js';
 import { ingredientsManquants } from '../engine.js';
+import { estimerCalories } from '../calories.js';
 import * as storage from '../storage.js';
 import { illustrationPour, libelleEquipement, categorieAppareil, formatQuantitePortions } from '../data.js';
 import { iconeSvgPourEtape } from '../icones.js';
@@ -37,6 +38,7 @@ export default function renderDetail(ctx, { recette }) {
       <span class="badge hl">${ICONS.horloge} ${recette.temps_min} min</span>
       <span class="badge">${ICONS.liste} ${recette.nb_comptables} ingrédients</span>
       <span class="badge">${ICONES_APPAREIL[categorieAppareil(recette)]} ${esc(libelleEquipement(recette))}</span>
+      <span class="badge" title="Estimation, hors matières grasses de cuisson">${ICONS.calories} ≈ ${estimerCalories(recette)} kcal</span>
     </div>`)
   );
 

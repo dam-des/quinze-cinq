@@ -38,6 +38,8 @@ export const ICONS = {
     '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M15 18l-6-6 6-6"/></svg>',
   panier:
     '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 4h2l2.4 12.3a1 1 0 0 0 1 .7h8.5a1 1 0 0 0 1-.8L21 8H6"/><circle cx="9" cy="20" r="1.2"/><circle cx="18" cy="20" r="1.2"/></svg>',
+  calories:
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 2c1 3-3 4-3 7a3 3 0 0 0 6 0c0-1-1-2-1-2 1.5 1 2.5 3 2.5 5a5 5 0 0 1-10 0c0-4 3-5 3-7 0-1-.5-2.5 2.5-3z"/></svg>',
 };
 
 // Icône de badge équipement par catégorie d'appareil (cf. data.js:categorieAppareil).

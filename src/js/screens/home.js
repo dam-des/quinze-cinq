@@ -6,6 +6,7 @@
 import { el, esc, ICONS, ICONES_APPAREIL, annoncer } from '../ui.js';
 import { illustrationPour, libelleEquipement, categorieAppareil } from '../data.js';
 import { fraisPertinents, streakCuisine } from '../engine.js';
+import { estimerCalories } from '../calories.js';
 import * as ads from '../ads.js';
 import * as storage from '../storage.js';
 import * as haptics from '../haptics.js';
@@ -56,6 +57,7 @@ export default function renderHome(ctx) {
           <span class="badge hl">${ICONS.horloge} ${recette.temps_min} min</span>
           <span class="badge">${ICONS.liste} ${recette.nb_comptables} ingrédients</span>
           <span class="badge">${ICONES_APPAREIL[categorieAppareil(recette)]} ${esc(libelleEquipement(recette))}</span>
+          <span class="badge" title="Estimation, hors matières grasses de cuisson">${ICONS.calories} ≈ ${estimerCalories(recette)} kcal</span>
         </div>
       </article>`);
     if (ctx.animerCarte) {

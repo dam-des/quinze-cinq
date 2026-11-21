@@ -187,6 +187,48 @@ export default function renderReglages(ctx) {
   );
   cardPref.appendChild(
     toggleRow(
+      'Plats légers',
+      prefs.leger,
+      async (v) => {
+        prefs.leger = v;
+        await ctx.sauver(storage.CLES.PREFERENCES, prefs);
+      },
+      'Les plats estimés sous le seuil choisi ci-dessous sont mis en avant (les autres restent proposés).'
+    )
+  );
+
+  // Seuil « léger » — SIMPLE sélection (un seul preset actif à la fois, contrairement aux
+  // chips d'appareils ci-dessus qui sont cumulables).
+  const rowSeuilLeger = el(
+    '<div class="set-row mode-row"><span class="set-row-txt"><span class="set-row-label">Seuil « léger »</span><span class="set-row-sub">Seuil (kcal/portion) utilisé par le réglage « Plats légers » ci-dessus.</span></span></div>'
+  );
+  const chipsSeuil = el('<div class="chips"></div>');
+  const SEUILS_LEGER = [350, 450, 550];
+  if (prefs.seuil_leger_kcal == null) prefs.seuil_leger_kcal = 450;
+  const seuilChips = [];
+  const rafraichirSeuil = () => {
+    for (const { valeur, btn } of seuilChips) {
+      const on = prefs.seuil_leger_kcal === valeur;
+      btn.classList.toggle('on', on);
+      btn.setAttribute('aria-pressed', String(on));
+    }
+  };
+  for (const valeur of SEUILS_LEGER) {
+    const btn = el(`<button class="chip" aria-pressed="false">${valeur} kcal</button>`);
+    btn.addEventListener('click', async () => {
+      prefs.seuil_leger_kcal = valeur;
+      rafraichirSeuil();
+      await ctx.sauver(storage.CLES.PREFERENCES, prefs);
+    });
+    seuilChips.push({ valeur, btn });
+    chipsSeuil.appendChild(btn);
+  }
+  rafraichirSeuil();
+  rowSeuilLeger.appendChild(chipsSeuil);
+  cardPref.appendChild(rowSeuilLeger);
+
+  cardPref.appendChild(
+    toggleRow(
       'Sans porc',
       (prefs.exclusions || []).includes('porc'),
       async (v) => {
