@@ -57,7 +57,7 @@ export default function renderHome(ctx) {
           <span class="badge hl">${ICONS.horloge} ${recette.temps_min} min</span>
           <span class="badge">${ICONS.liste} ${recette.nb_comptables} ingrédients</span>
           <span class="badge">${ICONES_APPAREIL[categorieAppareil(recette)]} ${esc(libelleEquipement(recette))}</span>
-          <span class="badge" title="Estimation, hors matières grasses de cuisson">${ICONS.calories} ≈ ${estimerCalories(recette)} kcal</span>
+          <span class="badge" title="Estimation, hors matières grasses de cuisson" aria-label="≈ ${estimerCalories(recette)} kcal par portion, estimation, hors matières grasses de cuisson">${ICONS.calories} ≈ ${estimerCalories(recette)} kcal/portion</span>
         </div>
       </article>`);
     if (ctx.animerCarte) {

@@ -1,6 +1,8 @@
 // data.js — chargement de la base de recettes embarquée (offline) et
 // utilitaires de dérivation (garde-manger par défaut, illustration par catégorie).
 
+import { SEUIL_LEGER_KCAL_DEFAUT } from './engine.js';
+
 let _cache = null;
 
 /** Charge recettes_50.json (62 recettes, embarqué — aucune requête réseau « métier »). */
@@ -35,7 +37,7 @@ export function preferencesParDefaut() {
     vegetarien: false,
     enfant_friendly: false,
     leger: false,
-    seuil_leger_kcal: 450,
+    seuil_leger_kcal: SEUIL_LEGER_KCAL_DEFAUT,
     exclusions: [],
     modes_appareil: [],
   };

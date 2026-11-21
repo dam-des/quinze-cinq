@@ -45,7 +45,7 @@ export const TABLE_KCAL = {
   riz: { kcal100g: 350 },
   'riz cuit': { kcal100g: 130, poidsUnite: 250 },
   'thon en conserve': { kcal100g: 130, poidsUnite: 130 },
-  'tomates concassées': { kcal100g: 30 },
+  'tomates concassées': { kcal100g: 30, poidsUnite: 400 },
   vermicelles: { kcal100g: 350 },
   œufs: { kcal100g: 155, poidsUnite: 55 },
 

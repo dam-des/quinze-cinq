@@ -7,6 +7,7 @@ import * as notifications from '../notifications.js';
 import * as ads from '../ads.js';
 import * as theme from '../theme.js';
 import { basiquesEditables, APPAREILS, categorieAppareil } from '../data.js';
+import { SEUIL_LEGER_KCAL_DEFAUT } from '../engine.js';
 
 export default function renderReglages(ctx) {
   const screen = el('<section class="screen actif" aria-label="Réglages"></section>');
@@ -104,7 +105,7 @@ export default function renderReglages(ctx) {
     if (t) { t.classList.add('on'); t.setAttribute('aria-checked', 'true'); }
   };
 
-  // ── Mode : par appareil(s) — MULTI-sélection (Tous / Classiques / Airfryer / Cookeo) ──
+  // ── Mode : par appareil(s) — MULTI-sélection (Tous / Classiques / Airfryer / Cookeo / Plancha) ──
   const gModeApp = el('<div class="set-group"><div class="gl">Mode — par appareil</div></div>');
   const cardModeApp = el('<div class="set-card"></div>');
   const rowModeApp = el(
@@ -204,7 +205,7 @@ export default function renderReglages(ctx) {
   );
   const chipsSeuil = el('<div class="chips"></div>');
   const SEUILS_LEGER = [350, 450, 550];
-  if (prefs.seuil_leger_kcal == null) prefs.seuil_leger_kcal = 450;
+  if (prefs.seuil_leger_kcal == null) prefs.seuil_leger_kcal = SEUIL_LEGER_KCAL_DEFAUT;
   const seuilChips = [];
   const rafraichirSeuil = () => {
     for (const { valeur, btn } of seuilChips) {
