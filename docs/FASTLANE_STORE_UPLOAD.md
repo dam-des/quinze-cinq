@@ -25,14 +25,13 @@
 
 - **App Store Connect** : la fiche existait déjà (`app_id=6783429160`, SKU
   `quinzecinq-001`, créée le 2026-06-23) avec un build (version 1) déjà
-  traité et sélectionné pour la version 1.0. Catégorie (Food & Drink),
-  sous-titre, description et mots-clés remplis via l'API ConnectAPI
-  (`store-assets/texts/description_fr.txt`). **Restent à faire à la main**
-  (compliance, voir plus bas) : App Privacy (nutrition labels), classification
-  d'âge, pricing/territoires, captures d'écran, URL de confidentialité (le
-  champ ASC n'a pas encore été rempli automatiquement — coller
-  `https://dam-des.github.io/quinze-cinq/privacy.html` une fois le site en
-  ligne confirmé), puis Soumettre à la review.
+  traité, sélectionné pour la version 1.0. Catégorie (Food & Drink),
+  sous-titre, description, mots-clés, URL de confidentialité/support, et
+  classification d'âge (`ageRatingDeclaration`) remplis via l'API ConnectAPI.
+  4 captures d'écran (1320×2868, `APP_IPHONE_67`) envoyées via `deliver`.
+  **Restent à faire à la main** : App Privacy (nutrition labels — bloqué
+  côté API, voir § Compliance), pricing/territoires (à vérifier, probablement
+  déjà "Gratuit" par défaut), puis Soumettre à la review.
 - **Play Console** : aucune fiche n'existait. Le formulaire de création a
   été pré-rempli (nom, package `com.quinzecinq.app`, français, Appli,
   gratuite) mais **les deux cases de déclaration (règlement du programme
@@ -94,15 +93,24 @@ fastlane android upload version:1.0.0    # envoie cet AAB sur Play Console (brou
                                           # — échouera tant que la permission §2 n'est pas accordée
 ```
 
-## Compliance — volontairement non automatisée
+## Compliance
 
-Classification d'âge et App Privacy / Data Safety ne sont **pas** remplies
-via l'API dans ce projet : ce sont des déclarations formelles à Apple/Google,
-avec des questionnaires guidés côté UI justement parce que l'ordre des
-questions compte. Les réponses sont préparées et sourcées (fichier:ligne)
-dans `store-assets/age-rating.md`, `store-assets/ios-app-privacy.md` et
-`store-assets/android-data-safety.md` — à reporter à la main dans chaque
-console plutôt qu'à écrire en brut via l'API.
+- **Classification d'âge (iOS)** : remplie via l'API ConnectAPI
+  (`ageRatingDeclaration`), valeurs reprises telles quelles depuis
+  `store-assets/age-rating.md` (tout `NONE`/non, `advertising = true`).
+- **App Privacy (iOS, nutrition labels)** : **pas** remplie via l'API —
+  tentative réelle via `Spaceship::ConnectAPI::AppDataUsage`, qui a échoué
+  avec « The relationship 'dataUsages' does not exist » : le gem `spaceship`
+  installé (fastlane 2.242.0) a un modèle obsolète par rapport au schéma
+  actuel d'Apple pour cet endpoint précis. Pas un choix de prudence — un mur
+  technique. Réponses prêtes et sourcées dans `store-assets/ios-app-privacy.md`
+  à reporter à la main dans le questionnaire guidé d'App Store Connect.
+- **Data Safety (Android)** : pas automatisable avant même la question de
+  l'API — l'app n'existe pas encore dans Play Console (voir § état ci-dessus).
+  Réponses prêtes dans `store-assets/android-data-safety.md`.
+- **Classification de contenu (Android, IARC)** : se fait via un
+  questionnaire externe IARC, jamais via l'API Play — toujours manuel par
+  nature. Réponses prêtes dans `store-assets/age-rating.md`.
 
 ## Sécurité
 

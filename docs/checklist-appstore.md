@@ -24,18 +24,25 @@ Bundle : `com.quinzecinq.app` · Team : `43W4PXPVHP` · Version : `1.0.0 (1)`
 - Pipeline fastlane en place (`fastlane/Fastfile`) : `ios release` / `ios upload` /
   `ios select_build` — voir `docs/FASTLANE_STORE_UPLOAD.md` pour les identifiants (déjà
   configurés, partagés avec Gamoria/Plantrace) et l'usage.
+- **Classification d'âge remplie via l'API** (2026-11-22) : `ageRatingDeclaration` mis à jour
+  (tout à `NONE`/non, sauf `advertising = true` à cause d'AdMob réel) — cf.
+  `store-assets/age-rating.md` pour le détail et les justifications.
+- **Captures d'écran envoyées** (2026-11-22) : 4 captures natives (iPhone 16 Pro Max simulateur,
+  1320×2868, type d'affichage `APP_IPHONE_67`) envoyées via `deliver`/ConnectAPI — onboarding,
+  accueil, recette, réglages équipement. Bannière pub désactivée temporairement pour la capture
+  (changement non commité) pour éviter le bandeau « Test mode » du SDK en simulateur. Fichiers
+  dans `fastlane/screenshots/fr-FR/` et `store-assets/screenshots/raw/ios/`.
 
 ## 2. Reste à faire à la main dans App Store Connect (action toi)
-1. **Confidentialité de l'app** (nutrition labels) : cf. `store-assets/ios-app-privacy.md` —
-   déclarer **Identifiants** + **Données d'usage** utilisés pour la **publicité tierce** +
-   **suivi = Oui** (à cause d'AdMob). Volontairement non rempli via l'API (déclaration formelle,
-   questionnaire guidé).
-2. **Classification d'âge** : cf. `store-assets/age-rating.md` — cocher la présence de publicité
-   tierce (Oui), sinon risque de rejet pour déclaration incohérente. Même raison, non automatisé.
-3. **Captures d'écran** (6.7" + 6.5" requis) — pas encore produites dans ce lot (simulateur trop
-   lent/capricieux lors de la tentative du 2026-11-21).
-4. Tarification : gratuit (pas encore confirmé dans l'UI).
-5. **Soumettre à la review** : geste humain final, volontairement jamais automatisé.
+1. **Confidentialité de l'app** (nutrition labels / App Privacy) : cf.
+   `store-assets/ios-app-privacy.md` — déclarer **Identifiants** + **Données d'usage** utilisés
+   pour la **publicité tierce** + **suivi = Oui** (à cause d'AdMob). Tentative via l'API
+   (`appDataUsages`) bloquée par une incompatibilité du gem `spaceship` installé avec le schéma
+   actuel d'Apple (« The relationship 'dataUsages' does not exist ») — pas un choix de prudence,
+   un mur technique constaté. À remplir dans le questionnaire guidé de l'UI.
+2. Tarification : gratuit — pas confirmé via l'API (endpoint `appPrices` lui aussi obsolète côté
+   gem), à vérifier/valider dans l'UI (normalement déjà "Gratuit" par défaut à la création).
+3. **Soumettre à la review** : geste humain final, volontairement jamais automatisé.
 
 ## 3. Build & upload — deux façons de faire
 
@@ -65,8 +72,9 @@ open ios/App/App.xcworkspace
   `SKAdNetworkIdentifier`).
 - [x] URL de politique de confidentialité et URL de support valides et en ligne (page vitrine) —
   renseignées sur la fiche le 2026-11-22.
-- [ ] Captures d'écran à jour (build Release sur simulateur ou appareil, aucune bannière DEBUG visible).
-- [ ] App Privacy + classification d'âge déclarées dans l'UI (brouillons prêts, cf. § 2).
+- [x] Captures d'écran à jour, envoyées sur la fiche (2026-11-22), aucune bannière DEBUG visible.
+- [x] Classification d'âge déclarée via l'API (2026-11-22).
+- [ ] App Privacy (nutrition labels) à déclarer dans l'UI (brouillon prêt, cf. § 2 — bloqué côté API).
 - [ ] Test fermé TestFlight OK (icône, notif, pubs réelles, ATT/consentement).
 - [ ] Après publication : associer l'app iOS à sa fiche App Store dans AdMob (App Store ID) —
   sinon aucune pub ne se diffuse malgré le câblage code.
