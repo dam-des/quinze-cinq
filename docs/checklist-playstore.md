@@ -34,8 +34,11 @@ Package : `com.quinzecinq.app` · Version : `1.0 (versionCode 1)` (`android/app/
    Cocher les 2 cases « Déclarations » puis cliquer **Créer une application**.
 2. Métadonnées : cf. `store-assets/android-metadata.md` (titre, description courte/longue,
    catégorie Nourriture et boisson, tags).
-3. Visuels : icône, captures d'écran (cf. liste des écrans à produire, format 1080×1920),
-   image de présentation (feature graphic 1024×500) — à produire séparément si demandé.
+3. **Visuels prêts** (2026-11-22, `tool/store_graphics.py` + `tool/store_marketing.py`) :
+   icône 512×512 (`store-assets/play/icon.png`), image de présentation 1024×500
+   (`store-assets/play/featureGraphic.png`), 4 captures mises en page 1080×1920
+   (`fastlane/metadata/android/fr-FR/images/phoneScreenshots/`, uploadées automatiquement
+   par `fastlane android upload` une fois l'app créée et la permission accordée).
 4. URL de politique de confidentialité (champ obligatoire, bloquant) :
    `https://dam-des.github.io/quinze-cinq/privacy.html` — **déjà en ligne**, prête à coller.
 5. Une fois l'app créée : accorder la permission au service account (§ ci-dessous), condition pour
