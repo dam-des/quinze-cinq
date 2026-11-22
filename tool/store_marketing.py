@@ -113,7 +113,7 @@ def compose(raw_name, title, sub, hero, platform, w, h):
     bg.alpha_composite(phone, (px0, py0))
     return bg.convert("RGB")
 
-PLATFORMS = {"ios": ("ios/6.9", 1320, 2868)}
+PLATFORMS = {"ios": ("ios/6.9", 1320, 2868), "android": ("android", 1080, 1920)}
 for platform, (folder, w, h) in PLATFORMS.items():
     out = os.path.join(OUT, folder)
     os.makedirs(out, exist_ok=True)
