@@ -13,6 +13,8 @@
 //    bas du classement et n'est relâché qu'en TOUT dernier recours.
 //  - Jamais d'écran vide : relâchement progressif des malus soft (§10.5).
 
+import { estimerCalories } from './calories.js';
+
 // ── Constantes de scoring ────────────────────────────────────────────────────
 export const SCORE_BASE = 100;
 
@@ -41,6 +43,12 @@ export const BONUS_FRAIS_COCHE = 45;
 
 // Préférence « plats pour enfants » : bonus doux (non filtrant).
 export const BONUS_ENFANT = 20;
+
+// Préférence « plats légers » : bonus doux (non filtrant). Le seuil réel est
+// lu dans `etat.preferences.seuil_leger_kcal` (réglable par l'utilisateur,
+// cf. Task 6) — cette constante n'est qu'une valeur de repli.
+export const BONUS_LEGER = 20;
+export const SEUIL_LEGER_KCAL_DEFAUT = 350;
 
 const MS_PAR_JOUR = 24 * 60 * 60 * 1000;
 
@@ -118,7 +126,16 @@ function categoriesRecentes(recettes, historique = {}, now, jours) {
  * Évalue un plat (déjà passé par les filtres durs) : éligibilité + score + raisons.
  * @param {object} options { maxManquants, applyRecence, applyDiversite, applyDislike }
  */
-function evaluer(recette, etat, now, options, catsRecentes, rng, restreindreAuxMatches = false) {
+function evaluer(
+  recette,
+  etat,
+  now,
+  options,
+  catsRecentes,
+  rng,
+  restreindreAuxMatches = false,
+  estimerCaloriesFn = estimerCalories
+) {
   const fraisCoches = etat.frais_du_jour || [];
   const manquants = ingredientsManquants(recette, etat.garde_manger, fraisCoches);
   const baseManquants = manquants.filter((m) => m.type === 'base').length;
@@ -201,6 +218,16 @@ function evaluer(recette, etat, now, options, catsRecentes, rng, restreindreAuxM
     raisons.push('enfant');
   }
 
+  // (h) Préférence « plats légers » (douce, non filtrante). Le seuil vit dans
+  // les préférences utilisateur, jamais figé dans le moteur.
+  if (etat.preferences?.leger) {
+    const seuil = etat.preferences.seuil_leger_kcal ?? SEUIL_LEGER_KCAL_DEFAUT;
+    if (estimerCaloriesFn(recette) < seuil) {
+      score += BONUS_LEGER;
+      raisons.push('léger');
+    }
+  }
+
   return {
     recette,
     eligible,
@@ -217,7 +244,14 @@ function evaluer(recette, etat, now, options, catsRecentes, rng, restreindreAuxM
  * Classe les plats ÉLIGIBLES par score décroissant (égalités départagées
  * aléatoirement via `rng`). N'inclut jamais un plat recalé par un filtre dur.
  */
-export function classer(recettes, etat, now = Date.now(), options = {}, rng = Math.random) {
+export function classer(
+  recettes,
+  etat,
+  now = Date.now(),
+  options = {},
+  rng = Math.random,
+  estimerCaloriesFn = estimerCalories
+) {
   const opt = {
     maxManquants: 1,
     applyRecence: true,
@@ -243,7 +277,7 @@ export function classer(recettes, etat, now = Date.now(), options = {}, rng = Ma
 
   return recettes
     .filter((r) => passeFiltresDurs(r, etat.preferences, etat.equipements))
-    .map((r) => evaluer(r, etat, now, opt, catsRecentes, rng, restreindreAuxMatches))
+    .map((r) => evaluer(r, etat, now, opt, catsRecentes, rng, restreindreAuxMatches, estimerCaloriesFn))
     .filter((e) => e.eligible)
     .sort((a, b) => b.score - a.score || b.alea - a.alea);
 }
@@ -276,10 +310,11 @@ export function genererProposition(
   etat,
   now = Date.now(),
   sessionShown = [],
-  rng = Math.random
+  rng = Math.random,
+  estimerCaloriesFn = estimerCalories
 ) {
   for (let niveau = 0; niveau < NIVEAUX_RELACHEMENT.length; niveau++) {
-    const classement = classer(recettes, etat, now, NIVEAUX_RELACHEMENT[niveau], rng);
+    const classement = classer(recettes, etat, now, NIVEAUX_RELACHEMENT[niveau], rng, estimerCaloriesFn);
     const horsSession = classement.filter((e) => !sessionShown.includes(e.recette.id));
     if (horsSession.length > 0) {
       return {
@@ -299,7 +334,8 @@ export function genererProposition(
     etat,
     now,
     NIVEAUX_RELACHEMENT[NIVEAUX_RELACHEMENT.length - 1],
-    rng
+    rng,
+    estimerCaloriesFn
   );
   if (ultime.length > 0) {
     return {

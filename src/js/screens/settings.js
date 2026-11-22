@@ -7,6 +7,7 @@ import * as notifications from '../notifications.js';
 import * as ads from '../ads.js';
 import * as theme from '../theme.js';
 import { basiquesEditables, APPAREILS, categorieAppareil } from '../data.js';
+import { SEUIL_LEGER_KCAL_DEFAUT } from '../engine.js';
 
 export default function renderReglages(ctx) {
   const screen = el('<section class="screen actif" aria-label="Réglages"></section>');
@@ -86,7 +87,11 @@ export default function renderReglages(ctx) {
     ctx.etat.equipements.cookeo = v;
     await ctx.sauver(storage.CLES.EQUIPEMENTS, ctx.etat.equipements);
   });
-  cardEquip.append(rowFour, rowAir, rowCookeo);
+  const rowPlancha = toggleRow('Plancha', !!ctx.etat.equipements.plancha, async (v) => {
+    ctx.etat.equipements.plancha = v;
+    await ctx.sauver(storage.CLES.EQUIPEMENTS, ctx.etat.equipements);
+  });
+  cardEquip.append(rowFour, rowAir, rowCookeo, rowPlancha);
   gEquip.appendChild(cardEquip);
   body.appendChild(gEquip);
 
@@ -95,12 +100,12 @@ export default function renderReglages(ctx) {
     if (ctx.etat.equipements[nom]) return;
     ctx.etat.equipements[nom] = true;
     ctx.sauver(storage.CLES.EQUIPEMENTS, ctx.etat.equipements);
-    const row = nom === 'airfryer' ? rowAir : rowCookeo;
+    const row = nom === 'airfryer' ? rowAir : nom === 'cookeo' ? rowCookeo : rowPlancha;
     const t = row.querySelector('.toggle');
     if (t) { t.classList.add('on'); t.setAttribute('aria-checked', 'true'); }
   };
 
-  // ── Mode : par appareil(s) — MULTI-sélection (Tous / Classiques / Airfryer / Cookeo) ──
+  // ── Mode : par appareil(s) — MULTI-sélection (Tous / Classiques / Airfryer / Cookeo / Plancha) ──
   const gModeApp = el('<div class="set-group"><div class="gl">Mode — par appareil</div></div>');
   const cardModeApp = el('<div class="set-card"></div>');
   const rowModeApp = el(
@@ -108,7 +113,7 @@ export default function renderReglages(ctx) {
   );
   // Compteurs par catégorie d'appareil (visibilité sur le nombre de recettes).
   const _R = ctx.catalogue.recettes;
-  const nb = { classique: 0, airfryer: 0, cookeo: 0 };
+  const nb = { classique: 0, airfryer: 0, cookeo: 0, plancha: 0 };
   for (const r of _R) nb[categorieAppareil(r)]++;
   const modes = ctx.etat.preferences.modes_appareil; // référence vivante (array)
 
@@ -141,7 +146,7 @@ export default function renderReglages(ctx) {
         modes.splice(idx, 1);
       } else {
         modes.push(ap.cle);
-        if (ap.cle === 'airfryer' || ap.cle === 'cookeo') forcerEquip(ap.cle);
+        if (ap.cle === 'airfryer' || ap.cle === 'cookeo' || ap.cle === 'plancha') forcerEquip(ap.cle);
       }
       rafraichirModes();
       await persistModes();
@@ -181,6 +186,48 @@ export default function renderReglages(ctx) {
       'Les plats adaptés aux enfants sont mis en avant (les autres restent proposés).'
     )
   );
+  cardPref.appendChild(
+    toggleRow(
+      'Plats légers',
+      prefs.leger,
+      async (v) => {
+        prefs.leger = v;
+        await ctx.sauver(storage.CLES.PREFERENCES, prefs);
+      },
+      'Les plats estimés sous le seuil choisi ci-dessous sont mis en avant (les autres restent proposés).'
+    )
+  );
+
+  // Seuil « léger » — SIMPLE sélection (un seul preset actif à la fois, contrairement aux
+  // chips d'appareils ci-dessus qui sont cumulables).
+  const rowSeuilLeger = el(
+    '<div class="set-row mode-row"><span class="set-row-txt"><span class="set-row-label">Seuil « léger »</span><span class="set-row-sub">Seuil (kcal/portion) utilisé par le réglage « Plats légers » ci-dessus.</span></span></div>'
+  );
+  const chipsSeuil = el('<div class="chips"></div>');
+  const SEUILS_LEGER = [300, 350, 450];
+  if (prefs.seuil_leger_kcal == null) prefs.seuil_leger_kcal = SEUIL_LEGER_KCAL_DEFAUT;
+  const seuilChips = [];
+  const rafraichirSeuil = () => {
+    for (const { valeur, btn } of seuilChips) {
+      const on = prefs.seuil_leger_kcal === valeur;
+      btn.classList.toggle('on', on);
+      btn.setAttribute('aria-pressed', String(on));
+    }
+  };
+  for (const valeur of SEUILS_LEGER) {
+    const btn = el(`<button class="chip" aria-pressed="false">${valeur} kcal</button>`);
+    btn.addEventListener('click', async () => {
+      prefs.seuil_leger_kcal = valeur;
+      rafraichirSeuil();
+      await ctx.sauver(storage.CLES.PREFERENCES, prefs);
+    });
+    seuilChips.push({ valeur, btn });
+    chipsSeuil.appendChild(btn);
+  }
+  rafraichirSeuil();
+  rowSeuilLeger.appendChild(chipsSeuil);
+  cardPref.appendChild(rowSeuilLeger);
+
   cardPref.appendChild(
     toggleRow(
       'Sans porc',

@@ -381,3 +381,47 @@ test('passeFiltresDurs / ingredientsManquants — comportements de base', () => 
   assert.equal(manq.length, 1);
   assert.equal(manq[0].nom, 'champignons');
 });
+
+// ════════════════════════════════════════════════════════════════════════════
+// G — Préférence douce « Plats légers » (bonus non filtrant, seuil paramétrable)
+// ════════════════════════════════════════════════════════════════════════════
+
+test('G1 — préférence légère : bonus non filtrant, jamais d\'exclusion', () => {
+  const data = CINQUANTE;
+  const deux = data.recettes.slice(0, 2); // peu importe lesquelles : calories stubées
+  const stubCalories = (r) => (r.id === deux[0].id ? 900 : 200); // 900 = lourd, 200 = léger
+  const e = etat(data, {
+    preferences: { vegetarien: false, enfant_friendly: false, leger: true, exclusions: [] },
+  });
+  const classement = classer(deux, e, NOW, {}, rng(), stubCalories);
+  // Non filtrant : les deux restent éligibles.
+  assert.equal(classement.length, 2);
+  const scoreLourd = classement.find((c) => c.recette.id === deux[0].id).score;
+  const scoreLeger = classement.find((c) => c.recette.id === deux[1].id).score;
+  assert.ok(scoreLeger > scoreLourd, 'le plat léger doit être mieux classé que le lourd');
+});
+
+test('G2 — préférence légère désactivée : aucun bonus appliqué', () => {
+  const data = CINQUANTE;
+  const deux = data.recettes.slice(0, 2);
+  const stubCalories = (r) => (r.id === deux[0].id ? 900 : 200);
+  const e = etat(data, {
+    preferences: { vegetarien: false, enfant_friendly: false, leger: false, exclusions: [] },
+  });
+  const avecLeger = classer(deux, { ...e, preferences: { ...e.preferences, leger: true } }, NOW, {}, rng(), stubCalories);
+  const sansLeger = classer(deux, e, NOW, {}, rng(), stubCalories);
+  const diffAvec = avecLeger[0].score - avecLeger[1].score;
+  const diffSans = sansLeger[0].score - sansLeger[1].score;
+  assert.notEqual(diffAvec, diffSans, 'le bonus doit changer l\'écart de score');
+});
+
+test('G3 — seuil paramétrable : lu dans les préférences, pas figé dans le moteur', () => {
+  const data = CINQUANTE;
+  const deux = data.recettes.slice(0, 2);
+  const stubCalories = () => 400; // entre les deux presets 350 et 450
+  const basePrefs = { vegetarien: false, enfant_friendly: false, leger: true, exclusions: [] };
+  const seuilBas = classer(deux, etat(data, { preferences: { ...basePrefs, seuil_leger_kcal: 350 } }), NOW, {}, rng(), stubCalories);
+  const seuilHaut = classer(deux, etat(data, { preferences: { ...basePrefs, seuil_leger_kcal: 450 } }), NOW, {}, rng(), stubCalories);
+  // À 400 kcal : pas de bonus sous un seuil de 350, bonus sous un seuil de 450.
+  assert.notEqual(seuilBas[0].score, seuilHaut[0].score);
+});

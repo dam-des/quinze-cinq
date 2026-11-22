@@ -2,51 +2,79 @@
 
 Bundle : `com.quinzecinq.app` · Team : `43W4PXPVHP` · Version : `1.0.0 (1)`
 
-## 1. AdMob — créer les comptes/blocs (action toi)
-Sur https://apps.admob.com :
-1. **Créer 2 applications** (une par plateforme) : « Quinze Cinq » iOS et « Quinze Cinq » Android.
-   → chacune donne un **App ID** au format `ca-app-pub-XXXX~YYYY`.
-2. Pour **chaque** app, créer **2 blocs** : une **Bannière** et un **Interstitiel**.
-   → chaque bloc donne un **ID de bloc** au format `ca-app-pub-XXXX/ZZZZ`.
-
-**À m'envoyer (6 valeurs) :**
-- App ID iOS / App ID Android
-- Bannière iOS / Interstitiel iOS
-- Bannière Android / Interstitiel Android
-
-Je câble alors : `src/js/ads.js` (blocs + `PROD = true`), `Info.plist` (`GADApplicationIdentifier` iOS),
-`AndroidManifest.xml` (`APPLICATION_ID` Android), et je colle la **liste SKAdNetwork complète**
-(https://developers.google.com/admob/ios/ios14#skadnetwork).
-
-## 2. Déjà fait côté code/config
+## 1. Déjà fait côté code/config
+- **AdMob réel, câblé en PROD (vérifié 2026-11-21)** : `src/js/ads.js:10` (`PROD = true`), blocs
+  bannière + interstitiel réels pour iOS et Android (`src/js/ads.js:19-27`), `GADApplicationIdentifier`
+  présent dans `ios/App/App/Info.plist:49-50`, `com.google.android.gms.ads.APPLICATION_ID` présent
+  dans `android/app/src/main/AndroidManifest.xml:13-15`. **Aucun compte/bloc AdMob à créer, cette
+  étape est terminée** — l'ancienne section « créer les comptes/blocs AdMob » de cette checklist est
+  donc obsolète et a été retirée.
 - ATT (App Tracking Transparency) demandé avant pubs + `NSUserTrackingUsageDescription`.
 - UMP (consentement) au 1er lancement.
 - `ITSAppUsesNonExemptEncryption = false` (pas de question chiffrement au dépôt).
 - Icône d'app = « 15/5 » net (asset catalog). **Sur appareil de dev, l'icône peut rester en cache :
   supprimer l'app puis réinstaller. Sur une install TestFlight/App Store (neuve), elle est correcte.**
+- **Fiche App Store Connect déjà créée** (découvert 2026-11-22, `app_id=6783429160`,
+  SKU `quinzecinq-001`, créée le 2026-06-23) — un build (version 1) existait déjà et a été
+  sélectionné pour la version 1.0. Catégorie (Food & Drink), sous-titre, description, mots-clés,
+  URL de confidentialité et URL de support remplis via l'API ConnectAPI (script ponctuel, cf.
+  `docs/FASTLANE_STORE_UPLOAD.md`) à partir de `store-assets/ios-metadata.md`.
+- **Page vitrine en ligne** (2026-11-22) : https://dam-des.github.io/quinze-cinq/ — privacy :
+  https://dam-des.github.io/quinze-cinq/privacy.html
+- Pipeline fastlane en place (`fastlane/Fastfile`) : `ios release` / `ios upload` /
+  `ios select_build` — voir `docs/FASTLANE_STORE_UPLOAD.md` pour les identifiants (déjà
+  configurés, partagés avec Gamoria/Plantrace) et l'usage.
+- **Classification d'âge remplie via l'API** (2026-11-22) : `ageRatingDeclaration` mis à jour
+  (tout à `NONE`/non, sauf `advertising = true` à cause d'AdMob réel) — cf.
+  `store-assets/age-rating.md` pour le détail et les justifications.
+- **Captures d'écran envoyées** (2026-11-22) : 4 captures natives (iPhone 16 Pro Max simulateur,
+  1320×2868, type d'affichage `APP_IPHONE_67`) envoyées via `deliver`/ConnectAPI — onboarding,
+  accueil, recette, réglages équipement. Bannière pub désactivée temporairement pour la capture
+  (changement non commité) pour éviter le bandeau « Test mode » du SDK en simulateur. Fichiers
+  dans `fastlane/screenshots/fr-FR/` et `store-assets/screenshots/raw/ios/`.
 
-## 3. App Store Connect (action toi)
-1. https://appstoreconnect.apple.com › **Apps › +** › nouvelle app iOS, bundle `com.quinzecinq.app`.
-2. Métadonnées : nom, sous-titre, description, mots-clés, catégorie (Cuisine/Food & Drink),
-   URL de confidentialité (cf. `docs/` privacy), **captures d'écran** (6.7" + 6.5" requis).
-3. **Confidentialité de l'app** (nutrition labels) : déclarer **Identifiants** + **Données d'usage**
-   utilisés pour la **publicité tierce** + **suivi = Oui** (à cause d'AdMob).
-4. Tarification : gratuit.
+## 2. Reste à faire à la main dans App Store Connect (action toi)
+1. **Confidentialité de l'app** (nutrition labels / App Privacy) : cf.
+   `store-assets/ios-app-privacy.md` — déclarer **Identifiants** + **Données d'usage** utilisés
+   pour la **publicité tierce** + **suivi = Oui** (à cause d'AdMob). Tentative via l'API
+   (`appDataUsages`) bloquée par une incompatibilité du gem `spaceship` installé avec le schéma
+   actuel d'Apple (« The relationship 'dataUsages' does not exist ») — pas un choix de prudence,
+   un mur technique constaté. À remplir dans le questionnaire guidé de l'UI.
+2. Tarification : gratuit — pas confirmé via l'API (endpoint `appPrices` lui aussi obsolète côté
+   gem), à vérifier/valider dans l'UI (normalement déjà "Gratuit" par défaut à la création).
+3. **Soumettre à la review** : geste humain final, volontairement jamais automatisé.
 
-## 4. Build & upload (Xcode, action toi)
+## 3. Build & upload — deux façons de faire
+
+**Via fastlane (nouveau, recommandé)** :
+```bash
+bundle exec fastlane ios release version:1.0.0
+bundle exec fastlane ios upload version:1.0.0
+bundle exec fastlane ios select_build version:1.0.0
+```
+
+**Via Xcode (historique, toujours valide)** :
 ```bash
 open ios/App/App.xcworkspace
 ```
 - Scheme **App** › destination **Any iOS Device (arm64)**.
 - **Product › Archive** (signature de **distribution** automatique avec le Team 43W4PXPVHP).
-- Organizer › **Distribute App › App Store Connect › Upload**.
+- Organizer › **Distribute App › App Store Connect › Upload** (ou via Transporter si export .ipa).
 - Le build apparaît dans App Store Connect (TestFlight) après traitement.
 
 > Le build de distribution doit être en **Release** et signé avec un profil **App Store**
 > (Xcode gère en signature automatique). `npm run ios:usb` ne sert qu'au test sur appareil.
 
-## 5. Avant d'envoyer en revue
-- [ ] `PROD = true` + vrais IDs AdMob câblés (sinon pubs de test en prod = violation AdMob).
-- [ ] Liste SKAdNetwork complète collée.
-- [ ] Captures d'écran à jour.
+## 4. Avant d'envoyer en revue
+- [x] `PROD = true` + vrais IDs AdMob câblés (vérifié `src/js/ads.js:10` et `:19-27` — sinon pubs de
+  test en prod = violation AdMob).
+- [x] Liste SKAdNetwork complète collée (vérifié `ios/App/App/Info.plist` — 50 entrées
+  `SKAdNetworkIdentifier`).
+- [x] URL de politique de confidentialité et URL de support valides et en ligne (page vitrine) —
+  renseignées sur la fiche le 2026-11-22.
+- [x] Captures d'écran à jour, envoyées sur la fiche (2026-11-22), aucune bannière DEBUG visible.
+- [x] Classification d'âge déclarée via l'API (2026-11-22).
+- [ ] App Privacy (nutrition labels) à déclarer dans l'UI (brouillon prêt, cf. § 2 — bloqué côté API).
 - [ ] Test fermé TestFlight OK (icône, notif, pubs réelles, ATT/consentement).
+- [ ] Après publication : associer l'app iOS à sa fiche App Store dans AdMob (App Store ID) —
+  sinon aucune pub ne se diffuse malgré le câblage code.

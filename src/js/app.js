@@ -82,7 +82,7 @@ const ctx = {
   calculerProposition() {
     let recettes = ctx.catalogue.recettes;
     // Filtre « par appareil(s) » : liste vide = tous ; sinon on ne garde que les
-    // recettes des catégories d'appareil sélectionnées (classique / airfryer / cookeo).
+    // recettes des catégories d'appareil sélectionnées (classique / airfryer / cookeo / plancha).
     const modes = (ctx.etat.preferences && ctx.etat.preferences.modes_appareil) || [];
     if (modes.length) recettes = recettes.filter((r) => modes.includes(categorieAppareil(r)));
     ctx.proposition = genererProposition(recettes, ctx.etat, Date.now(), ctx.session, Math.random);

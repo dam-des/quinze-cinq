@@ -1,6 +1,8 @@
 // data.js — chargement de la base de recettes embarquée (offline) et
 // utilitaires de dérivation (garde-manger par défaut, illustration par catégorie).
 
+import { SEUIL_LEGER_KCAL_DEFAUT } from './engine.js';
+
 let _cache = null;
 
 /** Charge recettes_50.json (62 recettes, embarqué — aucune requête réseau « métier »). */
@@ -31,7 +33,14 @@ export function basiquesEditables(catalogue) {
 
 /** Préférences par défaut. `modes_appareil` : liste vide = tous les appareils. */
 export function preferencesParDefaut() {
-  return { vegetarien: false, enfant_friendly: false, exclusions: [], modes_appareil: [] };
+  return {
+    vegetarien: false,
+    enfant_friendly: false,
+    leger: false,
+    seuil_leger_kcal: SEUIL_LEGER_KCAL_DEFAUT,
+    exclusions: [],
+    modes_appareil: [],
+  };
 }
 
 // Appareils sélectionnables (extensible : ajouter ici une future entrée suffit).
@@ -39,19 +48,21 @@ export const APPAREILS = [
   { cle: 'classique', label: 'Classiques' },
   { cle: 'airfryer', label: 'Airfryer' },
   { cle: 'cookeo', label: 'Cookeo' },
+  { cle: 'plancha', label: 'Plancha' },
 ];
 
-/** Catégorie d'appareil d'une recette : 'airfryer' | 'cookeo' | 'classique'. */
+/** Catégorie d'appareil d'une recette : 'airfryer' | 'cookeo' | 'plancha' | 'classique'. */
 export function categorieAppareil(recette) {
   const eq = recette.equipement_requis || [];
   if (eq.includes('airfryer')) return 'airfryer';
   if (eq.includes('cookeo')) return 'cookeo';
+  if (eq.includes('plancha')) return 'plancha';
   return 'classique';
 }
 
 /** Équipements par défaut (poêle/plaque toujours supposés). */
 export function equipementsParDefaut() {
-  return { four: true, airfryer: false, cookeo: false };
+  return { four: true, airfryer: false, cookeo: false, plancha: false };
 }
 
 // Catégorie → fichier d'illustration (les 7 SVG fournis, intégrés tels quels).
@@ -76,6 +87,7 @@ export function libelleEquipement(recette) {
   const eq = recette.equipement_requis || [];
   if (eq.includes('airfryer')) return 'Airfryer';
   if (eq.includes('cookeo')) return 'Cookeo';
+  if (eq.includes('plancha')) return 'Plancha';
   if (eq.includes('four')) return 'Four';
   return 'Poêle';
 }

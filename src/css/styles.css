@@ -103,6 +103,7 @@ body {
 }
 .badge.hl { background: var(--accent); color: var(--on-accent); }
 .badge svg { width: 14px; height: 14px; }
+.badges-note { margin-top: 6px; font-size: 11.5px; font-weight: 600; color: var(--ink-faint); }
 
 /* Sélecteur de personnes (met les quantités à l'échelle dans le détail). */
 .portions { display: flex; align-items: center; gap: 12px; margin-top: 16px; padding: 10px 14px; border: 1px solid var(--line-strong); border-radius: 12px; }
