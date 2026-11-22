@@ -100,19 +100,17 @@ recette,dîner,repas,cuisine,rapide,facile,airfryer,cookeo,four,soir,idée repas
 ## URL de politique de confidentialité
 
 ```
-[URL à renseigner une fois la page vitrine en ligne]
+https://dam-des.github.io/quinze-cinq/privacy.html
 ```
-Contenu déjà rédigé localement : `privacy.html` (racine du repo). À publier sur la page vitrine
-(ex. `dam-des.github.io/quinze-cinq/privacy.html`) avant de coller l'URL définitive ici.
+Page vitrine en ligne (2026-11-22) et URL déjà renseignée sur la fiche App Store Connect via l'API.
 
 ## URL de support
 
 ```
-[URL à renseigner une fois la page vitrine en ligne — ou mailto: en attendant]
+https://dam-des.github.io/quinze-cinq/
 ```
-Contact déjà existant dans `privacy.html:68` : `damien.desanlis@gmail.com`. Une URL de support
-web est recommandée par Apple (une simple page de contact suffit) ; en l'absence de page vitrine,
-une adresse `mailto:` peut être utilisée temporairement si App Store Connect l'accepte.
+Déjà renseignée sur la fiche App Store Connect via l'API (même page que la vitrine — pas de page
+de contact dédiée pour l'instant).
 
 ## Notes de version — v1.0.0 (soumission initiale)
 

@@ -1,0 +1,5 @@
+app_identifier("com.quinzecinq.app")      # Bundle ID iOS (prod)
+apple_id("damien.desanlis@me.com")        # email du compte App Store Connect / Apple Developer (même Team 43W4PXPVHP que les autres apps)
+# itc_team_id("...")                      # optionnel — un seul compte/team, non renseigné
+
+package_name("com.quinzecinq.app")        # Android

@@ -1,0 +1,214 @@
+default_platform(:ios)
+
+# Usage :
+#   fastlane ios release version:1.0.0        # build + signe l'IPA, la range dans releases/ios/vX.Y.Z/
+#   fastlane ios upload version:1.0.0         # envoie IPA + captures fr-FR + notes de version sur App Store Connect
+#   fastlane ios select_build version:1.0.0   # attend la fin du traitement Apple (jusqu'à 30 min) et sélectionne
+#                                              # ce build pour la version — à lancer après `ios upload`
+#   fastlane android release version:1.0.0    # build + signe l'AAB, le range dans releases/android/vX.Y.Z/
+#   fastlane android upload version:1.0.0     # envoie AAB + captures fr-FR + notes de version sur Play Console (brouillon)
+#
+# Prérequis :
+# - App Capacitor à la racine du repo (un niveau au-dessus de fastlane/)
+# - iOS : ios/App/ExportOptions.plist existant (méthode app-store), Team 43W4PXPVHP, signature
+#   automatique déjà configurée dans Xcode
+# - Android : android/key.properties + keystore déjà configurés (~/quinzecinq-upload-keystore.jks)
+# - upload (les deux plateformes) : voir docs/FASTLANE_STORE_UPLOAD.md pour les identifiants
+#   attendus (ASC_KEY_ID, ASC_ISSUER_ID, ASC_KEY_PATH, PLAY_JSON_KEY_PATH) — déjà exportés dans
+#   ~/.zshrc, partagés avec les autres apps du même compte développeur. Jamais commités.
+#
+# Garde-fou volontaire des lanes `upload` : elles envoient le binaire mais ne déclenchent jamais
+# la mise en ligne (submit_for_review/automatic_release false côté iOS, release_status "draft"
+# côté Android) — la bascule finale "Soumettre à la review" / "Publier" reste un clic manuel dans
+# chaque console. Les lanes envoient aussi captures (fastlane/screenshots/fr-FR/ côté iOS,
+# fastlane/metadata/android/fr-FR/images/phoneScreenshots/ côté Android) et notes de version
+# (depuis store-assets/texts/whats_new_fr.md) — en écrasant les anciennes captures
+# (overwrite_screenshots), jamais le titre/la description de la fiche.
+
+APP_SLUG = "QuinzeCinq"
+
+platform :ios do
+  desc "Build IPA release et le range dans releases/ios/vX.Y.Z/"
+  lane :release do |options|
+    version = options[:version] || UI.user_error!("Passe la version : fastlane ios release version:X.Y.Z")
+
+    bump_version(version: version)
+
+    Dir.chdir("..") do
+      sh("npx cap sync ios")
+      archive_path = File.expand_path("build/App.xcarchive", Dir.pwd)
+      export_path = File.expand_path("build/ios-export", Dir.pwd)
+      Dir.chdir("ios/App") do
+        sh("xcodebuild -workspace App.xcworkspace -scheme App -configuration Release " \
+           "-archivePath #{archive_path} archive")
+        sh("xcodebuild -exportArchive -archivePath #{archive_path} " \
+           "-exportPath #{export_path} -exportOptionsPlist ExportOptions.plist")
+      end
+    end
+
+    release_dir = File.expand_path("../releases/ios/v#{version}", Dir.pwd)
+    FileUtils.mkdir_p(release_dir)
+
+    ipa_source = Dir[File.expand_path("../build/ios-export/*.ipa", Dir.pwd)].first
+    UI.user_error!("IPA introuvable dans build/ios-export/ — vérifie ExportOptions.plist et la signature") unless ipa_source
+
+    dest = "#{release_dir}/#{APP_SLUG}_v#{version}.ipa"
+    FileUtils.cp(ipa_source, dest)
+
+    UI.success("IPA rangé : #{dest}")
+  end
+
+  desc "Envoie l'IPA déjà buildé (releases/ios/vX.Y.Z/) sur App Store Connect — binaire seul, pas de soumission à la review automatique"
+  lane :upload do |options|
+    version = options[:version] || UI.user_error!("Passe la version : fastlane ios upload version:X.Y.Z")
+
+    ipa_path = File.expand_path("../releases/ios/v#{version}/#{APP_SLUG}_v#{version}.ipa", Dir.pwd)
+    unless File.exist?(ipa_path)
+      UI.user_error!("IPA introuvable : #{ipa_path} — lance d'abord `fastlane ios release version:#{version}`")
+    end
+
+    api_key = app_store_connect_api_key(
+      key_id: ENV.fetch("ASC_KEY_ID") { UI.user_error!("Variable d'environnement ASC_KEY_ID manquante") },
+      issuer_id: ENV.fetch("ASC_ISSUER_ID") { UI.user_error!("Variable d'environnement ASC_ISSUER_ID manquante") },
+      key_filepath: ENV.fetch("ASC_KEY_PATH") { UI.user_error!("Variable d'environnement ASC_KEY_PATH manquante") },
+    )
+
+    whats_new = File.read(File.expand_path("../store-assets/texts/whats_new_fr.md", Dir.pwd), encoding: "UTF-8").strip
+
+    upload_to_app_store(
+      api_key: api_key,
+      ipa: ipa_path,
+      skip_metadata: false,
+      release_notes: { "fr-FR" => whats_new },
+      skip_screenshots: false, # fastlane/screenshots/fr-FR/*.png (6.9", détecté par taille)
+      overwrite_screenshots: true, # remplace, n'accumule pas avec les anciennes captures
+      submit_for_review: false,
+      automatic_release: false,
+      precheck_include_in_app_purchases: false,
+      force: true, # pas de prompt interactif HTML preview
+    )
+
+    UI.success("IPA v#{version} envoyé sur App Store Connect (binaire + captures + notes de version). Reste à vérifier et soumettre à la review manuellement.")
+  end
+
+  desc "Attend que le build soit traité par Apple (jusqu'à 30 min) puis le sélectionne pour la version — à lancer après `ios upload`"
+  lane :select_build do |options|
+    version = options[:version] || UI.user_error!("Passe la version : fastlane ios select_build version:X.Y.Z")
+
+    app_store_connect_api_key(
+      key_id: ENV.fetch("ASC_KEY_ID") { UI.user_error!("Variable d'environnement ASC_KEY_ID manquante") },
+      issuer_id: ENV.fetch("ASC_ISSUER_ID") { UI.user_error!("Variable d'environnement ASC_ISSUER_ID manquante") },
+      key_filepath: ENV.fetch("ASC_KEY_PATH") { UI.user_error!("Variable d'environnement ASC_KEY_PATH manquante") },
+    )
+
+    app = Spaceship::ConnectAPI::App.find("com.quinzecinq.app")
+    UI.user_error!("App introuvable sur App Store Connect (com.quinzecinq.app)") unless app
+
+    UI.message("Attente du traitement du build #{version} par Apple (vérifié toutes les 30s, jusqu'à 30 min)...")
+    build = nil
+    60.times do |i|
+      builds = Spaceship::ConnectAPI::Build.all(app_id: app.id, version: version, platform: "IOS")
+      build = builds.find { |b| b.processing_state == Spaceship::ConnectAPI::Build::ProcessingState::VALID }
+      break if build
+
+      failed = builds.find do |b|
+        [Spaceship::ConnectAPI::Build::ProcessingState::FAILED,
+         Spaceship::ConnectAPI::Build::ProcessingState::INVALID].include?(b.processing_state)
+      end
+      UI.user_error!("Le traitement du build #{version} par Apple a échoué (#{failed.processing_state}) — vérifie App Store Connect.") if failed
+
+      sleep(30) unless i == 59
+    end
+    UI.user_error!("Build #{version} toujours en traitement après 30 min — relance `fastlane ios select_build version:#{version}` plus tard.") unless build
+
+    app_version = app.get_edit_app_store_version(platform: "IOS")
+    UI.user_error!("Aucune version modifiable trouvée sur App Store Connect pour la piste iOS") unless app_version
+    app_version.select_build(build_id: build.id)
+
+    UI.success("Build #{version} sélectionné pour la version #{app_version.version_string} sur App Store Connect.")
+  end
+end
+
+platform :android do
+  desc "Build AAB release et le range dans releases/android/vX.Y.Z/"
+  lane :release do |options|
+    version = options[:version] || UI.user_error!("Passe la version : fastlane android release version:X.Y.Z")
+
+    bump_version(version: version)
+
+    Dir.chdir("..") do
+      sh("npx cap sync android")
+      Dir.chdir("android") { sh("./gradlew bundleRelease") }
+    end
+
+    release_dir = File.expand_path("../releases/android/v#{version}", Dir.pwd)
+    FileUtils.mkdir_p(release_dir)
+
+    aab_source = File.expand_path("../android/app/build/outputs/bundle/release/app-release.aab", Dir.pwd)
+    UI.user_error!("AAB introuvable : #{aab_source} — vérifie key.properties") unless File.exist?(aab_source)
+
+    dest = "#{release_dir}/#{APP_SLUG}_v#{version}.aab"
+    FileUtils.cp(aab_source, dest)
+
+    UI.success("AAB rangé : #{dest}")
+  end
+
+  desc "Envoie l'AAB déjà buildé (releases/android/vX.Y.Z/) sur Play Console — piste production, en brouillon (pas de rollout automatique)"
+  lane :upload do |options|
+    version = options[:version] || UI.user_error!("Passe la version : fastlane android upload version:X.Y.Z")
+
+    aab_path = File.expand_path("../releases/android/v#{version}/#{APP_SLUG}_v#{version}.aab", Dir.pwd)
+    unless File.exist?(aab_path)
+      UI.user_error!("AAB introuvable : #{aab_path} — lance d'abord `fastlane android release version:#{version}`")
+    end
+
+    json_key = ENV.fetch("PLAY_JSON_KEY_PATH") { UI.user_error!("Variable d'environnement PLAY_JSON_KEY_PATH manquante") }
+
+    build_number = version_code_from_gradle
+    whats_new_path = File.expand_path("../store-assets/texts/whats_new_fr.md", Dir.pwd)
+    changelog_dir = File.expand_path("metadata/android/fr-FR/changelogs", Dir.pwd)
+    FileUtils.mkdir_p(changelog_dir)
+    FileUtils.cp(whats_new_path, File.join(changelog_dir, "#{build_number}.txt"))
+
+    upload_to_play_store(
+      aab: aab_path,
+      json_key: json_key,
+      track: "production",
+      release_status: "draft", # créé mais pas lancé — clic "Publier" manuel dans Play Console
+      skip_upload_metadata: true, # titre/description : pas gérés ici, changent rarement
+      skip_upload_images: true,   # icône/image de présentation : pas gérées ici
+      skip_upload_screenshots: false, # fastlane/metadata/android/fr-FR/images/phoneScreenshots/
+      skip_upload_changelogs: false,  # généré juste au-dessus depuis whats_new_fr.md
+    )
+
+    UI.success("AAB v#{version} envoyé sur Play Console (brouillon, piste production, captures + notes de version à jour). Reste à vérifier et publier manuellement.")
+  end
+end
+
+def bump_version(version:)
+  # iOS : ios/App/App.xcodeproj/project.pbxproj (MARKETING_VERSION + CURRENT_PROJECT_VERSION)
+  pbxproj_path = File.expand_path("../ios/App/App.xcodeproj/project.pbxproj", Dir.pwd)
+  content = File.read(pbxproj_path, encoding: "UTF-8")
+  current_build = content[/CURRENT_PROJECT_VERSION = (\d+);/, 1].to_i
+  new_build = current_build + 1
+  content = content.gsub(/MARKETING_VERSION = [\d.]+;/, "MARKETING_VERSION = #{version};")
+  content = content.gsub(/CURRENT_PROJECT_VERSION = \d+;/, "CURRENT_PROJECT_VERSION = #{new_build};")
+  File.write(pbxproj_path, content, encoding: "UTF-8")
+
+  # Android : android/app/build.gradle (versionName + versionCode)
+  gradle_path = File.expand_path("../android/app/build.gradle", Dir.pwd)
+  gcontent = File.read(gradle_path, encoding: "UTF-8")
+  current_code = gcontent[/versionCode (\d+)/, 1].to_i
+  new_code = current_code + 1
+  gcontent = gcontent.sub(/versionName "[^"]*"/, "versionName \"#{version}\"")
+  gcontent = gcontent.sub(/versionCode \d+/, "versionCode #{new_code}")
+  File.write(gradle_path, gcontent, encoding: "UTF-8")
+
+  UI.message("Version mise à jour -> iOS #{version} (build #{new_build}), Android #{version} (versionCode #{new_code})")
+end
+
+def version_code_from_gradle
+  gradle_path = File.expand_path("../android/app/build.gradle", Dir.pwd)
+  content = File.read(gradle_path, encoding: "UTF-8")
+  content[/versionCode (\d+)/, 1] || UI.user_error!("Impossible de lire versionCode depuis build.gradle")
+end

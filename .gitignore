@@ -13,3 +13,11 @@ www/
 dist/
 *.log
 .env
+
+# Signature Android (jamais versionnée) + identifiants fastlane
+/android/key.properties
+*.jks
+*.keystore
+/fastlane/report.xml
+/releases/
+.p8
